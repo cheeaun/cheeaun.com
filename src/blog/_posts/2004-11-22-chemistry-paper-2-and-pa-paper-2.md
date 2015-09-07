@@ -1,0 +1,6 @@
+Chemistry Paper 2 and PA Paper 2
+===
+
+The first question is about the Lyman series. Whoa. I can do most of the structure questions, but some of them are *way too easy* for anyone to memorise. For example, what is the catalyst used in the Haber process? The essay part is *ridiculously hard*. That's all I can say. After the Chemistry paper, I had my PA paper in the evening. Somehow, my mind seems to clash between both subjects. My friends simply say that I'm *hilariously crazy*. When we were discussing the PA subject together, my mind suddenly thought of Le Chatelier's Principle for no particular reason.
+
+The time duration for the PA paper is 2 hours and 40 minutes. It's quite a long time but I couldn't finish all questions every time having this paper in my school examinations. Fortunately, *this time* and also for the first time ever, I finished everything. Yeah. The Section A and B, essay part, are pretty good, as my mind was filled with a lot of crazy ideas. The Section C is pretty tricky because both question 1 and 2 really make my head spinning. I'm not even sure if I've drawn the correct graph format! While taking this paper, I was sweating like a dog. Is it the green house effect in the examination hall, or just *me*?

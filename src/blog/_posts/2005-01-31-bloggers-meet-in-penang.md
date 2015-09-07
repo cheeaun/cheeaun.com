@@ -1,0 +1,24 @@
+Bloggers meet in Penang
+===
+
+Yesterday, the [bloggers meet](http://jogalong.blogspot.com/2005/01/bloggers-meet-in-penang.html "bloggers meet in penang") was great. I enjoyed it. Really.
+
+Before the meet, I was kind of hesitant to go because I have a problem with transportation. At first, I asked my friend, Will Sen to give me a lift, but he seems not interested, eventhough he's a [blogger](http://getrichwithme.blogspot.com/ "Rich ME Rich YOU"), too. Then, I thought if I'm going to attend this meet, I have to take buses and ferry, *to and fro*. So, I try to find for *alternative* solutions. I remember, Lucia wrote about [her experience in last year's blogger meet](http://jogalong.blogspot.com/2004/06/meet-meet.html "the meet. the meet?"), when **only one** person attend. That guy was Jasdev, who went to the meet, all the way from mainland to Prangin Mall. Whoa. Immediately, I surfed to Jasdev's [weblog](http://jasdevism.blog-city.com/ "Jasdevism"), verified that he *is* a human being, found his mobile phone number, and contacted him. Fortunately, he responded and agreed to give me a ride on his motorbike. Yay.
+
+The weather was hot. By the time we reached [Nasi Kandar Pelita](http://pelita.com.my/p_finder_usm.html), it's about 5pm. We try to look around and Jasdev found the bloggers group, maybe because he recognises Lucia. I was a bit surprised  and felt weird because *all are strangers* to me. I sat beside KS Tang, the guy who has [a pathetic attempt at blogging](http://kstang.blogspot.com/ "A pathetic attempt at blogging"). As I try to ask him who's who, he just answered that he had no idea at all. Haha. I looked around and recognised Peter Tan because he's on a wheelchair. I also recognised Lucia because she was [dressed in black pants and blue t-shirt](http://jogalong.blogspot.com/2005/01/update-on-bloggers-meet.html "update on the bloggers meet"), *sort of*, if I'm not mistaken. There were also two non-bloggers taking part, Joyce and Wuan.
+
+Peter Tan looks different than what I expected. Frankly speaking, he looks very energetic despite his physical disability. He told me, he blogs *all the time*. Awesome. Jasdev is kind of a cool guy, who spreads his *Jasdevism* terminologies and wears the *Evil cap*, whether anyone notice it or not. His laptop rocks. *Really, really rocks*. I think he should be careful with his copy of Windows Media Player 10, though. Lucia always mention that she's short and fat, but actually, it's the *exact opposite*. [Her 'baby'](http://jogalong.blogspot.com/2005/01/my-new-baby_25.html "my new 'baby' ...") is really neat, with all the shining metallic colours and amazing features. I always want to own one, but you know, money matters.
+
+As I sat beside KS Tang, I found out that he works in the same area as I do, the Prai Industrial Area. He's from PenFibre and I'm from GKN Driveline. What a coincidence. Besides, I also met Ong BK, the one who gave his Oops!! newspapers and calendar to everyone, *free of charge*. From his facial appearance, I could imagine he's some soft of a wise old man who lives on the Himalayas, where people strive to reach him just to ask the most important question of all, **'What is the purpose of life?'**. Okay, just kidding. As for Ee Yean, she seems quiet and maybe [felt a bit weird](http://reallybites.net/mtt/archives/2005/01/sooo_penang_blo.html "sooo / penang bloggers meet"). Her name somehow reminds me of *1 yuan*, meaning China's 1 dollar. Haha. Sorry, Ee Yean.
+
+The bloggers meet actually start at 4, but Jasdev and I arrived late. Lucia told me that HK Teh came before us, and took photos and videos all over before leaving. Kew also came and chatted for a while, also left in a flash. All of us bloggers, and non-bloggers, talked about various topics, as one by one left the group. At 9, we all left, with a hope that there will be yet another meet like this.
+
+Ever since I decided to start blogging last June, this is my *first time* attending a bloggers meet. All thanks to Lucia for [organising it](http://jogalong.blogspot.com/2005/01/bloggers-meet.html "bloggers meet"). As I mentioned, Peter Tan blogs *all the time*. Yes, he [proves it, in pictures](http://petertan.com/blog/archives/2005/01/penang_bloggers_2.html "Penang Bloggers Meet in Pictures"). Ironically, I prove mine in words, instead.
+
+**Update 2 February 2005**: Okay, the *gang* has updated their blogs. Here they are:
+
+- [the bloggers meet](http://jogalong.blogspot.com/2005/02/bloggers-meet.html)
+- [Penang Bloggers Meetup II](http://jasdevism.blog-city.com/read/1039375.htm)
+- [Penang's 2nd Bloggers Meet !](http://www.malvu.org/malvu/html/index.php?module=articles&func=display&aid=1502&ptid=5)
+- [bloggers meet in penang (30.1.05)](http://www.worldisround.com/articles/129322/)
+- [Penang Bloggers Meet 30.1.2005](http://usm.net.my/penangbloggers/)

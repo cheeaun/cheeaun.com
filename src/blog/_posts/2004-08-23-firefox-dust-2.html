@@ -1,0 +1,51 @@
+<h1>Firefox Dust 2</h1>
+<p>Last month, I wrote about some <em>dusts</em> I found in Firefox. I supposed it&apos;s a good read for most Firefox users. However, it is only the <em>scratch of the surface</em>. You might see this as a form of criticism, but what I&apos;m writing here is actually to help improving the Firefox UI before reaching 1.0.</p>
+<p>The dusting begins:</p>
+<ul>
+<li><img src="/blog/images/screenshots/firefox/animated_tabpanel_portrait_landscape_page_setup.png" width="400" height="350" alt="Changing height of the tab panel when selecting either Portrait or Landscape of the Page Setup window">
+<p>Go to Page Setup window and change the page orientation format by selecting either &apos;Portrait&apos; or &apos;Landscape&apos;. If you try checking one another, you could notice that the tab panel <em>animates</em>. It happens because, on the &apos;Margins &amp; Header/Footer&apos; tab, the small page figure changes according the checked page orientation radios of the &apos;Format &amp; Options&apos; tab. When the page figure switches from either the portrait or landscape shapes, it also changes the height of its surrounding group box which affects the height of the tab panel. The result is a tab panel which <em>jumps up and down</em>. I don&apos;t know how fix this but I remember the first time I spot this, it just looks weird.</p></li>
+<li><img src="/blog/images/screenshots/firefox/shifted_outline_borders_disclosure_buttons_twisties_listbox_panel.png" width="155" height="100" alt="an expanded twisty or disclosure button, which shifts away from its original position and has outline borders around it">
+<p>Launch the Options window, go to either Advanced or Privacy panel, and click on the twisties. When expanded, the twisty image shifts 1 pixel down and to the right. When focused, outline borders appear around it. As insignificant as it looks, I say this is an UI bug. Via DOM Inspector, I checked out that this widget <em>is</em> a button, which means that it contains the same XBL binding and CSS styles of other normal buttons. Actually, the twisties are called expander buttons or disclosure buttons. I&apos;m not an XUL expert, so I&apos;m confused why the <code>button</code> element is used for such widgets.</p>
+<p>From my understanding, the XBL binding for normal buttons basically includes three child elements, which is the button box, button icon and button label. But, the button box and button label are totally useless for twisties. So, I found a solution to fix this bug:</p>
+<pre><code>button[type=&quot;disclosure&quot;] {
+-moz-binding: url(&quot;<em>chrome://global/content/bindings/button.xml#button-image</em>&quot;) !important;
+}</code></pre>
+<p>The above code applies a different binding to the disclosure button, which contains only the button image as the child element. With just one piece of code, the bug is fixed.</p>
+</li>
+<li><img src="/blog/images/screenshots/firefox/incorrect_background_colour_tooltip.png" width="280" height="110" alt="incorrect background colour of the tooltip in Firefox, compared to Windows&apos; tooltip">
+<p>Hover your cursor over the toolbar buttons and observe the tooltip pops up. It may not be visible to some people, but the problem I see is the incorrect background colour. On Windows XP Luna, the tooltip should be in black text on light yellow background. But on Firefox, it&apos;s on <em>white</em> background. So, I wonder, where does the white colour come from? Extracted from &apos;popup.css&apos; of the default theme JAR file, the codes applied to this widget are the following:</p>
+<pre><code>tooltip {
+-moz-appearance: tooltip;
+margin-top: 21px;
+border: 1px solid InfoText;
+padding: 2px 3px;
+max-width: 40em;
+background-color: InfoBackground;
+color: InfoText;
+font: message-box;
+}</code></pre>
+<p>So far, the CSS properties above look fine. The <code>InfoBackground</code> colour is correct, which <em>should</em> be yellow on my system. But why is it showing white then? Well, the culprit is <code>-moz-appearance: tooltip</code>. Somehow, it doesn&apos;t seem to work, therefore it should be removed, as a temporary solution:</p>
+<pre><code>tooltip {
+<em>-moz-appearance: none !important;</em>
+}</code></pre></li>
+<li><img src="/blog/images/screenshots/firefox/bookmarks_toolbar_items_drag_pointer_toolbar.png" width="250" height="80" alt="Bookmarks Toolbar Items being dragged, showing a drag pointer">
+<p>Enable the Bookmarks toolbar, right-click on the toolbox, point to &apos;Customize...&apos;, open the Customize window, and drag the Bookmarks toolbar into it. No icon visible, right? Then, click the &apos;Done&apos; button and take notice that the Bookmarks toolbar is <em>still</em> there, with no bookmarks on it. After that, go to the Customize window again, drag the Bookmarks palette item back to its toolbar, and click &apos;Done&apos;. There is still <strong>nothing</strong> on the Bookmarks toolbar. Restart Firefox, and the bookmarks will come back.</p>
+<img src="/blog/images/screenshots/firefox/missing_bookmarks_toolbar_items_icon_customize.png" width="250" height="180" alt="missing icon for the Bookmarks item, after being dragged into the Customize window">
+<p>The first quirk is that it doesn&apos;t have an icon, unlike other toolbar items. Since it&apos;s <em>not</em> a toolbar button, it shouldn&apos;t have any icons? Then, why it has the same label as the <em>real</em> Bookmarks toolbar button? The second quirk is the blank Bookmarks toolbar. Logically speaking, the toolbar should collapse when the bookmark item is dragged into the Customize window, or any other toolbars. The third quirk is obviously a bug as the bookmarks doesn&apos;t appear even <em>after</em> the Bookmarks item is dragged back to its original toolbar.</p></li>
+<li><img src="/blog/images/screenshots/firefox/expand_open_in_tabs_manage_folder_menuitems_popup_bookmarks_toolbar_folder_boomarks_sidebar.png" width="400" height="290" alt="different right-click popups for Bookmarks Toolbar Folder and other folders, lacking few menu items">
+<p>The bookmarks management in Firefox seems pretty weird sometimes. Try open the Bookmarks sidebar, or launch the Bookmarks Manager and look at all the bookmarks you have. The first folder you&apos;ll notice is the &apos;Bookmarks Toolbar Folder&apos;. Right-clicking on this folder will show you a context menu popup. Doing so in <em>other</em> folders will also show a context menu popup, but with <strong>more</strong> menu items. So, now you see any folders which has been set as the bookmarks toolbar folder, by pointing to &apos;Set as Bookmarks Toolbar Folder&apos; from the &apos;View&apos; menu of the Bookmarks Manager, will have a different right-click popup. It lacks the &apos;Expand&apos;, &apos;Collapse&apos;, &apos;Open in Tabs&apos; and &apos;Manage Folder&apos; menu items.</p>
+<img src="/blog/images/screenshots/firefox/useless_expand_menuitem_popup_folder_bookmarks_toolbar.png" width="240" height="210" alt="useless &apos;Expand&apos; menu item on the right-click popup of a folder located on the Bookmarks toolbar">
+<p>I know that this popup is suitable for the Bookmarks toolbar, because it doesn&apos;t need those menu items. From there, if you right-click on any folder <em>on</em> the Bookmarks toolbar, a popup appears. On the right-click popup, the &apos;Expand&apos; menu item is totally useless and does nothing. I&apos;m not sure about this but how do I <em>expand a toolbar button</em>? Should it open a menu popup?</p></li>
+<li><img src="/blog/images/screenshots/firefox/flexible_space_space_customize.png" width="260" height="110" alt="&apos;Flexible Space&apos; and &apos;Space&apos; toolbar palette items on the Customize window">
+<p>Right-click on the toolbox, and point to &apos;Customize...&apos;. There you see the &apos;Flexible Space&apos; and &apos;Space&apos;. On the toolbars, in XUL terms, &apos;Flexible Space&apos; is called a toolbar spring and &apos;Space&apos; is a toolbar spacer. The former is <em>stretchable</em> with <code>-moz-box-flex: 1000</code>, the latter has a fixed width of 15 pixels. Both toolbar items look identical and would confuse first-time users.</p>
+<p><img src="/blog/images/screenshots/firefox/flexible_space_double_headed_arrow_space_light_background_customize.png" width="260" height="110" alt="enhanced &apos;Flexible Space&apos; and &apos;Space&apos; toolbar palette items, with a double-headed arrow and light backgrounds, on the Customize window">
+</p><p>To differentiate both, a double-headed arrow would be right for &apos;Flexible Space&apos;, to indicate that it can grow or shrink to fit its given space. It would be better if the spacers have <em>lighter</em> backgrounds to be distinguishable from the dialog background.</p></li>
+<li><img src="/blog/images/screenshots/firefox/light_background_hover_checked_toolbar_button_windows_firefox.png" width="230" height="80" alt="two hovered checked toolbar buttons, one has dialog background colour on Windows, the other has lighter dialog background colour on Mozilla Firefox">
+<p>On Windows Classic, checked toolbar buttons have <em>light</em> dialog background colour, but when hovered, it changes into the normal dialog background colour. On Firefox, it doesn&apos;t change. So, let&apos;s make it change:</p>
+<pre><code>toolbarbutton[checked=&quot;true&quot;]:hover{
+background-image: none !important;
+}</code></pre></li>
+<li><img src="/blog/images/screenshots/firefox/disabled_menubar_menus_unfocused_window_windows_firefox.png" width="260" height="220" alt="two unfocused windows, one is the Internet Explorer window showing disabled menubar menus, the other is the Mozilla Firefox window showing non-disabled menubar menus">
+<p>On Windows, the menus of the menubar switch to disabled state when the window is not focused. This doesn&apos;t happen in Firefox. I have no idea if this can be done within Firefox&apos;s interface, especially with XUL. It could be <em>platform-specific</em> because it doesn&apos;t happen in Opera too. Yet another minor bug, I guess.</p></li>
+</ul>
+<p>Okay now, I&apos;m done. It&apos;s time for the developers to carry out their dusting work.</p>

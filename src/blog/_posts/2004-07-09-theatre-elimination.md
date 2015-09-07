@@ -1,0 +1,4 @@
+Theatre Elimination
+===
+
+I watched the 2-hour special Malaysian Idol on 8TV channel, and it is *really dramatic*. The contestants actually gone through 3 days of physical and mental *torture*, just to get chosen into the top 30. They underwent the elimination stages which include solo and group singing. A lot of happy and sad incidents happened. Some participants even gave up, for all the difficulties to cope with song tunes, lyrics and music. The guys performed badly for the group singing part, but some of them were very lucky to be chosen. The judges had a hard time choosing the talented ones. From my observation, all the contestants are specially gifted. If not, they wouldn't have come this far.

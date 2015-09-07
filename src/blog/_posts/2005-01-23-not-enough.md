@@ -1,0 +1,8 @@
+Not enough
+===
+
+The [story of the Firefox 1.0 launch](http://weblogs.mozillazine.org/mitchell/archives/2005/01/firefox_10_laun_1.html "Firefox 1.0 Launch Day") is a nice read. The [process](http://weblogs.mozillazine.org/asa/archives/007309.html "making releases happen - answers") is an eye-opener. Now I understand what the developers do behind the scenes. They have done **so many amazing things** that my simplistic brain has never thought of. Before this, I don't know how open-source organisations work. It's a little hard for me to imagine a number of people bringing their laptops, working together, digging into computer screens and make the **very best web browser software** for everyone. The dedicated developers inspired me and I'm very proud to support them.
+
+Despite my lack of skills in some technological areas such as programming, I just wish I can help them in any ways possible. I also have the feeling that I haven't done enough to contribute to this great project. I guess other Firefox fans have that same feeling too. The least for me to do is to show my gratitude, encourage my friends to [switch](http://switch2firefox.com/ "Switch2Firefox"), [spread Firefox](http://spreadfirefox.com/) and report bugs to [Bugzilla](http://bugzilla.mozilla.org/). Somehow for me, those are just *psychologically* not enough. Yes, not enough. Mind you, that is what I felt.
+
+Well, what more can I do?

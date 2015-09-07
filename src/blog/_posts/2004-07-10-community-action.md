@@ -1,0 +1,4 @@
+Community action
+===
+
+The Mozila community has been very busy lately. [Mozilla 1.7.1, Mozilla Firefox 0.9.2 and Mozilla Thunderbird 0.7.2](http://mozillazine.org/talkback.html?article=4964 "Mozilla 1.7.1, Mozilla Firefox 0.9.2 and Mozilla Thunderbird 0.7.2 Released") were released altogether. Frankly speaking, I haven't download Firefox 0.9.1 yet. I guess I'll download this 0.9.2 build instead, since the Mozilla developers are speeding up at such a fast rate. Recently, a lot of Firefox users [take action](http://weblogs.mozillazine.org/asa/archives/005930.html) to [add reviews and ratings](http://weblogs.mozillazine.org/djst/archives/005937.html "Vote for Firefox at Download.com") on [Firefox at Download.com](http://download.com/Mozilla-Firefox/3000-2356-10299359.html?tag=lst-0-1), as a massive effort to get the word out about this great software. I haven't add mine yet, but don't worry, I'll do that later today.

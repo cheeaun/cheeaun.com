@@ -1,0 +1,427 @@
+/*=====================================
+  Standard Styles
+=======================================*/
+
+html, body, button, input, select, textarea{ font-family: "Helvetica Neue", helvetica, arial, sans-serif; }
+
+pre, code, samp, kbd, var{ font-family: consolas, menlo, monaco, "Courier New", courier, monospace; }
+
+a{ text-decoration: none; }
+
+a:hover{ text-decoration: underline; }
+
+img, a img{ border: 0; }
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  padding: 0;
+}
+
+caption{
+  font-weight: bold;
+  padding: .5em;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th, td{
+  vertical-align: top;
+}
+
+ul, ol{
+  padding: 0;
+}
+
+dt{
+  font-weight: bold;
+}
+
+dfn{
+  font-style: normal;
+  font-weight: bold;
+}
+
+abbr{ border-bottom: 1px dotted; }
+
+form{
+  margin: 0;
+  padding: 0;
+}
+
+legend{
+  font-weight: bold;
+}
+
+input, select, textarea, button{
+  font-size: 1em;
+  max-width: 100%;
+  vertical-align: middle;
+  margin: 0;
+}
+
+textarea{ overflow: auto; }
+
+input.button, button{
+  padding: 0 .5em;
+  *overflow: visible;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+
+/*=====================================
+  Site Styles
+=======================================*/
+
+body{
+  color: #444;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  font-family: 'Work sans', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+a{
+  color: #0B62A0;
+  padding: .25em;
+  margin: -.25em;
+  border-radius: 3px;
+  text-decoration: underline;
+}
+a:hover{
+  color: #000;
+  text-decoration: underline;
+}
+a:focus{
+  color: #000;
+  background-color: rgba(0,0,0,.08);
+  text-decoration: none;
+}
+
+strong, b, th, dt{
+  font-weight: 500;
+}
+
+p, li{
+  line-height: 1.5em;
+}
+
+ul, ol{
+  margin-left: 1.35em;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+p strong{
+  color: #000;
+}
+p a strong{
+  color: inherit;
+}
+
+code, kbd, samp, var{
+  background-color: #fafafa;
+}
+pre code{
+  background-color: auto;
+}
+
+#container{
+  position: relative;
+  margin: auto;
+  max-width: 40em;
+  word-wrap: break-word;
+}
+
+header{
+  text-align: center;
+  padding: 50px;
+}
+header h1{
+  margin: 0;
+}
+header h1 a{
+  display: inline-block;
+  border-radius: 50%;
+}
+header h1 a:focus{
+  transform: scale(.97);
+}
+header img{
+  vertical-align: top;
+}
+header h1 a:focus img{
+  -webkit-filter: brightness(.9);
+  filter: brightness(.9);
+}
+
+#content{
+  padding: 0 10px;
+  clear: left;
+}
+.blog #content{
+  padding-bottom: 60px;
+}
+#content h1{
+  font-size: 28px;
+  line-height: 1.2em;
+  margin: 0 0 .5em;
+  text-align: center;
+  letter-spacing: -.05em;
+  font-weight: 300;
+}
+
+#content header{
+  text-align: left;
+  padding: 0;
+  background-image: none;
+}
+#content article header time{
+  float: right;
+  color: #999;
+}
+
+#content article h1+time{
+  display: block;
+  text-align: center;
+  padding: 0 0 2em;
+  color: #999;
+}
+
+#content h2{
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin: 0 0 .75em;
+}
+#content *+h2{
+  margin-top: 1.5em;
+}
+
+#content p{
+  margin: 0 0 1em;
+}
+
+#content ul,
+#content ol{
+  margin-bottom: 1em;
+}
+
+#content dt{
+  margin-bottom: 1em;
+  color: #000;
+}
+#content dd{
+  margin-left: 1.35em;
+}
+#content pre{
+  margin: 0 0 1em;
+  border-radius: 3px;
+  padding: 1em;
+  background-color: #f3f3f3;
+  font-size: .9em;
+  line-height: 1.5em;
+  overflow: auto;
+}
+#content pre code,
+#content pre kbd,
+#content pre samp,
+#content pre var{
+  background-color: inherit;
+}
+#content pre em,
+#content pre strong{
+  color: #f00;
+  font-style: normal;
+}
+#content pre em.remark{
+  color: #888;
+  font-style: normal;
+}
+#content pre var{
+  color: #060;
+  font-style: normal;
+}
+#content blockquote{
+  border-left: 3px solid #444;
+  padding: 0 0 0 1em;
+  margin: 0 0 1em;
+}
+#content blockquote p:last-child{
+  margin-bottom: 0;
+}
+#content table{
+  margin: 0 auto 1em;
+  border: 1px solid #ddd;
+}
+#content table td,
+#content table th{
+  padding: .5em 1.5em;
+}
+#content table thead th{
+  text-align: center;
+  background-color: #eee;
+}
+#content table tbody th{
+  text-align: left;
+}
+#content table tbody tr:nth-child(even){
+  background-color: #fafafa;
+}
+
+#content footer{
+  background-image: none;
+  padding: 30px 0 0;
+}
+
+#content aside{
+  padding: 5px 10px;
+}
+#content aside,
+#content aside p{
+  line-height: 28px;
+  background-color: #FFF5D9;
+  text-align: right;
+}
+
+/*For Pinyin..., something special*/
+.pinyin{
+  font-style: italic;
+}
+
+.remark{
+  font-style: italic;
+  color: #999;
+}
+
+:lang(ms){
+  font-style: italic;
+}
+
+#content figure{
+  text-align: center;
+  margin: 1em -10px;
+}
+#content *+figure{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+#content figure.image-aside{
+  margin: 0 0 1em 1em;
+  padding: 10px;
+  background-color: rgba(255,255,255,.5);
+  float: right;
+  clear: right;
+}
+
+#content figure a{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+#content figure a img{
+  vertical-align: bottom;
+}
+#content figure a:focus img{
+  -webkit-filter: brightness(.9);
+  filter: brightness(.9);
+}
+
+footer{
+  padding: 50px;
+  text-align: center;
+  color: #888;
+}
+footer a{
+  color: #888;
+}
+footer nav ul{
+  list-style: none;
+  display: block;
+  margin: 0 0 20px;
+}
+footer nav ul li{
+  display: inline;
+}
+footer nav ul li a{
+  padding: 5px 10px;
+}
+
+#blog-archives{
+  list-style: none;
+  margin: 0;
+}
+#blog-archives li{
+  padding: .5em 1em;
+}
+#blog-archives li:nth-child(even){
+  background-color: #fafafa;
+}
+#blog-archives time{
+  float: right;
+  margin-left: 1em;
+}
+
+@-ms-viewport{
+  width: device-width;
+  zoom: 1.0;
+}
+
+@viewport{
+  width: device-width;
+  zoom: 1.0;
+}
+
+@media (min-width: 600px){
+
+  #content h1{
+    font-size: 44px;
+  }
+
+  #content h2{
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: -.5px;
+  }
+
+  #content article h1+time{
+    padding-bottom: 4em;
+  }
+}
+
+@media print{
+  footer{
+    display: none;
+  }
+
+  #content a[href]{
+    text-decoration: none;
+  }
+  #content a[href]:after{
+    content: " (" attr(href) ") ";
+    font-size: 90%;
+  }
+}

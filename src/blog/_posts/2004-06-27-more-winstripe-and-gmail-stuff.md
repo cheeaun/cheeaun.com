@@ -1,0 +1,4 @@
+More Winstripe and Gmail stuff
+===
+
+Okay, [MozillaZine forum](http://forum.mozillazine.org/) is back to normal. Great. I read discussions about the [upcoming Firefox 0.9.1](http://forums.mozillazine.org/viewtopic.php?t=90193 "0.9.1 coming") and the [new Winstripe](http://forums.mozillazine.org/viewtopic.php?t=90503 "New Winstripe Fixes!!"). Pretty good. At the same time, I found out that [GMailCompose has been updated to version 0.2.1](http://www.livejournal.com/users/jedbro/16773.html) with improved features! It's even better accompanied with the [Gmail Notifier](http://weblogs.mozillazine.org/doron/archives/005836.html "Gmail Notifier Progress") extension! Wow, this is so great.

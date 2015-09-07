@@ -1,0 +1,4 @@
+My first working day
+===
+
+Today is my first day working in GKN Driveline. I went through some briefing about the company, rules, regulations and stuff by the Human Resource Administrator. Then, I went out for my medical body checkup at the Joe Fernandez Clinic in Chai Leng Park and opened a new bank account at Maybank in Taman Inderawasih. These will be my health report and account for my salary transfer. Later, I came back again to the office, ate some food in the canteen, met my colleagues, and was told to do some *simple* filing work. Somehow I couldn't get used with the noise in the office, especially when all the phones keep ringing around my ears. But at least, I felt quite comfortable there. Not bad, I think. Not bad at all.

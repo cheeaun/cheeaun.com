@@ -1,0 +1,16 @@
+Web standards breakage
+===
+
+> Hear, hear. Code for standards, don't code for browsers. Site developers, web authors, repeat that mantra every day please?
+>
+> — <http://meyerweb.com/eric/thoughts/2004/12/01/unbreaking-the-web/#comment-2404>
+
+Indeed.
+
+I read Tristan Nitot's [article](http://standblog.org/blog/2004/11/27/93113842 "How Microsoft can support CSS2 without breaking the Web") and Eric Meyer's [comments](http://meyerweb.com/eric/thoughts/2004/12/01/unbreaking-the-web/ "Unbreaking the Web"). It's a good read, focusing on issues of web standards support and *web breakage*. I never actually thought about web standards breaking old web pages. I adopt web standards because it's the right thing to do. Some web designers don't because Internet Explorer, the dominant web browser, doesn't support much of it. The majority prefers Internet Explorer because it renders most web pages *better*, thanks to its *wonderful* [error handling](http://ln.hixie.ch/?start=1074730185&count=1 " Error handling and Web language design"). Some novices even thought that Internet Explorer *is* the Internet itself!
+
+All I can say is that all these are wrong. Web standards make our work easier because it forms a central reference for all web designers and developers. We don't have to create different versions of the web page for each browser. In my opinion, error handling in browsers is useless because it won't help any web designers to learn from their mistakes. If Internet Explorer can introduce all those [proprietary CSS filters](http://msdn.microsoft.com/workshop/author/filter/filters.asp "Introduction to Filters and Transitions"), [behaviours](http://msdn.microsoft.com/workshop/author/behaviors/overview.asp "Introduction to DHTML Behaviors"), [conditional comments](http://quirksmode.org/css/condcom.html "Conditional comments"), et cetera, why not complete support for [CSS 2.1](http://w3.org/TR/CSS21/ "Cascading Style Sheets, level 2 revision 1"), [PNG alpha-transparency](http://petitiononline.com/msiepng/ "Proper PNG Support in Internet Explorer for Windows") and correct [XHTML media types](http://w3.org/TR/xhtml-media-types/ "XHTML Media Types")? If the Mozilla developers can do it, why not the [IE development team](http://blogs.msdn.com/ie/ "IEBlog")?
+
+Supporting web standards wouldn't break the web. It will improve the web. When more people learn about web standards, more web sites will get better in terms of visual design, content management, usability, accessibility, and forward compatibility. Instead, **not** supporting web standards would break the web. Proprietary codes, horrible tag soup, deprecated tags, and browser-specific hacks would mess up the web and leave it stagnant. Ironically, it even [breaks Internet Explorer](http://slashdot.org/articles/03/05/02/1845241.shtml "HTML Rendering Crashes IE")!
+
+So, the truth is [out there](http://webstandards.org/ "Web Standards Project"). It's either Microsoft adopts web standards into Internet Explorer, or *we* [adopt other standards-compliant browsers](http://browsehappy.com/ "Browse Happy") right away. For me, I've already made my choice and chosen the [latter](http://mozilla.org/products/firefox/ "Mozilla Firefox").

@@ -1,0 +1,10 @@
+Everything that has a beginning has an end
+===
+
+Now I am a Form Upper Six student, the eldest among all students at my school. It's the *very last stage* before stepping out of the schooling world. I have spent the last **13 years** studying in several classrooms and learning from various teachers. I could remember those happy times and sad moments with my friends from different schools. From the Chai Leng Park Kindergarten, <span lang="ms">SK Seberang Jaya</span>, <span lang="ms">SMK Taman Inderawasih</span> to the current <span lang="ms">SMK Dato' Onn</span>, it's hard for me to forget my experiences.
+
+Today, a <span lang="ms" title="blessing">mohon restu</span> session was held at school. All Upper Six students gathered at the hall to listen to speeches. I actually felt quite sleepy at that time, as tears welled up my eyes. Some of my friends thought that I wept. After that, everyone went to ask for forgiveness from the teachers, and thank them for their support and guidance. My friends and I also asked for forgiveness from each other, also thanking for our friendship. It was quite emotional at that time. I noticed that not only the girls burst into tears, so do the guys.
+
+Next month, all of us will be facing the STPM examination. That means starting from next month, I'll be, sort of, in *invisible mode*. I might not reply to much emails in my inbox. I might not post much in the MozillaZine forums. On 9 November 2004, [Firefox 1.0 will take back the web](http://forums.mozillazine.org/viewtopic.php?t=147449 "Help us take back the web."). On that day, I will be having my Physics Paper 2. So, please be expected that my Phoenity theme *will not be updated* that early. Sorry to all.
+
+So, all the best to my friends! Everything that has a beginning has an end. Everything that has ended will have a new beginning.

@@ -1,0 +1,6 @@
+Mozilla verses
+===
+
+The first ever Mozilla build I've downloaded is Mozilla 0.8. At that time, I have only *half years* of computing experience. I was quite excited to discover an easter egg when typing `about:mozilla` into the Location or Address bar. If you try that on Internet Explorer, it shows a blue page. But on Mozilla, it shows a nice verse, in white text on red background. The colours almost spoilt my eyes the first time I see it. Now, I've get used with it and thinks that it's pretty cool.
+
+From the MozillaZine forums, I found out that [`about:firefox` works](http://forums.mozillazine.org/viewtopic.php?t=113790 "about:firefox?") too! This easter egg shows a *different* verse and is only available if [FireSomething](http://update.mozilla.org/extensions/moreinfo.php?application=firefox&id=31) extension is installed. So, there's no big deal that `about:firesomething` works too. There are [many more prophecies](http://livejournal.com/users/kennethf/20839.html "The Book of Mozilla") compiled by kennethf, which I think, accumulated throughout the development phases of Mozilla. All of them sound so *literary*. Are those verses meant to be jokes? I don't get it though.

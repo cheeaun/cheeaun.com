@@ -1,0 +1,10 @@
+Ex-classmates' reunion party
+===
+
+Yesterday night was great. My ex-classmates and I had a reunion party at Robina Beach. As was planned earlier, the party should start by around 4 to 5PM. Of course, any Malaysians *should* have in mind that the Malaysian time is *always* half an hour or an hour late. So, I drove there at 6. Haha.
+
+Reaching there, I found out that it hasn't even started. More than 10 of my classmates actually came, which adds much to the excitement. Some couldn't make it, unfortunately. Anyway, my friends and I talked a lot of stuff, made ridiculous jokes, and set up the charcoals and fire for the barbecue. As I could see, Teoh, Huay Phing, Peh, Ling Ling, Leang, Ting Ting, Farhim, Firdaus, Edwin, Chiew, Kong brothers, Sanggari, Chuen Chuen, Yuet Ling, Hui Chi, Chin Eng, and few others whom I forgot their names, were present to gather together in a wooden hut by the beach. Ivan came much later because of work. At that time, there were few people, mostly Malays, enjoying themselves there. Some *bird hunters* were nearby too, pointing their rifles at the flying crows in the sky. We saw quite a number of crows falling down from the sky. Cool.
+
+The food was not bad, as I ate few chicken wings, crab meat balls, cocktails, fried bee hoon, a hamburger, plain sardine sandwiches and nuggets. At about 9PM, it rained slightly but didn't bother us much from having fun. I discovered that most guys, *except me*, seem to be heavily influenced by [Dota](http://dota-allstars.com/ "Defence of the Ancients Allstars")! Besides, few *creative* photographs were taken too. Yeah. By the way, I also found out that the toilet that Albert, the guy I mentioned before about his toilet experiences, went last time on the same beach, has been fixed and rebuilt! Wow!
+
+At midnight, I just went back home. Well, the party was a nice idea, really. It eventually helped bringing the *good old* Chee Aun out of me.

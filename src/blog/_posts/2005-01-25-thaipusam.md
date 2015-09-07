@@ -1,0 +1,6 @@
+Thaipusam
+===
+
+Today is [Thaipusam](http://allmalaysia.info/msiaknow/festivals/thaipusam/ "A test of faith") day. It's supposed to be a public holiday but somehow it's a working day for all workers of [GKN Driveline](http://gkndriveline.com/). Myself included. GKN Driveline is one of the few companies in Malaysia to be operational on this day. So, less traffic congestion was expected this morning, plus a *quieter* office environment, too. Everyone else, especially the Hindus, is spending the holiday while my colleagues and I are working. Sounds not fair, doesn't it? Well, it's only *one day*.
+
+Yesterday night, my friend, Firdaus called me up. We chatted for a while about *the life after STPM*. I say, there's only one word for it. **Boring.** Before STPM, I'm used to talk *crazy* stuff with my friends, play around and study together. Now I know why some people especially working adults say they wish to go back to school, as students. Firdaus also told me that he's working at a petrol station. Wow. I guess his job would be *more interesting* than mine. Maybe.

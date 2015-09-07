@@ -1,0 +1,75 @@
+<h1>Report for week 12</h1>
+<p>This week is so-called week 12. That means it has been 12 weeks since I started studying for this semester. Wow. But it&apos;s a great week, compared to previous weeks. Not <em>that</em> boring though.</p>
+<p>So, let me summarise few things here, as usual.</p>
+<ul>
+<li><img src="/blog/images/screenshots/software/presentation-proposal-upgrade-current-computer-systems-workspace-web-2.0-visual-elements.png" width="300" height="225" alt="PowerPoint slide presentation titled &apos;Proposal to Upgrade Current Computer Systems and Workspace&apos;, designed with the Web 2.0 visual elements, blue theme and rounded corners">
+<p>Last Monday, my friends and I have done our presentation in front of the class for the Basic Professional Writing subject. It&apos;s a proposal presentation. My group members and I had to wear formal clothes to campus and we looked pretty <em>smart</em>, especially my group leader, Awang. He wore an all-black suit with a dazzling <strong>red</strong> tie. He rocks.</p>
+<p>Okay, what&apos;s so cool about this presentation anyway? Well, the secret lies in the PowerPoint file that I&apos;ve created with my bare hands. Gosh, it&apos;s the coolest PowerPoint presentation file I&apos;ve ever created. I&apos;ve designed it using the <a href="http://en.wikipedia.org/wiki/Web_2.0">Web 2.0</a> visual elements. I named my masterpiece as <strong>Presentation 2.0</strong>. Haha!</p>
+<p>Basically, I simply apply some rounded corners, slight gradient backgrounds and large text. I&apos;ve also used &apos;Fade&apos; animation effects for the slides transition and &apos;Motion Paths&apos; effect for certain elements. Frankly speaking, I <em>stole</em> some high-quality images from <a href="http://sxc.hu/">stock.xchng</a> and design ideas from <a href="http://freesoftwaremagazine.com/">Free Software Magazine</a>&apos;s magazine issue. Thanks a lot.</p></li>
+<li><img src="/blog/images/screenshots/windows/gibberish-characters-corrupted-folders-files-incorrect-file-size-usb-drive.png" width="220" height="260" alt="gibberish characters on the corrupted folder and file names in the USB drive, some displays incorrect file size values">
+<p>On Tuesday, a <strong>bad</strong> thing happened. And I&apos;m not even sure <strong>how it happened at all!</strong></p>
+<p>The contents of my 1 Gb USB drive got <strong class="very-strong">corrupted</strong>. And this happens the second time now, ever since my first USB drive died last semester. According to my inspection, the level of corruption is quite high. Some folders disappeared. Some files are there but their sizes are incorrect. I couldn&apos;t copy the files or folders out. There were gibberish characters on the folder and file names. Around 90% of all files in my USB drive are corrupted. The worst part is I <strong>did not have a backup for it.</strong></p>
+<p>I made the same stupid mistake again. <strong>Again.</strong> Sigh.</p></li>
+<li><p>My roommate asked me for help in writing a C program for one of his assignments. And of course, I helped and done this, the file name is &apos;calc-lines.c&apos;:</p>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#define ONE_FILE &quot;calc-lines.c&quot;
+
+int main(void)
+{
+    FILE *fpin;
+    char character;
+    int linesnum = 0;
+    int totallinesnum = 1;
+    int countline = 0;
+
+    fpin = fopen(ONE_FILE, &quot;r&quot;);
+
+    if( fpin == NULL )
+    {
+        printf(&quot;Cannot open file.\n&quot;);
+        exit(101);
+    }
+
+    printf(&quot;  1. &quot;);
+
+    while( fscanf(fpin, &quot;%c&quot;, &amp;character) != EOF )
+    {
+        do{
+            printf(&quot;%c&quot;, character);
+
+            if( character != &apos; &apos; &amp;&amp; character != &apos;\r&apos; &amp;&amp; character != &apos;\t&apos; &amp;&amp; character != &apos;\n&apos; )
+                countline = 1;
+            else if( character == &apos;\n&apos; )
+            {
+                totallinesnum++;
+                printf(&quot;%3d. &quot;, totallinesnum);
+            }
+        } while( fscanf(fpin, &quot;%c&quot;, &amp;character) != EOF &amp;&amp; character != &apos;\n&apos; );
+
+        if(countline)
+        {
+            linesnum++;
+            countline = 0;
+        }
+
+        if( character == &apos;\n&apos; )
+        {
+            totallinesnum++;
+            printf(&quot;\n%3d. &quot;, totallinesnum);
+        }
+    }
+
+    fclose(fpin);
+
+    printf(&quot;\n====================\n\n&quot;);
+    printf(&quot;Number of lines : %d\n&quot;, totallinesnum);
+    printf(&quot;Number of code lines : %d\n&quot;, linesnum);
+    printf(&quot;Number of blank lines : %d\n&quot;, totallinesnum-linesnum);
+
+    return 0;
+}</code></pre>
+<p>This is a program that counts the number of lines for a file, including the blank lines and non-blank lines. Sorry, I won&apos;t explain further about the code and do not guarantee that the code above is high-quality.</p>
+</li>
+</ul>
+<p>That&apos;s all for the report this week. I hope that next week will be better.</p>

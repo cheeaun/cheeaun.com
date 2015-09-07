@@ -1,0 +1,6 @@
+Temporary job
+===
+
+Now, STPM is over. There will be about 3-4 months of holiday for all STPM candidates, till we get to know our results by around the month of March or April. Some of us might book plane tickets to Italy or Hong Kong to spend the holiday. Some of us might hang out here and there, have a drink at the <span lang="ms" title="Indian Muslim">mamak</span> stall, and watch all the latest movies in the cinema. Some might be enjoying a lovely time with their girlfriends or boyfriends, to strengthen their relationship. Some might just get a job and start working, at least to gain some experience and money.
+
+Today, I just went for a job interview in a company called [GKN Driveline](http://gknplc.com/), somewhere at the Prai Industrial Area. The interview went on smoothly, and immediately I got a job, as an assistant. How great. I'll start working by next Monday. Since this is my *first ever job*, I hope it will be a great experience for me. And I do hope that I would still have time for other work especially, you know, my Phoenity stuff. So, let's hope for the best and see what's in store for me in the next few weeks. Wish me luck!

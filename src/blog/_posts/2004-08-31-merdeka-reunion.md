@@ -1,0 +1,16 @@
+Merdeka Reunion
+===
+
+It's late at night. And I'm still awake.
+
+The <span lang="ms">Merdeka</span> celebration at school this morning, I mean yesterday, was quite *exceptional*. It's just the usual event that happens every year with nothing much special for me to highlight. Waving flags, inspirational speeches and patriotic songs. That's all.
+
+What I'm going to highlight is the reunion that my friends and I had just now. It is a reunion for *almost all* ex-students of <span lang="ms">SK Seberang Jaya</span>, including myself. At around 8.30PM, Kah Peng and Yuen Munn came to my apartment to fetch me. At that time, there were traffic jams around my neighbourhood because some roads have been closed for the <span lang="ms">Merdeka</span> celebration. So, it took few minutes to slither through. Fortunately, I can listen to Jay Chou's *Qi Li Xiang* in Kah Peng's car, instead of the sound pollution from the traffic jams.
+
+Our *unofficial* reunion was held at a <span lang="ms">nasi kandar</span> restaurant situated at Highway Auto-City in Juru. By the time we reached there, I saw few of my friends, like Will Sen, Kee Seng, Kuhan, Beng Chong, Lee Ling and Gina. <ins datetime="2004-12-11T20:01+08:00">I also get to know a new friend, Kenny.</ins> I found that some ex-students couldn't make it due to *unavoidable factors*. So, I had a great time talking to them, laughing at their jokes, and eating few things. I couldn't believe that we all actually gathered and talked about the happenings during our time in primary school. It felt like traveling back to the past and relive the events all over again. The good old stories, gossips, friends and teachers. Wow.
+
+We chatted for such a long time that we don't even notice the time already showed 12.00PM. Seems that we totally forgot about <span lang="ms">Merdeka</span>. Few minutes then, the gang splitted into two groups, one going to Raja Uda to eat curry mee, two going to a pub nearby. I choosed the latter, following Lee Ling, Gina, Kah Peng<ins datetime="2004-12-11T20:01+08:00">, Kenny</ins> and Yuen Munn to a pub located few walks away. We said goodbye to the others. At that time, Kim, another old friend of mine, came and to my surprise, he still remembers me. Unfortunately, time is unforgiving and we have to go separate ways.
+
+The pub is pretty cool, with nice bikes showcase, creative artworks and friendly people. They all drink beer, except Yuen Munn and myself. We played a card game there, called Bluff. I never heard of it, so <del datetime="2004-12-11T20:01+08:00">they</del><ins datetime="2004-12-11T20:01+08:00">Kenny</ins> taught me how to play it. I learnt it pretty quick, as it works like a pyschology game. It just tests a person if he or she bluffs about the real signs of the cards when showing them covered to the other players. If you are caught bluffing, the cards go back to your own deck. If you got tricked by revealing the cards shown by the person who is *not* bluffing, the cards go to your deck too. It may sound complicated but is actually a simple yet time-consuming game.
+
+We played till about 1.30AM. That means time to leave, and *another* goodbye. I felt a bit tired and sleepy, but also happy to experience the atmosphere meeting old time buddies. *Another* reunion would be wonderful, maybe *after* my STPM test, I guess.

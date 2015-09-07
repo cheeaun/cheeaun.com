@@ -1,0 +1,6 @@
+Aliens and Jasmine
+===
+
+[Alien VS Predator](http://www.avp-movie.com/) rocks! I went to Megamal with my friend, Kang Chia Chao, to watch it at 1PM. I got to say the Predators really have some sleek moves, with cool retractable blades and uh, *nice hair*. The Aliens, on the other side, are simply boring because they only attack with their tails. I don't understand why is there a *miniature* mouth in the Alien's mouth? And aren't those Predators aliens too since they come from outer space? Some parts in the story mixes too much of those historical stuff that blows off my mind. I prefer simplicity.
+
+By the way, I also bought Jay Chou's latest album there, called *Qi Li Xiang*. I went back home to listen to it, and the songs sound good. I really mean it. My friends told me that they sound *bad*, but somehow I'm tuned to it. Even the first track, *Wo De Di Pan* sounds so cool. This album is definitely recommended for all Jay Chou fans! Watch out the for [lyrics](http://jay-chou.net/lyrics.php "Jay Chou album lyrics") too!

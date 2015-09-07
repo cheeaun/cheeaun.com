@@ -1,0 +1,10 @@
+Gmail at last
+===
+
+![Gmail logo displayed on Gmail web site, resized 200% larger](/blog/images/screenshots/web/gmail_logo_on_gmail_web_site.png)
+
+I have Gmail! All thanks to Asa's invitation link. I [got started](http://gmail.google.com/gmail/help/start.html) and really like it a lot. The interface is neat and clean. 'Conversations' sounds like a very innovative idea. I never actually try out most features, such as conversations labels and mail search, because my inbox is empty, for now. I tried composing and sending a mail to my friend, Navin, who also just had a Gmail account like me. As I'm kind of a guy who likes icons, I notice the neat Gmail logo, which shows a mail combined with the letter 'M'. If I'm not mistaken, that must be one of Dennis Hwang's [artful doodles](http://google.com/googleblog/2004/06/oodles-of-doodles.html "Oodles of Doodles"). Seems that David [has a Gmail account](http://weblogs.mozillazine.org/djst/archives/005711.html "My Own Gmail Account") two days ago and started to [give some feedback](http://weblogs.mozillazine.org/djst/archives/005749.html "Gmail Feedback - Where To Send It?"). As for me, I'm just about to start, waiting for mails to accumulate my inbox.
+
+Nowadays, [Google](http://google.com/) is everywhere. I'm a Google fan and like the search engine very much, especially the [Malaysian version](http://google.com.my/ "Google Malaysia"). I got involved in [Orkut](http://orkut.com/), thanks to Chris Cunningham for inviting me. I start this blog using [Blogger](http://blogger.com/) as the tool of my choice. And now, I have a [Gmail](http://gmail.google.com/) account. 1 Gb of email storage space is definitely enough for me, which is **10 times** more than [Yahoo! Mail](http://mail.yahoo.com/) and **100 times** more than [Myrealbox](http://myrealbox.com/). I could just predict if Google combines all these services together, it'll be absolutely wonderful.
+
+So, whether you know me or not, feel free to drop me an email at cheeaun@gmail.com .

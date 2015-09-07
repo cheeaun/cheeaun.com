@@ -1,0 +1,4 @@
+Merdeka campaign
+===
+
+In conjuntion with the upcoming Independence Day on 31 August, my school proudly launches the <span lang="ms">Merdeka</span> campaign today. This means that when I step into my school tomorrow morning, I'll be listening to <span lang="ms">Merdeka</span> songs being played via the school's PA system, before the lessons start. To get students into the <span lang="ms">Merdeka</span> mood, all classes will have to be decorated with national flags, flowers and colours. The most beautiful class will be awarded on that *special* day. I could hardly wait to celebrate this great event.

@@ -1,0 +1,8 @@
+Cross-country
+===
+
+My school's cross-country or <span lang="ms">rentas desa</span> was held this morning. It was an 8-km run for the participating male students and 4-km run for female students. I myself didn't run. Instead, as a member of the Red Cross Society, I volunteered to help providing first aids to needy runners. I was stationed at Checkpoint 10, near Taman Wira and Pantai Robina, with a Form 2 guy and a teacher. That guy is also a voluntary member of Red Cross Society. Despite the age gap, I just got myself a new friend.
+
+The race began at about 8.30am, starting from school, running all the way to two different courses, where my checkpoint, located at the longest course, is the turrning point before the participants take a different route back to the finish line at school. Standing there watching the runners pass by, I hoped that none of them faint. One runner was injured and had scratches on his arm and fingers, due to accidental fall. I came to the rescue, applying appropriate medicine to his bruise, thanks to the availability of the First Aid Kit. After that, off he go continuing his run. Fortunately, no one faint near my checkpoint.
+
+When the race finished, all participants, including myself, stayed at school to take some food. There was a silat performance for our viewing pleasure. Then, the prize-giving ceremony was held for the cross-country winners. As I wasn't involved in the run, I didn't get any medals or prizes. What I get is self-satisfaction for what I done to make sure the run went on smoothly. *That* makes me feel good.

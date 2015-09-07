@@ -1,0 +1,6 @@
+Firefox 0.9 installation
+===
+
+![list of installed themes (Qute, Lure and Doodle) displayed on Mozilla Firefox 0.9's Themes manager window](/blog/images/screenshots/firefox/qute_doodle_lure_themes_manager.png)
+
+I've uninstalled Mozilla Firefox 0.9RC and 0.8 from my Windows XP system. I've  deleted the Firefox folder from the profiles directory, just to make sure everything starts out clean. I've double-clicked the 'FirefoxSetup-0.9.exe' file, imported my previous Firefox 0.8 settings (history, cookies, saved passwords and bookmarks) and installed it successfully. I've also installed three themes, [Qute 2.1.1](http://quadrone.org/projects/mozilla/browser/), [Doodle (Classic) 1.5.3](http://home.student.uu.se/dana3949/doodle/) and [Lure 0.4.3](http://digiboy.deviantart.com/), downloaded from [Mozilla Update](http://update.mozilla.org/). Firefox's theme-switching feature has improved to be much better and faster this time. Everything seems so smooth and simple. I think it's time for me to start doing some updating work for my Phoenity theme. I have to update it quick, not to upset the Phoenity fans, whoever.

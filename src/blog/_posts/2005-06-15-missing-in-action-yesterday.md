@@ -1,0 +1,4 @@
+Missing in action yesterday
+===
+
+Yesterday was the second annual [International Weblogger's Day](http://chronicled.org/intlblogday/). There was a [Penang Bloggers meet](http://jogalong.blogspot.com/2005/06/today-is-international-webloggers-day.html "today is international webloggers day (inweday)") in Prangin Mall. Kew [couldn't make it there](http://wekgna.com/blog/?p=44 "Internation Bloggers Day & appologies to Penang Bloggers!"). Andy [couldn't as well](http://wittysquirrel.blogspot.com/2005/06/inweday-meetup-in-penang.html "InWeDay meetup in Penang"). Peter Tan [couldn't too](http://www.petertan.com/blog/archives/2005/06/june_bloggers_m.html "June Bloggers Meet in Penang"). Kenny bailed out at the last minute. Me also then. So, here's my apologies to everyone for not turning up. Maybe next time? Right in the middle of Penang Bridge if possible?
