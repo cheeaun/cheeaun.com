@@ -211,4 +211,4 @@ My experiments are done with the help of only two browsers, Mozilla Firefox 1.0+
 
 I'm not sure if this has been discussed somewhere else and I could have missed some points, whatever. So, please correct me if I'm wrong. Overall, CSS is fun, right?
 
-**Update 4 June 2005**: To make things more visually stimulating, I've prepared a [testcase page](/experiments/whitespace-generated-content/ "Whitespace and generated content") which includes the above codes, for testing purposes.
+**Update 4 June 2005**: To make things more visually stimulating, I've prepared a [testcase page](https://cheeaun.github.io/experiments/whitespace-generated-content/ "Whitespace and generated content") which includes the above codes, for testing purposes.
