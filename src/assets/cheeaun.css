@@ -179,7 +179,7 @@ header h1 a:focus img{
 }
 
 #content{
-  padding: 0 10px;
+  padding: 0 1em;
   clear: left;
 }
 .blog #content{
@@ -216,6 +216,7 @@ header h1 a:focus img{
   font-weight: 500;
   color: #333;
   margin: 0 0 .75em;
+  line-height: 1.2em;
 }
 #content *+h2{
   margin-top: 1.5em;
@@ -323,7 +324,7 @@ header h1 a:focus img{
 
 #content figure{
   text-align: center;
-  margin: 1em -10px;
+  margin: 1em -1em;
 }
 #content *+figure{
   margin-top: 2em;
@@ -367,12 +368,12 @@ footer nav ul li{
   display: inline;
 }
 footer nav ul li a{
-  padding: 5px 10px;
+  margin: 0 .25em;
 }
 
 #blog-archives{
   list-style: none;
-  margin: 0;
+  margin: 0 -1em;
 }
 #blog-archives li{
   padding: .5em 1em;
@@ -404,7 +405,6 @@ footer nav ul li a{
   #content h2{
     font-size: 20px;
     font-weight: normal;
-    letter-spacing: -.5px;
   }
 
   #content article h1+time{
