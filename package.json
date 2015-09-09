@@ -2,7 +2,7 @@
   "name": "cheeaun.com",
   "description": "cheeaun's web site",
   "scripts": {
-    "build": "node build.js",
+    "build": "node --harmony_generators build.js",
     "watch": "watch \"npm run build\" src/",
     "serve": "http-server build/ -c-1",
     "start": "parallelshell \"npm run watch\" \"npm run serve\""
