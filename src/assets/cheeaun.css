@@ -191,7 +191,7 @@ header h1 a:focus img{
   padding-bottom: 60px;
 }
 #content h1{
-  font-size: 28px;
+  font-size: 44px;
   line-height: 1.2em;
   margin: 0 0 .5em;
   text-align: center;
@@ -206,19 +206,20 @@ header h1 a:focus img{
 }
 #content article header time{
   float: right;
+  margin-left: 1em;
   color: #999;
 }
 
 #content article h1+time{
   display: block;
   text-align: center;
-  padding: 0 0 2em;
+  padding: 0 0 4em;
   color: #999;
 }
 
 #content h2{
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: normal;
   color: #333;
   margin: 0 0 .75em;
   line-height: 1.2em;
@@ -399,22 +400,6 @@ footer nav ul li a{
 @viewport{
   width: device-width;
   zoom: 1.0;
-}
-
-@media (min-width: 600px){
-
-  #content h1{
-    font-size: 44px;
-  }
-
-  #content h2{
-    font-size: 20px;
-    font-weight: normal;
-  }
-
-  #content article h1+time{
-    padding-bottom: 4em;
-  }
 }
 
 @media print{
