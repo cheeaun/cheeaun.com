@@ -50,7 +50,7 @@ function plugin(options){
         data.contents = new Buffer($.html());
         // Path - Year and month, NOT day
         var path = file.replace(/_posts[\/\\](\d+)-(\d+)-\d+-/i, '$1/$2/');
-        data.permalink = '/' + path.replace(/\\/ig, '/').replace('.html', '');
+        data.permalink = '/' + path.replace(/\\/ig, '/').replace('.html', '/');
         delete files[file];
         files[path] = data;
       }
