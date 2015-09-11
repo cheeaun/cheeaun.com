@@ -28,6 +28,7 @@
 <script>
 window.onload = function(){
   var $figures = document.getElementsByTagName('figure');
+  if (!$figures.length) return;
   var asideImages = function(){
     for (var i=0, l=$figures.length; i<l; i++){
       var $figure = $figures[i];
