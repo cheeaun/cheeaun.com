@@ -175,10 +175,10 @@ header h1 a{
 header h1 a:focus{
   transform: scale(.97);
 }
-header img{
+header svg{
   vertical-align: top;
 }
-header h1 a:focus img{
+header h1 a:focus svg{
   -webkit-filter: brightness(.9);
   filter: brightness(.9);
 }

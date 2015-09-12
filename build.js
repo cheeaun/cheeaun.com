@@ -1,19 +1,23 @@
+var fs = require('fs');
+var CleanCSS = require('clean-css');
+
 var Metalsmith = require('metalsmith');
 var layouts = require('metalsmith-layouts');
 var inplace = require('metalsmith-in-place');
 var markdown = require('metalsmith-markdownit');
 var permalinks = require('metalsmith-permalinks');
-var cleanCSS = require('metalsmith-clean-css');
 var collections = require('metalsmith-collections');
+
 var contentTitles = require(__dirname + '/plugins/content-titles');
 var blogData = require(__dirname + '/plugins/blog-data');
 
 var metalsmith = Metalsmith(__dirname)
   .metadata({
     authorName: 'Lim Chee Aun',
-    domainURL: 'http://cheeaun.com'
+    domainURL: 'http://cheeaun.com',
+    logo: fs.readFileSync('src/assets/images/cheeaun-logo.html.svg'),
+    css: new CleanCSS().minify(fs.readFileSync('src/assets/cheeaun.css')).styles
   })
-  .use(cleanCSS())
   .use(markdown('commonmark'))
   .use(contentTitles())
   .use(blogData())
