@@ -9,10 +9,10 @@
   },
   "dependencies": {
     "cheerio": "~0.19.0",
-    "clean-css": "~3.4.7",
-    "handlebars": "~4.0.4",
+    "clean-css": "~3.4.8",
+    "handlebars": "~4.0.5",
     "http-server": "~0.8.5",
-    "image-size": "~0.3.5",
+    "image-size": "~0.4.0",
     "metalsmith": "~2.1.0",
     "metalsmith-assets": "~0.1.0",
     "metalsmith-collections": "~0.7.0",
