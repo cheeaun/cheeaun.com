@@ -15,7 +15,7 @@ I was introduced to this game was when I was working part-time. I personally fin
 
 Okay, enough with the story.
 
-![Pentagoo web site, with visible white and black marbles on the board](/blog/images/screenshots/web/pentagoo-web-site-black-white-marbles.png)
+![Pentagoo web site, with visible white and black marbles on the board](../images/screenshots/web/pentagoo-web-site-black-white-marbles.png)
 
 Now, let me introduce the [**Pentagoo**](http://pentagoo.googlecode.com/). Take note of the extra 'o'. The *online* Pentago game, written in Javascript. Yeah, I wrote the whole game from scratch. Haha. Quite a challenge for myself, though.
 
@@ -30,7 +30,7 @@ Actually, there are already some other projects and web sites for Pentago:
 
 Some are very matured while some seems to be quite inactive. However, I decide to make my own version with more features and better interface. Therefore, Pentagoo is born. The current version has few interesting features such as sub-board rotation animation effects, keyboard control support, undo and history logging.
 
-![Pentagoo desktop application, running under Adobe AIR on Windows Vista](/blog/images/screenshots/software/pentagoo-desktop-app-adobe-air-windows-vista.png)
+![Pentagoo desktop application, running under Adobe AIR on Windows Vista](../images/screenshots/software/pentagoo-desktop-app-adobe-air-windows-vista.png)
 
 Following the recent [Adobe AIR](http://en.wikipedia.org/wiki/Adobe_Air) craze, I've even made a desktop version of Pentagoo! It works on Windows Vista and though I never test it thoroughly, it should work on Windows XP and Mac OSX too. I've learnt some pretty cool stuff while developing Pentagoo with Adobe AIR. A very amazing technology, especially for web designers like me. Well obviously, it look almost, if not exactly, the same as the site, *but* with additional features like save game and sound effects! Sometimes, I just couldn't believe how easy it is to create a desktop application with Adobe AIR. **Simply unbelievable**.
 

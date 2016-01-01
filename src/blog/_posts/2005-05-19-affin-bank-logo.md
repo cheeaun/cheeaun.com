@@ -1,7 +1,7 @@
 Affin Bank logo
 ===
 
-![Affin Bank logo entry for the Banking Without Barriers Logo Contest](/blog/images/artwork/logos/affin_bank.png)
+![Affin Bank logo entry for the Banking Without Barriers Logo Contest](../images/artwork/logos/affin_bank.png)
 
 I've submitted my logo entry for [Affin Bank](http://affinbank.com.my/)'s [Banking Without Barriers Logo Contest](http://affinbank.com.my/bwb/bwb.html). I might be *a bit* late, but I think it's worth a try.
 
@@ -11,7 +11,7 @@ According to the contest's [terms and conditions](http://affinbank.com.my/bwb/tn
 
 Well, things just got so ridiculous as Huay Phing helped me by asking for help from the *friends network*, such as Kah Peng, Chung Hwa, Yuen Munn and few whom I've forgotten. All of them were either busy or not sure if their printers *still* work. Fortunately, Huay Phing found that Way Fern has a printer that *truly* works. With some mapping guidelines and without much hesitation, I went to Way Fern's house, uh I mean, shophouse. Her printer works great and my logo was printed in its full glory. I was very excited. On her computer, I found Mozilla Firefox too! Haha. Later, I chatted with her for a while before leaving.
 
-![Affin Bank logo entry, with the motto 'Banking Without Barriers', for the Banking Without Barriers Logo Contest](/blog/images/artwork/logos/affin_bank_banking_without_barriers.png)
+![Affin Bank logo entry, with the motto 'Banking Without Barriers', for the Banking Without Barriers Logo Contest](../images/artwork/logos/affin_bank_banking_without_barriers.png)
 
 I sent my entry on A4-sized paper with a 10×13-inch envelope and a 50-cent stamp. On the paper, two versions of my logo are displayed, one of them is designed with Affin Bank's motto, 'Banking without Barriers'. I've also included a short explanation for my logo, written as such:
 

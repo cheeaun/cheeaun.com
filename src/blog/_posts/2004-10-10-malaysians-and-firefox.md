@@ -3,7 +3,7 @@ Malaysians and Firefox
 
 I always wonder, am I the *only* Malaysian involved in this Firefox mania? I asked myself this question ever since the [release of Phoenix 0.1](http://mozillazine.org/talkback.html?article=2494 "Phoenix 0.1 Released"), about two years ago. If you don't know what is Phoenix, you might not realise that this open-sourced web browser project has **5 names**, rebranded over and over again from 'mozilla/browser', 'm/b', 'Phoenix', 'Firebird' to the current 'Firefox'. It's quite confusing, I know.
 
-![Phoenix 0.1 on Windows XP](/blog/images/screenshots/software/phoenix_0.1.png)
+![Phoenix 0.1 on Windows XP](../images/screenshots/software/phoenix_0.1.png)
 
 I still have the 'phoenix-0.1-win32.zip' file on my hard disk. And it's *still* installed, just incase I feel nostalgic one day. I *might* be the only Malaysian to download this piece of software, despite my slow dial-up connection. After few releases of Phoenix, I start to contribute to the Phoenix development by [creating various application icons](http://www.deftone.com/blogzilla/archives/change_the_phoenix_icon.html "Change the Phoenix Icon"). Later on, I create a simplistic theme called Phoenity and publish it to the community on October 2002. At that time, [MozillaZine](http://mozillazine.org/) has a *primitive* [forum](http://mozillazine.org/talkback.html?article=2096 "Forums Arrive!") that I used to browse around. To my surprise, I'm the only Chinese there, because most posters have *non-Chinese* names, or nicknames, as I observed.
 

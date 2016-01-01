@@ -20,7 +20,7 @@ The first [*unconference*](https://en.wikipedia.org/wiki/Unconference) I've atte
 - [CSSConf.Asia 2015](http://2015.cssconf.asia/)
 - [JSConf.Asia 2015](http://2015.jsconf.asia/)
 
-[![Conference badges and lanyards on the floor](/blog/images/photos/objects/conference-badges-lanyards-floor.jpg)](https://twitter.com/cheeaun/status/670188296559980544)
+[![Conference badges and lanyards on the floor](../images/photos/objects/conference-badges-lanyards-floor.jpg)](https://twitter.com/cheeaun/status/670188296559980544)
 
 My colleagues and friends start to call me a *professional* conference goer. And I'm not even a speaker, just a normal attendee. I go to conferences as an excuse to travel around too.
 
@@ -39,13 +39,13 @@ The talks
 
 I love seeing how the speakers talk. The way they pronounce certain words or terms like JSON and GIF. The way they avoid the blinding lights that shine on them. The way they look at the audience and try to see who's interested and who's not. The way they ask questions to get some participation from the audience. The way they continue the *flow* with their current talk *from* the previous talks.
 
-[![Sara Robinson speaking in JSConf.EU 2014](/blog/images/photos/scenery/sara-robinson-speaking-jsconfeu.jpg)](https://www.flickr.com/photos/cheeaun/15181580780/in/album-72157647681056838/)
+[![Sara Robinson speaking in JSConf.EU 2014](../images/photos/scenery/sara-robinson-speaking-jsconfeu.jpg)](https://www.flickr.com/photos/cheeaun/15181580780/in/album-72157647681056838/)
 
 I love how speakers *express* and *share* their own experiences when interacting with a specific technology, design or philosophy. I remember how Ryan Florence manage to [perform a drone back flip trick](https://www.youtube.com/watch?v=nVTXJyyBxQc) during his talk in EmberConf 2014. I remember how Jeffrey Zeldman [describe his own facial features](https://twitter.com/swampmonster/status/661242758938497024) during his opening talk in An Event Apart San Francisco 2015. I remember how Jeffrey Veen cleverly [lay out his talk outline](https://vimeo.com/129198643) that covers a surprisingly huge scope of topics into a 1-hour talk in Beyond Tellerrand Düsseldorf 2015. I remember how Andrew Sorensen did a mind-blowing [live-coding session with western music](https://www.youtube.com/watch?v=xpSYWd_aIiI) using a language called Impromptu in Codemania 2015.
 
 It's all in the details.
 
-[![Doug Bowman speaking on stage in Web Directions South 2014](/blog/images/photos/scenery/doug-bowman-speaking-stage-web-directions-south.jpg)](https://www.flickr.com/photos/cheeaun/15558466159/in/album-72157646868674304/)
+[![Doug Bowman speaking on stage in Web Directions South 2014](../images/photos/scenery/doug-bowman-speaking-stage-web-directions-south.jpg)](https://www.flickr.com/photos/cheeaun/15558466159/in/album-72157646868674304/)
 
 The good slides are simple and focused. Speakers prepare a lot in case the projector or Internet doesn't work. They repeat points over and over again to effectively deliver the message to the audience. Good speakers adapt to the culture and environment rather than forcing their own on the audience. They [care about their talks](http://zachholman.com/talk/the-talk-on-talks/) and spend *a lot* of time to rehearse so that it's worth your time to listen to them. Some can be [a bit demanding](https://www.christianheilmann.com/2012/04/25/so-you-want-me-to-talk/) while some are [concern whether they get paid](http://whopays.techspeakers.info/). They are almost always at the back of the conference room, probably sitting on the floor, feeling a little nervous, still tweaking, adding and removing little details from their slides.
 
@@ -54,11 +54,11 @@ I'm always amazed by the level of details [Chris Heilmann](https://twitter.com/c
 The conferences
 ---
 
-[![The stage in Beyond Tellerrand Düsseldorf 2015](/blog/images/photos/scenery/stage-red-lighting-beyond-tellerrand-dusseldorf.jpg)](https://www.flickr.com/photos/cheeaun/17713748289/in/album-72157652750212588/)
+[![The stage in Beyond Tellerrand Düsseldorf 2015](../images/photos/scenery/stage-red-lighting-beyond-tellerrand-dusseldorf.jpg)](https://www.flickr.com/photos/cheeaun/17713748289/in/album-72157652750212588/)
 
 Not all conferences are organized the same way. Few things to expect from conferences would be swags like t-shirts, mugs and stickers. Some conferences offer more than those. JSConf.EU 2014 has [a very, very cool opening](https://www.youtube.com/watch?v=pkjwUOk_iCk). Some conferences like JSConf.EU and CSSConf.EU serve [Club-Mate](https://en.wikipedia.org/wiki/Club-Mate) for the attendees and also provide [live realtime transcription for all talks](https://twitter.com/jsconfeu/status/510727355422507008). Web Directions South gives out a [Lindt Roasted Almond dark chocolate bar](https://www.instagram.com/p/uxWOZ2S973/). RedDotRubyConf 2015 gives out a [spork](https://en.wikipedia.org/wiki/Spork) in a handy zipper bag which also acts as a swag pouch. An Event Apart San Francisco 2015 gives out [colourful socks](https://www.instagram.com/p/9mP5o7S98g/). JSConf.Asia gives out [Photon](https://twitter.com/kosamari/status/667146891033841664), a tiny Wi-Fi development kit for Internet of Things stuff. ReactEurope even has [its own conference mobile app](https://medium.com/@patcito/get-the-reacteurope-conference-and-checkin-app-10cc4e49df46#.8vyzx5kv5) for attendees to check-in and leave feedback. Beyond Tellerrand gives [badges that includes your Twitter profile avatar](https://www.flickr.com/photos/cheeaun/17277445764/in/album-72157652750212588/), which is a nice touch in case people recognize you by your avatar. Beyond Tellerrand also *remixes* the speakers talks with music, and one that I like most is [Sara Soueidan's talk](https://soundcloud.com/baldower/the-canvas-is-infinite-feat-sara-soueidan?in=beyondtellerrand/sets/beyond-tellerrand-dus-2015).
 
-[![Swags from Beyond Tellerrand Düsseldorf 2015](/blog/images/photos/objects/swags-beyond-tellerrand-dusseldorf-2015.jpg)](https://www.flickr.com/photos/cheeaun/17712420790/in/album-72157652750212588/)
+[![Swags from Beyond Tellerrand Düsseldorf 2015](../images/photos/objects/swags-beyond-tellerrand-dusseldorf-2015.jpg)](https://www.flickr.com/photos/cheeaun/17712420790/in/album-72157652750212588/)
 
 Some conferences print your name on both sides of the badge so that it won't be flipped to the wrong side while wearing it around your neck. Some conferences provide women's fitted t-shirts along with the unisex ones. Some conferences have extra activities like [bingo](https://medium.com/@nekolaweb/what-i-learned-from-conference-bingo-51cdb088ab01#.dz5ryhcot), [fold-an-origami](https://twitter.com/SiteGround/status/661613026173317120), and online questionnaires or quizzes. Some have a short Q&A session after every talk. Some don't have Q&A sessions because they encourage people to ask the speakers directly, which would make the speakers feel less lonely.
 
@@ -94,7 +94,7 @@ But wait, there's more.
 
 Some organizers decide to print sponsor logos on the lanyards. Some will project a [conference wall](https://confwall.com/) on the screen and have DJs playing music in between the talks. I really appreciate the attention to details by the organizers when they purposely [dim out the lights when a talk session begins](https://github.com/cheeaun/ama/issues/7#issuecomment-119830311) so that it won't be glaring to the audience. Some might even think that the speakers need to see the projection of their own slides instead of keep looking at their backs, so they put a stage monitor.
 
-[![All the people, the stage, the chairs and projectors in EmberConf 2014](/blog/images/photos/scenery/people-stage-tables-chairs-projectors-emberconf.jpg)](https://twitter.com/cheeaun/status/448516462609965056)
+[![All the people, the stage, the chairs and projectors in EmberConf 2014](../images/photos/scenery/people-stage-tables-chairs-projectors-emberconf.jpg)](https://twitter.com/cheeaun/status/448516462609965056)
 
 Being an organizer is hard. There are always things that you forgot or missed. Attendees might tell you that the air-conditioning is too cold or hot. Or the food is bad. Or the Wi-Fi connection doesn't work. Or the talks are boring.
 

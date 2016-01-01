@@ -23,11 +23,11 @@ I found this from the [K-meleon Development forum](http://kmeleon.sourceforge.ne
 
 Wow, I never thought that my artwork is *that* good. Thanks for the compliments, jsnj.
 
-![two Phoenity Back icons, one is anti-aliased, the other is aliased](/blog/images/artwork/icons/phoenity_back_icon_anti_aliased.png)
+![two Phoenity Back icons, one is anti-aliased, the other is aliased](../images/artwork/icons/phoenity_back_icon_anti_aliased.png)
 
 Yes, Phoenity is an original creation. It is designed with practicality, simplicity and beauty in mind. I read a lot of toolbar icon design guidelines and mostly inspired by Matthew Thomas's [guideline](http://groups.google.ca/groups?q=g:thl3612817263d&dq=&hl=en&lr=&ie=UTF-8&oe=UTF8&selm=3D029DF6.E3C15D9%40myrealbox.com "Re: Replace the \"Classic\" theme with a native looking \"Modern\" theme"). The icons I've created for K-meleon are so-called clean, because the anti-aliasing pixels have been removed so that they can blend in any background. Phoenity has never been the default for any browsers, but it has been included in other software such as [Maxthon](http://maxthon.com/), [XNview](http://xnview.com/) and [GGSearch](http://frysianfools.com/ggsearch/).
 
-![three sets of Phoenity toolbar icons, first contains 256 colours, second contains 16 colours, the last one contains only black and white](/blog/images/artwork/icons/phoenity_toolbar_icons_256_16_colours_black_white.png)
+![three sets of Phoenity toolbar icons, first contains 256 colours, second contains 16 colours, the last one contains only black and white](../images/artwork/icons/phoenity_toolbar_icons_256_16_colours_black_white.png)
 
 I've tried hard to make my icons as understandable as possible. Sometimes, I test them by  decreasing the color depth, step by step, until containing *only* two colours, black and white. I also make sure that my icons blend well not only for Windows, but also for Mac and Linux environments. I use some of my own concepts making the icons unique in such a way  that is different than other millions of icons on the web.
 

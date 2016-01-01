@@ -1,7 +1,7 @@
 Gmail at last
 ===
 
-![Gmail logo displayed on Gmail web site, resized 200% larger](/blog/images/screenshots/web/gmail_logo_on_gmail_web_site.png)
+![Gmail logo displayed on Gmail web site, resized 200% larger](../images/screenshots/web/gmail_logo_on_gmail_web_site.png)
 
 I have Gmail! All thanks to Asa's invitation link. I [got started](http://gmail.google.com/gmail/help/start.html) and really like it a lot. The interface is neat and clean. 'Conversations' sounds like a very innovative idea. I never actually try out most features, such as conversations labels and mail search, because my inbox is empty, for now. I tried composing and sending a mail to my friend, Navin, who also just had a Gmail account like me. As I'm kind of a guy who likes icons, I notice the neat Gmail logo, which shows a mail combined with the letter 'M'. If I'm not mistaken, that must be one of Dennis Hwang's [artful doodles](http://google.com/googleblog/2004/06/oodles-of-doodles.html "Oodles of Doodles"). Seems that David [has a Gmail account](http://weblogs.mozillazine.org/djst/archives/005711.html "My Own Gmail Account") two days ago and started to [give some feedback](http://weblogs.mozillazine.org/djst/archives/005749.html "Gmail Feedback - Where To Send It?"). As for me, I'm just about to start, waiting for mails to accumulate my inbox.
 

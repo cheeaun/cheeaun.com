@@ -7,7 +7,7 @@ It's called [Death Note](http://www.deathnoteonline.com/ "Death Note (online)").
 
 Let me repeat, it's **Death** Note. Sounds scary?
 
-[![Death Note, online version beta, web site. Front cover.](/blog/images/screenshots/web/deathnote_online_beta_web_site_front_cover.png)](http://www.deathnoteonline.com/ "Death Note (online)")
+[![Death Note, online version beta, web site. Front cover.](../images/screenshots/web/deathnote_online_beta_web_site_front_cover.png)](http://www.deathnoteonline.com/ "Death Note (online)")
 
 For your information, [Death Note](http://en.wikipedia.org/wiki/Death_Note) is the name of a Japanese [manga](http://en.wikipedia.org/wiki/Manga). The story begins with a notebook that could kill people, by merely writing the name. Of course, it may sound simple, but there are some rules using the book and all that death god stuff. So, I think it would better for you to watch the movie or animation, or read the comic just to *experience* its exciting storyline.
 
@@ -33,7 +33,7 @@ There will be three fields to be filled which are the name, cause and details of
 
 From one perspective, what I need is only a posting system, for example a commenting script of a weblog. It will have features like a posting form interface, paging system with archives and an administration interface. I would prefer to use flat file database to store all the entries, instead of MySQL. As lazy as I get, I search for scripts on [Hotscripts.com](http://hotscripts.com/), tried a lot of scripts, and finally settle down on a [guestbook script from flumpCakes](http://flumpcakes.co.uk/php/guestbook/). The script is simple and light enough for me to modify and tweak to my liking.
 
-![Death Note pen image, with shadows blending into the lines of the paper background, on the Death Note online web site](/blog/images/screenshots/web/deathnote_online_beta_web_site_pen.jpg)
+![Death Note pen image, with shadows blending into the lines of the paper background, on the Death Note online web site](../images/screenshots/web/deathnote_online_beta_web_site_pen.jpg)
 
 After the back-end script is done, I start to design the site to look *almost exactly* like a Death Note. It may seem difficult to design a site to look like a book, but with CSS, anything is possible. The secret behind it is `line-height` and probably `min-height`, if you know CSS. For the first time ever, I start to use a 32-bit alpha-transparent PNG image on a public web page! It's an image of a pen with very cool shadows casting on the lines of the page. It works on Firefox and even on Internet Explorer 7! As for Internet Explorer 6 and maybe older, I use [an easy hack](http://blog.bjorkoy.com/2006/12/12/flawless-and-fast-png-support-in-ie6/ "
 The easiest way to PNG support in IE6 ") along with some conditional comments to filter the styles.
@@ -48,7 +48,7 @@ Wicked.
 
 There are some crazy ideas as well. I thought of allowing people to upload photos. Instead of the writer having the person's face in their mind when writing the name, why not have the person's face **in the note?** Haha! Before this, I thought of adding some stuff like [Captcha](http://en.wikipedia.org/wiki/Captcha) to get rid of spams, but I kind of trying very hard to preserve the nature of the book. A book doesn't have Captcha, right?
 
-![Search form with 'chee aun' typed into the textbox, on the Death Note online web site](/blog/images/screenshots/web/deathnote_online_beta_web_site_search_form_textbox_chee_aun.png)
+![Search form with 'chee aun' typed into the textbox, on the Death Note online web site](../images/screenshots/web/deathnote_online_beta_web_site_search_form_textbox_chee_aun.png)
 
 On 18 December 2006, I decided to launch it online. Open to the public. I realised few things. First, Death Note can be multi-lingual! Second, I am not multi-lingual, enough. Third, I don't know how to filter *inappropriate* phrases of other languages. Sigh, I'm not even sure *if* i should filter them nor *how* to filter!? I might as well don't care about it yet. Few days after the launch, I started working on a subscription feed and pass it through [FeedBurner](http://feedburner.com/). Few weeks later, I asked my friend, Simon Lim, to code a simple AJAX-powered search engine for the online Death Note. It works great and really, really cool. I actually took quite some time to think how to integrate the search feature *without* affecting the nature of the book. Haha!
 

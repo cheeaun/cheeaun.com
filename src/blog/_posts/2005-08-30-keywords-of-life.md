@@ -1,7 +1,7 @@
 Keywords of life
 ===
 
-![Malaysia flag logo, wrapped up into a glassy ball](/blog/images/artwork/logos/merdeka_logo_malaysia_flag_ball.png)
+![Malaysia flag logo, wrapped up into a glassy ball](../images/artwork/logos/merdeka_logo_malaysia_flag_ball.png)
 
 These keywords describe what happened to me since that last time I post here:
 

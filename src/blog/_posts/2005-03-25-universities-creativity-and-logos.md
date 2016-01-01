@@ -9,19 +9,19 @@ Art equals to money, I supposed. As web design is also my passion, I found out t
 
 I've been asking myself, should the development of a child be limited by money? I'm not sure if I'm gifted or talented in some ways. I simply want to express my creativity,  that's all. Last Thursday, I've met Benjamin Leow, ate something at the char koey teow stall and had a talk. He's the guy behind the [Surf7 network](http://surf7.net/) and was a former Form 6 student of SMK Dato' Onn, so we have much things in common. He opened up my mind about the potential of selling my artwork, especially logo designs. It's a good business. I begin to consider his offer to help me in this business, on how to earn money from my creativity.
 
-![letters 'LcF', lowercased 'f', combined c' and 'f', and shifted, curved 'L' forming from simple characters to a figure](/blog/images/artwork/logos/lcf_cf_combined_l_shifted_curved.png)
+![letters 'LcF', lowercased 'f', combined c' and 'f', and shifted, curved 'L' forming from simple characters to a figure](../images/artwork/logos/lcf_cf_combined_l_shifted_curved.png)
 
 This is when the bad timing comes. I'm going to sell the Malaysia Bloggers logo and Liew [won't pay for it](http://malaysiabloggers.com/showpost.php?p=2730&postcount=35) if there are no sponsors, donators or advertisers. Somehow, the more I read the threads in the [forum](http://malaysiabloggers.com/ "Malaysia Bloggers forum"), the more I notice Liew's nickname, abbreviated as 'LcF'. My brain starts to generate ideas for no particular reason and my hands get itchy. I call this the *Uncontrollable Creativity Syndrome* (UCS).
 
 I start with 'LcF', rendered with Lucida Grande. Really, I like the Lucida font family very much. Initially, the letters 'L' and 'F' are uppercased, 'c' is lowercased, as how Liew always present it. Looking at it for few minutes, I discover some *connection* between 'c' and 'F', when I try to lowercase the latter. A bit of editing connects both characters, with a sense of sleek curves. I also edit the character 'L' to be more curvaceous and shifts it to a better position, under the 'cf' figure. The lower end of 'L' is lengthened for few pixels, to make the lines more consistent. The soft edges of the lines are sharpened to give it a *cutting edge* appearance.
 
-![two figures, one is the flat 'Lcf', the other is the moulded 'Lcf' with slightly altered perspective grid](/blog/images/artwork/logos/lcf_moulded_3d.png)
+![two figures, one is the flat 'Lcf', the other is the moulded 'Lcf' with slightly altered perspective grid](../images/artwork/logos/lcf_moulded_3d.png)
 
 I was thinking to take a much simpler approach in designing logos. Most logos I've created are too complex, using a lot of colours and graphic effects. You see, most professional logos are simplistic, such as the [Fedex logo](http://actsofvolition.com/archives/2002/october/hidinginthe/ "Hiding in the FedEx logo"). Of course, I am **not** a professional so this is trivial anyway.
 
 The flat look of the logo seems a bit weird. So, I try to *mould* the logo, altering its perspective grid, adding a dimension to it.  The logo looks elegant and a bit *modern*. It's like I've seen it somewhere before, but not sure what is it. As simple as it gets, this logo is done.
 
-![six variations of the 'Lcf' logo, different colours and decorations](/blog/images/artwork/logos/lcf_six_variations.png)
+![six variations of the 'Lcf' logo, different colours and decorations](../images/artwork/logos/lcf_six_variations.png)
 
 Regarding the design, I found out that the advantage of creating such simplistic logo is you can create many variations of it, depends on how good your creativity is. I played with mine and came out with six variations. Not *more* than six because the symptoms of my *syndrome* have stopped, finally.
 

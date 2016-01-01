@@ -1,7 +1,7 @@
 Déjà vu ports
 ===
 
-![two similar ports displayed on the 'Ports' tab of the 'Canon BJC-1000SP Properties' window](/blog/images/screenshots/windows/canon_bjc_1000sp_properties_ports_lpt1_printer_port.png)
+![two similar ports displayed on the 'Ports' tab of the 'Canon BJC-1000SP Properties' window](../images/screenshots/windows/canon_bjc_1000sp_properties_ports_lpt1_printer_port.png)
 
 Few months ago, maybe last year, I have a problem with my printer. Suddenly Windows couldn't detect my printer automatically. My printer is the [Canon BJC-1000SP](http://bubblejet.canon.com.my/product/bubble_jet/bjc1000sp.htm), an *old* model.
 

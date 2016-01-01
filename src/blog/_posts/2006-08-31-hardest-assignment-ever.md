@@ -9,7 +9,7 @@ The subject is Digital Systems Design. My assignment is to design a *simple* tab
 
 Even though my group consists of four persons, as so do other groups, the problem is that I am the only one who is good in coding. All my other group members don't even know how to start writing [Verilog](http://en.wikipedia.org/wiki/Verilog) codes and couldn't understand the basics of parallel programming at all! Okay, I'm not alone. There are some of my friends in other groups facing this harsh situation as well. One person doing four persons work, especially in coding. That is very tiring, indeed.
 
-![tablet counter system block diagram, showing the input and output ports, including the port names](/blog/images/figures/diagram/tablet-counter-system-block-diagram-input-output-ports.png)
+![tablet counter system block diagram, showing the input and output ports, including the port names](../images/figures/diagram/tablet-counter-system-block-diagram-input-output-ports.png)
 
 So, what is this *tablet counting system* anyway? Well, it's a system to calculate the number of tablets that goes into every bottle, something like what you could see in factories. It can count up to 100 tablets and the user can set a custom maximum tablets count into the system too. As good as it gets, the system utilizes few *modules*, such as the synchronizer, hex keypad code generator, 2-digit BCD counter, programmable comparator and BCD-to-7-segment decoder. Cool.
 

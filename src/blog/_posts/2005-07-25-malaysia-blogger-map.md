@@ -3,7 +3,7 @@ Malaysia Blogger Map
 
 Few weeks ago, I've launched the [Malaysia Blogger Map](http://malaysiabloggers.com/showthread.php?t=556) web site. It is one of my experiments to test a very cool Flash-based mapping application called [worldKit](http://brainoff.com/worldkit/). If you've never heard of it, don't worry, it's not too late for you to check it out.
 
-![Malaysia Blogger Map web site, displaying some points, or locations of plotted weblogs, in Penang on the worldKit-powered Flash-based Malaysia map](/blog/images/screenshots/web/malaysia_blogger_map_worldkit_flash_points_penang.jpg)
+![Malaysia Blogger Map web site, displaying some points, or locations of plotted weblogs, in Penang on the worldKit-powered Flash-based Malaysia map](../images/screenshots/web/malaysia_blogger_map_worldkit_flash_points_penang.jpg)
 
 The site shows the whole map of Malaysia. Once loaded on the browser, some points will appear on the map with tooltips that show a weblog's title and description. If you click on the points or tooltips, it will bring you to that weblog's page. As some points get too *crowded* on the map, you may *zoom in* and see the landscape clearly via a smaller scale. Those weblogs are plotted on the map, following the exact coordinates provided by respective authors. Sound interesting, doesn't it?
 
@@ -17,7 +17,7 @@ So, there are three ways to acquire them.
 
 - Instead of finding for a base map of a specific area, maybe try download the **whole world map**! Later crop it to a desired area and calculate the bounding box information *manually*. It's a lot of work though.
 
-![Eastern hemisphere Earth map satellite image, showing the land surface, shallow water and shaded topography](/blog/images/figures/maps/eastern_hemisphere_earth_map_satellite_image_land_surface_shallow_water_shaded_topography.jpg)
+![Eastern hemisphere Earth map satellite image, showing the land surface, shallow water and shaded topography](../images/figures/maps/eastern_hemisphere_earth_map_satellite_image_land_surface_shallow_water_shaded_topography.jpg)
 
 After some thinking, I decided to use the third way. From the [worldKit documentation](http://brainoff.com/worldkit/doc/) pages, there is a link to NASA's spectacular [Blue Marble](http://earthobservatory.nasa.gov/Newsroom/BlueMarble/ "a true-color 1km image of the Earth") satellite images. It seems to be the *one and only* site to provide **highly detailed whole Earth images** produced from satellite data. Even the worldKit package includes *smaller* versions of them. Practically speaking, downloading a map image is easy, but viewing one is another story. The image file I wanted to download is the **400.7Mb** [Eastern hemisphere Earth map](http://visibleearth.nasa.gov/view_rec.php?vev1id=11656 "Blue Marble: Land Surface, Shallow Water, and Shaded Topography"). It measures a whooping **21600×21600px** in dimension, equivalent to **more than 400 monitors** worth of screen space!
 
@@ -48,7 +48,7 @@ These are round numbers, which I think *should* reduce error percentage. Using t
 - RightCrop = Width - ( (180 - East) × Width ÷ 360 )
 - LeftCrop = Width - ( (180 - West) × Width ÷ 360)
 
-![Earh map satellite image, displaying Malaysia as the focused region with crop values of its bounding box](/blog/images/figures/maps/earth_map_satellite_image_malaysia_region_bounding_box_crop_values.jpg)
+![Earh map satellite image, displaying Malaysia as the focused region with crop values of its bounding box](../images/figures/maps/earth_map_satellite_image_malaysia_region_bounding_box_crop_values.jpg)
 
 The width and height of the Eastern hemisphere map image is **21600×21600px**, but for the *whole Earth* image including the Western hemisphere, it's supposed to be **43200×21600px**. This means the RightCrop and LeftCrop values will have to be deducted by 21600 pixels. As a result, the calculator shows these values:
 
@@ -61,13 +61,13 @@ The width and height of the Eastern hemisphere map image is **21600×21600px**, 
 
 Okay, no more Mathematics! It's Photoshop time again. Go to 'View' and click on 'New Guide...' to place four horizontal and vertical guides *around* the area, based on the values above. Use the 'Crop Tool' and drag near the area as it snaps to the guides. Commit the operation, save it as a new file and done!
 
-![two Malaysia map satellite images, one is the default, the other is modified from its contrast, brightness and colours](/blog/images/figures/maps/malaysia_map_satellite_image_contrast_brightness_colours_modified.jpg)
+![two Malaysia map satellite images, one is the default, the other is modified from its contrast, brightness and colours](../images/figures/maps/malaysia_map_satellite_image_contrast_brightness_colours_modified.jpg)
 
 The map base image is quite fine. The more I look at it, the more I feel that the colours are too *dark*, somehow. I also have to do some modification to make Malaysia *stands out better* from the crowd. A little colour fading, enhanced contrast, increased brightness, and changes to the sea colour make it look absolutely perfect.
 
 After the map is ready, I start to draw my plans out and do some actions. I prepared a simple XHTML web page to display the Flash map, with instructions for people on how to add weblogs to it. To be honest, I'm not a Flash fan myself, because I support open standards such as SVG more than proprietary ones. If you are a Flash enthusiast, I bet you would know that embedding Flash into a web page will produce invalid markup due to the presence of the `embed` element followed by browser compatibility issues. Heck, **no more worries** now, especially with Ian Hickson's [Embedding Flash without <embed>](http://ln.hixie.ch/?start=1081798064&count=1) solution. It's valid, easy and works well in modern browsers. Cool!
 
-![Malaysia Blogger Map logo, showing a smiley and Earth, recycled from the Malaysia Blogger Forums logo design candidate](/blog/images/artwork/logos/malaysia_blogger_map_smiley_earth.png)
+![Malaysia Blogger Map logo, showing a smiley and Earth, recycled from the Malaysia Blogger Forums logo design candidate](../images/artwork/logos/malaysia_blogger_map_smiley_earth.png)
 
 Besides that, I also *recycle* my previous logo design candidate for [Malaysia Bloggers Forum](http://malaysiabloggers.com/) and tweak it a bit for this site. As for the required XML feed in worldKit, I did some quick PHP scripting that can let me add blogs from a form interface and generate an Atom feed file automatically. Since the map is too large to be displayed on normal screen resolutions, I resample it down to **756×288px** and run the large one through [Zoomifyer](http://zoomify.com/ "Zoomify") which *spits* out **56 zoom-and-pan images** under a new directory. The integration between worldKit and Zoomify will process images faster and save precious bandwidth.
 

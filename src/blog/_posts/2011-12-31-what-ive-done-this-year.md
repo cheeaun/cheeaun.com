@@ -7,11 +7,11 @@ Not specifically this year, but for the past 3 years since 2009, I've been tweet
 
 Thanks to Google Spreadsheet, here is a roughly-made chart showing the number of times I've been asked every month:
 
-![Area chart showing the number of times I've been asked for directions every month](/blog/images/figures/chart/askdirection-monthly-area-chart.png)
+![Area chart showing the number of times I've been asked for directions every month](../images/figures/chart/askdirection-monthly-area-chart.png)
 
 It averages to about 0.7333 per month. The reason is probably because I look <del>good</del> *trusty* and people seems to think that I know every single place on the planet. But the data is **all** in Singapore! On a small island. Surrounded by water. And flash floods.
 
-[![One Piece anime cover image](/blog/images/artwork/entertainment/one-piece-anime-cover.jpg)](http://myanimelist.net/anime/21/One_Piece)
+[![One Piece anime cover image](../images/artwork/entertainment/one-piece-anime-cover.jpg)](http://myanimelist.net/anime/21/One_Piece)
 
 Aside from this, I've been watching a lot of anime series. Yes, [anime](http://en.wikipedia.org/wiki/Anime). As some anime or manga lovers may know, there's this so-called the **big three**; [One Piece](http://en.wikipedia.org/wiki/One_piece), [Naruto](http://en.wikipedia.org/wiki/Naruto) and [Bleach](http://en.wikipedia.org/wiki/Bleach). One Piece is the only anime that's not in my watching list for years, and this year, I've manage to unlock the achievement of watching the anime from the first episode on 27 January 2011 to episode 494 on 17 April 2011. That's like almost **500 episodes** in just **3 months**! To put things into perspective, the first episode was aired on October 1999 and episode 494 is on April 2011. I'll never forget how my weekends feel like months gone by and it's really **one hell of an adventure**.
 

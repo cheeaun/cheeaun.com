@@ -1,7 +1,7 @@
 cheeaunblog beta
 ===
 
-![a 'cheeaunblog beta' web 2.0 logo, rendered with vibrant colours and reflection effects](/blog/images/artwork/logos/cheeaunblog_beta_logo_reflection_web_2.0.png)
+![a 'cheeaunblog beta' web 2.0 logo, rendered with vibrant colours and reflection effects](../images/artwork/logos/cheeaunblog_beta_logo_reflection_web_2.0.png)
 
 It seems that many people, even Neil, are [playing with it](http://neilturner.me.uk/2006/Aug/18/neilturnr_20_beta.html "neilturnr 2.0 beta!"). I just couldn't resist. Haha.
 

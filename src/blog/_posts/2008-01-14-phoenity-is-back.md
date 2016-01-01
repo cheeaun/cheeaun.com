@@ -1,7 +1,7 @@
 Phoenity is back
 ===
 
-[![Phoenity web site, redesigned](/blog/images/screenshots/web/phoenity-web-site-new-design.jpg)](http://phoenity.com/)
+[![Phoenity web site, redesigned](../images/screenshots/web/phoenity-web-site-new-design.jpg)](http://phoenity.com/)
 
 Phoenity.
 
@@ -21,7 +21,7 @@ Around the month of December last year, I started planning on how to *revive* Ph
 
 This is the time for me to introduce my new icon set, **Phoenity Aura**.
 
-![Phoenity Aura 'back' icon, zoomed and displayed with a grid](/blog/images/artwork/icons/phoenity-aura-back-icon-zoomed-grid.png)
+![Phoenity Aura 'back' icon, zoomed and displayed with a grid](../images/artwork/icons/phoenity-aura-back-icon-zoomed-grid.png)
 
 Nice name, eh?
 

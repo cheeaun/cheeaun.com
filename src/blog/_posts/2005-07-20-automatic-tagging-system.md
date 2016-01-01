@@ -1,7 +1,7 @@
 Automatic tagging system
 ===
 
-![tags applied to a weblog post titled 'Commenting system in weblogs' on cheeaunblog web site](/blog/images/screenshots/web/cheeaunblog_commenting_system_in_weblogs_post_tags.png)
+![tags applied to a weblog post titled 'Commenting system in weblogs' on cheeaunblog web site](../images/screenshots/web/cheeaunblog_commenting_system_in_weblogs_post_tags.png)
 
 A lot of sites have implemented tagging systems nowadays. We tag our bookmarks on various social bookmarking sites such as [del.icio.us](http://del.icio.us/), [de.lirio.us](http://de.lirio.us/), [Furl](http://furl.net/), [BlogMarks](http://blogmarks.net/), [Simpy](http://simpy.com/) and [Wists](http://wists.com/). We also tag our photos and images on [Flickr](http://flickr.com/). We even tag the things we do on [43 Things](http://43things.com/) and places around the world on [43 Places](http://43places.com/). It's obvious that [tagging is pure fun](http://ok-cancel.com/archives/article/2005/07/tagging-for-fun-and-finding.html "Tagging for Fun and Finding").
 

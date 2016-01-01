@@ -13,7 +13,7 @@ This is [Bug 171245](http://bugzilla.mozilla.org/show_bug.cgi?id=171245 "Bug 171
 >
 > — <http://bugzilla.mozilla.org/show_bug.cgi?id=171245#c21>
 
-!['Address' label of the Location bar in Mozilla Firefox, on Windows Luna and Classic](/blog/images/screenshots/firefox/address_label_location_bar_windows_luna_classic.png)
+!['Address' label of the Location bar in Mozilla Firefox, on Windows Luna and Classic](../images/screenshots/firefox/address_label_location_bar_windows_luna_classic.png)
 
 I'm not sure if this is the right decision, since I'm not an usability expert. Before I switched to Firefox, I always thought of removing the 'Address' label from Internet Explorer's address bar. Of course, there is **no** way to do that. Even third-party IE-based browsers don't allow me to do that. For me, it's useless, because the label doesn't serve much purpose except to tell me that it *is* an address bar. I expect most users can easily recognise the address field from the intuitive page icon and the autocomplete dropmarker on the right edge. But then, it *might* be useful for beginners, especially those who just started to learn using computers.
 

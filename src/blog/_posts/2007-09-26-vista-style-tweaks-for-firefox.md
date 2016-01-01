@@ -15,7 +15,7 @@ I've been using Vista for quite some time now and I supposed most of us already 
 So, here are the steps:
 
 1.
-	![before: Firefox interface with menubar; after: Firefox interface without the menubar, installed with the 'Hide Menubar' extension](/blog/images/screenshots/firefox/menubar-hide-vista-style-before-after-firefox.png)
+	![before: Firefox interface with menubar; after: Firefox interface without the menubar, installed with the 'Hide Menubar' extension](../images/screenshots/firefox/menubar-hide-vista-style-before-after-firefox.png)
 
 	Obviously is the menubar. Before I start using Vista, I disagree that the menubar is hidden by default because of some reasons. But now, I got used to it. Gosh. The lack of menubar does seem to make the interface cleaner though. So, I got to hide the menubar. With CSS?
 
@@ -28,7 +28,7 @@ So, here are the steps:
 	**No**. This is not practical. **Do not use the above code.** I still need the menubar sometimes. In Vista, when you press `Alt`, the menubar appears on demand. To emulate that on Firefox, you'll need the [Hide Menubar](https://addons.mozilla.org/en-US/firefox/addon/4762) extension by yuoo2k. Works perfect!
 
 2.
-	![before: the 'darker' background of the tabs bar on Firefox; after: the new shiny Vista-style background of the tabs bar on Firefox](/blog/images/screenshots/firefox/tabbrowser-tabs-background-vista-style-before-after-firefox.png)
+	![before: the 'darker' background of the tabs bar on Firefox; after: the new shiny Vista-style background of the tabs bar on Firefox](../images/screenshots/firefox/tabbrowser-tabs-background-vista-style-before-after-firefox.png)
 
 	The tabs. Oops, I mean the background *behind* the tabs actually. From what I see, it's a little *darker than usual*. Somehow, on Internet Explorer 7, the tabs bar just look *shiny*, though I don't quite like the huge tabs taking up all the space. Mind you, Firefox's tabs are just nice. This may seem unnecessary but the code below will make quite a difference:
 
@@ -39,7 +39,7 @@ So, here are the steps:
 	```
 
 3.
-	![before: the normal Firefox navigation toolbar; after: the 'darker' Firefox navigation toolbar when the window is maximized](/blog/images/screenshots/firefox/dark-navigation-toolbar-window-maximized-vista-style-before-after-firefox.png)
+	![before: the normal Firefox navigation toolbar; after: the 'darker' Firefox navigation toolbar when the window is maximized](../images/screenshots/firefox/dark-navigation-toolbar-window-maximized-vista-style-before-after-firefox.png)
 
 	Okay, the navigation toolbar, the toolbar that contains the Back, Forward buttons, location bar and stuff. If you enable Windows Aero, when some windows are maximized such as Internet Explorer's, you'll find that the navigation bar turns into a dark background. I don't know why Windows did that, but it does seem useful as it makes me **more focused** on the tabs bar and the web content area of the browser window. Perhaps, just a personal preference. Here goes:
 
@@ -63,7 +63,7 @@ So, here are the steps:
 	So, when Firefox's window is maximized, the background of the navigation toolbar will become dark. Cool.
 
 4.
-	![before: the awkward 'Go' button, 'Search' button, location bar and search bar on Firefox; after: Vista-style 'Go' button, 'Search' button, location bar and search bar](/blog/images/screenshots/firefox/better-location-bar-search-bar-buttons-vista-style-before-after-firefox.png)
+	![before: the awkward 'Go' button, 'Search' button, location bar and search bar on Firefox; after: Vista-style 'Go' button, 'Search' button, location bar and search bar](../images/screenshots/firefox/better-location-bar-search-bar-buttons-vista-style-before-after-firefox.png)
 
 	What's left now is the location bar and the search bar. Vista's address bar has all those hover effects, *glowing* buttons and built-in loading indicator. Also, if you try the previous tweak, you'll notice that the 'Go' button and 'Search' button looks awkward. The white-background location bar and search bar are too contrasting against the black background, when maximized.
 
@@ -104,7 +104,7 @@ So, here are the steps:
 
 	Done? Not yet.
 
-	![Vista-styled or Safari-styled Firefox location bar, which doubles as a loading bar, installed with the 'Fission' extension](/blog/images/screenshots/firefox/loading-progress-meter-location-bar-vista-safari-style-fission-firefox.png)
+	![Vista-styled or Safari-styled Firefox location bar, which doubles as a loading bar, installed with the 'Fission' extension](../images/screenshots/firefox/loading-progress-meter-location-bar-vista-safari-style-fission-firefox.png)
 
 	How about that Vista-style address bar which doubles as a loading bar? Or should I mention Safari-style address bar? Whatever. The [Fission](https://addons.mozilla.org/en-US/firefox/addon/1951) extension by zeniko is the ultimate answer. And a little ingredient to spice it up:
 

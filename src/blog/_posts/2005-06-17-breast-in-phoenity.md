@@ -7,7 +7,7 @@ Breast in Phoenity?
 >
 > — <https://addons.mozilla.org/themes/moreinfo.php?application=firefox&id=5&page=comments>
 
-![16 frames of the animated throbber GIF image file in the Phoenity theme for Firefox](/blog/images/artwork/icons/phoenity_throbber_motion_indicator_animated_16_frames.png)
+![16 frames of the animated throbber GIF image file in the Phoenity theme for Firefox](../images/artwork/icons/phoenity_throbber_motion_indicator_animated_16_frames.png)
 
 This is really one of the [funniest user comments](https://addons.mozilla.org/themes/moreinfo.php?application=firefox&id=5&page=comments "Phoenity - User Comments") I've ever read. Who would have thought of that? This comment is posted on my theme's comments page on [Mozilla Update](https://addons.mozilla.org/) by a creative fellow named polly on 30 April 2005. Of course, I would highly appreciate his *or her* sense of humour which proves that things you see always depends on your own perspective.
 

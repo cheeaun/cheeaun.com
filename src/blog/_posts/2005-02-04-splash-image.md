@@ -1,7 +1,7 @@
 Splash image
 ===
 
-![splash image for my first ever personal home page, showing 'welcome to » cheeaun01 homepage'](/blog/images/artwork/web/cheeaun01_homepage_splash.jpg)
+![splash image for my first ever personal home page, showing 'welcome to » cheeaun01 homepage'](../images/artwork/web/cheeaun01_homepage_splash.jpg)
 
 I was browsing into the dense jungle of files on my drive partitions and suddenly I found a very *interesting* graphic. It's created on 8 February 2002 and I've left it there till today. Wow.
 

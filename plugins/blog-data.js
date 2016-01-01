@@ -27,13 +27,26 @@ function plugin(options){
         // Summary
         var summary = $('p').text().slice(0, 140).trim() + '…';
         data.summary = summary;
+        // Fix relative images path in links
+        $('a').each(function(){
+          var a = $(this);
+          var href = a.attr('href');
+          if (/^\.\.\/images/i.test(href)){
+            href = href.replace(/^\.\.\/images/i, '/blog/images');
+            a.attr('href', href);
+          }
+        });
         // Image dimensions
         $('img').each(function(){
           var img = $(this);
           var src = img.attr('src');
-          if (/http/i.test(src)){
+          if (/^http/i.test(src)){
             console.log('Found remote image: ' + src);
             return;
+          }
+          if (/^\.\.\//i.test(src)){ // Resolve relative path
+            src = src.replace(/^\.\.\//i, '/blog/');
+            img.attr('src', src);
           }
           var dimensions = sizeOf('src' + src);
           img.attr('width', dimensions.width);
@@ -41,11 +54,14 @@ function plugin(options){
           var el = img;
           if (img.parent('a').length) el = img.parent('a');
           if (el.parent('p').length){ // remove the <p>
-            el = el.parent('p');
-            el.replaceWith('<figure>' + el.html() + '</figure>');
+            el.parent('p').addClass('__P2FIGURE__');
           } else {
             el.replaceWith('<figure>' + $.html(el) + '</figure>');
           }
+        });
+        $('p.__P2FIGURE__').each(function(){
+          var p = $(this);
+          p.replaceWith('<figure>' + p.html() + '</figure>');
         });
         data.contents = new Buffer($.html());
         // Path - Year and month, NOT day

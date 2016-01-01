@@ -1,7 +1,7 @@
 <h1>First steps in theme design</h1>
 <p>I remember before I started making themes for Phoenix, I don&apos;t know anything at all about icons design and theme design. At that time, I have never even created a theme or skin for <em>any</em> software before. But somehow I was motivated to create one for Phoenix, just for fun anyway.</p>
 <p>I decided to give it a try and used the <a href="http://quadrone.org/" title="Quadrone">Qute theme</a> as my base, because it was the most <em>polished</em> theme at that time. After decompressing the theme package, I look around and surprised to see that all are plain CSS files and mostly PNG images. When reading the files, I began to understand that all the UI elements in Phoenix are rendered with CSS properties! Using my basic CSS knowledge, it got me started right away.</p>
-<img src="/blog/images/artwork/icons/phoenie.png" width="270" height="100" alt="Phoenie icons">
+<img src="../images/artwork/icons/phoenie.png" width="270" height="100" alt="Phoenie icons">
 <p>As you might not know, my first theme is <strong>not</strong> Phoenity. It&apos;s called <strong>Phoenie</strong>. It&apos;s my first ever attempt to create toolbar icons. Obviously, the icons look a lot like Phoenity, as they are now better known as the <em>pre-Phoenity</em> icons. When I released this theme, I didn&apos;t get much response from the community because the theme was very buggy. As I remember, the only person giving feedback was Chris Neale, who helped me a lot since then.</p>
 <p>Unfortunately, the Phoenie icons are <em>a bit too complex</em>, so I decided to make a much simpler version which is now known as Phoenity. The simplicity of the icons actually gives me more time to focus on the codes and learn some stuff. One of the problems I had is that I don&apos;t understand some of the Mozilla-proprietary CSS codes. I was confused how <code>-moz-image-region</code> works as it is one of the most common properties used around the theme files. I guess, this could the <em>first problem</em> faced by most novice theme designers in the Mozilla community.</p>
 <p>According to <a href="http://xulplanet.com/references/elemref/ref_StyleProperties.html#prop_-moz-image-region" title="Style Properties Reference : -moz-image-region">XULPlanet.com</a>, the syntax is explained as such:</p>
@@ -14,7 +14,7 @@
 <p>Now let&apos;s take a look at the difficult part. <code>-moz-image-region</code> practically works almost like image cropping, where you can crop certain areas of the image so that it shows only the area you want. The difference is <code>-moz-image-region</code> doesn&apos;t <em>really</em> crop it out but rather <em>hide</em> the areas around it. Why? Because these hidden areas can be reused again for other purposes, which means different elements may use one big image but each uses different regions of it, thus reducing the amount of memory required, as stated above.</p>
 <p>I know, explaining in words is not enough, so below are few steps for further understanding.</p>
 <ol>
-<li><img src="/blog/images/figures/interface/back_icon_image_no_region.png" width="200" height="170" alt="An image of the Winstripe 0.1 Back icon">
+<li><img src="../images/figures/interface/back_icon_image_no_region.png" width="200" height="170" alt="An image of the Winstripe 0.1 Back icon">
 <p>First, we get an image, as shown. It&apos;s the Winstripe 0.1 Back icon, which I dig out from my hard drive. Somehow it looks like a good example to be used here. By the scale of 1 pixel equivalent to 4 pixels, the image is 34&#xD7;34px in dimension. As you can see, I&apos;ve purposely added some redundant space around the icon, so that you can observe clearly how the clipping works <em>around</em> the icon.</p>
 <p>The code used is:</p>
 <pre><code>#button{
@@ -22,14 +22,14 @@
 list-style-image: url(/path/to/image.png);
 }</code></pre>
 <p>Since no regions are specified, the whole 34&#xD7;34px image will be displayed.</p></li>
-<li><img src="/blog/images/figures/interface/back_icon_image_highlight_region.png" width="180" height="160" alt="An image of the Winstripe 0.1 Back icon, with highlighted region">
+<li><img src="../images/figures/interface/back_icon_image_highlight_region.png" width="180" height="160" alt="An image of the Winstripe 0.1 Back icon, with highlighted region">
 <p>Now, I have to highlight the region to be displayed. This region may be specified in any dimension, as any space <em>outside</em> the region will not be displayed. For this example, I decided to set the region as 24&#xD7;24px in dimension, because it&apos;s the standard size for Winstripe and Luna <em>large</em> icons. Please note that this step doesn&apos;t involve any codes and the highlight on the image is only for illustrative purposes. However, this step is rather important especially to pinpoint the dimensions of the region when dealing with an image of multiple icons.</p></li>
-<li><img src="/blog/images/figures/interface/back_icon_image_top_left_edge_offsets.png" width="160" height="160" alt="An image of the Winstripe 0.1 Back icon, with values of its offset from top and left edges">
+<li><img src="../images/figures/interface/back_icon_image_top_left_edge_offsets.png" width="160" height="160" alt="An image of the Winstripe 0.1 Back icon, with values of its offset from top and left edges">
 <p>When specifying the offset values of the region from the edges, only the top and left edges are concerned. Offsets of all sides of the region are calculated only from both edges, <strong>not</strong> right and bottom. I supposed, one might ask, why not <em>all edges</em> since they would be more <em>logical</em>? Well, I don&apos;t know. I asked myself that question before. According to the <a href="http://w3.org/TR/CSS21/visufx.html#clipping">CSS 2.1 specification</a>, for the <code>clip</code> property, quoted:</p>
 <blockquote><p>Future versions may also reintroduce a syntax for offsetting shapes from each edge instead of offsetting from a point.</p>
 <p>— <a href="http://w3.org/TR/CSS21/visufx.html#clipping">http://w3.org/TR/CSS21/visufx.html#clipping</a></p></blockquote>
 <p>So, let&apos;s just get on with it. No codes are needed in this step too.</p></li>
-<li><img src="/blog/images/figures/interface/back_icon_image_top_right_bottom_left_edge_offsets_values.png" width="360" height="355" alt="Four images of the Winstripe 0.1 Back icon, each with calculated values of its offset from top, right, bottom and left edges">
+<li><img src="../images/figures/interface/back_icon_image_top_right_bottom_left_edge_offsets_values.png" width="360" height="355" alt="Four images of the Winstripe 0.1 Back icon, each with calculated values of its offset from top, right, bottom and left edges">
 <p>It&apos;s time to do some simple mathematics, to find out the pixels for each offset of the region. From the diagram shown, the top and left offsets are 5 pixels. The right and bottom offsets are 29 pixels, as calculated from the top and left edges of the image (24 + 5 = 29).</p>
 <p>So, the code now is:</p>
 <pre><code>#button{
@@ -38,9 +38,9 @@ list-style-image: url(/path/to/image.png);
 }</code></pre>
 <p>Only this region will be displayed for the <code>#button</code> element. Anything outside will be hidden from view. Yeah.</p></li>
 </ol>
-<img src="/blog/images/artwork/icons/winstripe_0.1_toolbar_icons.png" width="360" height="72" alt="Winstripe 0.1 toolbar icons, showing default, hovered and disabled states">
+<img src="../images/artwork/icons/winstripe_0.1_toolbar_icons.png" width="360" height="72" alt="Winstripe 0.1 toolbar icons, showing default, hovered and disabled states">
 <p>From the steps above, it explains much why you will see images with <em>multiple icons</em> when opening the theme JAR files. You might see a PNG image showing <em>all</em> toolbar icons, including its hovered states, disabled states and in some themes, even active states. When the UI element displays a region of this image, it basically will load this <em>whole file</em> into memory. It&apos;s a bit like creating graphical menu effects on web pages when you need to <em>pre-load</em> some images into the browser cache so that the menu images can switch flawlessly without flicker. In this case, the idea is applied in exactly the same way to pre-load images into your system memory, instead.</p>
-<img src="/blog/images/figures/interface/back_icons_default_hovered_disabled_states_image_highlight_region_offset_values.png" width="250" height="170" alt="Four images of the Winstripe 0.1 Back icon, each with calculated values of its offset from top, right, bottom and left edges">
+<img src="../images/figures/interface/back_icons_default_hovered_disabled_states_image_highlight_region_offset_values.png" width="250" height="170" alt="Four images of the Winstripe 0.1 Back icon, each with calculated values of its offset from top, right, bottom and left edges">
 <p>This implementation can be used to <em>simulate</em> animation, for example showing region A by default, region B when the element is hovered and region C when in disabled state.</p>
 <p>The codes, for example, would look like this:</p>
 <pre><code><em class="remark">/*default state*/</em>

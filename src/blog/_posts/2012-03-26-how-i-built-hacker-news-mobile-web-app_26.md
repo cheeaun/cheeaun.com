@@ -5,7 +5,7 @@ This is continued from the [first part](/blog/2012/03/how-i-built-hacker-news-mo
 
 Before I begin, I would like to mention that I'm very surprised by the **amazing response** on the first article and the **massive traffic** hitting my site. It was seriously unexpected and **quite meta**.
 
-[![Hacker News Mobile web app showing the first article](/blog/images/screenshots/web/hacker-news-web-app-blog-article-meta-thumbnail.png)](/blog/images/screenshots/web/hacker-news-web-app-blog-article-meta.png)
+[![Hacker News Mobile web app showing the first article](../images/screenshots/web/hacker-news-web-app-blog-article-meta-thumbnail.png)](../images/screenshots/web/hacker-news-web-app-blog-article-meta.png)
 
 The first part puts focus on the look and feel of the app. For this second part, I'll provide an addendum on some new things I found and various details on the development of the app.
 
@@ -14,13 +14,13 @@ iOS imitation
 
 In the first article, I mentioned an example of rendering the Back button in pure CSS without images. It doesn't look that good and has artifacts on it. Well, there exists a way, way better implementation by Gregor Adams. It is [**the best** pure CSS iOS Back button](http://dream-world.us/2011/11/30/the-best-pure-css3-ios-style-arrow-back-button/ "the best pure CSS3 iOS style arrow Back button") I've ever seen. Here's a comparison:
 
-![Native iOS navigation bar Back button and one done in pure CSS, zoomed in 5 times](/blog/images/figures/interface/ios-navigation-bar-back-button-better-css-native.png)
+![Native iOS navigation bar Back button and one done in pure CSS, zoomed in 5 times](../images/figures/interface/ios-navigation-bar-back-button-better-css-native.png)
 
 No artifacts and smooth edges. No images are used at all. It uses **a lot** of fancy CSS properties to achieve this almost exact replica.
 
 This also leads me to discover even more impressive work by others who tried to mimic the iOS interface, such as [CSSUIKit](http://cssuikit.com/) and [-webkit-OS](http://webkit-os.pixelass.com/). I find -webkit-OS very interesting because it also replicate the look of the iOS Lock screen and Springboard, including slide-to-unlock and wiggling icons!
 
-[![-webkit-OS Lock screen](/blog/images/screenshots/web/webkit-os-lock-screen-thumbnail.png)](/blog/images/screenshots/web/webkit-os-lock-screen.png)
+[![-webkit-OS Lock screen](../images/screenshots/web/webkit-os-lock-screen-thumbnail.png)](../images/screenshots/web/webkit-os-lock-screen.png)
 
 The screenshot above is [-webkit-OS](http://webkit-os.pixelass.com/), a **web page**. The date and time is live, and you can slide to unlock to see the Springboard. The status bar is slightly translucent because of this code:
 
@@ -39,11 +39,11 @@ From my observations, standalone mode only works for web apps that let users do 
 
 So, what type of apps are suitable to be 'standalone'? Two examples.
 
-[![Doubbble mobile web app](/blog/images/screenshots/web/doubbble-web-app-thumbnail.png)](/blog/images/screenshots/web/doubbble-web-app.png)
+[![Doubbble mobile web app](../images/screenshots/web/doubbble-web-app-thumbnail.png)](../images/screenshots/web/doubbble-web-app.png)
 
 First, this is [Doubbble](http://doubbble.com/) by [Benjamin De Cock](http://deaxon.com/). It's a [Dribbble](http://dribbble.com/) viewer mobile web app. You may notice that Mobile Safari's toolbar is gone, that's standalone mode. You can view popular Dribbble shots or 'Following' shots, view individual shots and swipe through them. If given the time and effort to implement more of [Dribbble's API](http://dribbble.com/api), you can do pretty much anything **without leaving the app**.
 
-[![Messenger mobile web app](/blog/images/screenshots/web/messenger-web-app-thumbnail.png)](/blog/images/screenshots/web/messenger-web-app.png)
+[![Messenger mobile web app](../images/screenshots/web/messenger-web-app-thumbnail.png)](../images/screenshots/web/messenger-web-app.png)
 
 Second, this is [Messenger](https://github.com/Harrison/Messenger) by Philip Harrison, a mobile web app which I happen to find on GitHub. It's basically a clone of the iOS built-in Messages app. It's not really a working app, but it demonstrates the possibility of building a messaging or chatting mobile application. You can browse through messages, tap on them and see the whole thread. It even has pull-to-refresh, implemented together with `-webkit-overflow-scrolling: touch`.
 
@@ -56,7 +56,7 @@ Navigation bar
 
 I'm always fascinated by the way iOS navigation bar layout works. It looks simple, yet *not quite* simple. Here's a simple sketch of the navigation bar layout with buttons:
 
-![Sketch of iOS navigation bar layout](/blog/images/figures/interface/ios-navigation-bar-sketch.png)
+![Sketch of iOS navigation bar layout](../images/figures/interface/ios-navigation-bar-sketch.png)
 
 The HTML code, in the most minimal form:
 
@@ -72,45 +72,45 @@ Initially, I didn't expect much and plan to just code this in a quick and easy w
 
 Here's how it looks like:
 
-![Sketch of iOS navigation bar layout, done with CSS Flexible Box Layout](/blog/images/figures/interface/ios-navigation-bar-sketch-css-flex-box.png)
+![Sketch of iOS navigation bar layout, done with CSS Flexible Box Layout](../images/figures/interface/ios-navigation-bar-sketch-css-flex-box.png)
 
 The CSS code `box-flex: 1` will make the title container, in this case the `h1` element, **grow** to fill the space. It works great, except for few cases. If one of the navigation bar buttons changes in width, the text alignment is shifted.
 
-![Sketch of iOS navigation bar layout, text alignment shifted due to shorter button](/blog/images/figures/interface/ios-navigation-bar-sketch-text-alignment-1.png)
+![Sketch of iOS navigation bar layout, text alignment shifted due to shorter button](../images/figures/interface/ios-navigation-bar-sketch-text-alignment-1.png)
 
 If the button is not there, it's also shifted.
 
-![Sketch of iOS navigation bar layout, text alignment shifted due to a missing button](/blog/images/figures/interface/ios-navigation-bar-sketch-text-alignment-2.png)
+![Sketch of iOS navigation bar layout, text alignment shifted due to a missing button](../images/figures/interface/ios-navigation-bar-sketch-text-alignment-2.png)
 
 Same thing applies if one of the buttons got wider.
 
-![Sketch of iOS navigation bar layout, text alignment shifted due to a wider button](/blog/images/figures/interface/ios-navigation-bar-sketch-text-alignment-3.png)
+![Sketch of iOS navigation bar layout, text alignment shifted due to a wider button](../images/figures/interface/ios-navigation-bar-sketch-text-alignment-3.png)
 
 On iOS, the navigation bar title doesn't shift regardless of these minor layout changes. It should still maintain being at the center of the navigation bar and not *pushed* by the buttons. Interestingly, using CSS floats have the *same issue* as flexible box too, so I try absolute positioning on the buttons instead.
 
-![Sketch of iOS navigation bar layout, using CSS absolute positioning on the buttons](/blog/images/figures/interface/ios-navigation-bar-sketch-position-absolute.png)
+![Sketch of iOS navigation bar layout, using CSS absolute positioning on the buttons](../images/figures/interface/ios-navigation-bar-sketch-position-absolute.png)
 
 Now, the title text will **always** be in the center because absolute-positioned buttons will not affect it anymore. But when the text becomes *too long*, the title text goes *under* the buttons and they overlap over it.
 
-![Sketch of iOS navigation bar layout, longer title text overlapped by the buttons](/blog/images/figures/interface/ios-navigation-bar-sketch-button-overlap-1.png)
+![Sketch of iOS navigation bar layout, longer title text overlapped by the buttons](../images/figures/interface/ios-navigation-bar-sketch-button-overlap-1.png)
 
 Longer buttons can also overlap on the title.
 
-![Sketch of iOS navigation bar layout, title text overlapped by longer buttons](/blog/images/figures/interface/ios-navigation-bar-sketch-button-overlap-2.png)
+![Sketch of iOS navigation bar layout, title text overlapped by longer buttons](../images/figures/interface/ios-navigation-bar-sketch-button-overlap-2.png)
 
 On iOS, even though the title alignment is not affected by the minor changes in the button width on both sides, it will eventually shift *if* the button becomes too long and *intrudes* the title's space. In the diagram above, the title becomes *left-aligned* along the Back button, and it seems like it still **tries to be in the center** of the navigation bar.
 
 I try to fix the overlapping problem by applying some CSS margins:
 
-![Sketch of iOS navigation bar layout, using absolute positioning and margins](/blog/images/figures/interface/ios-navigation-bar-sketch-position-absolute-margin.png)
+![Sketch of iOS navigation bar layout, using absolute positioning and margins](../images/figures/interface/ios-navigation-bar-sketch-position-absolute-margin.png)
 
 Remember that the left and right margins still have to be (almost) the same so that it won't shift the title like the first few diagrams above. And I have to hardcode them, knowing the width of the buttons in the first place. The title is also applied with `text-overflow: ellipsis` so that longer text will be clipped and shows the ellipsis character.
 
-![Sketch of iOS navigation bar layout, all rendered correctly thanks to absolute positioning and margins](/blog/images/figures/interface/ios-navigation-bar-sketch-correct-text-alignment.png)
+![Sketch of iOS navigation bar layout, all rendered correctly thanks to absolute positioning and margins](../images/figures/interface/ios-navigation-bar-sketch-correct-text-alignment.png)
 
 HNmobile currently uses this technique. It works in *most* cases, fortunately. The obvious case where it *doesn't* work correctly is when the title is long and there's no button on the right side:
 
-![Sketch of iOS navigation bar layout, title text clipped even when there's no button on the right](/blog/images/figures/interface/ios-navigation-bar-sketch-incorrect-text-alignment.png)
+![Sketch of iOS navigation bar layout, title text clipped even when there's no button on the right](../images/figures/interface/ios-navigation-bar-sketch-incorrect-text-alignment.png)
 
 Here you'll see that if the title is long and there's space around it, iOS will fill it up. Makes sense.
 
@@ -149,7 +149,7 @@ hn.css
 
 Then I pass this to Google Analytics with [Event Tracking](http://code.google.com/apis/analytics/docs/tracking/eventTrackerGuide.html) so that I can see the version distribution among HNmobile users.
 
-![HNmobile version distribution tracked with Google Analytics](/blog/images/screenshots/web/google-analytics-hnmobile-version-distribution.png)
+![HNmobile version distribution tracked with Google Analytics](../images/screenshots/web/google-analytics-hnmobile-version-distribution.png)
 
 This is really useful for me to debug certain issues with Application Cache and find ways to make the updates propagate faster to users. As what [most Mobile Gurus stated](http://www.stevesouders.com/blog/2011/10/03/improving-app-cache/ "Improving app cache"), Application Cache can be pretty *clumsy*. I still don't understand why there are less than 10% of users having the older version of the cache. Hopefully this tracking will help me uncovering the mysteries.
 
@@ -158,7 +158,7 @@ Error logging
 
 Sometimes, it's hard to track client-side errors and exceptions. It may work well on your device, but strangely break on others. It's especially hard to debug because that device is not in your hands. There are ways to do [client-side error logging](http://blog.pamelafox.org/2011/10/client-side-error-logging.html "Client-Side Error Logging"), either to your own server or remotely with third-party services like [ErrorStack](http://errorstack.appspot.com/), [jsErrLog](http://jserrlog.appspot.com/) and [Errorception](http://errorception.com/). I decided to use [Muscula](http://www.muscula.com/) for HNmobile, which is currently free so that I can get a rough idea on how it works.
 
-![HNmobile error log tracked with Muscula](/blog/images/screenshots/web/muscula-hnmobile-error-log.png)
+![HNmobile error log tracked with Muscula](../images/screenshots/web/muscula-hnmobile-error-log.png)
 
 After running it for weeks, first thing I realise is that it doesn't quite work with minified JavaScript files because the error is always reported at line number 1. [Errorception mentioned this solution](http://errorception.com/makethemost "Making the most of Errorception"):
 

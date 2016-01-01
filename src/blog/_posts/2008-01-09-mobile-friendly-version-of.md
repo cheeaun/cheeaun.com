@@ -1,7 +1,7 @@
 Mobile-friendly version of PenangBloggers.com
 ===
 
-[![Penang Bloggers web site, optimized for Mobile Safari, displayed on iPhone](/blog/images/screenshots/web/penang-bloggers-web-site-mobile-safari-iphone.jpg)](http://penangbloggers.com/i)
+[![Penang Bloggers web site, optimized for Mobile Safari, displayed on iPhone](../images/screenshots/web/penang-bloggers-web-site-mobile-safari-iphone.jpg)](http://penangbloggers.com/i)
 
 Last week, I've been trying to make [PenangBloggers.com](http://penangbloggers.com/) **mobile-friendly** so that phone or PDA users could look out for the latest blog posts. Also, I would love to include [iPhone](http://www.apple.com/iphone/) as well. And perhaps try to create an iPhone-friendly site since there are [so](http://www.digg.com/iphone "Digg") [many](http://i.bloglines.com/ "iBloglines") [out](http://iphone.facebook.com/ "Facebook") there. As the matter a fact, it shouldn't be called 'iPhone-friendly' because iPod touch has Mobile Safari as well. So, it's better that I use the term '**Mobile Safari**-friendly'.
 
@@ -29,7 +29,7 @@ Cool. I did it!
 
 However, the [GeminiGeek](http://geminigeek.com/) guy, who shares the same birth date as myself, told me that iPhone **is not hot stuff in Malaysia**, yet. I [got excited on my own in the forums](http://www.facebook.com/topic.php?uid=22807221240&topic=3423). Hmm...
 
-[![Penang Bloggers web site, on Opera Mini, displayed on Nokia 5300](/blog/images/screenshots/web/penang-bloggers-web-site-opera-mini-nokia-5300.jpg)](http://penangbloggers.com/m)
+[![Penang Bloggers web site, on Opera Mini, displayed on Nokia 5300](../images/screenshots/web/penang-bloggers-web-site-opera-mini-nokia-5300.jpg)](http://penangbloggers.com/m)
 
 Okay now, let's do a non-Mobile-Safari version of the mobile site. What other *mobile web browsers* do we have? Of course, we have the great [Opera Mini](http://www.operamini.com/)! My [Nokia 5300](http://en.wikipedia.org/wiki/Nokia_5300) has a built-in browser which I really hate to use. I use Opera Mini all the time. I did a search online and found a [publisher tip from Feedburner](http://blogs.feedburner.com/tips/ "FeedBurner Publisher Tips") on how to [make your site mobile friendly in under 5 minutes](http://blogs.feedburner.com/tips/optimize/make_your_site_mobile_in_under/).
 

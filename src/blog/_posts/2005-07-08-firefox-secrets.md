@@ -3,7 +3,7 @@ Firefox Secrets
 
 Cheah Chu Yeow is the man! Though he hasn't been [blogging much](http://blog.codefront.net/ "redemption in a blog") last few months, but he's sure capable to produce such [wonderful book](http://sitepoint.com/books/firefox1/ "Firefox Secrets") for everyone. Also not forgetting Asa Dotzler for being the Expert Reviewer of the book, while still able to spend a little time to [blog](http://weblogs.mozillazine.org/asa/ "firefox, cats, mars, and more").
 
-!['Firefox Secrets' book and bonus CD-ROM, authored by Cheah Chu Yeow, published by SitePoint](/blog/images/photos/objects/firefox_secrets_book_cd_rom_sitepoint.jpg)
+!['Firefox Secrets' book and bonus CD-ROM, authored by Cheah Chu Yeow, published by SitePoint](../images/photos/objects/firefox_secrets_book_cd_rom_sitepoint.jpg)
 
 Just today, I received my **free copy** of the book Firefox Secrets, with **bonus CD-ROM** inside! **Cool!** Well, I'm not the only person who got it. Bernie Zimmermann, author of [GrayModern theme](http://bernzilla.com/projects.php), [received one too](http://bernzilla.com/item.php?id=507 "Firefox Secrets"), much earlier because the place I live is further than his, I guess. Last April, Simon Mackie, the Managing Editor of [SitePoint](http://sitepoint.com/), sent an email to get my permission to include Phoenity on the CD. I agreed and now I got the book in exchange of it.
 

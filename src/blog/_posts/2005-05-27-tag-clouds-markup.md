@@ -1,7 +1,7 @@
 Tag clouds markup
 ===
 
-![Flickr's photo tags page, showing the all time most popular tags in a tag cloud](/blog/images/screenshots/web/flickr_photo_sharing_all_time_most_popular_tags_cloud.png)
+![Flickr's photo tags page, showing the all time most popular tags in a tag cloud](../images/screenshots/web/flickr_photo_sharing_all_time_most_popular_tags_cloud.png)
 
 Tag clouds are cool though they do have [some disadvantages](http://zeldman.com/daily/0505a.shtml "Remove Forebrain and Serve: Tag Clouds II") as well. I just look at [the popular ones on Flickr](http://flickr.com/photos/tags/ "Popular Tags on Flickr Photo Sharing") and noticed something wrong in the way the cloud is presented. I view the source of the page and realise that it's an **ugly markup**:
 

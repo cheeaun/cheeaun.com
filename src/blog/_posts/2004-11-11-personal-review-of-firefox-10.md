@@ -1,7 +1,7 @@
 Personal review of Firefox 1.0
 ===
 
-![Mozilla Firefox 1.0's About dialog](/blog/images/screenshots/firefox/mozilla_firefox_1.0_about_dialog.png)
+![Mozilla Firefox 1.0's About dialog](../images/screenshots/firefox/mozilla_firefox_1.0_about_dialog.png)
 
 After two years of using Firefox, I have never actually write a *thorough* review of this browser. Okay, I am not a tech specialist or journalist but somehow I feel like want to write something. I don't regard my previous blog posts about Firefox as my *reviews*. For the past few months, I wrote about pre-release Winstripe icons, Firefox interface's tiny glitches, Firefox tips and my little *adventure* in the process of updating the Phoenity theme for latest releases. This time, I'm going to write a review. My *personal* review.
 
@@ -14,11 +14,11 @@ Looking at the main window interface, I felt so proud of my toolbar items arrang
 <pre><code>statusbar[moz-collapsed=&quot;true&quot;]{
 <em>visibility: visible !important;</em>
 }</code></pre>
-!['Open Web Location' dialog](/blog/images/screenshots/firefox/open_web_location_dialog.png)
+!['Open Web Location' dialog](../images/screenshots/firefox/open_web_location_dialog.png)
 
 I have a question in my mind, but I dare not ask other people. Yeah, I'm a little shy to ask *potentially stupid* questions. Here goes anyway. If the location bar and search bar are *dragged away* from the toolbars, obviously into the Customize window, what would happen to the 'Open Location...' and 'Web Search' menu items? Basically, when you click these menu items, the location bar or search bar will be focused with a blinking caret. If these bars are gone, where would the caret be? Well, guess no more because I'm going to find it out myself. I press `Ctrl + K`, nothing happens. I press `Ctrl + L`, a dialog appears. Everyone, behold the mysterious 'Open Web Location' dialog. I guess most Firefox users have *never* seen this before, right?
 
-!['Begin finding when you begin typing' label of the checkbox under the 'Accessibility' section](/blog/images/screenshots/firefox/begin_finding_when_you_begin_typing_checkbox_accessibility.png)
+!['Begin finding when you begin typing' label of the checkbox under the 'Accessibility' section](../images/screenshots/firefox/begin_finding_when_you_begin_typing_checkbox_accessibility.png)
 
 Okay now, let's have a look at one of the coolest feature in Firefox, the find bar. It is an innovative feature, as a solution to provide an usable interface for [Find As You Type](http://mozilla.org/access/type-ahead/). This neat feature was formerly known as 'Type Ahead Find', and now it's renamed to 'Find As You Type'. On the [Firefox web page](http://mozilla.org/products/firefox/ "Firefox - Rediscover the web"), it's also known as 'FastFind'. In the Options window, it's referred as 'Begin finding when you begin typing'. Confusing? Anyway, it's such a handy tool that I use it almost every day, especially when I read *long* documents or web pages such as the [CSS3 Selectors](http://w3.org/TR/css3-selectors/) working draft. Just simply type few keys, the Find bar pops up, and the typed characters on the page will be highlighted right away. `F3` is the keyboard shortcut that I remember for sure, because it functions as both `Ctrl + F` and `Ctrl + G` together. I admit the Find bar interface is a bit weird, for example the left-positioned Close button. Kevin has proposed a [much better solution](http://kmgerich.com/archive/000074.html "Find Bar Feng Shui"), in my opinion. For your information, the Find bar not only works in the View Source window, but also the Help Contents window! To make things *more* complicated, it even works in the Print Preview window! Awesome, but **it's actually a bug** I found recently. Practically, you cannot *find anything* when print previewing web pages. Sigh.
 

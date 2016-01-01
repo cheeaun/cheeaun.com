@@ -1,7 +1,7 @@
 Scrollbar tweaks
 ===
 
-![tweaked appearance of the scrollbar widget, specifically the scrollbar buttons and slider, on Mozilla Firefox](/blog/images/screenshots/firefox/tweaked_scrollbar_buttons_slider_themes_manager.png)
+![tweaked appearance of the scrollbar widget, specifically the scrollbar buttons and slider, on Mozilla Firefox](../images/screenshots/firefox/tweaked_scrollbar_buttons_slider_themes_manager.png)
 
 Do you notice anything *weird* in the screenshot? Take a look at it carefully. It's neither the themes list nor the buttons. No, it's not a *trick* image or whatever.
 
@@ -11,7 +11,7 @@ I've customised my Firefox with Mac-alike scrollbars, by adding few codes to **b
 
 I read the XBL binding for the scrollbar widget, 'scrollbar.xml' archived in the 'toolkit.jar' file of the 'chrome' folder, and discovered that there are *actually four* scrollbar buttons. I'm confused, why four? Isn't it that Windows have only two? Reading the codes, there are two scrollbar buttons on both sides of the slider, showing two opposing arrows. One of the buttons of each side is hidden. Out of curiosity, I played around the codes, using CSS to tweak the buttons and came up with these:
 
-- ![tweaked appearance of the scrollbar widget, Mac-alike look, on Mozilla Firefox](/blog/images/screenshots/firefox/scrollbar_mac_alike_tweak.png)
+- ![tweaked appearance of the scrollbar widget, Mac-alike look, on Mozilla Firefox](../images/screenshots/firefox/scrollbar_mac_alike_tweak.png)
 
 	The code for Mac-alike scrollbar is:
 
@@ -24,7 +24,7 @@ I read the XBL binding for the scrollbar widget, 'scrollbar.xml' archived in the
 	}
 	```
 
-- ![tweaked appearance of the scrollbar widget, reversed type of Mac-alike look, on Mozilla Firefox](/blog/images/screenshots/firefox/scrollbar_reversed_mac_alike_tweak.png)
+- ![tweaked appearance of the scrollbar widget, reversed type of Mac-alike look, on Mozilla Firefox](../images/screenshots/firefox/scrollbar_reversed_mac_alike_tweak.png)
 
 	For a *reversed* type of Mac-alike scrollbar, try this:
 
@@ -37,7 +37,7 @@ I read the XBL binding for the scrollbar widget, 'scrollbar.xml' archived in the
 	}
 	```
 
-- ![tweaked appearance of the scrollbar widget, specially for Linux environment, on Mozilla Firefox](/blog/images/screenshots/firefox/scrollbar_linux_tweak.png)
+- ![tweaked appearance of the scrollbar widget, specially for Linux environment, on Mozilla Firefox](../images/screenshots/firefox/scrollbar_linux_tweak.png)
 
 	Some of you Linux users would love this instead:
 
@@ -47,7 +47,7 @@ I read the XBL binding for the scrollbar widget, 'scrollbar.xml' archived in the
 	}
 	```
 
-- ![tweaked appearance of the scrollbar widget, with no scrollbar buttons at all, on Mozilla Firefox](/blog/images/screenshots/firefox/scrollbar_no_buttons_tweak.png)
+- ![tweaked appearance of the scrollbar widget, with no scrollbar buttons at all, on Mozilla Firefox](../images/screenshots/firefox/scrollbar_no_buttons_tweak.png)
 
 	If you *hate* the scrollbar buttons, remove them all!
 
@@ -60,7 +60,7 @@ I read the XBL binding for the scrollbar widget, 'scrollbar.xml' archived in the
 
 Wow, this is getting very cool. Fortunately, the fun doesn't stop here, yet.
 
-![two vertical scrollbars, one is Mozilla Firefox's, the other is Windows Luna's, both has different width](/blog/images/screenshots/firefox/scrollbar_fatter_width_firefox_windows_luna.png)
+![two vertical scrollbars, one is Mozilla Firefox's, the other is Windows Luna's, both has different width](../images/screenshots/firefox/scrollbar_fatter_width_firefox_windows_luna.png)
 
 My experiments lead me to a minor rendering bug in Firefox. The scrollbar in Firefox is 2 pixels wider than normal. Yes, *only 2 pixels*. Sounds negligible, right? Wrong. Suddenly, my mind flashed all the way back to the beginning of Phoenity when a person named Mathieu Johnson sent me an email titled 'Bug in Phoenity 0.1' on 5 November 2002, quoted:
 

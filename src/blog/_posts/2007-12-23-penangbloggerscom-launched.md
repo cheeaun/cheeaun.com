@@ -1,7 +1,7 @@
 PenangBloggers.com launched
 ===
 
-[![Penang Bloggers web site, with a new design](/blog/images/screenshots/web/penang-bloggers-web-site-new-design.jpg)](http://penangbloggers.com/)
+[![Penang Bloggers web site, with a new design](../images/screenshots/web/penang-bloggers-web-site-new-design.jpg)](http://penangbloggers.com/)
 
 Yes, a [domain name for the Penang Bloggers portal](http://penangbloggers.com/)! And of course, after about two years, **a whole new refreshing design**. Even the back-end script has been rewritten from scratch. Perhaps I should say, it's a totally different script.
 
@@ -34,7 +34,7 @@ Okay, done? No.
 
 The initial layout is too plain, somehow. The list of blog posts are from various blogs, so I need to provide a visual cue for visitors to recognise where the post originates from. At first, I thought of grabbing the site icon, or so-called [favicon](http://en.wikipedia.org/wiki/Favicon) for each blog site. It can be done with CSS Guy's [Hyperlink Cues with Favicons](http://www.askthecssguy.com/2006/12/hyperlink_cues_with_favicons.html). Awesome, but I found a much, much better way.
 
-![thumbnail images of the Penang Bloggers web site taken from MyThumbShot, thumbalizr, websnapr, artViper and ShrinkTheWeb](/blog/images/screenshots/web/penang-bloggers-web-site-thumbnails-mythumbshot-thumbalizr-artviper-websnapr-shrinktheweb.jpg)
+![thumbnail images of the Penang Bloggers web site taken from MyThumbShot, thumbalizr, websnapr, artViper and ShrinkTheWeb](../images/screenshots/web/penang-bloggers-web-site-thumbnails-mythumbshot-thumbalizr-artviper-websnapr-shrinktheweb.jpg)
 
 **Web site thumbnails**.
 

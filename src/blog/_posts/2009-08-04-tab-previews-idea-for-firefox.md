@@ -9,14 +9,14 @@ In my opinion, this is a very cool feature. I've tried the extension on my Firef
 
 However, I have an idea for the tab switching pane to be positioned at the **bottom** of the tab bar instead.
 
-![before: Tab switching pane at the center of screen; after: Tab switching pane at the bottom of tab bar](/blog/images/figures/interface/tab-switching-pane-before-after-firefox.png)
+![before: Tab switching pane at the center of screen; after: Tab switching pane at the bottom of tab bar](../images/figures/interface/tab-switching-pane-before-after-firefox.png)
 
 If the tab switching pane *sticks* to the tab bar, there is no need for me to move my eyes to the center of the screen. The previews can be arranged based on the order of the tabs and probably overlap on one another if there are too many tabs. Switching tabs could even be as fancy as [Cover Flow](http://en.wikipedia.org/wiki/Cover_Flow), like in most Mac applications such as Safari.
 
 Here are some mockups:
 
-[![Tab switching pane mockup with two tabs on Firefox](/blog/images/figures/interface/tab-switching-pane-two-tabs-firefox.jpg)](/blog/images/figures/interface/tab-switching-pane-two-tabs-firefox.png)
-[![Tab switching pane mockup with many tabs on Firefox](/blog/images/figures/interface/tab-switching-pane-many-tabs-firefox.jpg)](/blog/images/figures/interface/tab-switching-pane-many-tabs-firefox.png)
+[![Tab switching pane mockup with two tabs on Firefox](../images/figures/interface/tab-switching-pane-two-tabs-firefox.jpg)](../images/figures/interface/tab-switching-pane-two-tabs-firefox.png)
+[![Tab switching pane mockup with many tabs on Firefox](../images/figures/interface/tab-switching-pane-many-tabs-firefox.jpg)](../images/figures/interface/tab-switching-pane-many-tabs-firefox.png)
 
 Upon triggering the `Ctrl`+`Tab` shortcut, the pane appears at the bottom of the tab bar, showing previews of the web pages. Current selected preview is highlighted with a border and an arrow pointing to its mutual tab. Previews that are not selected fade with a slight transparency.
 

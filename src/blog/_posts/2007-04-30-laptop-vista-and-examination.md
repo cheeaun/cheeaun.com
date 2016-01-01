@@ -4,7 +4,7 @@ Laptop, Vista and examination
 April is a great month. Quite great. Let's start:
 
 - 
-	![HP Compaq Presario V3205TU laptop](/blog/images/photos/objects/laptop-hp-compaq-presario-v3205tu.jpg)
+	![HP Compaq Presario V3205TU laptop](../images/photos/objects/laptop-hp-compaq-presario-v3205tu.jpg)
 
 	Finally, **I got myself a new laptop!** It's a [HP Compaq Presario V3205TU](http://h10010.www1.hp.com/wwpc/my/en/ho/WF06b/1090709-1116637-1123071-1123071-1123071-13031696-78196163.html "Compaq Presario V3205TU Notebook PC specifications"), bought on 9 April 2007. I choose it over other products because it just looks so sleek. Intel Core 2 Duo processor, 1Gb RAM, 120Gb hard disk memory space, 14.1" WXGA High Definition BrightView Widescreen Display and Altec Lansing speakers. Okay enough for my needs.
 

@@ -1,14 +1,14 @@
 Read, find, express, fix
 ===
 
-[![hard-to-read text of the 'PHPitfalls: Five Beginner Mistakes to Avoid' article on Digital Web Magazine](/blog/images/screenshots/web/text_phpitfalls_article_digital_web_magazine.png)](http://digital-web.com/articles/phpitfalls/ "PHPitfalls: Five Beginner Mistakes to Avoid")
+[![hard-to-read text of the 'PHPitfalls: Five Beginner Mistakes to Avoid' article on Digital Web Magazine](../images/screenshots/web/text_phpitfalls_article_digital_web_magazine.png)](http://digital-web.com/articles/phpitfalls/ "PHPitfalls: Five Beginner Mistakes to Avoid")
 
 PHP is a nice scripting language to learn. I'm still a beginner, so I read articles and tutorials which are made *specifically* for beginners. I found [one such article](http://digital-web.com/articles/phpitfalls/ "PHPitfalls: Five Beginner Mistakes to Avoid") written by Daryl L. L. Houston from [Digital Web Magazine](http://digital-web.com/). I read it and find that the text on the page is quite *unfriendly* to my eyes. The small font is okay, but there are **no spacing** at all between the paragraphs and codes, making it hard for me to read line by line. Anyone, at least myself, can easily get lost tracing the lines. I'm not sure if this is an intended visual effect or something wrong with my copy of Mozilla Firefox, so I investigated and found this piece of code in the 'design.css' file of the page:
 
 <pre><code>#content p {
 <em>margin: 0;</em>
 }</code></pre>
-![iconic 'Print Preview' menu item appearing on the menupopup of the Page Style button on Mozilla Firefox's statusbar](/blog/images/screenshots/firefox/iconic_print_preview_radio_menuitem_page_style_statusbar.png)
+![iconic 'Print Preview' menu item appearing on the menupopup of the Page Style button on Mozilla Firefox's statusbar](../images/screenshots/firefox/iconic_print_preview_radio_menuitem_page_style_statusbar.png)
 
 Sigh, I decided to disable the page style, removing all the formatting and styles. I clicked the Page Style icon on the status bar and surprised to see the Print Preview icon on the popup. The alternative stylesheet of Digital Web Magazine is labeled as 'Print Preview'. At that time, I'm using my Phoenity theme, applied with the cute menus sub-skin. Somehow the codes implemented for the sub-skin is *so good* that it even iconise *this* menu item, also removing the radio character.
 

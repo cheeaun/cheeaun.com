@@ -1,7 +1,7 @@
 Jigsaw puzzles
 ===
 
-![two jigsaw puzzles, first is simplistic, second is more sleek](/blog/images/artwork/web/homepage_first_second_jigsaw_puzzle.png)
+![two jigsaw puzzles, first is simplistic, second is more sleek](../images/artwork/web/homepage_first_second_jigsaw_puzzle.png)
 
 I tried to design a jigsaw puzzle. I want it to look cool, three-dimensional and a bit realistic. I'm not sure why, but ever since I've started getting into graphics design, a jigsaw puzzle is one of the first few things popping up my mind.
 

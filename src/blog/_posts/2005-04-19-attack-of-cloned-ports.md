@@ -1,7 +1,7 @@
 Attack of the cloned ports
 ===
 
-![cloned ports listed on the menu popup of the 'Select a Printer Port' section of the 'Add Printer Wizard' window](/blog/images/screenshots/windows/add_printer_wizard_select_a_printer_port_cloned_ports_list.png)
+![cloned ports listed on the menu popup of the 'Select a Printer Port' section of the 'Add Printer Wizard' window](../images/screenshots/windows/add_printer_wizard_select_a_printer_port_cloned_ports_list.png)
 
 Two days ago, Mr. Steven has managed to fix my printer. He gave it to me and I was happy. I connect the printer to the parallel port and the power source. The printer runs, cleaning its cartridge head. I boot up my computer and Windows couldn't auto-detect the printer. Okay, I try to use the Add Printer Wizard and it reveals yet again the same *shocking* sight. The wizard lists all ports and **cloned** ports including LPT1, LPT2, LPT3, COM1, COM2, COM3, COM4 and even FILE (Print to File) ports.
 

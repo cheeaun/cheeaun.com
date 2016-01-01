@@ -5,7 +5,7 @@ It's time to reflect on this year and after going through some *deep* thinking, 
 
 - For the first time ever, my site got [featured on the front page of Hacker News](http://twitter.com/bearwithclaws/status/176302505054052352). Rather than words, I think my site stats here does a better job at expressing how **phenomenal** it is:
 
-	![Bar chart graph of the number of visits to cheeaun.com for the past 12 months in 2012, rendered from Mint stats](/blog/images/screenshots/web/cheeaun-com-visits-graph-2012-mint-stats.png)
+	![Bar chart graph of the number of visits to cheeaun.com for the past 12 months in 2012, rendered from Mint stats](../images/screenshots/web/cheeaun-com-visits-graph-2012-mint-stats.png)
 
 - I attended two really awesome conferences, [RedDotRubyConf](http://reddotrubyconf.com/) on May and [JSCamp.Asia](http://jscamp.asia/) on November. Both events were very eye-opening and [mind-blowing](http://twitter.com/cheeaun/status/274534221119361024). Special thanks to [Andy Croll](http://andycroll.com/) and the [JSCamp.Asia team](http://jscamp.asia/team) for organizing them, not to mention giving out all the nice goodies and holding after-parties.
 

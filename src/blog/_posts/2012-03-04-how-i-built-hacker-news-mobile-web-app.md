@@ -1,7 +1,7 @@
 How I built the Hacker News mobile web app
 ===
 
-[![Hacker News Mobile web app landing page](/blog/images/screenshots/web/hacker-news-mobile-web-app-landing.png)](http://cheeaun.github.com/hnmobile/landing/)
+[![Hacker News Mobile web app landing page](../images/screenshots/web/hacker-news-mobile-web-app-landing.png)](http://cheeaun.github.com/hnmobile/landing/)
 
 Last month, I [tweeted](http://twitter.com/cheeaun/status/170127822818516993) about one of my recent projects, the [Hacker News mobile web app](http://cheeaun.github.com/hnmobile/landing/). It's a simple little app to read [Hacker News](http://news.ycombinator.com/)' stories and comments in Mobile Safari. It started out as an experiment for me to try one of the new CSS extensions introduced in Mobile Safari in iOS5, `-webkit-overflow-scrolling: touch` which uses [native-style scrolling](http://johanbrook.com/browsers/native-momentum-scrolling-ios-5/ "Native style momentum scrolling to arrive in iOS 5") in an `overflow: scroll` element.
 
@@ -34,17 +34,17 @@ border-bottom: 1px solid #2e3744;
 
 The result is surprisingly good if you compare it with the native interface.
 
-![iOS navigation bar, one coded with CSS, the other is a screenshot, zoomed in 5 times](/blog/images/figures/interface/ios-navigation-bar-css-native.png)
+![iOS navigation bar, one coded with CSS, the other is a screenshot, zoomed in 5 times](../images/figures/interface/ios-navigation-bar-css-native.png)
 
 That's simple. Next, let's take a look at the buttons on the navigation bar. If you look closely at them, you might notice some inner shadows and gradients. Well it's more than meets the eye.
 
-![Native iOS navigation bar button, zoomed in 5 times](/blog/images/figures/interface/ios-navigation-bar-button-css-native.png)
+![Native iOS navigation bar button, zoomed in 5 times](../images/figures/interface/ios-navigation-bar-button-css-native.png)
 
 It's quite hard to create this in 100% pure CSS. Not exactly the same at least. The figure shows the CSS button I used for the Kanade app, not really best-effort but *almost there*. There's a lot of alpha-transparency here. I have to guess the opacity levels, the border radius, and color-pick the borders. You might even notice that iOS's borders actually have **gradients on them**. Instead of using CSS `border` property, I use `box-shadow` with `inset` value so that it *blends* together with the gloss effect.
 
 If this doesn't look complex to you, now take a look at the Back button:
 
-![Native iOS navigation bar Back button, zoomed in 5 times](/blog/images/figures/interface/ios-navigation-bar-back-button-css-native.png)
+![Native iOS navigation bar Back button, zoomed in 5 times](../images/figures/interface/ios-navigation-bar-back-button-css-native.png)
 
 The pure no-images CSS version is based on [a little guide](http://lab.jeffbatterton.com/iphone-back-button/ "How To Make An iPhone Back Button With No Images") by Jeff Batterton. It's a pretty smart technique to rotate a square `div` to form the arrow, though you might see some artifacts there. Still, it's not *exactly* the same as the native button.
 
@@ -52,25 +52,25 @@ How about the **retina display**? With CSS borders and shadows, 1px ends up beco
 
 After one month of developing HNmobile, I decided to use static images for the buttons, and eventually the navigation bar. At first, I try to create the images from scratch in vector forms which later I realised that I don't have to. So behold, probably the very first native mobile web app on the planet, the [iPhone User Guide](http://help.apple.com/iphone/) web site (view it on Mobile Safari or spoof with the iPhone user agent string)
 
-[![The iPhone User Guide web site on iPhone](/blog/images/screenshots/web/iphone-user-guide-site.png)](http://help.apple.com/iphone/)
+[![The iPhone User Guide web site on iPhone](../images/screenshots/web/iphone-user-guide-site.png)](http://help.apple.com/iphone/)
 
 For some reason, when I view the site on my iPhone 4S, some of the images are not displayed in their retina form. But if you read the CSS, [iAd.css](https://gist.github.com/1493781) to be exact, retina images are referenced. Digging through this gem, I found almost all the images needed for the app and most of them are 32-bit images with alpha-transparency!
 
-![iOS interface artwork from the iPhone User Guide site](/blog/images/artwork/web/ios-interface-artwork.png)
+![iOS interface artwork from the iPhone User Guide site](../images/artwork/web/ios-interface-artwork.png)
 
 I still have to create the other images myself such as the reload icon and the loading indicator. Most native apps and some sites now provide two images for both non-retina and retina displays. For HNmobile, I use **only** retina images and downsize them with CSS for non-retina displays. There is a number of resources to do this with CSS properties like `background-size` and `border-image`, and one of them is the article [Fun with Retina Display](http://www.riverturn.com/blog/?p=685). Perhaps I'm being lazy here because providing two set of images depending on pixel density is kind of *troublesome* in my opinion. I might change my mind if things break but for now, it works great.
 
 With the images in place, I proceed with the whole layout of the app, copying every single pixel and measurements from native iPhone apps. HNmobile's table view is largely inspired by the native YouTube app. Tap on the table cell to view the video, tap on the detail disclosure button (the blue-coloured button) to view the video details. Same concept for HNmobile.
 
-![Table view in HNmobile web app and native YouTube app in comparison](/blog/images/screenshots/web/hnmobile-youtube-app-table-view.png)
+![Table view in HNmobile web app and native YouTube app in comparison](../images/screenshots/web/hnmobile-youtube-app-table-view.png)
 
 For the details/comments page of HNmobile, I refer to the *old* Twitter app's tweet view. I was planning to copy YouTube's layout but I need the extra space because some comments in Hacker News tend to get very lengthy, unlike the comments in YouTube.
 
-![Details/comments view in HNmobile web app and tweet view on the old native Twitter app](/blog/images/screenshots/web/hnmobile-old-twitter-details-comments-view.png)
+![Details/comments view in HNmobile web app and tweet view on the old native Twitter app](../images/screenshots/web/hnmobile-old-twitter-details-comments-view.png)
 
 HNmobile shows **threaded comments** for each story. I've never seen any good implementation of threaded comments interface on any iPhone apps, so I experimented a little here, using arrows to indicate the parent-child hierarchy of the comments.
 
-![Threaded comments in HNmobile](/blog/images/screenshots/web/hnmobile-threaded-comments.png)
+![Threaded comments in HNmobile](../images/screenshots/web/hnmobile-threaded-comments.png)
 
 As some stories might have a **huge** number of comments or super lengthy comments, HNmobile *intelligently* collapse the threads so that you don't have to scroll like mad.
 
@@ -83,7 +83,7 @@ The very first problem for mobile web apps is always the **scrolling**, for `ove
 
 And it is *this* feature that sparks the beginning of HNmobile.
 
-![Diagram of the web app with a navigation bar and scroll area, inside Mobile Safari with the location bar, title bar and toolbar, on iOS with a status bar](/blog/images/figures/diagram/ios-mobile-safari-web-app.png)
+![Diagram of the web app with a navigation bar and scroll area, inside Mobile Safari with the location bar, title bar and toolbar, on iOS with a status bar](../images/figures/diagram/ios-mobile-safari-web-app.png)
 
 Native scrolling works very well but it has few tiny glitches. When the scroll area is at the top of a `overflow: scroll` element and the user scrolls up, the *whole* page is scrolled up instead showing a rubber-band effect. When it's at the bottom, the whole page is scrolled down. Here's [a video on how it works](http://www.youtube.com/watch?v=Oe6xv8IgasA "iOS5 overflow scrolling without ScrollFix.js") and [a better explanation](http://blog.joelambert.co.uk/2011/10/14/a-fix-for-ios5-overflow-scrolling-scrollfix-js/ "A (partial) fix for iOS5 overflow scrolling (ScrollFix.js)") by Joe Lambert. Few smart people immediately came up with JavaScript fixes, such as [OverflowScrollingFix](https://github.com/cubiq/OverflowScrollingFix) and [ScrollFix](https://github.com/joelambert/ScrollFix). This is later superseded by [a much better fix](https://github.com/joelambert/ScrollFix/issues/2) found by Matt Sahr which doesn't require JavaScript and uses nested `div`s with `-webkit-overflow-scrolling: touch`.
 
@@ -100,7 +100,7 @@ Basically, Mobile Safari doesn't have a 'tap' event, and its 'click' event is *d
 
 Tappable is developed with only the 'tap' event in mind, and eventually does it better in my opinion. The first part you might notice in HNmobile, is the tapping hit-area for the navigation buttons is actually **larger than it appears**.
 
-![Tap hit-area on the 'About' button in HNmobile](/blog/images/screenshots/web/tap-hit-area-about-button-hnmobile.png)
+![Tap hit-area on the 'About' button in HNmobile](../images/screenshots/web/tap-hit-area-about-button-hnmobile.png)
 
 The second part is enhanced by Tappable, and is best explained by [this article](http://mattgemmell.com/2008/10/29/favorites-ui-design/ "Favorites UI design") written by Matt Gemmell in 2008, quoted:
 
@@ -110,17 +110,17 @@ The second part is enhanced by Tappable, and is best explained by [this article]
 
 The yellow marks the hit-area. The red marks the trigger-area. If your finger is within the trigger-area and lifted up from the screen, the button will be triggered. You have to drag your finger **out** of the red area to cancel the trigger on the button.
 
-![Tap trigger-area on the 'About' button in HNmobile](/blog/images/screenshots/web/tap-trigger-area-about-button-hnmobile.png)
+![Tap trigger-area on the 'About' button in HNmobile](../images/screenshots/web/tap-trigger-area-about-button-hnmobile.png)
 
 I'm not very sure what's the correct dimension for this trigger area, so it's all guesses for now. By default, Tappable sets this to 50 pixels boundary around the element, which I think should be good enough.
 
-![Tap hit-area and trigger-area on the detail disclosure button in HNmobile](/blog/images/screenshots/web/tap-hit-trigger-area-detail-discloure-button-hnmobile.png)
+![Tap hit-area and trigger-area on the detail disclosure button in HNmobile](../images/screenshots/web/tap-hit-trigger-area-detail-discloure-button-hnmobile.png)
 
 As you might expect, the detail disclosure buttons have the large hit and trigger areas too. Unlike the navigation buttons which stays on a fixed toolbar, these buttons are located in the **scrollable area**. Normally if you tap on the button and drag your finger, the content **will scroll** and the trigger is canceled. But if you hold the tap for more than roughly 100 ms and *then* drag your finger, the content **won't scroll** and you would need to drag the finger out of the trigger area to cancel the operation. This is quite subtle and you might need to try it few times on a native iOS app. My point is, Tappable is built specially for these cases, with many options to control the behaviour and timing of the tap.
 
 Moving on to the third problem, **animation**. On iPhone apps, page transitions always seem so smooth when you navigate from one page to another by tapping an item in a list. This transition animation is actually quite complex, which was mentioned in the article by John Blackburn, [A closer look at iPhone transition animations](http://watchingapple.com/2009/11/a-closer-look-at-iphone-transition-animations/). I've even made [a video screencast](http://vimeo.com/32704624 "iOS transition effect in slow motion") to see them clearly and figure out how it's all done.
 
-![iOS page transition animation](/blog/images/figures/diagram/ios-page-transition-animation.png)
+![iOS page transition animation](../images/figures/diagram/ios-page-transition-animation.png)
 
 This rough sketch shows the transitions between two pages, from the beginning, half-way till the end of the animation. See how the title of the navigation bar slides from the center to the left outer edge of the screen. See how the Back button fades in from the center to the left side of the navigation bar. It's not one but **multiple** animations at the same time. To achieve this transition accurately, you have to use JavaScript to calculate the position for multiple elements where there are cases such as the title of the navigation bar varies in length, size of buttons varies in width and different viewport dimension based on device orientation. Remember that these have to be animated with [CSS transform](https://developer.mozilla.org/en/CSS/transform) so that they are hardware-accelerated in Mobile Safari.
 
@@ -141,13 +141,13 @@ At first, I plan to make HNmobile a **standalone** web app, simply by adding thi
 
 This will **hide** Mobile Safari's chrome which includes the location bar at the top and the toolbar at the bottom. It only works when the user adds the app to the Home screen and launch it there. So, first-time users loading the app will see the browser chrome. Some web apps like Google Maps might detect this standalone mode and show a floating balloon to *invite* the user to add the app to the Home screen.
 
-!['Add to Home screen' ballon on Google Maps mobile site](/blog/images/screenshots/web/google-maps-mobile-site-add-to-homescreen-balloon.png)
+!['Add to Home screen' ballon on Google Maps mobile site](../images/screenshots/web/google-maps-mobile-site-add-to-homescreen-balloon.png)
 
 However, I found few issues when using HNmobile in this mode. Tapping on links will launch Mobile Safari, which jumps out of your standalone app. There's [a way to prevent that](http://www.bennadel.com/blog/2302-Preventing-Links-In-Standalone-iPhone-Applications-From-Opening-In-Mobile-Safari.htm) and make it load *inside* the standalone app, but since the toolbar is gone, there's no Back button and you can't go back. This is okay if the link goes to your own site where you have full control, but if it's going to *other* sites then your app basically got *kicked out*. So how about loading the link in an `iframe` and keep the user within the app? The experience can be like tapping on links in an iPhone Twitter client which implements a built-in browser so that the user *stays* in the app. Unfortunately, `iframe` doesn't work well on *any* mobile browsers and some sites implement those [framebuster](http://en.wikipedia.org/wiki/Framekiller) scripts that prevents a web page from being displayed inside an `iframe`.
 
 For few weeks, I tried using HNmobile in standalone mode with links that launch in Mobile Safari. It was tedious. I tap on a story link, it switches to Mobile Safari. After that, I double-tap on the Home button to go back to HNmobile. Rinse and repeat.
 
-![The built-in browser on Twitter for iPhone app](/blog/images/screenshots/software/built-in-browser-twitter-for-iphone.png)
+![The built-in browser on Twitter for iPhone app](../images/screenshots/software/built-in-browser-twitter-for-iphone.png)
 
 If I'm not mistaken, third-party native iPhone apps in the early days have this exact problem too. It's the reason why iPhone apps implement their own built-in browser to *view* links. The built-in browser is like a stripped-down version of Mobile Safari, without the bookmarks, location bar, search bar and tabs. When the user tap on a link that loads into a built-in browser and wants to bookmark the site, he or she would have to switch to Mobile Safari first before bookmarking. It's just a *quick view* of the link. Anything more than that, the user has to *re-open* it in Mobile Safari.
 

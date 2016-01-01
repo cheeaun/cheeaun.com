@@ -17,7 +17,7 @@ Now that I look back, I haven't update my blog since February! I mean, this year
 
 - I guess it's pretty obvious that I've redesigned my site and moved to a new domain, **cheeaun.com** instead of the former cheeaun.phoenity.com, which is a little shorter now. The new design will be reflecting much of my online identity. [Orange and green](http://twitter.com/cheeaun/statuses/806991586).
 
-	![cheeaun web site in 'orange and green' design](/blog/images/screenshots/web/cheeaun_site_orange_green_design.png)
+	![cheeaun web site in 'orange and green' design](../images/screenshots/web/cheeaun_site_orange_green_design.png)
 
 	The design is rather simple, compared to the [previous one](/blog/2005/05/rebooted-into-greenery). I've added my own lifestream page and list of projects. This is [a quiet re-launch](http://twitter.com/cheeaun/statuses/901633045) after all, nothing fancy about it.
 

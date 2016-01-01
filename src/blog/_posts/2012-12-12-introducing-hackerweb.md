@@ -1,7 +1,7 @@
 Introducing HackerWeb
 ===
 
- ![old Hacker News web app icon and new HackerWeb icon on iOS](/blog/images/screenshots/software/hacker-news-hackerweb-ios-icons.jpg)
+ ![old Hacker News web app icon and new HackerWeb icon on iOS](../images/screenshots/software/hacker-news-hackerweb-ios-icons.jpg)
 
 It started out as [a simple testcase](http://twitter.com/cheeaun/status/125548998118490112), on 16 October 2011. Few months later, it became [a *secret* little fun project](http://twitter.com/cheeaun/status/153394634511482880). I [spilled the beans](http://twitter.com/cheeaun/status/170127822818516993) and publicly announced it on 16 February 2012. March was the month when my project got some [huge](http://news.ycombinator.com/item?id=3662709) [attention](http://news.ycombinator.com/item?id=3756771) from the Hacker News peeps. I received a lot of positive feedback and comments on how my app *improved* their productivity, while at work and on the move.
 
