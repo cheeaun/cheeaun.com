@@ -55,12 +55,15 @@ window.onload = function(){
   var asideImages = function(){
     for (var i=0, l=$figures.length; i<l; i++){
       var $figure = $figures[i];
-      var $img = $figure.getElementsByTagName('img')[0];
-      var width = $img.naturalWidth || $img.width;
-      if (width <= 280 && (width/$figure.parentNode.offsetWidth*100 < 50)){
-        $figure.className = 'image-aside';
-      } else if ($figure.className){
-        $figure.className = '';
+      var $images = $figure.getElementsByTagName('img');
+      if ($images.length == 1){
+        var $img = $images[0];
+        var width = $img.naturalWidth || $img.width;
+        if (width <= 280 && (width/$figure.parentNode.offsetWidth*100 < 50)){
+          $figure.className = 'image-aside';
+        } else if ($figure.className){
+          $figure.className = '';
+        }
       }
     }
   };
