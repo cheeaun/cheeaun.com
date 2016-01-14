@@ -14,7 +14,7 @@
 			<updated>{{iso8601Date}}</updated>
 			<title type="text">{{title}}</title>
 			<summary type="text">{{{summary}}}</summary>
-			<link rel="alternate" type="text/html" href="{{url}}" title="{{title}}"/>
+			<link rel="alternate" type="text/html" href="{{../domainURL}}{{permalink}}" title="{{title}}"/>
 		</entry>
 	{{/each}}
 </feed>
