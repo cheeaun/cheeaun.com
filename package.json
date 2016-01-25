@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "cheerio": "~0.19.0",
-    "clean-css": "~3.4.8",
+    "clean-css": "~3.4.9",
     "handlebars": "~4.0.5",
     "http-server": "~0.8.5",
     "image-size": "~0.4.0",
@@ -20,7 +20,7 @@
     "metalsmith-layouts": "~1.4.2",
     "metalsmith-markdownit": "~0.3.0",
     "metalsmith-permalinks": "~0.4.1",
-    "moment": "~2.10.6",
+    "moment": "~2.11.1",
     "parallelshell": "~2.0.0",
     "watch": "~0.17.1"
   }
