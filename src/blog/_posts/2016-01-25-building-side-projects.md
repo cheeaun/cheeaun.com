@@ -18,7 +18,7 @@ And being aware leads to being curious:
 
 > First is being aware of things around you, be curious about them, think about them, and things just naturally flow from that point.
 
-More than 10 years ago, I used to take buses all the time. At first, it's quite *exhilarating* because there were no apps or smart phones at that time. No Google Maps, no directions, no GPS. Everytime I take a bus, I have to board the bus and ask the driver if the bus goes to destination X. And once I tried it few times, it slowly becomes a routine for me to take bus from point A to point B and vice versa. I have to memorise bus numbers and their routes. Whenever I look at bus stops, I'll observe every bus that stops there and note to myself, "Ah okay, these buses stop here, I'll have to memorise them in case I need to come here one day." A question always pops into my mind, what if one day, I missed my stop? Where would I end up at? In fact, where does the bus end up anyway? I know that every bus has a route but I don't know how the route looks like.
+More than 10 years ago, I used to take buses all the time. At first, it's quite *exhilarating* because there were no apps or smart phones at that time. No Google Maps, no directions, no GPS. Every time I take a bus, I have to board the bus and ask the driver if the bus goes to destination X. And once I tried it few times, it slowly becomes a routine for me to take bus from point A to point B and vice versa. I have to memorise bus numbers and their routes. Whenever I look at bus stops, I'll observe every bus that stops there and note to myself, "Ah okay, these buses stop here, I'll have to memorise them in case I need to come here one day." A question always pops into my mind, what if one day, I missed my stop? Where would I end up at? In fact, where does the bus end up anyway? I know that every bus has a route but I don't know how the route looks like.
 
 That *curiosity* has stuck with me for a *long* time.
 
@@ -86,7 +86,7 @@ The response I got is [this](https://github.com/cheeaun/mangafeeder/issues/1#iss
 
 > awesome 👍
 
-Somehow it reminded me of the [WWDC 2012 developer apprecation video](https://www.youtube.com/watch?v=FirarNC85sU), especially the part where Emil Ovemar said:
+Somehow it reminded me of the [WWDC 2012 developer appreciation video](https://www.youtube.com/watch?v=FirarNC85sU), especially the part where Emil Ovemar said:
 
 > It's really fantastic to see what we have created has made a difference in people's lives. Those reactions worth way more than any downloads.
 
