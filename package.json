@@ -4,7 +4,7 @@
   "scripts": {
     "build": "node build.js",
     "watch": "watch \"npm run build\" src/",
-    "serve": "http-server build/ -c-1",
+    "serve": "http-server build/ -c-1 -p 1337",
     "start": "parallelshell \"npm run watch\" \"npm run serve\""
   },
   "dependencies": {
