@@ -49,8 +49,9 @@ function plugin(options){
             img.attr('src', src);
           }
           var dimensions = sizeOf('src' + src);
-          img.attr('width', dimensions.width);
-          img.attr('height', dimensions.height);
+          var pixelRatio = parseInt((src.match(/@(\d)x\./i) || [,1])[1], 10);
+          img.attr('width', Math.round(dimensions.width/pixelRatio));
+          img.attr('height', Math.round(dimensions.height/pixelRatio));
           var el = img;
           if (img.parent('a').length) el = img.parent('a');
           if (el.parent('p').length){ // remove the <p>
