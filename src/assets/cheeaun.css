@@ -149,6 +149,7 @@ p a strong{
 
 code, kbd, samp, var{
   background-color: #fafafa;
+  font-size: .9em;
 }
 pre code{
   background-color: auto;
@@ -269,8 +270,8 @@ header h1 a:focus svg{
   font-style: normal;
 }
 #content blockquote{
-  border-left: 3px solid #444;
-  padding: 0 0 0 1em;
+  border-left: 3px solid #999;
+  padding: .3em 0 .3em 1em;
   margin: 0 0 1em;
 }
 #content blockquote p:last-child{
@@ -326,6 +327,9 @@ header h1 a:focus svg{
 #content *+figure{
   margin-top: 2em;
   margin-bottom: 2em;
+}
+#content time+figure{
+  margin-top: 0;
 }
 #content figure.image-aside{
   margin: 0 0 1em 1em;
