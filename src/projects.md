@@ -5,10 +5,12 @@ title: Projects
 Awesome Projects
 ===
 
-- **[HackerWeb](http://hackerwebapp.com/)**: A simply readable Hacker News web app.
+- **[HackerWeb](http://hackerwebapp.com/)**: A simply readable Hacker News app.
 - **[Life](https://github.com/cheeaun/life)**: A timeline of important events in my life.
+- **[BusRouter SG](https://busrouter.sg/)**: Explore bus stops and routes on the map for all bus services in Singapore.
+- **[RailRouter SG](https://railrouter.sg/)**: Explore MRT and LRT rail routes in Singapore.
+- **[TaxiRouter SG](https://taxirouter.sg/)**: Explore available taxis and taxi stands in Singapore.
 - **[Max Tabs](https://addons.mozilla.org/en-US/firefox/addon/max-tabs/)**: A no-restart Firefox extension to set maximum number of opened tabs in a window.
-- **[Singapore Bus Routes Explorer](http://cheeaun.github.com/busrouter-sg/)**: Show all routes and bus stops on the map for all bus services in Singapore.
 - **[connections.my](http://connections.my/)**: Tech things aggregator for Malaysia.
 
 Older Projects
