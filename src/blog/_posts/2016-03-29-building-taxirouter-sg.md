@@ -5,7 +5,7 @@ Building TaxiRouter SG
 
 For some reason, I check my [GitHub](https://github.com/) news feed regularly and really like to know what my followings are starring, forking, pull-requesting, creating and open-sourcing. It's like Twitter, but for public projects and repositories.
 
-On 18 March 2016, I found that [Kah Wee](https://github.com/kahwee) started watching [U-Zyn Chua](https://github.com/uzyn)'s' new repository called [taxisg](https://github.com/uzyn/taxisg). I was curious and clicked to find a really awesome project that [visualizes the Singapore taxi data](http://uzyn.github.io/taxisg/), with snapshots of historical data and live heatmap visualization for thousands of available taxi locations on a map.
+On 18 March 2016, I found that [Kah Wee](https://github.com/kahwee) started watching [U-Zyn Chua](https://github.com/uzyn)'s new repository called [taxisg](https://github.com/uzyn/taxisg). I was curious and clicked to find a really awesome project that [visualizes the Singapore taxi data](http://uzyn.github.io/taxisg/), with snapshots of historical data and live heatmap visualization for thousands of available taxi locations on a map.
 
 [![U-zyn's TaxiSG site: Singapore Taxi Data Visualization](../images/screenshots/web/uzyn-taxisg-singapore-taxi-data-visualization.png)](http://uzyn.github.io/taxisg/)
 
@@ -55,7 +55,7 @@ I ended up making the taxi stand to look like, again, a taxi stand. It's way big
 Getting rid of flicker
 ---
 
-During the first phase of development, the app basically fetches the API response and draw all the thousands of markers with the [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/). The polling happens every minute and each time, it will fetch the API response again, destroy all markers and redraw them again. It results in flickering of markers, which they disppears briefly and reappears again. Kind of jarring and *feels* slow.
+During the first phase of development, the app basically fetches the API response and draw all the thousands of markers with the [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/). The polling happens every minute and each time, it will fetch the API response again, destroy all markers and redraw them again. It results in flickering of markers, which they disappears briefly and reappears again. Kind of jarring and *feels* slow.
 
 I use the Google Maps Javascript API a lot in my past projects. The usual solution for "[Too Many Markers](https://developers.google.com/maps/articles/toomanymarkers)" problem is always *not* displaying all of them at once.
 
