@@ -250,3 +250,5 @@ So this is it. HackerWeb for iOS. Since 2011.
 I am deeply grateful to all my long-time loyal users, beta testers, and my friends who supported me. I really appreciate [Paul Irish's compliment](https://twitter.com/paul_irish/status/649491293232480256) and everyone else's because positive feedback is always the reason that kept me going and continue building things. It has always been worth more than any number of downloads or likes or whatever.
 
 I’ll be continuing to work on [my project](https://github.com/cheeaun/hackerweb-ios/) in my spare time and further improve things along the way. [Follow me on Twitter](https://twitter.com/cheeaun) or [@hackerwebapp](https://twitter.com/hackerwebapp) for updates.
+
+**Update 2 May 2016**: [Continue to Part 2, Building HackerWeb for Android.](/blog/2016/05/building-hackerweb-android/)
