@@ -352,6 +352,12 @@ header h1 a:focus svg{
   filter: brightness(.9);
 }
 
+#content hr{
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 2em;
+}
+
 footer{
   padding: 50px;
   text-align: center;
