@@ -149,7 +149,7 @@ In a group, there will also be one quiet person, sometimes but not always. That 
 
 I tried to fix this.
 
-When a leader talks too much, I’ll chip in and divert the attention to the another person in the group. When a topic gets too heated or out-of-topic, I’ll need to change the topic or do something stupid to *break* the flow. When one person in the group feels left out of the conversation, I’ll need to pull that person in. When the group gets too quiet, I’ll need to be the loud one. When one person is left behind the group while walking, I’ll need to slow down my pace and constantly look back to see if he or she is catching up.
+When a leader talks too much, I’ll chip in and divert the attention to another person in the group. When a topic gets too heated or out-of-topic, I’ll need to change the topic or do something stupid to *break* the flow. When one person in the group feels left out of the conversation, I’ll need to pull that person in. When the group gets too quiet, I’ll need to be the loud one. When one person is left behind the group while walking, I’ll need to slow down my pace and constantly look back to see if he or she is catching up.
 
 It doesn’t just happen in a group. It happens **everywhere**.
 
