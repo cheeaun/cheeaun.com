@@ -102,7 +102,7 @@ The first version was slow. The page actually loads **720 Pokémon images**, whi
 
 ![720 images combined into 1 sprite image](../images/figures/diagram/720-images-1-sprite-image.png)
 
-[My first solution](https://github.com/cheeaun/repokemon/commit/fcc3e4ce7d1c8df30f6d2922b1f23f2ed78e6f76) is to combine *all* images into a single sprite image and further compress the image *lossily*. So instead of making 720 connections to the server, it could just make one. It [sort of worked](https://twitter.com/cheeaun/status/755068597458706434) as I use [spritesmith](https://github.com/Ensighten/spritesmith) to generate the **5805×5805px** sprite image, convert the image into JPEG with [TinyJPG](https://tinyjpg.com/), and manually generate a custom stylesheet out of it. The total download size for the images went down from **20MB to roughly 2MB**!
+[My first solution](https://github.com/cheeaun/repokemon/commit/fcc3e4ce7d1c8df30f6d2922b1f23f2ed78e6f76) is to combine *all* images into a single sprite image and further compress the image *lossily*. So instead of making 720 connections to the server, it could just make one. It [sort of worked](https://twitter.com/cheeaun/status/755068597458706434) as I use [spritesmith](https://github.com/Ensighten/spritesmith) to generate the **5805×5805px** sprite image, convert the image into JPEG, compress it with [TinyJPG](https://tinyjpg.com/), and manually generate a custom stylesheet out of it. The total download size for the images went down from **20MB to roughly 2MB**!
 
 Unfortunately the solution has some issues. In less than a day after I deployed this, [Alvin Teh](http://alvinteh.me/) reported a weird bug on Chrome for Android:
 
