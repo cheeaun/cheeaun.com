@@ -66,7 +66,7 @@ On the next morning, I publicly announce the project on [Twitter](https://twitte
 
 Anyway, I call the project "Repokémon", which combines the word "repo" from "repository" and "Pokémon". It's quite ironic that I didn't use a Pokémon name for this project instead 😉.
 
-Within hours, my project got retweeted, liked and [shared](https://twitter.com/indutny/status/753861032066637824) a few hundred times on [Twitter](https://twitter.com/search?q=repokemon). It appeared briefly on [Hacker News' frontpage](https://news.ycombinator.com/item?id=12098918) and [Designer News](https://www.designernews.co/stories/71852-repokmon--showcase-of-github-repos-with-pokmon-names). It also got featured on [Product Hunt](https://www.producthunt.com/tech/repokemon)!
+Within hours, my project got retweeted, liked and [shared](https://twitter.com/indutny/status/753861032066637824) a few hundred times on [Twitter](https://twitter.com/search?q=repokemon). It appeared briefly on [Hacker News' front page](https://news.ycombinator.com/item?id=12098918) and [Designer News](https://www.designernews.co/stories/71852-repokmon--showcase-of-github-repos-with-pokmon-names). It also got featured on [Product Hunt](https://www.producthunt.com/tech/repokemon)!
 
 [![Repokémon retweeted by Brendan Eich](../images/screenshots/web/repokemon-retweet-brendan-eich@2x.png)](https://twitter.com/indutny/status/753861032066637824)
 
@@ -108,7 +108,7 @@ Unfortunately the solution has some issues. In less than a day after I deployed 
 
 ![Repokémon web site on Chrome for Android](../images/screenshots/software/repokemon-web-site-chrome-android@2x.jpg)
 
-On Chrome for Android, all the sprite image styles with `background-image`, [`background-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size) (the image is downsized for high-DPI displays) and `background-position` are **totally messed up**. Strangely, it works fine on other browsers like Firefox, Safari and even on Chrome on destop.
+On Chrome for Android, all the sprite image styles with `background-image`, [`background-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size) (the image is downsized for high-DPI displays) and `background-position` are **totally messed up**. Strangely, it works fine on other browsers like Firefox, Safari and even on Chrome on desktop.
 
 It took me a while to figure out the bug. It seems that the bug happens for the JPEG sprite image, but **not** for a similar PNG sprite image. Quite perplexing but anyway I did a [super-quick fix](https://github.com/cheeaun/repokemon/commit/d3ea7320b1d9c897a53135d929544b5f65f25938) by *conditionally* use a [WebP](https://en.wikipedia.org/wiki/WebP) sprite image, which somehow doesn't trigger the bug. Only JPEG has the bug? Oh well.
 
