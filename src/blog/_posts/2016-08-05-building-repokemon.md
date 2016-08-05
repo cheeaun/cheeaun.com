@@ -157,7 +157,7 @@ The CSS code for multiple sprite images is not pretty. At first, It looks like t
 .i002{background-position: -700px -100px;}
 ...
 
-.i101,.i102,.i103, ..., .i198, .i199, .i200{ background-image: url(sprite-1.png) }
+.i101,.i102,.i103, ..., .i198, .i199, .i200{ background-image: url(sprite-2.png) }
 .i101{background-position: -100px -0px;}
 .i102{background-position: -700px -100px;}
 ...
@@ -175,7 +175,7 @@ I wonder if I could save a few more bytes? I came up with this:
 .i002{background-position: -700px -100px;}
 ...
 
-[class*=i1]:not(.i100),.i200{ background-image: url(sprite-1.png) }
+[class*=i1]:not(.i100),.i200{ background-image: url(sprite-2.png) }
 .i101{background-position: -100px -0px;}
 .i102{background-position: -700px -100px;}
 ...
