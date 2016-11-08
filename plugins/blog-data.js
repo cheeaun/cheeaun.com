@@ -23,7 +23,8 @@ function plugin(options){
         // Date headings
         var contents = data.contents.toString();
         var $ = cheerio.load(contents);
-        $('h1').first().after('<time>' + humanDate + '</time>');
+        var header = $('<header></header>');
+        $('h1').first().wrap(header).after('<time>' + humanDate + '</time>');
         // Summary
         var summary = $('p').text().slice(0, 140).trim() + '…';
         data.summary = summary;

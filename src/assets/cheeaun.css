@@ -201,11 +201,6 @@ header h1 a:focus svg{
   padding: 0;
   background-image: none;
 }
-#content article header time{
-  float: right;
-  margin-left: 1em;
-  color: #999;
-}
 
 #content article h1+time{
   display: block;
@@ -223,6 +218,15 @@ header h1 a:focus svg{
 }
 #content *+h2{
   margin-top: 1.5em;
+}
+
+#content article.summary h2{
+  margin-bottom: .5em;
+}
+#content article.summary time{
+  color: #999;
+  display: block;
+  margin: 0 0 .75em;
 }
 
 #content p{

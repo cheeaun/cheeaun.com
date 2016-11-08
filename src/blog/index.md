@@ -7,10 +7,10 @@ Recent Posts
 
 <div>
   {{#each latestPosts}}
-    <article>
+    <article class="summary">
       <header>
-        <time datetime="{{date}}">{{humanDate}}</time>
         <h2><a href="{{permalink}}" rel="bookmark">{{title}}</a></h2>
+        <time datetime="{{date}}">{{humanDate}}</time>
       </header>
       <p>{{{summary}}}</p>
     </article>
