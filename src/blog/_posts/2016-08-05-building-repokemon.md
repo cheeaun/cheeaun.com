@@ -142,7 +142,7 @@ The sprite image solves the 1st and 2nd goals but not the 3rd goal 😔
 
 Every sprite contains a maximum of 100 Pokémon characters, with a 10×10 grid, resulting in at most 2150×2150px dimension. It's now **8 sprite images** with the last one in 1075×860px dimension.
 
-Technically the sprite images are still not small enough, though I need to balance between the number of HTTP round trips, overall file size and concurrent connections throughput. I figured that multiple sprite images, not too many yet not little, could somehow make use of the number of concurrent connections that the browser could make, and hopefully speed up the download time and start render time of the images. I suspect that it could make it easier for browsers the juggle the memory usage a little.
+Technically the sprite images are still not small enough, though I need to balance between the number of HTTP round trips, overall file size and concurrent connections throughput. I figured that multiple sprite images, not too many yet not little, could somehow make use of the number of concurrent connections that the browser could make, and hopefully speed up the download time and start render time of the images. I suspect that it could make it easier for browsers to juggle the memory usage a little.
 
 Speculations aside, I tested this on both desktop and mobile browsers. The scroll jank is somewhat gone. On Firefox for Mac, I still see a bit of jank sometimes and more noticeably blank whitespaces if I scroll too fast. Well, at least it's better than before 😅
 
