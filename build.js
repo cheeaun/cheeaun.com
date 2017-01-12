@@ -35,8 +35,7 @@ var metalsmith = Metalsmith(__dirname)
     }
   }))
   .use(inplace({
-    engine: 'handlebars',
-    pattern: ['blog/index.*', 'blog/archives.*', 'blog/feed.xml']
+    pattern: '**/*.hbs',
   }))
   .use(layouts({
     engine: 'handlebars',
@@ -46,6 +45,6 @@ var metalsmith = Metalsmith(__dirname)
   .use(permalinks({
     relative: false
   }))
-  .build(function(err){
+  .build((err) => {
     if (err) throw err;
   });
