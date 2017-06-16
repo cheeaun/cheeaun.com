@@ -97,6 +97,13 @@ summary {
   Site Styles
 =======================================*/
 
+html{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
 body{
   color: #444;
   background-color: #fff;
