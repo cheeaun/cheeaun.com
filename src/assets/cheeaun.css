@@ -201,8 +201,8 @@ header h1 a:focus svg{
   line-height: 1.2em;
   margin: 0 0 .5em;
   text-align: center;
-  letter-spacing: -.05em;
-  font-weight: 300;
+  letter-spacing: -.075em;
+  font-weight: 500;
 }
 
 #content header{
