@@ -167,6 +167,8 @@ pre code{
   margin: auto;
   max-width: 40em;
   word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 header{
