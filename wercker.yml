@@ -3,14 +3,11 @@ box: node
 build:
   steps:
     - script:
-      name: set yarn cache
-      code: yarn config set cache-folder $WERCKER_CACHE_DIR/yarn
-    - script:
       name: install dependencies
-      code: yarn
+      code: npm i --production
     - script:
       name: build
-      code: yarn build
+      code: npm run build
 
 deploy:
   steps:
