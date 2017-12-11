@@ -158,6 +158,24 @@ code, kbd, samp, var{
   background-color: #fafafa;
   font-size: .9em;
 }
+:not(pre) code,
+:not(pre) kbd,
+:not(pre) samp,
+:not(pre) var{
+  color: rgb(11, 160, 78);
+}
+:not(pre) code:before,
+:not(pre) kbd:before,
+:not(pre) samp:before,
+:not(pre) var:before{
+  content: '`';
+}
+:not(pre) code:after,
+:not(pre) kbd:after,
+:not(pre) samp:after,
+:not(pre) var:after{
+  content: '`';
+}
 pre code{
   background-color: auto;
 }
@@ -220,7 +238,7 @@ header h1 a:focus svg{
 
 #content h2{
   font-size: 20px;
-  font-weight: normal;
+  letter-spacing: -.05em;
   color: #333;
   margin: 0 0 .75em;
   line-height: 1.2em;
