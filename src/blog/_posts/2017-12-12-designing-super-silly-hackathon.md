@@ -1,7 +1,7 @@
 Designing Super Silly Hackathon
 ===
 
-Last week, I gave a talk on "CSS-ing the Super Silly Hackathon website" at [Talk.CSS #23 Party Edition 🎉](https://singaporecss.github.io/23/) meetup. I realised that I didn't give any talks at all since last year in *any* meetups, so this is basically my **first** talk of the year and perhaps my last for this year 😌
+Two weeks ago, I gave a talk on "CSS-ing the Super Silly Hackathon website" at [Talk.CSS #23 Party Edition 🎉](https://singaporecss.github.io/23/) meetup. I realised that I didn't give any talks at all since last year in *any* meetups, so this is basically my **first** talk of the year and perhaps my last for this year 😌
 
 [![Chee Aun speaking about Super Silly Hackathon at Talk.CSS #23 Party Edition](../images/photos/objects/cheeaun-speaking-super-silly-hackathon-talk-css-23-party-edition.jpg)](https://twitter.com/hj_chen/status/935837598265720832)
 
