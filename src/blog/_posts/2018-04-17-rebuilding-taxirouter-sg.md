@@ -20,7 +20,7 @@ map.addListener('bounds_changed', function(){
 });
 ```
 
-Since my web apps mostly revolve around Singapore, I always have to write a piece of code to detect if the user panned outside of Singapore's boundary. It could be unintential too if the user outside of Singapore clicked on the 'Current location' (or 'My Location') button that utilizes the browser's [geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation) feature.
+Since my web apps mostly revolve around Singapore, I always have to write a piece of code to detect if the user panned outside of Singapore's boundary. It could be unintentional too if the user outside of Singapore clicked on the 'Current location' (or 'My Location') button that utilizes the browser's [geolocation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation) feature.
 
 Anyway, looking back at the code, the *critical* error happens when the `bounds` variable returns as `null` and it doesn't have the `intersects` method. It didn't break before, so somewhere along the [Google Maps JavaScript API releases on February](https://developers.google.com/maps/documentation/javascript/releases) kind of broke it and rendered all my apps useless 😅
 
@@ -53,13 +53,13 @@ Ultimately, here's the ideal case:
 
 - On low zoom levels, show a heatmap.
 - On high zoom levels, show individual taxis, not grouped or coalesced.
-- Taxi stands only appear on high zoom levels because they are not useful on low zoom levels anway.
+- Taxi stands only appear on high zoom levels because they are not useful on low zoom levels anyway.
 - Zero performance issues.
 
 Challenge accepted
 ---
 
-I've always been quite disatisfied with the Google Maps JavaScript API V3 due to its usage of raster tiles. Meanwhile on the user-facing [Google Maps](https://maps.google.com/) web site, it uses [vector tiles](https://en.wikipedia.org/wiki/Vector_tiles), rendered in WebGL, resulting in super smooth zooms and technically reduced data transfer.
+I've always been quite dissatisfied with the Google Maps JavaScript API V3 due to its usage of raster tiles. Meanwhile on the user-facing [Google Maps](https://maps.google.com/) web site, it uses [vector tiles](https://en.wikipedia.org/wiki/Vector_tiles), rendered in WebGL, resulting in super smooth zooms and technically reduced data transfer.
 
 Last year, I got my [first taste](https://mobile.twitter.com/cheeaun/status/884605816547885057) on another WebGL-based vector-tiled map JavaScript library called [Mapbox GL JS](https://www.mapbox.com/mapbox-gl-js/). Also last year, I remembered that [Mapbox finally introduced heatmaps](https://blog.mapbox.com/introducing-heatmaps-in-mapbox-gl-js-71355ada9e6c) that are dynamically generated, powered by WebGL and could render smoothly at 60 fps while panning and zooming! One of the highlighted features is the application of `heatmap-opacity` to fade out the heatmap for a more detailed look when zooming in!
 
@@ -67,7 +67,7 @@ Comparatively speaking, the same features could be done on Google Maps JavaScrip
 
 - Google Maps JS API V3 only allows *fixed* zoom levels (1, 2, 3), which explains the "lag" when it needs to fade in or out the tiles between the zoom levels. Mapbox GL JS allows floating-number zoom levels (1.234, 2.887, 3.147) because… vector 😉
 - Markers performance on Mapbox GL JS is so much better, as the data layer is passed to the GPU, as if you're building a game.
-- Customizing the map (markers and styles) based on zoom levels is quite troublesome on Google Maps JS API. On Mapbox GL JS, [**expressions**](https://www.mapbox.com/mapbox-gl-js/style-spec/#expressions) are super powerful for data-driven styling. Transitions between property values can be automagially interpolated and `zoom_changed` events are not needed!
+- Customizing the map (markers and styles) based on zoom levels is quite troublesome on Google Maps JS API. On Mapbox GL JS, [**expressions**](https://www.mapbox.com/mapbox-gl-js/style-spec/#expressions) are super powerful for data-driven styling. Transitions between property values can be automagically interpolated and `zoom_changed` events are not needed!
 
 On 21 February, I [posted some sneak peeks](https://twitter.com/cheeaun/status/966131208726790145) of the all-new TaxiRouter SG:
 
@@ -91,7 +91,7 @@ On first load, TaxiRouter SG shows the whole Singapore with the heatmap layer on
 I manage to maintain **all** existing features from the first version:
 
 - "My location" or current location button, which will plot the user's location so that they can use it to locate taxis surrounding them. I've also added a bonus feature, a compass indicator which resembles very closely to the one on Google Maps.
-- Stationary taxis, which I labeled for taxis that didn't move for a minute, are still there. Instead of 50% opacity, I changed them to **orange-colored** taxis and purposedly put more attention on them.
+- Stationary taxis, which I labeled for taxis that didn't move for a minute, are still there. Instead of 50% opacity, I changed them to **orange-colored** taxis and purposely put more attention on them.
 - Taxi stands are available on higher zoom levels.
 - Bottom right panel indicator for nearby taxis and taxi stands, within a 5-minute walk, are there as well.
 
@@ -99,7 +99,7 @@ As the map is zoomed in, individual taxis will slowly and *partially* fade in.
 
 ![TaxiRouter SG, zoomed in from heatmap layer to show individual taxis](../images/screenshots/web/taxirouter-sg-zoom-in-heatmap-taxis.gif)
 
-Do note that the heatmap layer is stll there, but the taxi markers are on top of it. As the map is further zoomed in, taxi stands will start appearing.
+Do note that the heatmap layer is still there, but the taxi markers are on top of it. As the map is further zoomed in, taxi stands will start appearing.
 
 ![TaxiRouter SG, zoomed in to show taxi stands](../images/screenshots/web/taxirouter-sg-zoom-in-taxi-stands.gif)
 
