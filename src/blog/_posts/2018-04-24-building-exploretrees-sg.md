@@ -102,7 +102,7 @@ I use [`Turf.circle`](http://turfjs.org/docs/#circle) to generate circle polygon
 
 Since the height is a ranged value (between two values), I use a regular expression to pick the last number in the string. If the `HEIGHT` value is `>6 but ≤9`, the tree height will be 9 meters.
 
-By using [Mapbox GL JS](https://www.mapbox.com/mapbox-gl-js/api/) and its [3D features](https://blog.mapbox.com/3d-features-in-mapbox-gl-js-e94734f12110), I manage to render the *extruded* polygons with both the girth and height values. However, the map was too embarrassingly** slow. Unlike buildings and skyscrapers, the trees were smaller and needed higher zoom levels. Without 3D terrain elevation data and [tree crown spread](https://en.wikipedia.org/wiki/Tree_measurement#Crown_spread) data, it doesn't seem realistic or useful enough in my opinion.
+By using [Mapbox GL JS](https://www.mapbox.com/mapbox-gl-js/api/) and its [3D features](https://blog.mapbox.com/3d-features-in-mapbox-gl-js-e94734f12110), I manage to render the *extruded* polygons with both the girth and height values. However, the map was too *embarrassingly* slow. Unlike buildings and skyscrapers, the trees were smaller and needed higher zoom levels. Without 3D terrain elevation data and [tree crown spread](https://en.wikipedia.org/wiki/Tree_measurement#Crown_spread) data, it doesn't seem realistic or useful enough in my opinion.
 
 It may look super cool and *can* be done, but it doesn't mean that it *should* be.
 
