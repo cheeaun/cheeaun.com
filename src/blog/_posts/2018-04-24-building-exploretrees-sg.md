@@ -145,7 +145,7 @@ Sounds easy? Nope. I spent more than 10 days *massaging* the data, deduplicating
 
 ![Tippecanoe running in the Terminal, converting geojson to vector tiles by dropping features](../images/screenshots/software/tippecanoe-terminal-geojson-vector-tiles-drop-features@2x.png)
 
-At lower zoom levels, Tippecanoe will drop or coalesce a fraction of features (data points) by setting some limits on the number of features and tile sizes. It's almost the same concept as clustering but with *more* control and the "clusters" are *much* smaller and more geographically detailed.
+At lower zoom levels, Tippecanoe will drop or coalesce a fraction of features (data points) by setting some limits on the number of features and tile sizes. It's almost like the same concept as clustering but with *more* control and the "clusters" are *much* smaller and more geographically detailed.
 
 As how Tippecanoe described its intent:
 
