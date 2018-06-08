@@ -74,13 +74,13 @@ A few weeks later, to my surprise, I discovered that the source code of [Weather
 
 ```javascript
 function calculatePosition(basemapImg,latitude,longitude){
-	  /* var map_latitude_top = 1.490735;		 
+	  /* var map_latitude_top = 1.490735;
 	  var map_longitude_left = 103.568691;
-	  var map_latitude_bottom = 1.177710;		 
+	  var map_latitude_bottom = 1.177710;
 	  var map_longitude_right = 104.134487; */
-	var map_latitude_top = 1.4572;		 
+	var map_latitude_top = 1.4572;
 	  var map_longitude_left = 103.565;
-	  var map_latitude_bottom = 1.1450;		 
+	  var map_latitude_bottom = 1.1450;
 	  var map_longitude_right = 104.130;
 		var width_calibration = 20720;
 		var height_calibration = 246;
