@@ -70,7 +70,7 @@ So the former is a 70km radar image, and this one is a 50km image… despite the
 
 Anyway, as I sniff the API calls on myEnv app, I found some coordinates. They are pretty rough, and I'm not sure if they're accurate, so I tried them out and they kind of worked…(?)
 
-A few weeks later, to my surprise, I discovered that the source code of [Weather.gov.sg](www.weather.gov.sg/weather-rain-area-50km/) site actually contains the coordinates! In fact, there are 8 coordinates?!?
+A few weeks later, to my surprise, I discovered that the source code of [Weather.gov.sg](http://www.weather.gov.sg/weather-rain-area-50km/) site actually contains the coordinates! In fact, there are 8 coordinates?!?
 
 ```javascript
 function calculatePosition(basemapImg,latitude,longitude){
