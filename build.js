@@ -39,9 +39,8 @@ var metalsmith = Metalsmith(__dirname)
     pattern: '**/*.hbs',
   }))
   .use(layouts({
-    engine: 'handlebars',
     pattern: ['*.html', '**/*.html'],
-    default: 'layout.html'
+    default: 'layout.html.hbs'
   }))
   .use(permalinks({
     relative: false

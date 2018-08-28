@@ -65,7 +65,7 @@ function plugin(options){
           var p = $(this);
           p.replaceWith('<figure>' + p.html() + '</figure>');
         });
-        data.contents = new Buffer($.html());
+        data.contents = Buffer.from($.html());
         // Path - Year and month, NOT day
         var path = file.replace(/_posts[\/\\](\d+)-(\d+)-\d+-/i, '$1/$2/');
         data.permalink = '/' + path.replace(/\\/ig, '/').replace('.html', '/');
