@@ -12,7 +12,7 @@
     "clean-css": "~4.2.1",
     "handlebars": "~4.0.11",
     "image-size": "~0.6.3",
-    "jstransformer-handlebars": "^1.1.0",
+    "jstransformer-handlebars": "~1.1.0",
     "metalsmith": "~2.3.0",
     "metalsmith-collections": "~0.9.0",
     "metalsmith-in-place": "~4.2.0",
@@ -21,10 +21,10 @@
     "metalsmith-permalinks": "~0.5.0",
     "metalsmith-redirect": "~2.1.0",
     "moment": "~2.22.2",
-    "serve": "^10.0.0"
+    "serve": "~10.0.0"
   },
   "devDependencies": {
-    "npm-run-all": "^4.1.3",
+    "npm-run-all": "~4.1.3",
     "watch": "~1.0.2"
   }
 }
