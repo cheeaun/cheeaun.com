@@ -24,7 +24,7 @@ function plugin(options){
         var contents = data.contents.toString();
         var $ = cheerio.load(contents);
         var header = $('<header></header>');
-        $('h1').first().wrap(header).after('<time>' + humanDate + '</time>');
+        $('h1').first().wrap(header).after('<time datetime="' + date + '" class="date">' + humanDate + '</time>');
         // Summary
         var summary = $('p').text().slice(0, 140).trim() + '…';
         data.summary = summary;
