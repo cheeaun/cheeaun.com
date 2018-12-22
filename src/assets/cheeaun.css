@@ -101,12 +101,37 @@ summary {
   Site Styles
 =======================================*/
 
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/assets/fonts/WorkSans-Regular.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url(/assets/fonts/WorkSans-Italic.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url(/assets/fonts/WorkSans-Medium.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: italic;
+  font-weight: 500;
+  src: url(/assets/fonts/WorkSans-MediumItalic.woff2) format('woff2');
+}
+
 body{
   color: #444;
   background-color: #fff;
   padding: 0;
   margin: 0;
-  font-family: 'Work sans', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+  font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
 }
 
@@ -216,7 +241,7 @@ header h1 a:focus svg{
   line-height: 1.2em;
   margin: 0 0 .5em;
   text-align: center;
-  letter-spacing: -.075em;
+  letter-spacing: -.05em;
   font-weight: 500;
 }
 
@@ -235,7 +260,7 @@ header h1 a:focus svg{
 
 #content h2{
   font-size: 20px;
-  letter-spacing: -.05em;
+  letter-spacing: -.025em;
   color: #333;
   margin: 0 0 .75em;
   line-height: 1.2em;
