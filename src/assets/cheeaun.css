@@ -7,9 +7,13 @@ html{
   -webkit-text-size-adjust: 100%;
 }
 
-html, body, button, input, select, textarea{ font-family: "Helvetica Neue", helvetica, arial, sans-serif; }
+html, body, button, input, select, textarea{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
 
-pre, code, samp, kbd, var{ font-family: consolas, menlo, monaco, "Courier New", courier, monospace; }
+pre, code, samp, kbd, var{
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
 
 a{ text-decoration: none; }
 
