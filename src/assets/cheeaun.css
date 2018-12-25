@@ -475,4 +475,17 @@ footer nav ul li a{
     content: " (" attr(href) ") ";
     font-size: 90%;
   }
+
+  pre, blockquote, img, li, figure, p{
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  h2, h3{
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+  p{
+    orphans: 2;
+    widows: 2;
+  }
 }
