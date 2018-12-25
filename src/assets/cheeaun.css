@@ -255,7 +255,7 @@ header h1 a:focus svg{
   display: block;
   text-align: center;
   padding: 0 0 4em;
-  color: #999;
+  color: #767676;
 }
 
 #content h2{
@@ -273,7 +273,7 @@ header h1 a:focus svg{
   margin-bottom: .5em;
 }
 #content article.summary time{
-  color: #999;
+  color: #767676;
   display: block;
   margin: 0 0 .75em;
 }
@@ -315,7 +315,7 @@ header h1 a:focus svg{
   font-style: normal;
 }
 #content pre em.remark{
-  color: #888;
+  color: #767676;
   font-style: normal;
 }
 #content pre var{
@@ -366,7 +366,7 @@ header h1 a:focus svg{
 
 .remark{
   font-style: italic;
-  color: #999;
+  color: #767676;
 }
 
 :lang(ms){
@@ -414,10 +414,10 @@ header h1 a:focus svg{
 footer{
   padding: 50px;
   text-align: center;
-  color: #888;
+  color: #767676;
 }
 footer a{
-  color: #888;
+  color: inherit;
 }
 footer nav ul{
   list-style: none;
