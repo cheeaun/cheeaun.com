@@ -188,19 +188,22 @@ code, kbd, samp, var{
 :not(pre) > kbd,
 :not(pre) > samp,
 :not(pre) > var{
-  color: rgb(11, 160, 78);
+  color: #08632C;
+  background-color: transparent;
 }
 :not(pre) > code:before,
 :not(pre) > kbd:before,
 :not(pre) > samp:before,
 :not(pre) > var:before{
   content: '`';
+  opacity: .5;
 }
 :not(pre) > code:after,
 :not(pre) > kbd:after,
 :not(pre) > samp:after,
 :not(pre) > var:after{
   content: '`';
+  opacity: .5;
 }
 pre code{
   background-color: auto;
