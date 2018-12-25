@@ -11,6 +11,7 @@ var redirect = require('metalsmith-redirect');
 
 var contentTitles = require(__dirname + '/plugins/content-titles');
 var blogData = require(__dirname + '/plugins/blog-data');
+var archives = require(__dirname + '/plugins/archives');
 
 var metalsmith = Metalsmith(__dirname)
   .metadata({
@@ -22,6 +23,7 @@ var metalsmith = Metalsmith(__dirname)
   .use(markdown('commonmark'))
   .use(contentTitles())
   .use(blogData())
+  .use(archives())
   .use(collections({
     latestPosts: {
       sortBy: 'date',

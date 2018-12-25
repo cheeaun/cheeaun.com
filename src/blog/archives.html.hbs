@@ -1,10 +1,15 @@
 <h1>Blog Archives</h1>
 
-<ul id="blog-archives">
-  {{#each posts}}
+<div id="blog-archives">
+  {{#each archives}}
+  <h2>{{year}}</h2>
+  <ul>
+    {{#each posts}}
     <li>
-      <time datetime="{{date}}" class="date">{{humanDate}}</time>
+      <time datetime="{{date}}" class="date">{{humanDateShort}}</time>
       <a href="{{permalink}}" rel="bookmark">{{title}}</a>
     </li>
+    {{/each}}
+  </ul>
   {{/each}}
-</ul>
+</div>

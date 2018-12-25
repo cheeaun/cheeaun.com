@@ -19,6 +19,7 @@ function plugin(options){
         var date = (file.match(/_posts[\/\\](\d+-\d+-\d+)-/i) || [, null])[1];
         data.date = date;
         var humanDate = data.humanDate = moment(date).format('D MMMM YYYY');
+        var humanDateShort = data.humanDateShort = moment(date).format('D MMM');
         data.iso8601Date = moment(date).format();
         // Date headings
         var contents = data.contents.toString();

@@ -431,14 +431,14 @@ footer nav ul li a{
   margin: 0 .25em;
 }
 
-#blog-archives{
+#blog-archives ul{
   list-style: none;
   margin: 0 -1em;
 }
-#blog-archives li{
+#blog-archives ul li{
   padding: .5em 1em;
 }
-#blog-archives li:nth-child(even){
+#blog-archives ul li:nth-child(even){
   background-color: #fafafa;
 }
 #blog-archives time{
