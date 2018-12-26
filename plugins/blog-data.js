@@ -13,14 +13,17 @@ function plugin(options){
       if (/blog/i.test(file)) files[file].isBlog = true;
       if (/_posts/i.test(file)){
         var data = files[file];
+
         // Article type
         data.isArticle = true;
+
         // Dates
         var date = (file.match(/_posts[\/\\](\d+-\d+-\d+)-/i) || [, null])[1];
         data.date = date;
         var humanDate = data.humanDate = moment(date).format('D MMMM YYYY');
         var humanDateShort = data.humanDateShort = moment(date).format('D MMM');
         data.iso8601Date = moment(date).format();
+
         // Date headings
         var contents = data.contents.toString();
         var $ = cheerio.load(contents);
@@ -50,6 +53,7 @@ function plugin(options){
             a.attr('href', href);
           }
         });
+
         // Image dimensions
         $('img').each(function(){
           var img = $(this);
@@ -79,6 +83,7 @@ function plugin(options){
           p.replaceWith('<figure>' + p.html() + '</figure>');
         });
         data.contents = Buffer.from($.html());
+
         // Path - Year and month, NOT day
         var path = file.replace(/_posts[\/\\](\d+)-(\d+)-\d+-/i, '$1/$2/');
         data.permalink = '/' + path.replace(/\\/ig, '/').replace('.html', '/');
