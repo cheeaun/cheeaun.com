@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>{{{css}}}</style>
 {{#if isBlog}}
+<meta name="description" content="{{summary}}">
 <link rel="alternate" href="/blog/feed.xml" type="application/atom+xml" title="cheeaunblog">
 {{/if}}
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-20436246-1"></script>
@@ -22,9 +23,9 @@
     </h1>
   </header>
   <div id="content">
-    {{#if isArticle}}<article>{{/if}}
+    {{#if isArticle}}<article itemscope itemtype="http://schema.org/BlogPosting">{{/if}}
       {{{contents}}}
-    {{#if isArticle}}</article>{{/if}}
+      {{#if isArticle}}</article>{{/if}}
   </div>
   <footer>
     <nav>

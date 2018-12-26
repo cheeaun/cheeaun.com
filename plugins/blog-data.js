@@ -24,11 +24,23 @@ function plugin(options){
         // Date headings
         var contents = data.contents.toString();
         var $ = cheerio.load(contents);
+
+        var h1 = $('h1').first();
+
+        var articleBody = h1.nextAll();
+        var bodyWrap = $('<div itemprop="articleBody"></div>');
+        articleBody.each((i, el) => $(el).appendTo(bodyWrap));
+        bodyWrap.insertAfter(h1);
+
         var header = $('<header></header>');
-        $('h1').first().wrap(header).after('<time datetime="' + date + '" class="date">' + humanDate + '</time>');
+        h1.wrap(header).after('<time datetime="' + date + '" class="meta date" itemprop="datePublished">' + humanDate + '</time>');
+        h1.attr('itemprop', 'heading');
+
         // Summary
-        var summary = $('p').text().slice(0, 140).trim() + '…';
+        // Shortener from https://stackoverflow.com/a/5454297/20838
+        var summary = bodyWrap.text().trim().replace(/[\n\t]/g, ' ').replace(/\s+/g, ' ').replace(/^(.{140}[^\s]*).*/, '$1') + '…';
         data.summary = summary;
+
         // Fix relative images path in links
         $('a').each(function(){
           var a = $(this);
