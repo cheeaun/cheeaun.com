@@ -82,7 +82,7 @@ function plugin(options){
           var p = $(this);
           p.replaceWith('<figure>' + p.html() + '</figure>');
         });
-        data.contents = Buffer.from($.html());
+        data.contents = Buffer.from($.html().trim());
 
         // Path - Year and month, NOT day
         var path = file.replace(/_posts[\/\\](\d+)-(\d+)-\d+-/i, '$1/$2/');
