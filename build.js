@@ -20,7 +20,7 @@ var metalsmith = Metalsmith(__dirname)
     logo: fs.readFileSync('src/assets/images/cheeaun-logo.html.svg'),
     css: new CleanCSS().minify(fs.readFileSync('src/assets/cheeaun.css')).styles
   })
-  .use(markdown('commonmark'))
+  .use(markdown('commonmark').enable('table'))
   .use(contentTitles())
   .use(blogData())
   .use(archives())
