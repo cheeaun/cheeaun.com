@@ -73,8 +73,11 @@ function plugin(options){
           }
           var dimensions = sizeOf('src' + src);
           var pixelRatio = parseInt((src.match(/@(\d)x\./i) || [,1])[1], 10);
-          img.attr('width', Math.round(dimensions.width/pixelRatio));
-          img.attr('height', Math.round(dimensions.height/pixelRatio));
+          var width = Math.round(dimensions.width/pixelRatio);
+          var height = Math.round(dimensions.height/pixelRatio);
+          img.attr('width', width);
+          img.attr('height', height);
+          if (width > 1080 || (width > 720 && pixelRatio > 1)) img.addClass('large');
           var el = img;
           if (img.parent('a').length) el = img.parent('a');
           if (el.parent('p').length){ // remove the <p>
