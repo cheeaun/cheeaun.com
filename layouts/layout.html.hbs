@@ -6,6 +6,7 @@
 <style>{{{css}}}</style>
 {{#if isBlog}}
 <meta name="description" content="{{summary}}">
+{{#if ogImage}}<meta name="og:image" content="{{domainURL}}{{ogImage}}">{{/if}}
 <link rel="alternate" href="/blog/feed.xml" type="application/atom+xml" title="cheeaunblog">
 {{/if}}
 <link rel="manifest" href="/manifest.webmanifest">

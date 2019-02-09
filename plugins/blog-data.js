@@ -75,6 +75,9 @@ function plugin(options){
           var pixelRatio = parseInt((src.match(/@(\d)x\./i) || [,1])[1], 10);
           var width = Math.round(dimensions.width/pixelRatio);
           var height = Math.round(dimensions.height/pixelRatio);
+          if (width >= 600 && height >= 315 && !data.ogImage){
+            data.ogImage = src;
+          }
           img.attr('width', width);
           img.attr('height', height);
           img.attr('intrinsicsize', width + 'x' + height);
