@@ -15,7 +15,7 @@ var archives = require(__dirname + '/plugins/archives');
 var metalsmith = Metalsmith(__dirname)
   .metadata({
     authorName: 'Lim Chee Aun',
-    domainURL: 'http://cheeaun.com',
+    domainURL: 'https://cheeaun.com',
     logo: fs.readFileSync('src/assets/images/cheeaun-logo.html.svg'),
     css: new CleanCSS().minify(fs.readFileSync('src/assets/cheeaun.css')).styles
   })
