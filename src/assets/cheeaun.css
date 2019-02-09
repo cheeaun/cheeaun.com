@@ -217,6 +217,11 @@ pre code{
   overflow-wrap: break-word;
   word-break: break-word;
 }
+#container pre {
+  word-wrap: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+}
 
 header{
   text-align: center;
