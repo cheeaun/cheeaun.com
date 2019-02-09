@@ -348,7 +348,7 @@ header h1 a:focus svg{
 }
 #content table td,
 #content table th{
-  padding: .5em 1.5em;
+  padding: .5em .9em;
 }
 #content table thead th{
   text-align: center;
