@@ -5,7 +5,6 @@ var Metalsmith = require('metalsmith');
 var layouts = require('metalsmith-layouts');
 var inplace = require('metalsmith-in-place');
 var markdown = require('metalsmith-markdownit');
-var permalinks = require('metalsmith-permalinks');
 var collections = require('metalsmith-collections');
 var redirect = require('metalsmith-redirect');
 
@@ -44,9 +43,17 @@ var metalsmith = Metalsmith(__dirname)
     pattern: ['*.html', '**/*.html'],
     default: 'layout.html.hbs'
   }))
-  .use(permalinks({
-    relative: false
-  }))
+  .use((files, metalsmith, done) => {
+    Object.keys(files)
+      .forEach(function(file){
+        if (/index\.html$/i.test(file)) return;
+        if (/\.html$/i.test(file)) {
+          files[file.replace(/\.html/, '/index.html')] = files[file];
+          delete files[file];
+        }
+      });
+    done();
+  })
   .use(redirect({
     '/newtedge': 'https://github.com/cheeaun/newtedge/',
     '/pre-phoenity': 'https://github.com/cheeaun/pre-phoenity/',

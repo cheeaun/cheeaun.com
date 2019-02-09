@@ -18,7 +18,6 @@
     "metalsmith-in-place": "~4.2.0",
     "metalsmith-layouts": "~2.3.0",
     "metalsmith-markdownit": "~0.5.0",
-    "metalsmith-permalinks": "~2.0.0",
     "metalsmith-redirect": "~2.1.0",
     "moment": "~2.23.0"
   },
