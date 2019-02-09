@@ -12,6 +12,11 @@ function plugin(options){
     Object.keys(files).forEach(function(file){
       if (/blog/i.test(file)) files[file].isBlog = true;
       if (/_posts/i.test(file)){
+        if (!/\.html$/i.test(file)){
+          delete files[file];
+          return;
+        }
+
         var data = files[file];
 
         // Article type
