@@ -508,6 +508,7 @@ There’s also [a tweet by Sarah Mei](https://twitter.com/sarahmei/status/981759
 React Rally also has this [pretty smart idea](https://twitter.com/ReactRally/status/978320677131505664) on combining socks and sandals:
 
 > regular brain: give out socks as conference swag
+>
 > galaxy brain: give out socks and sandals as conference swag so everyone can see the socks
 
 Yet it’s quite rare to see conferences in Singapore that give out socks. Maybe it’s not trendy yet? I don’t know. Why not give a try?
