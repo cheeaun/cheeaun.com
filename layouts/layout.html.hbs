@@ -43,6 +43,7 @@
   </footer>
 </div>
 <script>
+{{#if isBlog}}
   window.onload = function () {
     var $figures = document.getElementsByTagName('figure');
     if (!$figures.length) return;
@@ -64,7 +65,7 @@
     asideImages();
     window.onresize = asideImages;
   };
-
+{{/if}}
   if (navigator.serviceWorker) {
     window.addEventListener('load', function () {
       navigator.serviceWorker.register('/sw.js', {
