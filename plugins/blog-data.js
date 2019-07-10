@@ -91,6 +91,19 @@ function plugin(options){
             el.replaceWith('<figure>' + $.html(el) + '</figure>');
           }
         });
+        $('video').each(function(){
+          var video = $(this);
+          var src = video.attr('src');
+          if (/^\.\.\//i.test(src)){ // Resolve relative path
+            src = src.replace(/^\.\.\//i, '/blog/');
+            video.attr('src', src);
+          }
+          if (video.parent('p').length) { // remove the <p>
+            video.parent('p').addClass('__P2FIGURE__');
+          } else {
+            video.wrap($('<figure></figure>'));
+          }
+        });
         $('p.__P2FIGURE__').each(function(){
           var p = $(this);
           p.replaceWith('<figure>' + p.html() + '</figure>');
