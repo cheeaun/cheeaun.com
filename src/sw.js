@@ -33,6 +33,9 @@ addEventListener('fetch', function(event){
   var request = event.request;
   var url = request.url;
   console.log('Fetch', url);
+
+  if (/blog\/videos\//i.test(url)) return;
+
   event.respondWith(new Promise(function(resolve, reject){
     var rejected = false;
     var reasons = [];
