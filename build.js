@@ -67,4 +67,5 @@ var metalsmith = Metalsmith(__dirname)
   }))
   .build((err) => {
     if (err) throw err;
+    console.log('🚀 BUILD DONE - ' + (new Date()));
   });
