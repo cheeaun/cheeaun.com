@@ -96,7 +96,7 @@ function plugin(options){
           var src = video.attr('src');
           if (/^\.\.\//i.test(src)){ // Resolve relative path
             src = src.replace(/^\.\.\//i, '/blog/');
-            video.attr('src', src);
+            video.attr('src', src + '#t=0.1');
           }
           if (video.parent('p').length) { // remove the <p>
             video.parent('p').addClass('__P2FIGURE__');
