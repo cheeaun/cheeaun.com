@@ -172,7 +172,7 @@ ul, ol{
   margin-left: 1.35em;
 }
 
-img{
+img, video{
   max-width: 100%;
   height: auto;
 }
@@ -428,6 +428,11 @@ header h1 a:focus svg{
   filter: brightness(.9);
 }
 
+#content video {
+  display: block;
+  margin: auto;
+}
+
 #content hr{
   border: 0;
   border-top: 1px solid #ccc;
@@ -492,7 +497,7 @@ footer nav ul li a{
     font-size: 90%;
   }
 
-  pre, blockquote, img, li, figure, p{
+  pre, blockquote, img, video, li, figure, p{
     break-inside: avoid;
     page-break-inside: avoid;
   }
