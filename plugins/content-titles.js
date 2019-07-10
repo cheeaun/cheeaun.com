@@ -11,6 +11,8 @@ function plugin(options){
       var data = files[file];
       if (!data.title){
         var contents = data.contents.toString();
+        if (!/\.html/i.test(file)) return;
+        // console.log(file);
         var $ = cheerio.load(contents);
         var title = $('h1').text();
         if (/chee aun/i.test(title)) return;
