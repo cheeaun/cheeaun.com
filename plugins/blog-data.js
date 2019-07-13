@@ -98,6 +98,7 @@ function plugin(options){
             src = src.replace(/^\.\.\//i, '/blog/');
             video.attr('src', src + '#t=0.1');
           }
+          video.attr('playsinline', '');
           if (video.parent('p').length) { // remove the <p>
             video.parent('p').addClass('__P2FIGURE__');
           } else {
