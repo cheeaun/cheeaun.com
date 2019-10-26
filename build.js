@@ -55,15 +55,17 @@ var metalsmith = Metalsmith(__dirname)
     done();
   })
   .use(redirect({
-    '/newtedge': 'https://github.com/cheeaun/newtedge/',
-    '/pre-phoenity': 'https://github.com/cheeaun/pre-phoenity/',
-    '/projects/phoenity': 'https://github.com/cheeaun/phoenity-icons',
-    '/projects/pentagoo': 'https://github.com/cheeaun/pentagoo',
-    '/projects/greenmind-zengarden/': 'https://github.com/cheeaun/csszengarden-greenmind',
-    '/projects/moodoco': 'https://github.com/cheeaun/moodoco',
-    '/projects/mooeditable': 'https://github.com/cheeaun/mooeditable',
-    '/projects/typesearch': 'https://github.com/cheeaun/typesearch',
-    '/tweets': 'https://cheeaun.github.io/tweets/',
+    redirections: {
+      '/newtedge': 'https://github.com/cheeaun/newtedge/',
+      '/pre-phoenity': 'https://github.com/cheeaun/pre-phoenity/',
+      '/projects/phoenity': 'https://github.com/cheeaun/phoenity-icons',
+      '/projects/pentagoo': 'https://github.com/cheeaun/pentagoo',
+      '/projects/greenmind-zengarden/': 'https://github.com/cheeaun/csszengarden-greenmind',
+      '/projects/moodoco': 'https://github.com/cheeaun/moodoco',
+      '/projects/mooeditable': 'https://github.com/cheeaun/mooeditable',
+      '/projects/typesearch': 'https://github.com/cheeaun/typesearch',
+      '/tweets': 'https://cheeaun.github.io/tweets/',
+    },
   }))
   .build((err) => {
     if (err) throw err;
