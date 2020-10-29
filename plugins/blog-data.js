@@ -80,7 +80,6 @@ function plugin(options){
           }
           img.attr('width', width);
           img.attr('height', height);
-          img.attr('intrinsicsize', width + 'x' + height);
           img.attr('loading', 'lazy');
           if (width > 1080 || (width > 720 && pixelRatio > 1)) img.addClass('large');
           var el = img;
