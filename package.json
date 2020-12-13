@@ -9,21 +9,21 @@
   },
   "dependencies": {
     "cheerio": "0.22.0",
-    "clean-css": "~4.2.1",
-    "handlebars": "~4.5.3",
-    "image-size": "~0.8.3",
+    "clean-css": "~4.2.3",
+    "date-fns": "~2.16.1",
+    "handlebars": "~4.7.6",
+    "image-size": "~0.9.3",
     "jstransformer-handlebars": "~1.1.0",
     "metalsmith": "~2.3.0",
     "metalsmith-collections": "~0.9.0",
     "metalsmith-in-place": "~4.4.1",
     "metalsmith-layouts": "~2.3.1",
     "metalsmith-markdownit": "~0.5.0",
-    "metalsmith-redirect": "~3.0.3",
-    "moment": "~2.24.0"
+    "metalsmith-redirect": "~3.1.0"
   },
   "devDependencies": {
     "npm-run-all": "~4.1.5",
-    "serve": "~11.3.0",
+    "serve": "~11.3.2",
     "watch": "~1.0.2"
   }
 }
