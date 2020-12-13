@@ -17,11 +17,7 @@ Awesome Projects
 Older Projects
 ===
 
-- **[Max Tabs](https://addons.mozilla.org/en-US/firefox/addon/max-tabs/)**: A no-restart Firefox extension to set maximum number of opened tabs in a window.
-- **[connections.my](http://connections.my/)**: Tech things aggregator for Malaysia.
-- **[Octofication](https://github.com/cheeaun/octofication)**: GitHub notifications for Chrome.
-- **[Kanade](https://github.com/cheeaun/kanade)**: A mobile web app to list anime series for every season, with scores and stuff for easy comparison.
-- **[Neat Bookmarks](https://github.com/cheeaun/neat-bookmarks)**: A neat bookmarks tree popup extension for Google Chrome. (Sold and no longer maintained, last build [here](https://github.com/cheeaun/neat-bookmarks/downloads))
+- **[Neat Bookmarks](https://github.com/cheeaun/neat-bookmarks)**: A neat bookmarks tree popup extension for Google Chrome. (Sold and no longer maintained)
 - **[Phoenity](https://github.com/cheeaun/phoenity-icons)**: Simple icon sets and themes, for everyone.
 - **[MooEditable](https://github.com/cheeaun/mooeditable)**: An attempt to create a simple WYSIWYG editor. Mootools-based.
 - **[Pinpoint](https://github.com/cheeaun/pinpoint)**: A Chrome extension that allows you to link to any part of a page.
