@@ -149,6 +149,7 @@ a{
   margin: -.25em;
   border-radius: 3px;
   text-decoration: underline;
+  text-underline-offset: 1px;
 }
 a:hover{
   color: #000;
