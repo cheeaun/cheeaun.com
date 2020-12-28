@@ -276,8 +276,9 @@ header h1 a:focus svg{
 }
 
 #content h2{
-  font-size: 20px;
-  letter-spacing: -.025em;
+  font-size: 32px;
+  letter-spacing: -.05em;
+  font-weight: 500;
   color: #333;
   margin: 0 0 .75em;
   line-height: 1.2em;
