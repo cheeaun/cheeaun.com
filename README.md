@@ -14,4 +14,4 @@ Setup
 - `npm run serve` - starts server for `build` folder.
 - `npm start` - runs both `watch` and `serve` scripts.
 
-The files in `build` folder are automagically deployed to `gh-pages` by using [Wercker](http://wercker.com/), following the steps on this article, [Deploy anything to GitHub Pages with wercker](http://luke.vivier.ca/wintersmith-with-wercker/).
+The files in `build` folder are automagically deployed to `gh-pages`.
