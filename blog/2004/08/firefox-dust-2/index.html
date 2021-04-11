@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Firefox Dust 2 &ndash; Lim Chee Aun</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preload" href="/assets/fonts/WorkSans-Regular.woff2" as="font" type="font/woff2">
+<style>html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body,button,html,input,select,textarea{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}code,kbd,pre,samp,var{font-family:SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace}a{text-decoration:none}a:hover{text-decoration:underline}a img,img{border:0}h1,h2,h3,h4,h5,h6{margin:0;padding:0}p{padding:0}caption{font-weight:700;padding:.5em}table{border-collapse:collapse;border-spacing:0}td,th{vertical-align:top}ol,ul{padding:0}dt{font-weight:700}dfn{font-style:normal;font-weight:700}abbr{border-bottom:1px dotted}form{margin:0;padding:0}legend{font-weight:700}button,input,select,textarea{font-size:1em;max-width:100%;vertical-align:middle;margin:0}textarea{overflow:auto}button,input.button{padding:0 .5em;overflow:visible}article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}@font-face{font-family:'Work Sans';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/WorkSans-Regular.woff2) format('woff2')}@font-face{font-family:'Work Sans';font-style:italic;font-weight:400;font-display:swap;src:url(/assets/fonts/WorkSans-Italic.woff2) format('woff2')}@font-face{font-family:'Work Sans';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/WorkSans-Medium.woff2) format('woff2')}@font-face{font-family:'Work Sans';font-style:italic;font-weight:500;font-display:swap;src:url(/assets/fonts/WorkSans-MediumItalic.woff2) format('woff2')}body,html{overflow-x:hidden}body{color:#444;background-color:#fff;padding:0;margin:0;font-family:'Work Sans',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:16px}a{color:#0b62a0;padding:.25em;margin:-.25em;border-radius:3px;text-decoration:underline;text-underline-offset:1px;text-decoration-color:#0b62a061}a:hover{color:#000;text-decoration:underline}a:focus{color:#000;background-color:rgba(0,0,0,.08);text-decoration:none}b,dt,strong,th{font-weight:500}li,p{line-height:1.5em}ol,ul{margin-left:1.35em}img,video{max-width:100%;height:auto}p strong{color:#000}p a strong{color:inherit}code,kbd,samp,var{background-color:#fafafa;font-size:.9em}:not(pre)>code,:not(pre)>kbd,:not(pre)>samp,:not(pre)>var{color:#08632c;background-color:transparent}:not(pre)>code:before,:not(pre)>kbd:before,:not(pre)>samp:before,:not(pre)>var:before{content:'`';opacity:.5}:not(pre)>code:after,:not(pre)>kbd:after,:not(pre)>samp:after,:not(pre)>var:after{content:'`';opacity:.5}pre code{background-color:auto}#container{position:relative;margin:auto;max-width:40em;word-wrap:break-word;overflow-wrap:break-word;word-break:break-word}#container pre{word-wrap:normal;overflow-wrap:normal;word-break:normal}header{text-align:center;padding:50px}header h1{margin:0}header h1 a{display:inline-block;border-radius:50%}header h1 a:focus{transform:scale(.97)}header svg{vertical-align:top}header h1 a:focus svg{-webkit-filter:brightness(.9);filter:brightness(.9)}#content{padding:0 1em}#content h1{font-size:44px;line-height:1.2em;margin:0 0 .5em;text-align:center;letter-spacing:-.05em;font-weight:500}#content header{text-align:left;padding:0;background-image:none}#content article h1+time{display:block;text-align:center;padding:0 0 4em;color:#767676}#content h2{font-size:32px;letter-spacing:-.05em;font-weight:500;color:#333;margin:0 0 .75em;line-height:1.2em}#content *+h2{margin-top:1.5em}#content article.summary h2{margin-bottom:.5em}#content article.summary time{color:#767676;display:block;margin:0 0 .75em}#content p{margin:0 0 1em}#content ol,#content ul{margin-bottom:1em}#content dt{margin-bottom:1em;color:#000}#content dd{margin-left:1.35em}#content pre{margin:0 0 1em;border-radius:3px;padding:1em;background-color:#f3f3f3;font-size:.9em;line-height:1.5em;overflow:auto}#content pre code,#content pre kbd,#content pre samp,#content pre var{background-color:inherit}#content pre em,#content pre strong{color:red;font-style:normal}#content pre em.remark{color:#767676;font-style:normal}#content pre var{color:#060;font-style:normal}#content blockquote{border-left:3px solid #999;padding:.3em 0 .3em 1em;margin:0 0 1em}#content blockquote p:last-child{margin-bottom:0}#content table{margin:0 auto 1em;border:1px solid #ddd}#content table td,#content table th{padding:.5em .9em}#content table thead th{text-align:center;background-color:#eee}#content table tbody th{text-align:left}#content table tbody tr:nth-child(even){background-color:#fafafa}#content aside{padding:5px 10px}#content aside,#content aside p{line-height:28px;background-color:#fff5d9;text-align:right}.pinyin{font-style:italic}.remark{font-style:italic;color:#767676}:lang(ms){font-style:italic}#content figure{text-align:center;margin:1em -1em}#content *+figure{margin-top:2em;margin-bottom:2em}#content time+figure{margin-top:0}#content figure.image-aside{margin:0 0 1em 1em;padding:10px;background-color:rgba(255,255,255,.5);float:right;clear:right}#content figure img.large{max-width:100vw;position:relative;left:50%;transform:translateX(-50%)}#content figure a{padding:0;margin:0;border:0}#content figure a img{vertical-align:bottom}#content figure a:focus img{-webkit-filter:brightness(.9);filter:brightness(.9)}#content video{display:block;margin:auto}#content hr{border:0;border-top:1px solid #ccc;margin:2em}footer{padding:50px;text-align:center;color:#767676}footer a{color:inherit}footer nav ul{list-style:none;display:block;margin:0 0 20px}footer nav ul li{display:inline}footer nav ul li a{margin:0 .25em}#blog-archives ul{list-style:none;margin:0 -1em}#blog-archives ul li{padding:.5em 1em}#blog-archives ul li:nth-child(even){background-color:#fafafa}#blog-archives time{float:right;margin-left:1em}@-ms-viewport{width:device-width;zoom:1}@viewport{width:device-width;zoom:1}@media print{footer{display:none}#content a[href]{text-decoration:none}#content a[href]:after{content:" (" attr(href) ") ";font-size:90%}blockquote,figure,img,li,p,pre,video{break-inside:avoid;page-break-inside:avoid}h2,h3{break-after:avoid-page;page-break-after:avoid}p{orphans:2;widows:2}}</style>
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="Firefox Dust 2">
+<meta name="description" property="og:description" content="Last month, I wrote about some dusts I found in Firefox. I supposed it&#x27;s a good read for most Firefox users. However, it is only the scratch…">
+
+<link rel="alternate" href="/blog/feed.xml" type="application/atom+xml" title="cheeaunblog">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/assets/images/icon-192.png">
+<meta name="theme-color" content="#fff">
+<div id="container">
+  <header role="banner">
+    <h1>
+      <a href="/"><svg width="120" height="120" viewBox="0 0 225 225">
+  <title>Lim Chee Aun</title>
+  <circle cx="112.5" cy="112.5" r="112.5" fill="#fa8e01"/>
+  <path fill="#fff" d="M104.8 127.1c-.8.4-1.9.9-3 1.3-1.2.5-2.4.9-3.6 1.2-1.2.3-2.3.5-3.3.5-3 0-5.3-1.5-7-4.7-1.6-3.1-2.5-7.8-2.5-13.9 0-4.3.4-7.6 1.2-9.9.7-2.3 1.8-4 3.2-4.9 1.3-1 2.9-1.4 4.7-1.3 1.2-.1 2.7.1 4.4.5 1.8.4 3.7 1.1 5.7 2.2l3.3-15.5c-2.7-.9-5.3-1.5-8-1.9-2.5-.3-4.8-.5-6.8-.5-5.8 0-10.7 1.1-14.8 3.3-4.1 2.2-7.2 5.7-9.4 10.7-2.1 4.8-3.2 11.2-3.3 19.2 0 10.8 2.1 18.8 6.3 24 4.1 5.2 10.2 7.8 18.3 7.8 2.2 0 4.4-.1 6.6-.5 2.2-.3 4.3-.8 6.3-1.4 2-.6 3.7-1.3 5.2-2.1l-3.5-14.1zm54.5 16.9c-.2-1.8-.5-3.8-.8-6.1-.2-2.2-.4-4.5-.6-7-.2-2.4-.3-4.9-.3-7.3v-23c0-2.9-.3-5.6-1-8.1-.6-2.5-1.8-4.7-3.3-6.6-1.6-1.9-3.9-3.4-6.7-4.5-2.8-1-6.3-1.6-10.6-1.6-3.5 0-7.1.4-10.7 1.1-3.6.8-7.3 1.8-11 3.1l3.7 14c3.1-1.2 5.8-2.1 8.2-2.8 2.5-.6 4.5-.9 6.1-.9 1.8 0 3.3.5 4.4 1.4 1.2 1 1.8 2.6 1.8 4.9v7.7c-3.8.3-7.2.8-10.4 1.6s-6 1.9-8.4 3.3c-2.4 1.5-4.3 3.4-5.7 5.8-1.3 2.3-2 5.1-2 8.5 0 2.3.2 4.5.7 6.7.5 2.1 1.3 4 2.4 5.6 1.1 1.7 2.5 3 4.1 3.9 1.7 1 3.6 1.5 5.9 1.5 2.6 0 4.9-.4 6.9-1.2 2.1-.8 3.9-1.8 5.6-2.9 1.6-1.1 3.1-2.2 4.6-3.3l1.5 6.2h15.6zm-20.7-14.9c-.9.8-1.8 1.4-2.6 1.9s-1.6.7-2.5.7c-1.4 0-2.5-.6-3.4-1.8-.8-1.2-1.3-2.8-1.3-5 0-1.7.5-2.9 1.4-3.8 1-.8 2.2-1.4 3.7-1.7 1.5-.3 3-.6 4.7-.7v10.4z"/>
+  <circle cx="112.5" cy="112.5" r="83.7" fill="none" stroke="#fff" stroke-width="20.1"/>
+</svg>
+</a>
+    </h1>
+  </header>
+  <div id="content">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+      <header><h1 itemprop="heading">Firefox Dust 2</h1><time datetime="2004-08-23" class="meta date" itemprop="datePublished">23 August 2004</time></header><div itemprop="articleBody"><p>Last month, I wrote about some <em>dusts</em> I found in Firefox. I supposed it&apos;s a good read for most Firefox users. However, it is only the <em>scratch of the surface</em>. You might see this as a form of criticism, but what I&apos;m writing here is actually to help improving the Firefox UI before reaching 1.0.</p><p>The dusting begins:</p><ul>
+<li><figure><img src="/blog/images/screenshots/firefox/animated_tabpanel_portrait_landscape_page_setup.png" width="400" height="350" alt="Changing height of the tab panel when selecting either Portrait or Landscape of the Page Setup window" loading="lazy"></figure>
+<p>Go to Page Setup window and change the page orientation format by selecting either &apos;Portrait&apos; or &apos;Landscape&apos;. If you try checking one another, you could notice that the tab panel <em>animates</em>. It happens because, on the &apos;Margins &amp; Header/Footer&apos; tab, the small page figure changes according the checked page orientation radios of the &apos;Format &amp; Options&apos; tab. When the page figure switches from either the portrait or landscape shapes, it also changes the height of its surrounding group box which affects the height of the tab panel. The result is a tab panel which <em>jumps up and down</em>. I don&apos;t know how fix this but I remember the first time I spot this, it just looks weird.</p></li>
+<li><figure><img src="/blog/images/screenshots/firefox/shifted_outline_borders_disclosure_buttons_twisties_listbox_panel.png" width="155" height="100" alt="an expanded twisty or disclosure button, which shifts away from its original position and has outline borders around it" loading="lazy"></figure>
+<p>Launch the Options window, go to either Advanced or Privacy panel, and click on the twisties. When expanded, the twisty image shifts 1 pixel down and to the right. When focused, outline borders appear around it. As insignificant as it looks, I say this is an UI bug. Via DOM Inspector, I checked out that this widget <em>is</em> a button, which means that it contains the same XBL binding and CSS styles of other normal buttons. Actually, the twisties are called expander buttons or disclosure buttons. I&apos;m not an XUL expert, so I&apos;m confused why the <code>button</code> element is used for such widgets.</p>
+<p>From my understanding, the XBL binding for normal buttons basically includes three child elements, which is the button box, button icon and button label. But, the button box and button label are totally useless for twisties. So, I found a solution to fix this bug:</p>
+<pre><code>button[type=&quot;disclosure&quot;] {
+-moz-binding: url(&quot;<em>chrome://global/content/bindings/button.xml#button-image</em>&quot;) !important;
+}</code></pre>
+<p>The above code applies a different binding to the disclosure button, which contains only the button image as the child element. With just one piece of code, the bug is fixed.</p>
+</li>
+<li><figure><img src="/blog/images/screenshots/firefox/incorrect_background_colour_tooltip.png" width="280" height="110" alt="incorrect background colour of the tooltip in Firefox, compared to Windows&apos; tooltip" loading="lazy"></figure>
+<p>Hover your cursor over the toolbar buttons and observe the tooltip pops up. It may not be visible to some people, but the problem I see is the incorrect background colour. On Windows XP Luna, the tooltip should be in black text on light yellow background. But on Firefox, it&apos;s on <em>white</em> background. So, I wonder, where does the white colour come from? Extracted from &apos;popup.css&apos; of the default theme JAR file, the codes applied to this widget are the following:</p>
+<pre><code>tooltip {
+-moz-appearance: tooltip;
+margin-top: 21px;
+border: 1px solid InfoText;
+padding: 2px 3px;
+max-width: 40em;
+background-color: InfoBackground;
+color: InfoText;
+font: message-box;
+}</code></pre>
+<p>So far, the CSS properties above look fine. The <code>InfoBackground</code> colour is correct, which <em>should</em> be yellow on my system. But why is it showing white then? Well, the culprit is <code>-moz-appearance: tooltip</code>. Somehow, it doesn&apos;t seem to work, therefore it should be removed, as a temporary solution:</p>
+<pre><code>tooltip {
+<em>-moz-appearance: none !important;</em>
+}</code></pre></li>
+<li><figure><img src="/blog/images/screenshots/firefox/bookmarks_toolbar_items_drag_pointer_toolbar.png" width="250" height="80" alt="Bookmarks Toolbar Items being dragged, showing a drag pointer" loading="lazy"></figure>
+<p>Enable the Bookmarks toolbar, right-click on the toolbox, point to &apos;Customize...&apos;, open the Customize window, and drag the Bookmarks toolbar into it. No icon visible, right? Then, click the &apos;Done&apos; button and take notice that the Bookmarks toolbar is <em>still</em> there, with no bookmarks on it. After that, go to the Customize window again, drag the Bookmarks palette item back to its toolbar, and click &apos;Done&apos;. There is still <strong>nothing</strong> on the Bookmarks toolbar. Restart Firefox, and the bookmarks will come back.</p>
+<figure><img src="/blog/images/screenshots/firefox/missing_bookmarks_toolbar_items_icon_customize.png" width="250" height="180" alt="missing icon for the Bookmarks item, after being dragged into the Customize window" loading="lazy"></figure>
+<p>The first quirk is that it doesn&apos;t have an icon, unlike other toolbar items. Since it&apos;s <em>not</em> a toolbar button, it shouldn&apos;t have any icons? Then, why it has the same label as the <em>real</em> Bookmarks toolbar button? The second quirk is the blank Bookmarks toolbar. Logically speaking, the toolbar should collapse when the bookmark item is dragged into the Customize window, or any other toolbars. The third quirk is obviously a bug as the bookmarks doesn&apos;t appear even <em>after</em> the Bookmarks item is dragged back to its original toolbar.</p></li>
+<li><figure><img src="/blog/images/screenshots/firefox/expand_open_in_tabs_manage_folder_menuitems_popup_bookmarks_toolbar_folder_boomarks_sidebar.png" width="400" height="290" alt="different right-click popups for Bookmarks Toolbar Folder and other folders, lacking few menu items" loading="lazy"></figure>
+<p>The bookmarks management in Firefox seems pretty weird sometimes. Try open the Bookmarks sidebar, or launch the Bookmarks Manager and look at all the bookmarks you have. The first folder you&apos;ll notice is the &apos;Bookmarks Toolbar Folder&apos;. Right-clicking on this folder will show you a context menu popup. Doing so in <em>other</em> folders will also show a context menu popup, but with <strong>more</strong> menu items. So, now you see any folders which has been set as the bookmarks toolbar folder, by pointing to &apos;Set as Bookmarks Toolbar Folder&apos; from the &apos;View&apos; menu of the Bookmarks Manager, will have a different right-click popup. It lacks the &apos;Expand&apos;, &apos;Collapse&apos;, &apos;Open in Tabs&apos; and &apos;Manage Folder&apos; menu items.</p>
+<figure><img src="/blog/images/screenshots/firefox/useless_expand_menuitem_popup_folder_bookmarks_toolbar.png" width="240" height="210" alt="useless &apos;Expand&apos; menu item on the right-click popup of a folder located on the Bookmarks toolbar" loading="lazy"></figure>
+<p>I know that this popup is suitable for the Bookmarks toolbar, because it doesn&apos;t need those menu items. From there, if you right-click on any folder <em>on</em> the Bookmarks toolbar, a popup appears. On the right-click popup, the &apos;Expand&apos; menu item is totally useless and does nothing. I&apos;m not sure about this but how do I <em>expand a toolbar button</em>? Should it open a menu popup?</p></li>
+<li><figure><img src="/blog/images/screenshots/firefox/flexible_space_space_customize.png" width="260" height="110" alt="&apos;Flexible Space&apos; and &apos;Space&apos; toolbar palette items on the Customize window" loading="lazy"></figure>
+<p>Right-click on the toolbox, and point to &apos;Customize...&apos;. There you see the &apos;Flexible Space&apos; and &apos;Space&apos;. On the toolbars, in XUL terms, &apos;Flexible Space&apos; is called a toolbar spring and &apos;Space&apos; is a toolbar spacer. The former is <em>stretchable</em> with <code>-moz-box-flex: 1000</code>, the latter has a fixed width of 15 pixels. Both toolbar items look identical and would confuse first-time users.</p>
+<figure><img src="/blog/images/screenshots/firefox/flexible_space_double_headed_arrow_space_light_background_customize.png" width="260" height="110" alt="enhanced &apos;Flexible Space&apos; and &apos;Space&apos; toolbar palette items, with a double-headed arrow and light backgrounds, on the Customize window" loading="lazy">
+</figure><p>To differentiate both, a double-headed arrow would be right for &apos;Flexible Space&apos;, to indicate that it can grow or shrink to fit its given space. It would be better if the spacers have <em>lighter</em> backgrounds to be distinguishable from the dialog background.</p></li>
+<li><figure><img src="/blog/images/screenshots/firefox/light_background_hover_checked_toolbar_button_windows_firefox.png" width="230" height="80" alt="two hovered checked toolbar buttons, one has dialog background colour on Windows, the other has lighter dialog background colour on Mozilla Firefox" loading="lazy"></figure>
+<p>On Windows Classic, checked toolbar buttons have <em>light</em> dialog background colour, but when hovered, it changes into the normal dialog background colour. On Firefox, it doesn&apos;t change. So, let&apos;s make it change:</p>
+<pre><code>toolbarbutton[checked=&quot;true&quot;]:hover{
+background-image: none !important;
+}</code></pre></li>
+<li><figure><img src="/blog/images/screenshots/firefox/disabled_menubar_menus_unfocused_window_windows_firefox.png" width="260" height="220" alt="two unfocused windows, one is the Internet Explorer window showing disabled menubar menus, the other is the Mozilla Firefox window showing non-disabled menubar menus" loading="lazy"></figure>
+<p>On Windows, the menus of the menubar switch to disabled state when the window is not focused. This doesn&apos;t happen in Firefox. I have no idea if this can be done within Firefox&apos;s interface, especially with XUL. It could be <em>platform-specific</em> because it doesn&apos;t happen in Opera too. Yet another minor bug, I guess.</p></li>
+</ul><p>Okay now, I&apos;m done. It&apos;s time for the developers to carry out their dusting work.</p></div>
+      </article>
+  </div>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+</div>
+<script>
+  window.onload = function () {
+    var $figures = document.getElementsByTagName('figure');
+    if (!$figures.length) return;
+    var asideImages = function () {
+      for (var i = 0, l = $figures.length; i < l; i++) {
+        var $figure = $figures[i];
+        var $images = $figure.getElementsByTagName('img');
+        if ($images.length == 1) {
+          var $img = $images[0];
+          var width = Math.max($img.naturalWidth, $img.width);
+          if (width <= 280 && (width / $figure.parentNode.offsetWidth * 100 < 50)) {
+            $figure.className = 'image-aside';
+          } else if ($figure.className) {
+            $figure.className = '';
+          }
+        }
+      }
+    };
+    asideImages();
+    window.onresize = asideImages;
+  };
+  if (navigator.serviceWorker) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js', {
+        scope: '/'
+      });
+    });
+  }
+</script>
+<script data-goatcounter="https://cheeaun.goatcounter.com/count" async src="//gc.zgo.at/count.v2.js" crossorigin="anonymous" integrity="sha384-PeYXrhTyEaBBz91ANMgpSbfN1kjioQNPHNDbMvevUVLJoWrVEjDCpKb71TehNAlj"></script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "56009c05c6234036a216843af8874520"}'></script><!-- End Cloudflare Web Analytics -->
+</html>

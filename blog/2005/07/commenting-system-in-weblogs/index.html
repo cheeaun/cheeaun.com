@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Commenting system in weblogs &ndash; Lim Chee Aun</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preload" href="/assets/fonts/WorkSans-Regular.woff2" as="font" type="font/woff2">
+<style>html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body,button,html,input,select,textarea{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}code,kbd,pre,samp,var{font-family:SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace}a{text-decoration:none}a:hover{text-decoration:underline}a img,img{border:0}h1,h2,h3,h4,h5,h6{margin:0;padding:0}p{padding:0}caption{font-weight:700;padding:.5em}table{border-collapse:collapse;border-spacing:0}td,th{vertical-align:top}ol,ul{padding:0}dt{font-weight:700}dfn{font-style:normal;font-weight:700}abbr{border-bottom:1px dotted}form{margin:0;padding:0}legend{font-weight:700}button,input,select,textarea{font-size:1em;max-width:100%;vertical-align:middle;margin:0}textarea{overflow:auto}button,input.button{padding:0 .5em;overflow:visible}article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}@font-face{font-family:'Work Sans';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/WorkSans-Regular.woff2) format('woff2')}@font-face{font-family:'Work Sans';font-style:italic;font-weight:400;font-display:swap;src:url(/assets/fonts/WorkSans-Italic.woff2) format('woff2')}@font-face{font-family:'Work Sans';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/WorkSans-Medium.woff2) format('woff2')}@font-face{font-family:'Work Sans';font-style:italic;font-weight:500;font-display:swap;src:url(/assets/fonts/WorkSans-MediumItalic.woff2) format('woff2')}body,html{overflow-x:hidden}body{color:#444;background-color:#fff;padding:0;margin:0;font-family:'Work Sans',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:16px}a{color:#0b62a0;padding:.25em;margin:-.25em;border-radius:3px;text-decoration:underline;text-underline-offset:1px;text-decoration-color:#0b62a061}a:hover{color:#000;text-decoration:underline}a:focus{color:#000;background-color:rgba(0,0,0,.08);text-decoration:none}b,dt,strong,th{font-weight:500}li,p{line-height:1.5em}ol,ul{margin-left:1.35em}img,video{max-width:100%;height:auto}p strong{color:#000}p a strong{color:inherit}code,kbd,samp,var{background-color:#fafafa;font-size:.9em}:not(pre)>code,:not(pre)>kbd,:not(pre)>samp,:not(pre)>var{color:#08632c;background-color:transparent}:not(pre)>code:before,:not(pre)>kbd:before,:not(pre)>samp:before,:not(pre)>var:before{content:'`';opacity:.5}:not(pre)>code:after,:not(pre)>kbd:after,:not(pre)>samp:after,:not(pre)>var:after{content:'`';opacity:.5}pre code{background-color:auto}#container{position:relative;margin:auto;max-width:40em;word-wrap:break-word;overflow-wrap:break-word;word-break:break-word}#container pre{word-wrap:normal;overflow-wrap:normal;word-break:normal}header{text-align:center;padding:50px}header h1{margin:0}header h1 a{display:inline-block;border-radius:50%}header h1 a:focus{transform:scale(.97)}header svg{vertical-align:top}header h1 a:focus svg{-webkit-filter:brightness(.9);filter:brightness(.9)}#content{padding:0 1em}#content h1{font-size:44px;line-height:1.2em;margin:0 0 .5em;text-align:center;letter-spacing:-.05em;font-weight:500}#content header{text-align:left;padding:0;background-image:none}#content article h1+time{display:block;text-align:center;padding:0 0 4em;color:#767676}#content h2{font-size:32px;letter-spacing:-.05em;font-weight:500;color:#333;margin:0 0 .75em;line-height:1.2em}#content *+h2{margin-top:1.5em}#content article.summary h2{margin-bottom:.5em}#content article.summary time{color:#767676;display:block;margin:0 0 .75em}#content p{margin:0 0 1em}#content ol,#content ul{margin-bottom:1em}#content dt{margin-bottom:1em;color:#000}#content dd{margin-left:1.35em}#content pre{margin:0 0 1em;border-radius:3px;padding:1em;background-color:#f3f3f3;font-size:.9em;line-height:1.5em;overflow:auto}#content pre code,#content pre kbd,#content pre samp,#content pre var{background-color:inherit}#content pre em,#content pre strong{color:red;font-style:normal}#content pre em.remark{color:#767676;font-style:normal}#content pre var{color:#060;font-style:normal}#content blockquote{border-left:3px solid #999;padding:.3em 0 .3em 1em;margin:0 0 1em}#content blockquote p:last-child{margin-bottom:0}#content table{margin:0 auto 1em;border:1px solid #ddd}#content table td,#content table th{padding:.5em .9em}#content table thead th{text-align:center;background-color:#eee}#content table tbody th{text-align:left}#content table tbody tr:nth-child(even){background-color:#fafafa}#content aside{padding:5px 10px}#content aside,#content aside p{line-height:28px;background-color:#fff5d9;text-align:right}.pinyin{font-style:italic}.remark{font-style:italic;color:#767676}:lang(ms){font-style:italic}#content figure{text-align:center;margin:1em -1em}#content *+figure{margin-top:2em;margin-bottom:2em}#content time+figure{margin-top:0}#content figure.image-aside{margin:0 0 1em 1em;padding:10px;background-color:rgba(255,255,255,.5);float:right;clear:right}#content figure img.large{max-width:100vw;position:relative;left:50%;transform:translateX(-50%)}#content figure a{padding:0;margin:0;border:0}#content figure a img{vertical-align:bottom}#content figure a:focus img{-webkit-filter:brightness(.9);filter:brightness(.9)}#content video{display:block;margin:auto}#content hr{border:0;border-top:1px solid #ccc;margin:2em}footer{padding:50px;text-align:center;color:#767676}footer a{color:inherit}footer nav ul{list-style:none;display:block;margin:0 0 20px}footer nav ul li{display:inline}footer nav ul li a{margin:0 .25em}#blog-archives ul{list-style:none;margin:0 -1em}#blog-archives ul li{padding:.5em 1em}#blog-archives ul li:nth-child(even){background-color:#fafafa}#blog-archives time{float:right;margin-left:1em}@-ms-viewport{width:device-width;zoom:1}@viewport{width:device-width;zoom:1}@media print{footer{display:none}#content a[href]{text-decoration:none}#content a[href]:after{content:" (" attr(href) ") ";font-size:90%}blockquote,figure,img,li,p,pre,video{break-inside:avoid;page-break-inside:avoid}h2,h3{break-after:avoid-page;page-break-after:avoid}p{orphans:2;widows:2}}</style>
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="Commenting system in weblogs">
+<meta name="description" property="og:description" content="A weblog is called a weblog if it contains these basic features: Content, either syndicated or from your brain Permanent hyperlinks, often abbreviated…">
+
+<link rel="alternate" href="/blog/feed.xml" type="application/atom+xml" title="cheeaunblog">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/assets/images/icon-192.png">
+<meta name="theme-color" content="#fff">
+<div id="container">
+  <header role="banner">
+    <h1>
+      <a href="/"><svg width="120" height="120" viewBox="0 0 225 225">
+  <title>Lim Chee Aun</title>
+  <circle cx="112.5" cy="112.5" r="112.5" fill="#fa8e01"/>
+  <path fill="#fff" d="M104.8 127.1c-.8.4-1.9.9-3 1.3-1.2.5-2.4.9-3.6 1.2-1.2.3-2.3.5-3.3.5-3 0-5.3-1.5-7-4.7-1.6-3.1-2.5-7.8-2.5-13.9 0-4.3.4-7.6 1.2-9.9.7-2.3 1.8-4 3.2-4.9 1.3-1 2.9-1.4 4.7-1.3 1.2-.1 2.7.1 4.4.5 1.8.4 3.7 1.1 5.7 2.2l3.3-15.5c-2.7-.9-5.3-1.5-8-1.9-2.5-.3-4.8-.5-6.8-.5-5.8 0-10.7 1.1-14.8 3.3-4.1 2.2-7.2 5.7-9.4 10.7-2.1 4.8-3.2 11.2-3.3 19.2 0 10.8 2.1 18.8 6.3 24 4.1 5.2 10.2 7.8 18.3 7.8 2.2 0 4.4-.1 6.6-.5 2.2-.3 4.3-.8 6.3-1.4 2-.6 3.7-1.3 5.2-2.1l-3.5-14.1zm54.5 16.9c-.2-1.8-.5-3.8-.8-6.1-.2-2.2-.4-4.5-.6-7-.2-2.4-.3-4.9-.3-7.3v-23c0-2.9-.3-5.6-1-8.1-.6-2.5-1.8-4.7-3.3-6.6-1.6-1.9-3.9-3.4-6.7-4.5-2.8-1-6.3-1.6-10.6-1.6-3.5 0-7.1.4-10.7 1.1-3.6.8-7.3 1.8-11 3.1l3.7 14c3.1-1.2 5.8-2.1 8.2-2.8 2.5-.6 4.5-.9 6.1-.9 1.8 0 3.3.5 4.4 1.4 1.2 1 1.8 2.6 1.8 4.9v7.7c-3.8.3-7.2.8-10.4 1.6s-6 1.9-8.4 3.3c-2.4 1.5-4.3 3.4-5.7 5.8-1.3 2.3-2 5.1-2 8.5 0 2.3.2 4.5.7 6.7.5 2.1 1.3 4 2.4 5.6 1.1 1.7 2.5 3 4.1 3.9 1.7 1 3.6 1.5 5.9 1.5 2.6 0 4.9-.4 6.9-1.2 2.1-.8 3.9-1.8 5.6-2.9 1.6-1.1 3.1-2.2 4.6-3.3l1.5 6.2h15.6zm-20.7-14.9c-.9.8-1.8 1.4-2.6 1.9s-1.6.7-2.5.7c-1.4 0-2.5-.6-3.4-1.8-.8-1.2-1.3-2.8-1.3-5 0-1.7.5-2.9 1.4-3.8 1-.8 2.2-1.4 3.7-1.7 1.5-.3 3-.6 4.7-.7v10.4z"/>
+  <circle cx="112.5" cy="112.5" r="83.7" fill="none" stroke="#fff" stroke-width="20.1"/>
+</svg>
+</a>
+    </h1>
+  </header>
+  <div id="content">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+      <header><h1 itemprop="heading">Commenting system in weblogs</h1><time datetime="2005-07-10" class="meta date" itemprop="datePublished">10 July 2005</time></header><div itemprop="articleBody"><p>A weblog is called a weblog if it contains these basic features:</p><ul>
+<li>Content, either syndicated or from your brain</li>
+<li>Permanent hyperlinks, often abbreviated as <em>permalink</em></li>
+<li>Daily, monthly, yearly, and/or categorical archives</li>
+<li>RSS and/or Atom subscription feeds</li>
+<li>Commenting system</li>
+</ul><p>Without them, the overall blogging experience is <strong>not complete</strong>.</p><p>This means <em>my</em> weblog is not complete because a decent weblog commenting system is nowhere to be seen at all. No, it&apos;s not <a href="http://blogger.com/">Blogger</a>&apos;s fault. Just that I disable comments on purpose. Why? This is a question that makes me think for days and I&apos;m unable give a simple answer. It evolves into a whole list of questions which keep popping up in my head and <em>overload</em> my memory capacity. So, here I finally open up my mind and release them to the world wild web.</p><p>The commenting system, explained. Sort of.</p><dl>
+<dt>What is a commenting system?</dt>
+<dd><p>Generally, it&apos;s a posting system, not very much different from forums, guestbooks, tagboards and weblog scripts. A weblog script such as <a href="http://wordpress.org/">WordPress</a> lets you post anything you like on your personal blog. A tagboard is more simplified with character limitations, IP address blocking, blacklists and words censoring. A guestbook is a bit like a tagboard but with less character limitations, additional archiving system and better administration interface. A forum such as <a href="http://phpbb.com/">phpBB</a> is more complicated with sub-forums, avatar customisation, file uploading, member control panels, built-in search engine and more.</p>
+<p>A weblog commenting system is like somewhere in between a tagboard and a guestbook. Its purpose is for readers to provide feedback <em>specifically</em> to your weblog posts, which also acts as a conversational tool and encourages exchange of ideas between the author and the reader.</p>
+<p>I know there are other non-weblog sites that have commenting systems out there, such as <a href="http://alistapart.com/">A List Apart</a>. Anyway, I will focus <em>only</em> on weblogs and some points mentioned here might apply to those sites as well, vice versa.</p>
+</dd>
+<dt>How do I comment on a weblog post?</dt>
+<dd><p>There are three ways.</p>
+<ul>
+<li><p>Use the comment interface readily provided by most weblog sites. It&apos;s a simple form where you put in your details such as name, e-mail address, web site address and your message, then submit. Within a certain time, your comment will appear there. Done.</p></li>
+<li><p>Use <a href="http://movabletype.org/trackback/">Trackback</a> or <a href="http://hixie.ch/specs/pingback/pingback">Pingback</a>, which helps much to form the relationship of <strong>blog-to-blog commentary</strong>. Though both works in a slightly different manner, each provides an automated way that encourage folks to write comments on their <em>own</em> blogs, instead. It also serves a good reason for them to <em>start</em> their own blog and get involved in the blogosphere.</p></li>
+<li><p><a href="http://technorati.com/">Technorati</a> cosmos is another way, to track all various blogs linking to your blog post. One of the blogs I know that implements this is Tantek&apos;s <a href="http://tantek.com/log/" title="Tantek&apos;s Thoughts">log</a>. Pretty neat.</p></li>
+</ul>
+<p>Other possible ways would be alternative forms of communication, maybe e-mail, instant messaging or forums.</p></dd>
+<dt>How should the markup looks like for comments listing?</dt>
+<dd><p>A very <em>common</em> markup is:</p>
+<pre><code>&lt;div class=&quot;comment&quot;&gt;
+&lt;p&gt;time and date, commentator commented:&lt;/p&gt;
+&lt;p&gt;comments&lt;/p&gt;
+&lt;/div&gt;
+...</code></pre>
+<p>Though the <code>div</code> tag acts as a container for the comment, it doesn&apos;t sound semantical enough. Since the comments are in the form of a <em>list</em>, we should use the list module:</p>
+<pre><code>&lt;ol class=&quot;comments-list&quot;&gt;
+&lt;li class=&quot;comment&quot;&gt;
+&lt;p&gt;time and date, commentator commented:&lt;/p&gt;
+&lt;p&gt;comments&lt;/p&gt;
+&lt;/li&gt;
+...
+&lt;/ol&gt;</code></pre>
+<p>The above example uses an ordered list, <code>ol</code>. Unordered list, <code>ul</code>, may be used too, as <a href="http://annevankesteren.nl/2005/04/comment-markup" title="Comment markup">quoted</a> by Anne van Kesteren:</p>
+<blockquote><p>If you don&apos;t like the idea of chronologically ordering comments or you think comments can be in reply to multiple other comments you can use the unordered list element.</p>
+<p>&#x2014; <a href="http://annevankesteren.nl/2005/04/comment-markup">http://annevankesteren.nl/2005/04/comment-markup</a></p></blockquote>
+<p>When I look at the markup, I could sense there&apos;s something missing, as there are no elements to contain the posted comments. Then, I thought if <code>blockquote</code> can be used to <em>quote</em> the comments:</p>
+<pre><code>&lt;ol class=&quot;comments-list&quot;&gt;
+&lt;li class=&quot;comment&quot;&gt;
+&lt;p&gt;time and date, commentator commented:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;comments&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+...
+&lt;/ol&gt;</code></pre>
+<p>But later, I discovered that Henrik Lied said, it&apos;s <a href="http://misinterpreted.org/archives/2005/04/11/get-semantic" title="Semantically speaking">an incorrect usage</a> of <code>blockquote</code>:</p>
+<blockquote><p>This is absolutely not the correct use of <code>BLOCKQUOTE</code>. The HTML 4.01 specification explains the usage of <code>BLOCKQUOTE</code> as &apos;Long quotations from <strong>external sources</strong>.&apos;.</p>
+<p>The text specified in a on-site comment isn&apos;t a quotation from an external resource. This means that it&apos;s unsemantic to wrap your comments in a <code>BLOCKQUOTE</code>-element.</p>
+<p>&#x2014; <a href="http://misinterpreted.org/archives/2005/04/11/get-semantic">http://misinterpreted.org/archives/2005/04/11/get-semantic</a></p></blockquote>
+<p>Alright then. It may not be correct for <em>on-site</em> comments but for <em>off-site</em> comments such as trackbacks and pingbacks, it&apos;s suitable. Two types of code now:</p>
+<pre><code>&lt;ol class=&quot;comments-list&quot;&gt;
+
+<em class="remark">&lt;!-- on-site comments --&gt;</em>
+&lt;li class=&quot;comment&quot;&gt;
+&lt;p&gt;time and date, commentator commented:&lt;/p&gt;
+&lt;p&gt;on-site comments&lt;/p&gt;
+&lt;/li&gt;
+
+<em class="remark">&lt;!-- off-site comments --&gt;</em>
+&lt;li class=&quot;comment&quot;&gt;
+&lt;p&gt;time and date, commentator or weblog name commented:&lt;/p&gt;
+&lt;blockquote cite=&quot;URL to the cited web page&quot;&gt;&lt;p&gt;off-site comments&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+
+...
+&lt;/ol&gt;</code></pre>
+<p>Besides this, definition lists also can be considered as another option. The HTML 4.01 specification stated that it is also for <a href="http://w3.org/TR/html401/struct/lists.html#edef-DL" title="10.3 Definition lists: the DL, DT, and DD elements">marking up dialogues</a>:</p>
+<pre><code>&lt;dl class=&quot;comments-list&quot;&gt;
+&lt;dt&gt;time and date, commentator commented:&lt;/dt&gt;
+&lt;dd&gt;&lt;p&gt;comments&lt;/p&gt;&lt;/dd&gt;
+...
+&lt;/dl&gt;</code></pre>
+<p>However, the current <a href="http://whatwg.org/specs/web-apps/current-work/">Web Applications 1.0</a> working draft <a href="http://whatwg.org/specs/web-apps/current-work/#the-dl" title="2.6.4. The dl element">stated otherwise</a>:</p>
+<blockquote><p>The <code>dl</code> element is inappropriate for marking up dialogue, since dialogue is ordered (each speaker/line pair comes after the next).</p>
+<p>&#x2014; <a href="http://whatwg.org/specs/web-apps/current-work/#the-dl">http://whatwg.org/specs/web-apps/current-work/#the-dl</a></p></blockquote>
+<p>So, definition list is out and ordered list would be my preferred choice, for now. Talking about this, I might be curious if there are any microformats for comments? From the <a href="http://microformats.org/wiki/microformats" title="Microformats">Microformats wiki</a> site, I found Andy Smith&apos;s <a href="http://an9.org/devdev/mfComment">mfComment</a> <a href="http://microformats.org/wiki/mfcomment" title="mfComment">draft</a>. Following the examples, I came up with this:</p>
+<pre><code>&lt;ol class=&quot;comments-list&quot;&gt;
+
+<em class="remark">&lt;!-- on-site comments --&gt;</em>
+&lt;li <em>class=&quot;mfcomment&quot;</em>&gt;
+&lt;p&gt;<em>&lt;abbr class=&quot;dtcommented&quot; title=&quot;20050630T18:00+0800&quot;&gt;6.00PM, 30 June 2005&lt;/abbr&gt;</em>, &lt;a href=&quot;http://tantek.com/&quot; <em>class=&quot;commentator url fn&quot;</em>&gt;Tantek&lt;/a&gt; commented:&lt;/p&gt;
+&lt;div <em>class=&quot;description&quot;</em>&gt;&lt;p&gt;Some comments here.&lt;/p&gt;&lt;/div&gt;
+&lt;/li&gt;
+
+<em class="remark">&lt;!-- off-site comments --&gt;</em>
+&lt;li <em>class=&quot;mfcomment&quot;</em>&gt;
+&lt;p&gt;<em>&lt;abbr class=&quot;dtcommented&quot; title=&quot;20050630T19:00+0800&quot;&gt;7.00PM, 30 June 2005&lt;/abbr&gt;</em>, &lt;a href=&quot;http://tantek.com/log/&quot; <em>class=&quot;commentator&quot;</em>&gt;Tantek&apos;s Thoughts&lt;/a&gt; commented:&lt;/p&gt;
+&lt;blockquote <em>class=&quot;description&quot;</em> cite=&quot;http://tantek.com/log/&quot;&gt;&lt;p&gt;Some comments from Tantek&apos;s site.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+
+...
+&lt;/ol&gt;</code></pre>
+<p>As I check through the dictionary, the word &apos;commenter&apos; does not exist. It&apos;s supposed to be &apos;commentator&apos;. Basically, it features few similarities to <a href="http://microformats.org/wiki/hreview">hReview</a>, reusing <a href="http://microformats.org/wiki/hcard">hCard</a> and <a href="http://microformats.org/wiki/hcalendar">hCalendar</a>. <a href="http://tantek.com/log/2005/01.html#d26t0100" title="Human vs. ISO8601 dates problem solved">Human-readable and ISO8601 dates</a> are presented with the <code>abbr</code> element.</p>
+<p>By the way, I use Tantek&apos;s name and site URL above because I admire his work a lot. The reason I provide nearly similar markup and interface for comments, trackbacks and/or pingbacks is that he once mentioned, <a href="http://tantek.com/log/2002/01.html#L20030104t1249" title="Comment markup, presentation and plumbing">a comment is a comment is a comment</a>. Think about it.</p></dd>
+<dt>What is comment spam? How do I prevent them?</dt>
+<dd><p>Simple. It&apos;s like e-mail spam. Bots or humans run around your site and submit <em>evil</em> links to your comments section. It&apos;s a fact of a blogger&apos;s life.</p>
+<p>There are many ways to combat comment spam. Wordpress has a <a href="http://codex.wordpress.org/Combating_Comment_Spam" title="Combating Comment Spam">good documentation on this topic</a>. Few of the most used techniques are comment moderation, spam detection algorithms, blacklists, members registration, <a href="http://google.com/googleblog/2005/01/preventing-comment-spam.html" title="Preventing comment spam">Google</a>&apos;s <code>rel=&quot;nofollow&quot;</code> codes, <a href="http://captcha.net/" title="Captcha Project">Captcha</a> authentication tests, and <a href="http://bayesian.org/">Bayesian</a> filters. These techniques have advantages and disadvantages, in terms of efficiency, usability and accessibility. Comments moderation needs manual inspection, blacklists needs constant maintenance, members registration is too <em>sloppy</em>, <code>rel=&quot;nofollow&quot;</code> code is unfair in certain cases, Captcha tests are inaccessible to visually-impaired users, and Bayesian filters need time to <em>learn</em>. Also be aware that there are <a href="http://sam.zoy.org/pwntcha/" title="PWNtcha - captcha decoder">Captcha-decoding software</a> available out there.</p>
+<p>I&apos;ve also look out for other techniques such as Jason Calacanis&apos;s <a href="http://calacanis.weblogsinc.com/entry/1234000443042919/" title="Fixing Comment Spam with the Star System">Star System</a> and Eric Meyer&apos;s <a href="http://meyerweb.com/eric/thoughts/2005/01/24/wp-gatekeeper/">WP-Gatekeeper</a>. Both are worth a try though. Besides, please keep in mind that spammers will get smarter and smarter every second. Now and then, the battle will never stop. It goes on as long as you try keeping your blog comments clean and unharmed. Even Keith Robinson <a href="http://7nights.com/asterisk/archive/2004/06/comment-system-dilemma" title="Comment System Dilemma">clarifies</a>:</p>
+<blockquote><p>It seems that no matter how clever the solution, spam still gets through some how. Spammers are simply smarter than I am. It just kills me that people are taking advantage of my hard work.</p>
+<p>&#x2014; <a href="http://7nights.com/asterisk/archive/2004/06/comment-system-dilemma">http://7nights.com/asterisk/archive/2004/06/comment-system-dilemma</a></p></blockquote>
+<p>Sounds like a lot of work? You bet.</p></dd>
+<dt>Could people abuse the commenting system?</dt>
+<dd><p>Of course. The comments section may suddenly turn into a tagboard or an instant messaging interface, like ICQ or IRC, when your readers start to post off-topic comments that were irrelevant to the scope of your blog article. Conversations become uncontrollable as commentators reply to one another till you don&apos;t even understand what they&apos;re talking about. They may cause flames involving third parties, include hate messages, and say discouraging words. This is one of the problems that sometimes happen in popular forums. The difference is forums have moderators and administrators to prevent this from happening in the first place, however on your blog, you&apos;re <strong>alone</strong>, unless your blog is a collaborative multiple-author content management system.</p>
+<p>Therefore, it&apos;s wise to set the commenting system to <em>limit</em> this by automatically or manually disabling the comments after a period of time, maybe 7 days or a month. Would you still be expecting feedback on a 10-month-old article? Forced preview would be great to prevent accidents like mistyped words or double posting. It&apos;ll be an extra step to evaluate the posted content, probably run it through spam words detection and HTML validation scripts. If your blog publishes socio-political issues, comment moderation would be critical.</p></dd>
+<dt>Should I enable HTML input for comments?</dt>
+<dd><p>Yes and no.</p>
+<p>Enabling HTML is useful to include semantics into comment posts. Elements such as <code>blockquote</code>, <code>strong</code>, <code>em</code>, <code>a</code>, <code>pre</code>, <code>code</code>, <code>ul</code>, <code>ol</code> and <code>li</code> are necessary in particular situations, especially for web standards enthusiasts. Unfortunately, there are <strong>risks</strong> in this implementation. Some people might put malicious Javascript links and submit malformed markup that could mess up your site. For XHTML-validated sites, tag soup is definitely a no-no. Just imagine if someone submits this:</p>
+<pre><kbd>&lt;i&gt;Hi, <em>&lt;b /&gt;</em>I am &lt;a href=<em>&quot;</em>http://spam.com/ title=<em>&apos;</em>some weird text <em>&gt;</em> plus few characters <em>&amp;</em> more&quot;&gt;spam&lt;/a&gt;<em>&lt;/i/&gt;</em> man.<em>&lt;/b&gt;</em></kbd></pre>
+<p>Or perhaps a little more advanced...</p>
+<pre><kbd>&lt;div style=&quot;<em>position: absolute; top: 0; left: 0; width: 100%; height: 100%; font-size: 5em;</em>&quot;&gt;I&apos;ve hacked your blog! Hahaha!&lt;/div&gt;</kbd></pre>
+<p>Of course, none of these could happen in most <em>matured</em> blogging systems, thanks to solutions like Ulf Harnhammar&apos;s <a href="http://sourceforge.net/projects/kses">kses</a> and Simon Willison&apos;s <a href="http://simon.incutio.com/archive/2003/02/23/safeHtmlChecker">SafeHtmlChecker</a>.</p>
+<p>Another point that needs consideration is your target audience. How are they going to comment if they don&apos;t have any or have <em>partial</em> knowledge of HTML? I always see certain cases when commentators <em>forgot</em> to use the <code>pre</code> or <code>code</code> tags for computer codes resulting it contained under a <code>p</code> tag instead. For message boards, <a href="http://en.wikipedia.org/wiki/Bbcode">BBCode</a> emerges as a simpler alternative to HTML. Nevertheless, commentators <em>still</em> have to learn it and not many will actually spend so much time on it just to leave a comment.</p>
+<p>Some blog owners, due to fear of abuse and spam, have disabled HTML for comments. Line breaks are automatically converted to <code>br</code> or <code>p</code> tags. Since commentators cannot use <code>a</code> tags, they have to type the whole URL which later converted into clickable links. Long URLs will break the layout unless truncated or <code>overflow: hidden</code> is applied to <em>crop</em> them. List items are coded with <code>br</code> tags instead of <code>li</code> tags. No more structured text to indicate emphasis, citation, code fragments and instances. Semantics are gone. This is purely unacceptable.</p>
+<p>In this context, HTML plays an important role to achieve structural markup and keep content in control. Thus, I shift my focus to <em>humane</em> text markup languages which are mostly devised by blog authors, probably following the concept of separation between content and markup. Dean Allen&apos;s <a href="http://textism.com/tools/textile/">Textile</a> and John Gruber&apos;s <a href="http://daringfireball.net/projects/markdown/">Markdown</a> are two good examples. Both convert simple text and characters to HTML, quite familiar to how we compose e-mail messages. Simple, clean and no codes at all.</p>
+<p>There are two levels of users here, those either know HTML or don&apos;t know at all. When composing in a comment form, HTML-literates might be wondering if they should code <code>p</code> tags for paragraphs instead of inserting double line breaks, or encode HTML entities like &apos;<kbd>&amp;</kbd>&apos; to &apos;<kbd>&amp;amp;</kbd>&apos;, especially for URLs. If HTML is disabled, all the codes they&apos;ve typed will display gibberish characters in the comments. As an aside, HTML-illiterates might get confused why their line breaks don&apos;t change to <code>br</code> elements.</p>
+<p>A comment posting guideline would be useful to inform commentators on such issues. Which tags and attributes can be used? Does it use a text markup language? Or simply no HTML is allowed?</p>
+<p><a href="http://7nights.com/asterisk/archive/2004/02/random-acts-of-validation#comment21" title="Random Acts Of Validation">An idea worth toying</a> around was mentioned by Richard Allsebrook:</p>
+<blockquote><p>A basic and advanced comment option. Basic allows NO hand coded markup and squirts it out as a <code>&lt;pre&gt;</code> tag. The Advanced option would allow markup (which would be validated before being accepted). That way you would keep most level of user happy.</p>
+<p>&#x2014; <a href="http://7nights.com/asterisk/archive/2004/02/random-acts-of-validation#comment21">http://7nights.com/asterisk/archive/2004/02/random-acts-of-validation#comment21</a></p></blockquote>
+<p>Hmm, maybe a little too complex, I think. I never see any blogs implement this idea yet.</p>
+<p>What&apos;s next? WYSIWYG?</p></dd>
+<dt>Do comments have permanent links?</dt>
+<dd><p>Now we see <strong>two</strong> permanent links. One is for your weblog post, the other is for individual comments. The reason to include permanent links for comments is to allow direct references. You might want to quote a commentator&apos;s words and point to that specific comment.</p>
+<p>To make this works, numeric IDs are applied to each comment, for example:</p>
+<pre><code>&lt;ol class=&quot;comments-list&quot;&gt;
+&lt;li id=&quot;comment-1&quot;&gt;...&lt;/li&gt;
+&lt;li id=&quot;comment-2&quot;&gt;...&lt;/li&gt;
+&lt;li id=&quot;comment-3&quot;&gt;...&lt;/li&gt;
+&lt;li id=&quot;comment-x&quot;&gt;...&lt;/li&gt;
+...
+&lt;/ol&gt;</code></pre>
+<p>Or...</p>
+<pre><code>&lt;ol class=&quot;comments-list&quot;&gt;
+&lt;li id=&quot;comment-99&quot;&gt;...&lt;/li&gt;
+&lt;li id=&quot;comment-105&quot;&gt;...&lt;/li&gt;
+&lt;li id=&quot;comment-121&quot;&gt;...&lt;/li&gt;
+&lt;li id=&quot;comment-x&quot;&gt;...&lt;/li&gt;
+...
+&lt;/ol&gt;</code></pre>
+<p>What&apos;s the difference? The first example shows that the comments are assigned with IDs unique to that particular blog article. The second shows the comments assigned with IDs unique to the <em>whole</em> blog archives. The <strong>first</strong> comment for a blog article might be the <strong>99th</strong> comment for the whole blog. For some remotely-hosted weblogs, assigned IDs are unique to the <em>whole system</em>, which means <em>all</em> hosted blogs!</p>
+<p>Permanent links for comments are not like blog posts&apos;. They <em>append</em> to a blog post&apos;s permanent link in the form of <samp class="url">/2005/07/post-title#comment-1</samp>. The numerals of the IDs may not be significant to indicate their <em>uniqueness</em>. Just don&apos;t <em>complicate</em> it to this, <samp>#comment-013514167121</samp>. Unnecessary, in my opinion.</p></dd>
+<dt>How do I reply to comments?</dt>
+<dd><p>Let&apos;s say 10 people commented on a blog post and you&apos;re going to reply each of them one by one. How are you going to do that? The most common technique is to type the name of the commentator, followed by a semi-colon or comma and your reply:</p>
+<pre><samp>commentator #1: bla bla
+
+commentator #2: bla bla
+
+commentator #3: bla bla
+
+commentator #4: bla bla
+
+commentator #5: bla bla
+
+...</samp></pre>
+<p>You have to do this because this posted reply will appear at the very last part of the comments section, so the name of the commentator is required so that readers know <em>who</em> and <em>which</em> comment you&apos;re replying to.</p>
+<p>Another more semantical way is to use <code>blockquote</code> to quote the text typed by the commentator and append your reply below it, much like how you reply e-mail messages. A little help with the <code>cite</code> attribute might do the trick:</p>
+<pre><kbd>&lt;blockquote cite=&quot;#comment-x&quot;&gt;quoted text from commentator #x&lt;/blockquote&gt;
+&lt;p&gt;your reply&lt;/p&gt;</kbd></pre>
+<p>I guess this will get very complicated if there are <strong>hundreds</strong> of comments.</p>
+<p>Basically, it&apos;s a <em>flat</em> commenting system. Not a <em>threaded</em> one. If it&apos;s threaded, your reply may appear directly <strong>under</strong> the commentator&apos;s post, styled with some left margin to indicate that it&apos;s a child element. One very good example is <a href="http://slashdot.org/">Slashdot</a>&apos;s <a href="http://slashdot.org/faq/com-mod.shtml" title="Slashdot FAQ - Comments and Moderation">powerful comment interface</a>. Unfortunately, the way threaded comments display will make your site looks a bit <em>bloated</em> and takes up a lot of space.</p>
+<p>Besides flat and threaded comments system, there is one more called <em>relational comment system</em>, introducing Dunstan Orchard&apos;s wonderful <a href="http://1976design.com/blog/">blog</a>. The concept is quite innovative, providing a <a href="http://1976design.com/blog/archive/2003/11/12/comments/" title="A visual guide to navigating blog comments">visual guide to comments navigation</a>. You can <em>alert</em> a specific comment and able to see comments that are <em>inspired</em> by others. Few Javascript and CSS tricks make the comments easily recognisable from its child, parent or focused state.</p>
+<p>On a related matter, there is one usability problem on comments. Imagine a list of 50 comments and the comment form located at the <em>very</em> bottom of the page. Let&apos;s say you want to reply to the 12th comment or to quote a text from the article above, then for sure you&apos;ll be scrolling back and forth, strenuously trying to refer to those sections.</p>
+<p>Popup comments can help to solve this problem by staying fixed on the screen while you scroll up or down the article. Thus this enables commentators to read and write at the same time. But nowadays, popups are not favourable anymore due to ever rising popup-blocking technologies. So, we enter <a href="http://snook.ca/archives/000368.html" title="Comments: Behind the Scenes">fixed positioning for comment forms</a>, a technique found by Jonathan Snook and implemented as part of his <a href="http://snook.ca/archives/000364.html" title="I&apos;m an addict.">78th redesign</a>. For those who want to implement the functionality right away, Derek Featherstone&apos;s <a href="http://boxofchocolates.ca/archives/2005/05/23/dockable-comments-intelligent-dom-scripting" title="Dockable Comments: Intelligent DOM Scripting">dockable comments</a> is highly recommended too. Copy and paste hasn&apos;t been so much easier.</p></dd>
+<dt>Is it useful for comments to have its own separate subscription feed?</dt>
+<dd><p>I am a reader of your blog. I post a comment and later surf to another web site. If I were to wonder if you, the blog author or any other commentators have replied to my comment, I would have to check and load your site again. But what if I&apos;ve left my comments for <strong>50 weblogs</strong>? Should I check them one by one all over again? Ridiculous.</p>
+<p>Email notification is one of the solution, but rather impractical because it would throw junk into my inbox. Comment spam might eventually turn into e-mail spam! Another solution is RSS or Atom feed for them. Simply subscribe to the comments feed and you&apos;ll be able to keep track of <em>any</em> comments of a specific post or blog site. The irony now is would <em>anyone</em> do that? For either per-post or per-blog comments feed, it feels a bit weird for anyone to add them into their personalised feed readers such as <a href="http://bradsoft.com/feeddemon/">FeedDemon</a>, <a href="http://ranchero.com/netnewswire/">NetNewsWire</a>, <a href="http://bloglines.com/">Bloglines</a> or Firefox&apos;s built-in <a href="http://mozilla.org/products/firefox/live-bookmarks">Live Bookmarks</a>.</p>
+<p>I would be very interested to know if any research or study has been conducted on subscriptions of comment feeds. For me, I certainly wouldn&apos;t subscribe to <em>any</em> comment feeds. There are <strong>over 100 subscriptions</strong> in my <a href="http://bloglines.com/public/cheeaun/" title="cheeaun&apos;s Bloglines">Bloglines</a> and <strong>another 30 Live Bookmarks</strong> on my Firefox! It&apos;s crazy, you know.</p></dd>
+<dt>Can I have fun modifying, editing or deleting comments?</dt>
+<dd><p>If someone accidentally made a typing error and has posted the comment, <em>who</em> should fix it? Commentator or blog author? If someone posted an off-topic or offensive comment, should you delete it? Blog owners have the authority to do <em>whatever</em> they like to the comments left by anyone. If you found that someone has criticised your blog article and made you angry, you can delete his comments and ban him right away!</p>
+<p>It may be <em>fun</em> to have such administrative power to control your blog comments but there <em>is</em> a side effect. From Gervase Markham&apos;s <a href="http://weblogs.mozillazine.org/gerv/" title="Hacking for Christ">blog</a>, I learnt about the <a href="http://weblogs.mozillazine.org/gerv/archives/006449.html" title="Bugzilla &quot;Limitations&quot; 2: Comments Are Permanent"><em>limitations</em> in comments on Bugzilla</a>. Surprisingly, comments are <strong>permanent</strong>. Gervase reasoned:</p>
+<blockquote><p>Editing comments is a bad idea because it is altering history. You said that stuff and, even if you wish you hadn&apos;t, it had an effect on things other people had said. If you revise what you said, and they don&apos;t, then there&apos;s potential for confusion and inconsistency.</p>
+<p>&#x2014; <a href="http://weblogs.mozillazine.org/gerv/archives/006449.html">http://weblogs.mozillazine.org/gerv/archives/006449.html</a></p></blockquote>
+<p>Wow, this time we&apos;re talking <strong>history</strong>. His points are very good in the sense that we should preserve historical elements as what we&apos;ve learn in school. When you alter your comments, other commentators will get confused not knowing <em>why</em> you delete them, <em>when</em> the post was deleted and <em>what</em> was posted before. Replies to deleted comments will make the situation more confusing and get people lost. Yet, I&apos;m not very sure if there are any <em>conceptual</em> differences between the commenting of a bug tracking system and a weblog system.</p>
+<p>On the commentator&apos;s side, do you think that they should have the option to edit their own comments? If you think that disallowing comment editing is too restrictive and possibly want to enable it, please review Ryan Brill&apos;s <a href="http://ryanbrill.com/archives/editing-blog-comments/" title="Editing Blog Comments">methodologies</a> before diving in. Different perspectives will affect the result of comments management. How are you going to control <em>what</em> and <em>when</em> the comment should be edited? Can you edit a comment even after it has been read by someone else? Could such changes affect the <em>flow</em> of this conversational comments thread? Hmm...</p>
+<p>One idea that pops up in my brain is to alter the comments <em>semantically</em>, using <code>ins</code> and <code>del</code> tags. For example to delete a comment, the markup would be like this:</p>
+<pre><code>&lt;ol class=&quot;comments-list&quot;&gt;
+&lt;li&gt;<em>&lt;del datetime=&quot;date and time of deletion&quot;&gt;</em>
+commentator name, time, date and comments
+<em>&lt;/del&gt;</em>&lt;/li&gt;
+...
+&lt;/ol&gt;</code></pre>
+<p>With CSS, you may either fade the colours of the comment item or apply <code>display: none</code> to it. You can also <em>tidy up</em> a comment:</p>
+<pre><code>...
+&lt;p&gt;Your article is so &lt;del datetime=&quot;date and time of deletion&quot; cite=&quot;#comment-x&quot;&gt;<strong>intersting</strong>&lt;/del&gt; &lt;ins datetime=&quot;date and time of insertion&quot; cite=&quot;#comment-x&quot;&gt;<strong>interesting</strong>&lt;/ins&gt; and informative!&lt;/p&gt;
+...</code></pre>
+<p>Note that the spelling error has been fixed. In addition to the <code>cite</code> attributes, it can be used to designate <em>another</em> posted comment to explain the changes made. Cool. Anyone dare to take a step forward putting this into practice?</p></dd>
+<dt>Whoa, do I need to care so much about this commenting stuff?</dt>
+<dd><p>You have the choice to ignore <strong>everything</strong> you read here. Go on and enable comments for your blog. I&apos;m not stopping anyone. Mind you, this article is only a set of possible questions and answers, <strong>not</strong> a complete hitchhiker&apos;s guide. I may not have much experience in handling comments, but I do learn from other people&apos;s weblogs.</p>
+<p>And I care.</p></dd>
+</dl><p>The end. Thanks for reading.</p></div>
+      </article>
+  </div>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+</div>
+<script>
+  window.onload = function () {
+    var $figures = document.getElementsByTagName('figure');
+    if (!$figures.length) return;
+    var asideImages = function () {
+      for (var i = 0, l = $figures.length; i < l; i++) {
+        var $figure = $figures[i];
+        var $images = $figure.getElementsByTagName('img');
+        if ($images.length == 1) {
+          var $img = $images[0];
+          var width = Math.max($img.naturalWidth, $img.width);
+          if (width <= 280 && (width / $figure.parentNode.offsetWidth * 100 < 50)) {
+            $figure.className = 'image-aside';
+          } else if ($figure.className) {
+            $figure.className = '';
+          }
+        }
+      }
+    };
+    asideImages();
+    window.onresize = asideImages;
+  };
+  if (navigator.serviceWorker) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js', {
+        scope: '/'
+      });
+    });
+  }
+</script>
+<script data-goatcounter="https://cheeaun.goatcounter.com/count" async src="//gc.zgo.at/count.v2.js" crossorigin="anonymous" integrity="sha384-PeYXrhTyEaBBz91ANMgpSbfN1kjioQNPHNDbMvevUVLJoWrVEjDCpKb71TehNAlj"></script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "56009c05c6234036a216843af8874520"}'></script><!-- End Cloudflare Web Analytics -->
+</html>

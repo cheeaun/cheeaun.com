@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Reading user comments &ndash; Lim Chee Aun</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preload" href="/assets/fonts/WorkSans-Regular.woff2" as="font" type="font/woff2">
+<style>html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body,button,html,input,select,textarea{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"}code,kbd,pre,samp,var{font-family:SFMono-Regular,Consolas,"Liberation Mono",Menlo,Courier,monospace}a{text-decoration:none}a:hover{text-decoration:underline}a img,img{border:0}h1,h2,h3,h4,h5,h6{margin:0;padding:0}p{padding:0}caption{font-weight:700;padding:.5em}table{border-collapse:collapse;border-spacing:0}td,th{vertical-align:top}ol,ul{padding:0}dt{font-weight:700}dfn{font-style:normal;font-weight:700}abbr{border-bottom:1px dotted}form{margin:0;padding:0}legend{font-weight:700}button,input,select,textarea{font-size:1em;max-width:100%;vertical-align:middle;margin:0}textarea{overflow:auto}button,input.button{padding:0 .5em;overflow:visible}article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block}@font-face{font-family:'Work Sans';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/WorkSans-Regular.woff2) format('woff2')}@font-face{font-family:'Work Sans';font-style:italic;font-weight:400;font-display:swap;src:url(/assets/fonts/WorkSans-Italic.woff2) format('woff2')}@font-face{font-family:'Work Sans';font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/WorkSans-Medium.woff2) format('woff2')}@font-face{font-family:'Work Sans';font-style:italic;font-weight:500;font-display:swap;src:url(/assets/fonts/WorkSans-MediumItalic.woff2) format('woff2')}body,html{overflow-x:hidden}body{color:#444;background-color:#fff;padding:0;margin:0;font-family:'Work Sans',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:16px}a{color:#0b62a0;padding:.25em;margin:-.25em;border-radius:3px;text-decoration:underline;text-underline-offset:1px;text-decoration-color:#0b62a061}a:hover{color:#000;text-decoration:underline}a:focus{color:#000;background-color:rgba(0,0,0,.08);text-decoration:none}b,dt,strong,th{font-weight:500}li,p{line-height:1.5em}ol,ul{margin-left:1.35em}img,video{max-width:100%;height:auto}p strong{color:#000}p a strong{color:inherit}code,kbd,samp,var{background-color:#fafafa;font-size:.9em}:not(pre)>code,:not(pre)>kbd,:not(pre)>samp,:not(pre)>var{color:#08632c;background-color:transparent}:not(pre)>code:before,:not(pre)>kbd:before,:not(pre)>samp:before,:not(pre)>var:before{content:'`';opacity:.5}:not(pre)>code:after,:not(pre)>kbd:after,:not(pre)>samp:after,:not(pre)>var:after{content:'`';opacity:.5}pre code{background-color:auto}#container{position:relative;margin:auto;max-width:40em;word-wrap:break-word;overflow-wrap:break-word;word-break:break-word}#container pre{word-wrap:normal;overflow-wrap:normal;word-break:normal}header{text-align:center;padding:50px}header h1{margin:0}header h1 a{display:inline-block;border-radius:50%}header h1 a:focus{transform:scale(.97)}header svg{vertical-align:top}header h1 a:focus svg{-webkit-filter:brightness(.9);filter:brightness(.9)}#content{padding:0 1em}#content h1{font-size:44px;line-height:1.2em;margin:0 0 .5em;text-align:center;letter-spacing:-.05em;font-weight:500}#content header{text-align:left;padding:0;background-image:none}#content article h1+time{display:block;text-align:center;padding:0 0 4em;color:#767676}#content h2{font-size:32px;letter-spacing:-.05em;font-weight:500;color:#333;margin:0 0 .75em;line-height:1.2em}#content *+h2{margin-top:1.5em}#content article.summary h2{margin-bottom:.5em}#content article.summary time{color:#767676;display:block;margin:0 0 .75em}#content p{margin:0 0 1em}#content ol,#content ul{margin-bottom:1em}#content dt{margin-bottom:1em;color:#000}#content dd{margin-left:1.35em}#content pre{margin:0 0 1em;border-radius:3px;padding:1em;background-color:#f3f3f3;font-size:.9em;line-height:1.5em;overflow:auto}#content pre code,#content pre kbd,#content pre samp,#content pre var{background-color:inherit}#content pre em,#content pre strong{color:red;font-style:normal}#content pre em.remark{color:#767676;font-style:normal}#content pre var{color:#060;font-style:normal}#content blockquote{border-left:3px solid #999;padding:.3em 0 .3em 1em;margin:0 0 1em}#content blockquote p:last-child{margin-bottom:0}#content table{margin:0 auto 1em;border:1px solid #ddd}#content table td,#content table th{padding:.5em .9em}#content table thead th{text-align:center;background-color:#eee}#content table tbody th{text-align:left}#content table tbody tr:nth-child(even){background-color:#fafafa}#content aside{padding:5px 10px}#content aside,#content aside p{line-height:28px;background-color:#fff5d9;text-align:right}.pinyin{font-style:italic}.remark{font-style:italic;color:#767676}:lang(ms){font-style:italic}#content figure{text-align:center;margin:1em -1em}#content *+figure{margin-top:2em;margin-bottom:2em}#content time+figure{margin-top:0}#content figure.image-aside{margin:0 0 1em 1em;padding:10px;background-color:rgba(255,255,255,.5);float:right;clear:right}#content figure img.large{max-width:100vw;position:relative;left:50%;transform:translateX(-50%)}#content figure a{padding:0;margin:0;border:0}#content figure a img{vertical-align:bottom}#content figure a:focus img{-webkit-filter:brightness(.9);filter:brightness(.9)}#content video{display:block;margin:auto}#content hr{border:0;border-top:1px solid #ccc;margin:2em}footer{padding:50px;text-align:center;color:#767676}footer a{color:inherit}footer nav ul{list-style:none;display:block;margin:0 0 20px}footer nav ul li{display:inline}footer nav ul li a{margin:0 .25em}#blog-archives ul{list-style:none;margin:0 -1em}#blog-archives ul li{padding:.5em 1em}#blog-archives ul li:nth-child(even){background-color:#fafafa}#blog-archives time{float:right;margin-left:1em}@-ms-viewport{width:device-width;zoom:1}@viewport{width:device-width;zoom:1}@media print{footer{display:none}#content a[href]{text-decoration:none}#content a[href]:after{content:" (" attr(href) ") ";font-size:90%}blockquote,figure,img,li,p,pre,video{break-inside:avoid;page-break-inside:avoid}h2,h3{break-after:avoid-page;page-break-after:avoid}p{orphans:2;widows:2}}</style>
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="Reading user comments">
+<meta name="description" property="og:description" content="I read. I notice. I reply. Too bright yellow Nice, but the bright yellow for folders is awful Maybe I should make it brown? Or simply darker?…">
+
+<link rel="alternate" href="/blog/feed.xml" type="application/atom+xml" title="cheeaunblog">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/assets/images/icon-192.png">
+<meta name="theme-color" content="#fff">
+<div id="container">
+  <header role="banner">
+    <h1>
+      <a href="/"><svg width="120" height="120" viewBox="0 0 225 225">
+  <title>Lim Chee Aun</title>
+  <circle cx="112.5" cy="112.5" r="112.5" fill="#fa8e01"/>
+  <path fill="#fff" d="M104.8 127.1c-.8.4-1.9.9-3 1.3-1.2.5-2.4.9-3.6 1.2-1.2.3-2.3.5-3.3.5-3 0-5.3-1.5-7-4.7-1.6-3.1-2.5-7.8-2.5-13.9 0-4.3.4-7.6 1.2-9.9.7-2.3 1.8-4 3.2-4.9 1.3-1 2.9-1.4 4.7-1.3 1.2-.1 2.7.1 4.4.5 1.8.4 3.7 1.1 5.7 2.2l3.3-15.5c-2.7-.9-5.3-1.5-8-1.9-2.5-.3-4.8-.5-6.8-.5-5.8 0-10.7 1.1-14.8 3.3-4.1 2.2-7.2 5.7-9.4 10.7-2.1 4.8-3.2 11.2-3.3 19.2 0 10.8 2.1 18.8 6.3 24 4.1 5.2 10.2 7.8 18.3 7.8 2.2 0 4.4-.1 6.6-.5 2.2-.3 4.3-.8 6.3-1.4 2-.6 3.7-1.3 5.2-2.1l-3.5-14.1zm54.5 16.9c-.2-1.8-.5-3.8-.8-6.1-.2-2.2-.4-4.5-.6-7-.2-2.4-.3-4.9-.3-7.3v-23c0-2.9-.3-5.6-1-8.1-.6-2.5-1.8-4.7-3.3-6.6-1.6-1.9-3.9-3.4-6.7-4.5-2.8-1-6.3-1.6-10.6-1.6-3.5 0-7.1.4-10.7 1.1-3.6.8-7.3 1.8-11 3.1l3.7 14c3.1-1.2 5.8-2.1 8.2-2.8 2.5-.6 4.5-.9 6.1-.9 1.8 0 3.3.5 4.4 1.4 1.2 1 1.8 2.6 1.8 4.9v7.7c-3.8.3-7.2.8-10.4 1.6s-6 1.9-8.4 3.3c-2.4 1.5-4.3 3.4-5.7 5.8-1.3 2.3-2 5.1-2 8.5 0 2.3.2 4.5.7 6.7.5 2.1 1.3 4 2.4 5.6 1.1 1.7 2.5 3 4.1 3.9 1.7 1 3.6 1.5 5.9 1.5 2.6 0 4.9-.4 6.9-1.2 2.1-.8 3.9-1.8 5.6-2.9 1.6-1.1 3.1-2.2 4.6-3.3l1.5 6.2h15.6zm-20.7-14.9c-.9.8-1.8 1.4-2.6 1.9s-1.6.7-2.5.7c-1.4 0-2.5-.6-3.4-1.8-.8-1.2-1.3-2.8-1.3-5 0-1.7.5-2.9 1.4-3.8 1-.8 2.2-1.4 3.7-1.7 1.5-.3 3-.6 4.7-.7v10.4z"/>
+  <circle cx="112.5" cy="112.5" r="83.7" fill="none" stroke="#fff" stroke-width="20.1"/>
+</svg>
+</a>
+    </h1>
+  </header>
+  <div id="content">
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+      <header><h1 itemprop="heading">Reading user comments</h1><time datetime="2004-12-19" class="meta date" itemprop="datePublished">19 December 2004</time></header><div itemprop="articleBody"><p>I read. I notice. I reply.</p><blockquote>
+<p><strong>Too bright yellow</strong></p>
+<p>Nice, but the bright yellow for folders is awful</p>
+</blockquote><p>Maybe I should make it brown? Or simply darker? Most folder icons are yellow in colour, though I doubt about it. I agree there are some weaknesses in the Phoenity folder icons. They are too <em>light</em> and not clear enough. I think I&apos;ll have to sharpen the outlines.</p><blockquote>
+<p><strong>Phoenity 1.3.1</strong></p>
+<p>very nice theme .. icons need to be bigger</p>
+</blockquote><p>Bigger? How big then? Current version of Phoenity, including Winstripe, follows the <em>standard</em> sizes of Windows XP which are 24&#xD7;24px by default and 16&#xD7;16px in small icons mode. The default standard icon size for older Windows is 20&#xD7;20px. Linux and MacOSX uses different icon sizes as well. So far, there is no <em>real</em> standard size here, as most people might argue. Since the Firefox developers have chosen Windows XP&apos;s sizes, I&apos;ll just follow.</p><blockquote>
+<p><strong>nice</strong></p>
+<p>i like the fact we can have subthemes/customisability 4 because i dont really like SOME of the icons, the others i love!</p>
+</blockquote><p>Well, that&apos;s a matter of personal taste. When I first released Phoenity to the public, I never thought <em>anyone</em> would like my icons at all. Whenever I compare my icons with the <em>heavyweights</em> such as <a href="http://everaldo.com/" title="Everaldo">Crystal</a>, I felt that my icons look so dull and boring. Ironically, there <em>are</em> people who like such icons. Simplicity rules, I guess.</p><blockquote>
+<p><strong>Great but could be a lot better</strong></p>
+<p>Its a great theme, just all those blue square things are annoying. What about circles in replace. Its really starting to bother me. This is the second best theme for firefox I have seen. Second best because it is missing some stuff and some of the graphics are a bit annoying (like said before).</p>
+</blockquote><p>I assume this commenter is referring the throbber as the <em>blue square things</em>, since no other Phoenity icons has such properties. Rounded circle is possible, but I&apos;ll have to wait till Firefox supports APNG or MNG. GIF will make it looks jagged, you know. As the matter a fact, my first decision is to create a round throbber. To prevent jaggedness, I have no choice but to use a rounded rectangle instead.</p><blockquote>
+<p>Nice Icons, could be alil bigger</p>
+</blockquote><p>Again? Okay, I think, this time, screen resolution could be one of the reasons. Some people, mostly laptop users, set a <em>very high</em> screen resolution for their monitors. Thus, the icons become <em>very small</em> and almost indistinguishable. In this case, the solution is not to create larger icons, but to use assistive technologies such as SVG so that the icons will be in vector form, <em>resizable</em> in any dimension yet still looks <em>sharp</em>. Opera tries to fix this problem by introducing its own zooming technology to resample the raster icon images. Mozilla Firefox have neither such capability nor supports any form of vector format for the icons. So, let&apos;s get on with it.</p><blockquote>
+<p><strong>best but dont like</strong></p>
+<p>very nice but dont like in your face throbber. simple default throbber will do. other than that it is very nice theme.</p>
+</blockquote><p>One question, what <em>is</em> a throbber? Think about it. Creating a throbber is more difficult than it seems. A throbber is also called an activity indicator, obviously to show the current status of the loading page. On Firefox, it also acts as a hyperlink button, and when clicked, goes to the <a href="http://mozilla.org/products/firefox/central.html" title="Firefox Central">Firefox home page</a>. So, what should a throbber looks like? Other web browsers&apos; throbbers represent their own logo and branding, such as Netscape and Internet Explorer. Maybe I should use the Phoenity logo as the throbber? Or maybe follow Winstripe&apos;s footsteps, creating a throbber that reflects its functionality instead? This requires some thinking, so I might come up with a <em>satisfying answer</em>, sooner or later.</p><blockquote>
+<p>Its alright, not great. Kind of weird. Needs more work.</p>
+</blockquote><p>Interesting. I never thought that I&apos;ve created some weird set of icons. I better change my theme&apos;s description to &apos;A simple, colourful and <em>weird</em> theme for everyone&apos;. Just kidding.</p><blockquote>
+<p><strong>Satisfactory</strong></p>
+<p>Well, I don&apos;t like it... You see... well, it&apos;s better than the default one, but... colorfull icons with grey toolbars don&apos;t really make a great harmony</p>
+</blockquote><p>Why not change the colour of the toolbar then? Before I use Windows XP, I&apos;ve changed my Windows 98&apos;s colour scheme to match Mozilla&apos;s Modern theme and wow, it sure makes things look <em>modern</em> at that time. What I mean is that not all icons can blend in any background. If it&apos;s not harmonic, try tweak the system colours to your liking. For your information, the first few versions of Phoenity theme for Firefox are created on a Windows 98 machine. I have never seen my own icons on Windows XP&apos;s interface, except screenshots sent to me by other people via e-mail, until the time I got to install Windows XP by around mid-year 2003.</p><blockquote>
+<p><strong>Not the best.</strong></p>
+<p>Somewhat disharmonic.</p>
+</blockquote><p><em>Another disharmony?</em></p><blockquote>
+<p><strong>Good but...</strong></p>
+<p>Abit distrative, and not very nice folder icons. Sort them out and we&apos;ll talk ;)</p>
+</blockquote><p>The word &apos;distractive&apos; shocked me. As for the folder icons, I&apos;ll try <em>fix</em> it, as mentioned above. But for the other icons, I wonder how <em>distractive</em> are they? Are they too bright, too colourful or too vibrant for the eyes? I&apos;m sorry if I missed the point here, so I supposed <em>we really</em> have to talk. Unfortunately, I don&apos;t have the commenter&apos;s e-mail address or any contact information. Sigh.</p><blockquote>
+<p><strong>Its really really BAD</strong></p>
+<p>BAD BAD n BAD. Dont download. Its a waste of time</p>
+</blockquote><p>I&apos;m <strong>terribly sorry</strong> for wasting your time, buddy. Thanks to Firefox&apos;s amazing features, you can immediately uninstall my theme and try all the other various themes from <a href="http://update.mozilla.org/">Mozilla Update</a>. I hope you can find your <em>favourite</em> theme. Good luck.</p><p><strong>Update 25 December 2004</strong>: <a href="https://addons.update.mozilla.org/">Mozilla Update</a> has been updated. All the <em>old</em> comments are gone. Fortunately, some of them are <em>archived</em> in this post.</p></div>
+      </article>
+  </div>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
+    </nav>
+  </footer>
+</div>
+<script>
+  window.onload = function () {
+    var $figures = document.getElementsByTagName('figure');
+    if (!$figures.length) return;
+    var asideImages = function () {
+      for (var i = 0, l = $figures.length; i < l; i++) {
+        var $figure = $figures[i];
+        var $images = $figure.getElementsByTagName('img');
+        if ($images.length == 1) {
+          var $img = $images[0];
+          var width = Math.max($img.naturalWidth, $img.width);
+          if (width <= 280 && (width / $figure.parentNode.offsetWidth * 100 < 50)) {
+            $figure.className = 'image-aside';
+          } else if ($figure.className) {
+            $figure.className = '';
+          }
+        }
+      }
+    };
+    asideImages();
+    window.onresize = asideImages;
+  };
+  if (navigator.serviceWorker) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js', {
+        scope: '/'
+      });
+    });
+  }
+</script>
+<script data-goatcounter="https://cheeaun.goatcounter.com/count" async src="//gc.zgo.at/count.v2.js" crossorigin="anonymous" integrity="sha384-PeYXrhTyEaBBz91ANMgpSbfN1kjioQNPHNDbMvevUVLJoWrVEjDCpKb71TehNAlj"></script>
+<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "56009c05c6234036a216843af8874520"}'></script><!-- End Cloudflare Web Analytics -->
+</html>

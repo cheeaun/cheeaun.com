@@ -1,0 +1,21 @@
+{
+  "name": "Lim Chee Aun",
+  "short_name": "Chee Aun",
+  "display": "minimal-ui",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
