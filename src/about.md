@@ -17,7 +17,7 @@ The purpose of this site is to serve as a playground for my thoughts and experim
 
 Previously, this site was created with my home-cooked _framework_ and the [Kirby](http://getkirby.com/docs/toolkit/) toolkit. The blog was initially powered by [Blogger](http://blogger.com/) with FTP publishing and after its [deprecation](http://blogger-ftp.blogspot.sg/2010/01/deprecating-ftp.html), it's recoded by using the [Blogger API](https://developers.google.com/blogger/) with [ToroPHP](https://github.com/anandkunal/ToroPHP) framework.
 
-Now, this whole site is statically generated with [Metalsmith](http://www.metalsmith.io/), available on [GitHub](https://github.com/cheeaun/cheeaun.com) and hosted on [Cloudflare Pages](https://pages.cloudflare.com/).
+Now, this whole site is statically generated with [Metalsmith](http://www.metalsmith.io/), available on [GitHub](https://github.com/cheeaun/cheeaun.com) and hosted on [GitHub Pages](https://pages.github.com/).
 
 Copyright
 ---
