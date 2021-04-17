@@ -156,6 +156,7 @@ em.tag {
   - [Hop on: 5 most scenic bus routes in S'pore](https://www.straitstimes.com/lifestyle/hop-on-five-of-the-most-scenic-bus-routes-in-singapore)
   - [The future of autonomous requires open source – updates on deck.gl and introducing loaders.gl](https://mailchi.mp/uber/the-future-of-autonomous-requires-open-source-updates-on-deckgl-and-introducing-loadersgl)
   - [Stacked bus routes on a map](https://flowingdata.com/2019/02/25/stacked-bus-routes-on-a-map/)
+  - [“BusRouter SG” Convenient Website to Check Bus Arrival in Singapore in Real Time!](https://pianotohikouki.com/en/singapore/BusRouter-SG)
 
   Discussion: [[OC] Visualization of bus routes overlapping each other, in Singapore](https://www.reddit.com/r/dataisbeautiful/comments/8xbvtz/oc_visualization_of_bus_routes_overlapping_each/)
 
@@ -166,6 +167,8 @@ em.tag {
   Explore MRT and LRT rail routes in Singapore.
 
   **[Check it out 👉](https://railrouter.sg/)**
+
+  Featured: [Explore The Rail System Using RailRouter](https://therojakplace.com/2016/01/explore-the-rail-system-using-railrouter/)
 
 - ![](/projects-images/taxirouter-sg.jpg)
 
@@ -186,7 +189,10 @@ em.tag {
 
   - [Datasets for the rest of us, via Data.gov.sg](https://www.digitalnewsasia.com/digital-economy/datasets-rest-us-datagovsg)
   - [政府数据网站鼓励国人使用 过去半年点击率百万](https://www.youtube.com/watch?v=8zH8fbUNdKI)
+  - [Launch of the Government Technology Agency](https://www.mci.gov.sg/pressroom/news-and-stories/pressroom/2016/10/launch-of-the-government-technology-agency)
+  - [GovTech hits the ground running](https://www.tech.gov.sg/media/technews/govtech-hits-the-ground-running)
   - [GovTech conference 2016](https://twitter.com/heliumlife/status/784217428410544128)
+  - [Data is powerful. But here’s what I care about more.](https://blog.data.gov.sg/data-is-powerful-but-heres-what-i-care-about-more-90229207d409)
 
   Discussions:
 
@@ -219,6 +225,8 @@ em.tag {
   **[Check it out 👉](https://checkweather.sg/)**
 
   Read more: [Building Check Weather SG](/blog/2018/06/building-check-weather-sg)
+
+  Featured: [The reality of standing up for my country – part 1](https://harishpillay.com/2020/07/27/the-reality-of-standing-up-for-my-country-part-1/)
 
   Discussion: [I built an iOS app (including a site & two bots) that shows rain radar in Singapore](https://www.reddit.com/r/singapore/comments/h9dne3/i_built_an_ios_app_including_a_site_two_bots_that/)
 
