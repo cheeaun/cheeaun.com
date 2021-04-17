@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<title>{{#if title}}{{title}} &ndash; {{/if}}{{authorName}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preload" href="/assets/fonts/WorkSans-Regular.woff2" as="font" type="font/woff2">
+<style>{{{css}}}</style>
+{{#if isBlog}}
+<meta name="twitter:card" content="summary">
+<meta property="og:title" content="{{title}}">
+<meta name="description" property="og:description" content="{{summary}}">
+{{#if ogImage}}<meta property="og:image" content="{{domainURL}}{{ogImage}}">{{/if}}
+<link rel="alternate" href="/blog/feed.xml" type="application/atom+xml" title="cheeaunblog">
+{{/if}}
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/assets/images/icon-192.png">
+<meta name="theme-color" content="#fff">

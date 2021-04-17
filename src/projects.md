@@ -1,26 +1,43 @@
 ---
 title: Projects
+layout: basic.html.hbs
 ---
 
-Awesome Projects
+Projects
 ===
 
 <style>
+#projects-list {
+  padding: 2em 0;
+  min-height: 100vh;
+}
 #projects-list > ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  /* padding: 1em;
+  columns: auto 320px;
+  column-gap: 2em; */
+  position: relative;
 }
 #projects-list h2 {
   margin: .25em 0;
-  font-size: 28px;
+  font-size: 24px;
 }
 #projects-list > ul > li{
-  padding: 1em;
-  margin: 0 0 2em;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 640px;
+  padding: 1em 1em .1em;
+  /* margin: 0 0 2em; */
   border-radius: 1em;
   overflow: hidden;
-  box-shadow: 0 5px 30px rgba(0,0,0,.1);
+  box-shadow: 0 15px 30px rgba(0,0,0,.1);
+  transition: .3s box-shadow;
+}
+#projects-list > ul > li:hover{
+  box-shadow: 0 17px 30px rgba(0,0,0,.2);
 }
 #projects-list > ul > li > p:first-child {
   /* assume first p has the image */
@@ -30,16 +47,56 @@ Awesome Projects
   /* assume first p has the image */
   border-radius: 1em;
   overflow: hidden;
-  box-shadow: 0 5px 30px rgba(0,0,0,.1);
+  box-shadow: 0 15px 30px #0b62a020;
+  object-fit: cover;
+  width: 100%;
+  min-height: 240px;
+  height: 240px;
+  background-color: #ccc;
+  transition: .3s all;
+  opacity: .9;
+  transform: scale(.98);
+}
+#projects-list > ul > li:hover > p:first-child img {
+  opacity: 1;
+  transform: scale(1);
+}
+#projects-list > ul > li p + ul {
+  margin-top: -1em;
 }
 #projects-list > ul > li li {
   list-style-type: disc;
 }
 #projects-list strong > a {
-  background-color: #0b62a022;
+  background-color: #0b62a010;
   padding: .5em;
   text-decoration: none;
+  display: block;
+  text-align: center;
+  border-radius: .5em;
+  transition: .3s background-color;
+}
+#projects-list > ul > li:hover strong > a {
+  background-color: #0b62a099;
+  color: #fff;
+}
+#projects-list > ul > li strong > a:hover {
+  background-color: #0b62a0;
+  color: #fff;
+}
+em.tag {
+  font-style: normal;
+  border-radius: 3px;
+  padding: .3em .75em;
+  background-color: #999;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
   display: inline-block;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  vertical-align: middle;
 }
 </style>
 <div id="projects-list">
@@ -48,7 +105,9 @@ Awesome Projects
 
   ## HackerWeb
 
-  A simply readable Hacker News app. **[Check it out 👉](http://hackerwebapp.com/)**
+  A simply readable Hacker News app.
+
+  **[Check it out 👉](https://hackerwebapp.com/)**
 
   Read more:
 
@@ -58,19 +117,27 @@ Awesome Projects
   - [Building HackerWeb for iOS](/blog/2016/03/building-hackerweb-ios/)
   - [Building HackerWeb for Android](/blog/2016/05/building-hackerweb-android/)
 
+  Discussion: [Rebuilt my RN app from scratch. Feedback welcomed](https://www.reddit.com/r/reactnative/comments/ki6652/rebuilt_my_rn_app_from_scratch_feedback_welcomed/)
+
+  Featured: [Product Hunt: HackerWeb](https://www.producthunt.com/posts/hackerweb-2)
+
 - ![](/projects-images/cheeaun-earth.jpg)
 
   ## cheeaun.earth
 
-  A map of places I've checked in on Earth. **[Check it out 👉](https://cheeaun.earth)**
+  A map of places I've checked in on Earth.
 
-  Featured: [Map Your Trips Around the World](http://googlemapsmania.blogspot.com/2017/07/map-your-trips-around-world.html)
+  **[Check it out 👉](https://cheeaun.earth)**
+
+  Featured: [Map Your Trips Around the World](https://googlemapsmania.blogspot.com/2017/07/map-your-trips-around-world.html)
 
 - ![](/projects-images/cheeaun-life.jpg)
 
   ## cheeaun.life
 
-  A timeline of important events in my life. **[Check it out 👉](https://cheeaun.life)**
+  A timeline of important events in my life.
+
+  **[Check it out 👉](https://cheeaun.life)**
 
   Discussion: [Show HN: Life – A timeline of important events in (your) life](https://news.ycombinator.com/item?id=6833565)
 
@@ -78,7 +145,9 @@ Awesome Projects
 
   ## BusRouter SG
 
-  Explore bus stops and routes on the map for all bus services in Singapore. **[Check it out 👉](https://busrouter.sg/)**
+  Explore bus stops and routes on the map for all bus services in Singapore.
+
+  **[Check it out 👉](https://busrouter.sg/)**
 
   Read more: [Building BusRouter SG](/blog/2019/02/building-busrouter-sg)
 
@@ -88,17 +157,23 @@ Awesome Projects
   - [The future of autonomous requires open source – updates on deck.gl and introducing loaders.gl](https://mailchi.mp/uber/the-future-of-autonomous-requires-open-source-updates-on-deckgl-and-introducing-loadersgl)
   - [Stacked bus routes on a map](https://flowingdata.com/2019/02/25/stacked-bus-routes-on-a-map/)
 
+  Discussion: [[OC] Visualization of bus routes overlapping each other, in Singapore](https://www.reddit.com/r/dataisbeautiful/comments/8xbvtz/oc_visualization_of_bus_routes_overlapping_each/)
+
 - ![](/projects-images/railrouter-sg.jpg)
 
   ## RailRouter SG
 
-  Explore MRT and LRT rail routes in Singapore. **[Check it out 👉](https://railrouter.sg/)**
+  Explore MRT and LRT rail routes in Singapore.
+
+  **[Check it out 👉](https://railrouter.sg/)**
 
 - ![](/projects-images/taxirouter-sg.jpg)
 
   ## TaxiRouter SG
 
-  Explore available taxis and taxi stands in Singapore. **[Check it out 👉](https://taxirouter.sg/)**
+  Explore available taxis and taxi stands in Singapore.
+
+  **[Check it out 👉](https://taxirouter.sg/)**
 
   Read more:
 
@@ -113,11 +188,18 @@ Awesome Projects
   - [政府数据网站鼓励国人使用 过去半年点击率百万](https://www.youtube.com/watch?v=8zH8fbUNdKI)
   - [GovTech conference 2016](https://twitter.com/heliumlife/status/784217428410544128)
 
+  Discussions:
+
+  - [Live Taxi Locations on Singapore Map](https://www.reddit.com/r/singapore/comments/4ives5/live_taxi_locations_on_singapore_map/)
+  - [I tried rendering data.gov.sg's live taxi locations in 3D. What do you think?](https://www.reddit.com/r/singapore/comments/i7qxrh/i_tried_rendering_datagovsgs_live_taxi_locations/)
+
 - ![](/projects-images/exploretrees-sg.jpg)
 
   ## ExploreTrees.SG
 
-  Explore Trees in Singapore. **[Check it out 👉](https://exploretrees.sg/)**
+  Explore Trees in Singapore.
+
+  **[Check it out 👉](https://exploretrees.sg/)**
 
   Read more:
 
@@ -132,19 +214,113 @@ Awesome Projects
 
   ## Check Weather SG
 
-  Yet another weather app for Singapore. **[Check it out 👉](https://checkweather.sg/)**
+  Yet another weather app for Singapore.
+
+  **[Check it out 👉](https://checkweather.sg/)**
 
   Read more: [Building Check Weather SG](/blog/2018/06/building-check-weather-sg)
 
+  Discussion: [I built an iOS app (including a site & two bots) that shows rain radar in Singapore](https://www.reddit.com/r/singapore/comments/h9dne3/i_built_an_ios_app_including_a_site_two_bots_that/)
+
+- ![](/projects-images/repokemon.jpg)
+
+  ## Repokémon
+
+  Showcase of GitHub repos with Pokémon names.
+
+  **[Check it out 👉](https://cheeaun.github.io/repokemon/)**
+
+  Read more: [Building Repokémon](/blog/2016/08/building-repokemon)
+
+  Presented: [Repokémon - Talk.CSS #9](https://www.youtube.com/watch?v=ECYVAiM1gSc)
+
+  Featured: [Product Hunt: Repokémon](https://www.producthunt.com/posts/repokemon)
+
+  Discussion: [Repokémon – Showcase of GitHub Repos with Pokémon Names](https://news.ycombinator.com/item?id=12098918)
+
+- ![](/projects-images/kopi-guide.jpg)
+
+  ## Order Kopi Guide
+
+  A helpful guide on how to order Kopi in Singapore and some say Malaysia too.
+
+  **[Check it out 👉](https://kopi.guide/)**
+
+- ![](/projects-images/bubble-wrap.jpg)
+
+  ## Bubble wrap
+
+  A rather satisfying bubble wrap popping game.
+
+  **[Check it out 👉](https://bubble-wrap.party/)**
+
+- ![](/projects-images/puppetron.jpg)
+
+  ## Puppetron
+
+  Puppeteer (Headless Chrome Node API)-based rendering solution.
+
+  **[Check it out 👉](https://puppetron.now.sh/)**
+
+  Featured: [Puppeteer examples](https://github.com/puppeteer/puppeteer/tree/main/examples)
+
+- ![](/projects-images/neat-bookmarks.jpg)
+
+  ## Neat Bookmarks
+
+  <em class="tag">Sold</em> <em class="tag">Unmaintained</em><br>A neat bookmarks tree popup extension for Google Chrome.
+
+  **[Check it out 👉](https://github.com/cheeaun/neat-bookmarks)**
+
+  Featured:
+
+  - [Launch bookmarks AND bookmarklets from the Chrome Omnibox with Neat Bookmarks](https://thenextweb.com/news/launch-bookmarks-and-bookmarklets-from-the-chrome-omnibox-with-neat-bookmarks)
+  - [Neat Bookmarks Gives You One Click Access to Your Chrome Bookmarks](https://lifehacker.com/neat-bookmarks-gives-you-one-click-access-to-your-chrom-5797418)
+  - [Neat Bookmarks For Chrome, Search And Access Bookmarks Faster](https://www.ghacks.net/2010/10/17/neat-bookmarks-for-chrome-search-and-access-bookmarks-faster/)
+  - [Access Bookmarks in Just 1 Click - Tekzilla Daily Tip](https://www.youtube.com/watch?v=RA3TxqaH26o)
+
+- ![](/projects-images/mooeditable.jpg)
+
+  ## MooEditable
+
+  <em class="tag">Unmaintained</em><br>A simple web-based WYSIWYG editor, written in MooTools.
+
+  **[Check it out 👉](https://github.com/cheeaun/mooeditable)**
+
+- ![](/projects-images/pentagoo.jpg)
+
+  ## Pentagoo
+
+  <em class="tag">Unmaintained</em><br>The popular Pentago game, written in Javascript.
+
+  **[Check it out 👉](https://github.com/cheeaun/pentagoo)**
+
+  Read more: [Pentago or Pentagoo?](/blog/2007/10/pentago-or-pentagoo)
+
+- ![](/projects-images/phoenity.jpg)
+
+  ## Phoenity
+
+  <em class="tag">Unmaintained</em><br>A whole family of icons, perfectly designed to be simple, modern and usable.
+
+  **[Check it out 👉](https://github.com/cheeaun/phoenity-icons)**
+
 </div>
 
-Older Projects
-===
+<div style="text-align: center; margin: 5em;">
+Check out more of my latest projects on <a href="https://github.com/cheeaun">GitHub</a>.<br><a href="https://twitter.com/cheeaun">Follow me on Twitter too</a>.
+</div>
 
-- **[Neat Bookmarks](https://github.com/cheeaun/neat-bookmarks)**: A neat bookmarks tree popup extension for Google Chrome. (Sold and no longer maintained)
-- **[Phoenity](https://github.com/cheeaun/phoenity-icons)**: Simple icon sets and themes, for everyone.
-- **[MooEditable](https://github.com/cheeaun/mooeditable)**: An attempt to create a simple WYSIWYG editor. Mootools-based.
-- **[Pinpoint](https://github.com/cheeaun/pinpoint)**: A Chrome extension that allows you to link to any part of a page.
-- **[Pentagoo](https://github.com/cheeaun/pentagoo)**: The popular Pentago game, written in Javascript. Uses [Mootools](http://mootools.net/) framework, PHP, XHTML, CSS.
+<script>
+  // https://unpkg.com/minimasonry@1.1.6/build/minimasonry.min.js
+  var MiniMasonry=function(){"use strict";function t(t){return this._sizes=[],this._columns=[],this._container=null,this._count=null,this._width=0,this._resizeTimeout=null,this.conf={baseWidth:255,gutterX:null,gutterY:null,gutter:10,container:null,minify:!0,ultimateGutter:5,surroundingGutter:!0},this.init(t),this}return t.prototype.init=function(t){for(var i in this.conf)null!=t[i]&&(this.conf[i]=t[i]);if(null!=this.conf.gutterX&&null!=this.conf.gutterY||(this.conf.gutterX=this.conf.gutterY=this.conf.gutter),this._container="object"==typeof this.conf.container&&this.conf.container.nodeName?this.conf.container:document.querySelector(this.conf.container),!this._container)throw new Error("Container not found or missing");window.addEventListener("resize",this.resizeThrottler.bind(this)),this.layout()},t.prototype.reset=function(){this._sizes=[],this._columns=[],this._count=null,this._width=this._container.clientWidth;var t=this.conf.baseWidth;this._width<t&&(this._width=t,this._container.style.minWidth=t+"px"),1==this.getCount()&&(this.conf.gutterX=this.conf.ultimateGutter,this._count=1),this._width<this.conf.baseWidth+2*this.conf.gutterX&&(this.conf.gutterX=0)},t.prototype.getCount=function(){return this.conf.surroundingGutter?Math.floor((this._width-this.conf.gutterX)/(this.conf.baseWidth+this.conf.gutterX)):Math.floor((this._width+this.conf.gutterX)/(this.conf.baseWidth+this.conf.gutterX))},t.prototype.computeWidth=function(){var t=this.conf.surroundingGutter?(this._width-this.conf.gutterX)/this._count-this.conf.gutterX:(this._width+this.conf.gutterX)/this._count-this.conf.gutterX;return t=Number.parseFloat(t.toFixed(2))},t.prototype.layout=function(){if(this._container){this.reset(),null==this._count&&(this._count=this.getCount());for(var t=this.computeWidth(),i=0;i<this._count;i++)this._columns[i]=0;for(var n=this._container.children,s=0;s<n.length;s++)n[s].style.width=t+"px",this._sizes[s]=n[s].clientHeight;var o,e=this.conf.surroundingGutter?this.conf.gutterX:0;this._count>this._sizes.length&&(o=this._sizes.length*(t+this.conf.gutterX)-this.conf.gutterX,e=(this._width-o)/2);for(var h=0;h<n.length;h++){var r=this.conf.minify?this.getShortest():this.getNextColumn(h),u=0;!this.conf.surroundingGutter&&r==this._columns.length||(u=this.conf.gutterX);var c=this._columns[r];n[h].style.transform="translate3d("+Math.round(e+(t+u)*r)+"px,"+Math.round(c)+"px,0)",this._columns[r]+=this._sizes[h]+(1<this._count?this.conf.gutterY:this.conf.ultimateGutter)}this._container.style.height=this._columns[this.getLongest()]-this.conf.gutterY+"px"}else console.error("Container not found")},t.prototype.getNextColumn=function(t){return t%this._columns.length},t.prototype.getShortest=function(){for(var t=0,i=0;i<this._count;i++)this._columns[i]<this._columns[t]&&(t=i);return t},t.prototype.getLongest=function(){for(var t=0,i=0;i<this._count;i++)this._columns[i]>this._columns[t]&&(t=i);return t},t.prototype.resizeThrottler=function(){this._resizeTimeout||(this._resizeTimeout=setTimeout(function(){this._resizeTimeout=null,this._container.clientWidth!=this._width&&this.layout()}.bind(this),33))},t}();
 
-Many more of my projects on [GitHub](http://github.com/cheeaun).
+  setTimeout(function(){
+    new MiniMasonry({
+      container: '#projects-list > ul',
+      baseWidth: 320,
+      gutter: 25,
+      ultimateGutter: 20,
+    });
+  }, 100);
+</script>

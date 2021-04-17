@@ -1,73 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="utf-8">
-<title>{{#if title}}{{title}} &ndash; {{/if}}{{authorName}}</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="preload" href="/assets/fonts/WorkSans-Regular.woff2" as="font" type="font/woff2">
-<style>{{{css}}}</style>
-{{#if isBlog}}
-<meta name="twitter:card" content="summary">
-<meta property="og:title" content="{{title}}">
-<meta name="description" property="og:description" content="{{summary}}">
-{{#if ogImage}}<meta property="og:image" content="{{domainURL}}{{ogImage}}">{{/if}}
-<link rel="alternate" href="/blog/feed.xml" type="application/atom+xml" title="cheeaunblog">
-{{/if}}
-<link rel="manifest" href="/manifest.webmanifest">
-<link rel="apple-touch-icon" href="/assets/images/icon-192.png">
-<meta name="theme-color" content="#fff">
+{{> head }}
 <div id="container">
-  <header role="banner">
-    <h1>
-      <a href="/">{{{logo}}}</a>
-    </h1>
-  </header>
+  {{> header }}
   <div id="content">
     {{#if isArticle}}<article itemscope itemtype="http://schema.org/BlogPosting">{{/if}}
       {{{contents}}}
       {{#if isArticle}}</article>{{/if}}
   </div>
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/projects/">Projects</a></li>
-        <li><a href="/about/">About</a></li>
-      </ul>
-    </nav>
-  </footer>
+  {{> footer }}
 </div>
-<script>
-{{#if isBlog}}
-  window.onload = function () {
-    var $figures = document.getElementsByTagName('figure');
-    if (!$figures.length) return;
-    var asideImages = function () {
-      for (var i = 0, l = $figures.length; i < l; i++) {
-        var $figure = $figures[i];
-        var $images = $figure.getElementsByTagName('img');
-        if ($images.length == 1) {
-          var $img = $images[0];
-          var width = Math.max($img.naturalWidth, $img.width);
-          if (width <= 280 && (width / $figure.parentNode.offsetWidth * 100 < 50)) {
-            $figure.className = 'image-aside';
-          } else if ($figure.className) {
-            $figure.className = '';
-          }
-        }
-      }
-    };
-    asideImages();
-    window.onresize = asideImages;
-  };
-{{/if}}
-  if (navigator.serviceWorker) {
-    window.addEventListener('load', function () {
-      navigator.serviceWorker.register('/sw.js', {
-        scope: '/'
-      });
-    });
-  }
-</script>
-<script data-goatcounter="https://cheeaun.goatcounter.com/count" async src="//gc.zgo.at/count.v2.js" crossorigin="anonymous" integrity="sha384-PeYXrhTyEaBBz91ANMgpSbfN1kjioQNPHNDbMvevUVLJoWrVEjDCpKb71TehNAlj"></script>
-<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "56009c05c6234036a216843af8874520"}'></script><!-- End Cloudflare Web Analytics -->
-</html>
+{{> foot }}
