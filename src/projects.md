@@ -157,6 +157,7 @@ em.tag {
   - [The future of autonomous requires open source – updates on deck.gl and introducing loaders.gl](https://mailchi.mp/uber/the-future-of-autonomous-requires-open-source-updates-on-deckgl-and-introducing-loadersgl)
   - [Stacked bus routes on a map](https://flowingdata.com/2019/02/25/stacked-bus-routes-on-a-map/)
   - [“BusRouter SG” Convenient Website to Check Bus Arrival in Singapore in Real Time!](https://pianotohikouki.com/en/singapore/BusRouter-SG)
+  - [deck.gl Showcase](https://deck.gl/showcase)
 
   Discussion: [[OC] Visualization of bus routes overlapping each other, in Singapore](https://www.reddit.com/r/dataisbeautiful/comments/8xbvtz/oc_visualization_of_bus_routes_overlapping_each/)
 
