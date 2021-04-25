@@ -8,6 +8,7 @@ var inplace = require('metalsmith-in-place');
 var markdown = require('metalsmith-markdownit');
 var collections = require('metalsmith-collections');
 var redirect = require('metalsmith-redirect');
+var sitemap = require('metalsmith-sitemap');
 
 var contentTitles = require(__dirname + '/plugins/content-titles');
 var blogData = require(__dirname + '/plugins/blog-data');
@@ -62,6 +63,12 @@ var metalsmith = Metalsmith(__dirname)
     });
     done();
   })
+  .use(
+    sitemap({
+      hostname: 'https://cheeaun.com',
+      omitIndex: true,
+    }),
+  )
   .use(
     redirect({
       redirections: {
