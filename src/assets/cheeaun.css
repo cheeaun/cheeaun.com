@@ -343,8 +343,8 @@ header h1 a:focus svg{
 }
 #content blockquote{
   border-left: 3px solid #999;
-  padding: .3em 0 .3em 1em;
-  margin: 0 0 1em;
+  padding: .6em 0 .6em 1em;
+  margin: 0 0 3em;
 }
 #content blockquote p:last-child{
   margin-bottom: 0;
@@ -416,6 +416,9 @@ header h1 a:focus svg{
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+}
+#content blockquote figure img.large {
+  left: calc(50% - 10px); /* I don't really know the math */
 }
 
 #content figure a{
