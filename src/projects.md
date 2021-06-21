@@ -159,7 +159,10 @@ em.tag {
   - [“BusRouter SG” Convenient Website to Check Bus Arrival in Singapore in Real Time!](https://pianotohikouki.com/en/singapore/BusRouter-SG)
   - [deck.gl Showcase](https://deck.gl/showcase)
 
-  Discussion: [[OC] Visualization of bus routes overlapping each other, in Singapore](https://www.reddit.com/r/dataisbeautiful/comments/8xbvtz/oc_visualization_of_bus_routes_overlapping_each/)
+  Discussions:
+  
+  - [[OC] Visualization of bus routes overlapping each other, in Singapore](https://www.reddit.com/r/dataisbeautiful/comments/8xbvtz/oc_visualization_of_bus_routes_overlapping_each/)
+  - [I've designed a pretty unique bus service route diagram on busrouter.sg](https://www.reddit.com/r/singapore/comments/nv03xe/ive_designed_a_pretty_unique_bus_service_route/)
 
 - ![](/projects-images/railrouter-sg.jpg)
 
