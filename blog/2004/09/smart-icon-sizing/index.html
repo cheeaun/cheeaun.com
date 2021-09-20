@@ -72,7 +72,8 @@ list-style-image: url(chrome://browser/skin/throbber_small_loading.gif);
         if ($images.length == 1) {
           var $img = $images[0];
           var width = Math.max($img.naturalWidth, $img.width);
-          if (width <= 280 && (width / $figure.parentNode.offsetWidth * 100 < 50)) {
+          var height = Math.max($img.naturalHeight, $img.height);
+          if (width <= 280 && (width / $figure.parentNode.offsetWidth * 100 < 50) && height < window.innerHeight * 0.9) {
             $figure.className = 'image-aside';
           } else if ($figure.className) {
             $figure.className = '';

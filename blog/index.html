@@ -31,6 +31,13 @@
 <div>
     <article class="summary">
       <header>
+        <h2><a href="/blog/2021/09/bus-service-route-diagrams-busrouter-sg/" rel="bookmark">Designing bus service route diagrams on BusRouter SG</a></h2>
+        <time datetime="2021-09-20" class="date">20 September 2021</time>
+      </header>
+      <p>I launched the all-new design for BusRouter SG on November 2018. I wrote about my journey that lead me to the current design and quoted: Redesign…</p>
+    </article>
+    <article class="summary">
+      <header>
         <h2><a href="/blog/2020/12/2020-in-review/" rel="bookmark">2020 in review</a></h2>
         <time datetime="2020-12-31" class="date">31 December 2020</time>
       </header>
@@ -56,13 +63,6 @@
         <time datetime="2019-06-02" class="date">2 June 2019</time>
       </header>
       <p>Apparently, I’ve been called the “swag king” of Singapore 😅, mainly due to my voluntary work on printing swags like stickers and t-shirts for…</p>
-    </article>
-    <article class="summary">
-      <header>
-        <h2><a href="/blog/2019/02/building-busrouter-sg/" rel="bookmark">Building BusRouter SG</a></h2>
-        <time datetime="2019-02-04" class="date">4 February 2019</time>
-      </header>
-      <p>In 2016, I wrote on Building side projects: More than 10 years ago, I used to take buses all the time. At first, it's quite exhilarating because…</p>
     </article>
 </div>
 
@@ -90,7 +90,8 @@
         if ($images.length == 1) {
           var $img = $images[0];
           var width = Math.max($img.naturalWidth, $img.width);
-          if (width <= 280 && (width / $figure.parentNode.offsetWidth * 100 < 50)) {
+          var height = Math.max($img.naturalHeight, $img.height);
+          if (width <= 280 && (width / $figure.parentNode.offsetWidth * 100 < 50) && height < window.innerHeight * 0.9) {
             $figure.className = 'image-aside';
           } else if ($figure.className) {
             $figure.className = '';
