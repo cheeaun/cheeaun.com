@@ -1,7 +1,7 @@
 Replicating 3D Trees from Apple Maps
 ===
 
-On June 2021, Apple’s [WWDC12](https://developer.apple.com/wwdc21/) [event](https://developer.apple.com/videos/play/wwdc2021/101/) announced the all-new [Apple Maps](https://www.apple.com/maps/), introducing an amazing [new three-dimensional city experience](https://techcrunch.com/2021/06/07/apple-maps-upgrade-brings-more-detailed-maps-transit-features-ar-view-and-more/) with unprecedented detail for elevation, neighbourhoods, buildings, trees, and road features.
+On June 2021, Apple’s [WWDC21](https://developer.apple.com/wwdc21/) [event](https://developer.apple.com/videos/play/wwdc2021/101/) announced the all-new [Apple Maps](https://www.apple.com/maps/), introducing an amazing [new three-dimensional city experience](https://techcrunch.com/2021/06/07/apple-maps-upgrade-brings-more-detailed-maps-transit-features-ar-view-and-more/) with unprecedented detail for elevation, neighbourhoods, buildings, trees, and road features.
 
 It looks like this.
 
