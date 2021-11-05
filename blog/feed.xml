@@ -4,10 +4,17 @@
 	<id>tag:cheeaun.com,2011:blog</id>
 	<link rel="alternate" type="text/html" href="https://cheeaun.com/blog"/>
 	<link rel="self" type="application/atom+xml" href="https://cheeaun.com/blog/feed.xml"/>
-	<updated>2021-09-20T00:00:00Z</updated>
+	<updated>2021-11-05T00:00:00Z</updated>
 	<author>
 		<name>Lim Chee Aun</name>
 	</author>
+		<entry>
+			<id>https://cheeaun.com/blog/2021/11/replicating-3d-trees-apple-maps/</id>
+			<updated>2021-11-05T00:00:00Z</updated>
+			<title type="text">Replicating 3D Trees from Apple Maps</title>
+			<summary type="text">On June 2021, Apple’s WWDC12 event announced the all-new Apple Maps, introducing an amazing new three-dimensional city experience with unprecedented…</summary>
+			<link rel="alternate" type="text/html" href="https://cheeaun.com/blog/2021/11/replicating-3d-trees-apple-maps/" title="Replicating 3D Trees from Apple Maps"/>
+		</entry>
 		<entry>
 			<id>https://cheeaun.com/blog/2021/09/bus-service-route-diagrams-busrouter-sg/</id>
 			<updated>2021-09-20T00:00:00Z</updated>
@@ -35,12 +42,5 @@
 			<title type="text">Next-level visualizations with ExploreTrees.SG</title>
 			<summary type="text">Last year, I wrote about one of my most ambitious side project ever, ExploreTrees.SG. It was simply breath-taking.Revisiting the masterpieceI…</summary>
 			<link rel="alternate" type="text/html" href="https://cheeaun.com/blog/2019/07/next-level-visualizations-exploretrees-sg/" title="Next-level visualizations with ExploreTrees.SG"/>
-		</entry>
-		<entry>
-			<id>https://cheeaun.com/blog/2019/06/what-i-learned-from-printing-custom-swags/</id>
-			<updated>2019-06-02T00:00:00Z</updated>
-			<title type="text">What I learned from printing custom swags</title>
-			<summary type="text">Apparently, I’ve been called the “swag king” of Singapore 😅, mainly due to my voluntary work on printing swags like stickers and t-shirts for…</summary>
-			<link rel="alternate" type="text/html" href="https://cheeaun.com/blog/2019/06/what-i-learned-from-printing-custom-swags/" title="What I learned from printing custom swags"/>
 		</entry>
 </feed>

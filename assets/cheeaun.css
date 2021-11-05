@@ -344,7 +344,7 @@ header h1 a:focus svg{
 #content blockquote{
   border-left: 3px solid #999;
   padding: .6em 0 .6em 1em;
-  margin: 0 0 3em;
+  margin: 0 0 2em;
 }
 #content blockquote p:last-child{
   margin-bottom: 0;
