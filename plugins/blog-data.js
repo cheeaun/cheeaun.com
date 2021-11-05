@@ -3,6 +3,13 @@ var parse = require('date-fns/parse');
 var format = require('date-fns/format');
 var formatISO = require('date-fns/formatISO');
 var sizeOf = require('image-size');
+var fs = require('fs');
+
+function getFilesizeInBytes(filename) {
+  var stats = fs.statSync(filename);
+  var fileSizeInBytes = stats.size;
+  return fileSizeInBytes;
+}
 
 module.exports = plugin;
 
@@ -91,6 +98,7 @@ function plugin(options) {
             img.attr('src', src);
           }
           var dimensions = sizeOf('src' + src);
+          var fileSize = getFilesizeInBytes('src' + src) / 1024;
           var pixelRatio = parseInt((src.match(/@(\d)x\./i) || [, 1])[1], 10);
           var width = Math.round(dimensions.width / pixelRatio);
           var height = Math.round(dimensions.height / pixelRatio);
@@ -99,7 +107,9 @@ function plugin(options) {
           }
           img.attr('width', width);
           img.attr('height', height);
-          img.attr('loading', 'lazy');
+          if (fileSize > 200) {
+            img.attr('loading', 'lazy');
+          }
           if (width > 1080 || (width > 720 && pixelRatio > 1))
             img.addClass('large');
           var el = img;
