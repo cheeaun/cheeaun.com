@@ -1,9 +1,10 @@
 <script>
 {{#if isBlog}}
   window.onload = function () {
+    // Auto float images
     var $figures = document.getElementsByTagName('figure');
     if (!$figures.length) return;
-    var asideImages = function () {
+    function asideImages () {
       for (var i = 0, l = $figures.length; i < l; i++) {
         var $figure = $figures[i];
         var $images = $figure.getElementsByTagName('img');
@@ -21,6 +22,34 @@
     };
     asideImages();
     window.onresize = asideImages;
+
+    // Autoplay videos when in viewport
+    // https://benfrain.com/automatically-play-and-pause-video-as-it-enters-and-leaves-the-viewport-screen/
+    function playPauseVideo() {
+      var videos = document.querySelectorAll("video");
+      videos.forEach((video) => {
+        video.muted = true;
+        var playPromise = video.play();
+        if (playPromise !== undefined) {
+          playPromise.then((_) => {
+            var observer = new IntersectionObserver(
+              (entries) => {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                    video.play();
+                  } else {
+                    video.pause();
+                  }
+                });
+              },
+              { threshold: 0.2 }
+            );
+            observer.observe(video);
+          });
+        }
+      });
+    }
+    playPauseVideo();
   };
 {{/if}}
   if (navigator.serviceWorker) {
