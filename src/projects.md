@@ -119,7 +119,10 @@ em.tag {
 
   Discussion: [Rebuilt my RN app from scratch. Feedback welcomed](https://www.reddit.com/r/reactnative/comments/ki6652/rebuilt_my_rn_app_from_scratch_feedback_welcomed/)
 
-  Featured: [Product Hunt: HackerWeb](https://www.producthunt.com/posts/hackerweb-2)
+  Featured:
+  
+  - [Product Hunt: HackerWeb](https://www.producthunt.com/posts/hackerweb-2)
+  - [EAS Build — April Preview Update](https://blog.expo.dev/eas-build-april-preview-update-ebd7dff9dd25)
 
 - ![](/projects-images/cheeaun-earth.jpg)
 
@@ -149,7 +152,10 @@ em.tag {
 
   **[Check it out 👉](https://busrouter.sg/)**
 
-  Read more: [Building BusRouter SG](/blog/2019/02/building-busrouter-sg)
+  Read more:
+  
+  - [Building BusRouter SG](/blog/2019/02/building-busrouter-sg)
+  - [Designing bus service route diagrams on BusRouter SG](https://cheeaun.com/blog/2021/09/bus-service-route-diagrams-busrouter-sg/)
 
   Featured:
 
@@ -163,6 +169,7 @@ em.tag {
   
   - [[OC] Visualization of bus routes overlapping each other, in Singapore](https://www.reddit.com/r/dataisbeautiful/comments/8xbvtz/oc_visualization_of_bus_routes_overlapping_each/)
   - [I've designed a pretty unique bus service route diagram on busrouter.sg](https://www.reddit.com/r/singapore/comments/nv03xe/ive_designed_a_pretty_unique_bus_service_route/)
+  - [BusRouter SG now has multi-route mode - display multiple bus routes at the same time](https://www.reddit.com/r/singapore/comments/ofyhrp/busrouter_sg_now_has_multiroute_mode_display/)
 
 - ![](/projects-images/railrouter-sg.jpg)
 
@@ -172,7 +179,15 @@ em.tag {
 
   **[Check it out 👉](https://railrouter.sg/)**
 
-  Featured: [Explore The Rail System Using RailRouter](https://therojakplace.com/2016/01/explore-the-rail-system-using-railrouter/)
+  Featured:
+  
+  - [Explore The Rail System Using RailRouter](https://therojakplace.com/2016/01/explore-the-rail-system-using-railrouter/)
+  - [RailRouter SG Lets You Know Which Crowded MRT Stations To Avoid.](https://the-sg-life.com/2021/11/10/railrouter-sg-lets-you-know-which-crowded-mrt-stations-to-avoid/)
+
+  Discussions:
+
+  - [RailRouter SG now updated with TEL2 line and stations](https://www.reddit.com/r/singapore/comments/pdqdwh/railrouter_sg_now_updated_with_tel2_line_and/)
+  - [Real-time crowdedness level indicators on MRT/LRT stations](https://www.reddit.com/r/singapore/comments/qpwi0r/realtime_crowdedness_level_indicators_on_mrtlrt/)
 
 - ![](/projects-images/taxirouter-sg.jpg)
 
@@ -215,10 +230,18 @@ em.tag {
 
   - [Building ExploreTrees.SG](/blog/2018/04/building-exploretrees-sg)
   - [Next-level visualizations with ExploreTrees.SG](/blog/2019/07/next-level-visualizations-exploretrees-sg)
+  - [Replicating 3D Trees from Apple Maps](https://cheeaun.com/blog/2021/11/replicating-3d-trees-apple-maps)
 
-  Featured: [My friend took NParks's data and built a site for people to visualise the various trees around Singapore](https://www.reddit.com/r/singapore/comments/bj0xze/my_friend_took_nparkss_data_and_built_a_site_for/)
+  Featured: [Mapping Trees in 3D](https://googlemapsmania.blogspot.com/2021/10/mapping-trees-in-3d.html)
 
   Presented: [Mapping 564,266 trees in Singapore - Hack & Tell Singapore](https://engineers.sg/video/mapping-564-266-trees-in-singapore-hack-tell-singapore--2801)
+
+  Discussions:
+
+  - [My friend took NParks's data and built a site for people to visualise the various trees around Singapore](https://www.reddit.com/r/singapore/comments/bj0xze/my_friend_took_nparkss_data_and_built_a_site_for/)
+  - [I rendered trees in SG to look like the one in Apple Maps](https://www.reddit.com/r/singapore/comments/q7v0gr/i_rendered_trees_in_sg_to_look_like_the_one_in/)
+  - [What's new on ExploreTrees.SG (Oct 2021)](https://www.reddit.com/r/singapore/comments/qhib9d/whats_new_on_exploretreessg_oct_2021/)
+  - [I made a cool video of my 3D trees project](https://www.reddit.com/r/singapore/comments/qjgm25/i_made_a_cool_video_of_my_3d_trees_project/)
 
 - ![](/projects-images/checkweather-sg.jpg)
 
@@ -317,6 +340,8 @@ em.tag {
 
   **[Check it out 👉](https://github.com/cheeaun/phoenity-icons)**
 
+  Featured: ["Firefox Secrets" book](https://books.google.com.sg/books?id=sfciobmzOOcC&lpg=PA110&dq=%22phoenity%22&pg=PA110#v=onepage&q=%22phoenity%22&f=false)
+
 </div>
 
 <div style="text-align: center; margin: 5em;">
@@ -324,8 +349,8 @@ Check out more of my latest projects on <a href="https://github.com/cheeaun">Git
 </div>
 
 <script>
-  // https://unpkg.com/minimasonry@1.1.6/build/minimasonry.min.js
-  var MiniMasonry=function(){"use strict";function t(t){return this._sizes=[],this._columns=[],this._container=null,this._count=null,this._width=0,this._resizeTimeout=null,this.conf={baseWidth:255,gutterX:null,gutterY:null,gutter:10,container:null,minify:!0,ultimateGutter:5,surroundingGutter:!0},this.init(t),this}return t.prototype.init=function(t){for(var i in this.conf)null!=t[i]&&(this.conf[i]=t[i]);if(null!=this.conf.gutterX&&null!=this.conf.gutterY||(this.conf.gutterX=this.conf.gutterY=this.conf.gutter),this._container="object"==typeof this.conf.container&&this.conf.container.nodeName?this.conf.container:document.querySelector(this.conf.container),!this._container)throw new Error("Container not found or missing");window.addEventListener("resize",this.resizeThrottler.bind(this)),this.layout()},t.prototype.reset=function(){this._sizes=[],this._columns=[],this._count=null,this._width=this._container.clientWidth;var t=this.conf.baseWidth;this._width<t&&(this._width=t,this._container.style.minWidth=t+"px"),1==this.getCount()&&(this.conf.gutterX=this.conf.ultimateGutter,this._count=1),this._width<this.conf.baseWidth+2*this.conf.gutterX&&(this.conf.gutterX=0)},t.prototype.getCount=function(){return this.conf.surroundingGutter?Math.floor((this._width-this.conf.gutterX)/(this.conf.baseWidth+this.conf.gutterX)):Math.floor((this._width+this.conf.gutterX)/(this.conf.baseWidth+this.conf.gutterX))},t.prototype.computeWidth=function(){var t=this.conf.surroundingGutter?(this._width-this.conf.gutterX)/this._count-this.conf.gutterX:(this._width+this.conf.gutterX)/this._count-this.conf.gutterX;return t=Number.parseFloat(t.toFixed(2))},t.prototype.layout=function(){if(this._container){this.reset(),null==this._count&&(this._count=this.getCount());for(var t=this.computeWidth(),i=0;i<this._count;i++)this._columns[i]=0;for(var n=this._container.children,s=0;s<n.length;s++)n[s].style.width=t+"px",this._sizes[s]=n[s].clientHeight;var o,e=this.conf.surroundingGutter?this.conf.gutterX:0;this._count>this._sizes.length&&(o=this._sizes.length*(t+this.conf.gutterX)-this.conf.gutterX,e=(this._width-o)/2);for(var h=0;h<n.length;h++){var r=this.conf.minify?this.getShortest():this.getNextColumn(h),u=0;!this.conf.surroundingGutter&&r==this._columns.length||(u=this.conf.gutterX);var c=this._columns[r];n[h].style.transform="translate3d("+Math.round(e+(t+u)*r)+"px,"+Math.round(c)+"px,0)",this._columns[r]+=this._sizes[h]+(1<this._count?this.conf.gutterY:this.conf.ultimateGutter)}this._container.style.height=this._columns[this.getLongest()]-this.conf.gutterY+"px"}else console.error("Container not found")},t.prototype.getNextColumn=function(t){return t%this._columns.length},t.prototype.getShortest=function(){for(var t=0,i=0;i<this._count;i++)this._columns[i]<this._columns[t]&&(t=i);return t},t.prototype.getLongest=function(){for(var t=0,i=0;i<this._count;i++)this._columns[i]>this._columns[t]&&(t=i);return t},t.prototype.resizeThrottler=function(){this._resizeTimeout||(this._resizeTimeout=setTimeout(function(){this._resizeTimeout=null,this._container.clientWidth!=this._width&&this.layout()}.bind(this),33))},t}();
+  // https://unpkg.com/minimasonry@1.3.0/build/minimasonry.min.js
+  var MiniMasonry=function(){"use strict";function t(t){return this._sizes=[],this._columns=[],this._container=null,this._count=null,this._width=0,this._removeListener=null,this._resizeTimeout=null,this.conf={baseWidth:255,gutterX:null,gutterY:null,gutter:10,container:null,minify:!0,ultimateGutter:5,surroundingGutter:!0,direction:"ltr",wedge:!1},this.init(t),this}return t.prototype.init=function(t){for(var i in this.conf)null!=t[i]&&(this.conf[i]=t[i]);if(null!=this.conf.gutterX&&null!=this.conf.gutterY||(this.conf.gutterX=this.conf.gutterY=this.conf.gutter),this._container="object"==typeof this.conf.container&&this.conf.container.nodeName?this.conf.container:document.querySelector(this.conf.container),!this._container)throw new Error("Container not found or missing");var n=this.resizeThrottler.bind(this);window.addEventListener("resize",n),this._removeListener=function(){window.removeEventListener("resize",n)},this.layout()},t.prototype.reset=function(){this._sizes=[],this._columns=[],this._count=null,this._width=this._container.clientWidth;var t=this.conf.baseWidth;this._width<t&&(this._width=t,this._container.style.minWidth=t+"px"),1==this.getCount()&&(this.conf.gutterX=this.conf.ultimateGutter,this._count=1),this._width<this.conf.baseWidth+2*this.conf.gutterX&&(this.conf.gutterX=0)},t.prototype.getCount=function(){return this.conf.surroundingGutter?Math.floor((this._width-this.conf.gutterX)/(this.conf.baseWidth+this.conf.gutterX)):Math.floor((this._width+this.conf.gutterX)/(this.conf.baseWidth+this.conf.gutterX))},t.prototype.computeWidth=function(){var t=this.conf.surroundingGutter?(this._width-this.conf.gutterX)/this._count-this.conf.gutterX:(this._width+this.conf.gutterX)/this._count-this.conf.gutterX;return t=Number.parseFloat(t.toFixed(2))},t.prototype.layout=function(){if(this._container){this.reset(),null==this._count&&(this._count=this.getCount());for(var t=this.computeWidth(),i=0;i<this._count;i++)this._columns[i]=0;for(var n,e,o=this._container.children,s=0;s<o.length;s++)o[s].style.width=t+"px",this._sizes[s]=o[s].clientHeight;n="ltr"==this.conf.direction?this.conf.surroundingGutter?this.conf.gutterX:0:this._width-(this.conf.surroundingGutter?this.conf.gutterX:0),this._count>this._sizes.length&&(e=this._sizes.length*(t+this.conf.gutterX)-this.conf.gutterX,!1===this.conf.wedge?n="ltr"==this.conf.direction?(this._width-e)/2:this._width-(this._width-e)/2:"ltr"==this.conf.direction||(n=this._width-this.conf.gutterX));for(var r=0;r<o.length;r++){var h=this.conf.minify?this.getShortest():this.getNextColumn(r),u=0;!this.conf.surroundingGutter&&h==this._columns.length||(u=this.conf.gutterX);var c="ltr"==this.conf.direction?n+(t+u)*h:n-(t+u)*h-t,u=this._columns[h];o[r].style.transform="translate3d("+Math.round(c)+"px,"+Math.round(u)+"px,0)",this._columns[h]+=this._sizes[r]+(1<this._count?this.conf.gutterY:this.conf.ultimateGutter)}this._container.style.height=this._columns[this.getLongest()]-this.conf.gutterY+"px"}else console.error("Container not found")},t.prototype.getNextColumn=function(t){return t%this._columns.length},t.prototype.getShortest=function(){for(var t=0,i=0;i<this._count;i++)this._columns[i]<this._columns[t]&&(t=i);return t},t.prototype.getLongest=function(){for(var t=0,i=0;i<this._count;i++)this._columns[i]>this._columns[t]&&(t=i);return t},t.prototype.resizeThrottler=function(){this._resizeTimeout||(this._resizeTimeout=setTimeout(function(){this._resizeTimeout=null,this._container.clientWidth!=this._width&&this.layout()}.bind(this),33))},t.prototype.destroy=function(){"function"==typeof this._removeListener&&this._removeListener();for(var t=this._container.children,i=0;i<t.length;i++)t[i].style.removeProperty("width"),t[i].style.removeProperty("transform");this._container.style.removeProperty("height"),this._container.style.removeProperty("min-width")},t}();
 
   setTimeout(function(){
     new MiniMasonry({
@@ -334,5 +359,5 @@ Check out more of my latest projects on <a href="https://github.com/cheeaun">Git
       gutter: 25,
       ultimateGutter: 20,
     });
-  }, 100);
+  }, 300);
 </script>
