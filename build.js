@@ -1,5 +1,4 @@
 var fs = require('fs');
-var CleanCSS = require('clean-css');
 
 var Metalsmith = require('metalsmith');
 var layouts = require('metalsmith-layouts');
@@ -9,6 +8,7 @@ var markdown = require('metalsmith-markdownit');
 var collections = require('metalsmith-collections');
 var redirect = require('metalsmith-redirect');
 var sitemap = require('metalsmith-sitemap');
+var postcss = require('metalsmith-with-postcss');
 
 var contentTitles = require(__dirname + '/plugins/content-titles');
 var blogData = require(__dirname + '/plugins/blog-data');
@@ -19,9 +19,17 @@ var metalsmith = Metalsmith(__dirname)
     authorName: 'Lim Chee Aun',
     domainURL: 'https://cheeaun.com',
     logo: fs.readFileSync('src/assets/images/cheeaun-logo.html.svg'),
-    css: new CleanCSS().minify(fs.readFileSync('src/assets/cheeaun.css'))
-      .styles,
   })
+  .use(
+    postcss({
+      map: false,
+      plugins: {
+        'postcss-clean': {},
+        'postcss-custom-properties': {},
+        autoprefixer: {},
+      },
+    }),
+  )
   .use(markdown('commonmark').enable('table'))
   .use(contentTitles())
   .use(blogData())
