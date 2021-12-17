@@ -9,6 +9,7 @@ var collections = require('metalsmith-collections');
 var redirect = require('metalsmith-redirect');
 var sitemap = require('metalsmith-sitemap');
 var postcss = require('metalsmith-with-postcss');
+var XXH = require('xxhashjs');
 
 var contentTitles = require(__dirname + '/plugins/content-titles');
 var blogData = require(__dirname + '/plugins/blog-data');
@@ -19,6 +20,9 @@ var metalsmith = Metalsmith(__dirname)
     authorName: 'Lim Chee Aun',
     domainURL: 'https://cheeaun.com',
     logo: fs.readFileSync('src/assets/images/cheeaun-logo.html.svg'),
+    cssHash: XXH.h32(fs.readFileSync('src/assets/cheeaun.css'), '').toString(
+      36,
+    ),
   })
   .use(
     postcss({
