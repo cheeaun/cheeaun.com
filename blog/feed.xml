@@ -4,10 +4,17 @@
 	<id>tag:cheeaun.com,2011:blog</id>
 	<link rel="alternate" type="text/html" href="https://cheeaun.com/blog"/>
 	<link rel="self" type="application/atom+xml" href="https://cheeaun.com/blog/feed.xml"/>
-	<updated>2021-11-05T00:00:00Z</updated>
+	<updated>2022-01-02T00:00:00Z</updated>
 	<author>
 		<name>Lim Chee Aun</name>
 	</author>
+		<entry>
+			<id>https://cheeaun.com/blog/2022/01/2021-in-review/</id>
+			<updated>2022-01-02T00:00:00Z</updated>
+			<title type="text">2021 in review</title>
+			<summary type="text">It’s still hard to believe how fast this year has gone by. My mind is probably still stuck in 2020.Anyway, let’s get on with the list.January…</summary>
+			<link rel="alternate" type="text/html" href="https://cheeaun.com/blog/2022/01/2021-in-review/" title="2021 in review"/>
+		</entry>
 		<entry>
 			<id>https://cheeaun.com/blog/2021/11/replicating-3d-trees-apple-maps/</id>
 			<updated>2021-11-05T00:00:00Z</updated>
@@ -35,12 +42,5 @@
 			<title type="text">2019 in review</title>
 			<summary type="text">As per my previous year-in-reviews (2018, 2017, 2016, 2015, 2014), I always start with the little things, now properly sectioned by month, as…</summary>
 			<link rel="alternate" type="text/html" href="https://cheeaun.com/blog/2020/01/2019-in-review/" title="2019 in review"/>
-		</entry>
-		<entry>
-			<id>https://cheeaun.com/blog/2019/07/next-level-visualizations-exploretrees-sg/</id>
-			<updated>2019-07-10T00:00:00Z</updated>
-			<title type="text">Next-level visualizations with ExploreTrees.SG</title>
-			<summary type="text">Last year, I wrote about one of my most ambitious side project ever, ExploreTrees.SG. It was simply breath-taking.Revisiting the masterpieceI…</summary>
-			<link rel="alternate" type="text/html" href="https://cheeaun.com/blog/2019/07/next-level-visualizations-exploretrees-sg/" title="Next-level visualizations with ExploreTrees.SG"/>
 		</entry>
 </feed>
