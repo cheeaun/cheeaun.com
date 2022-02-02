@@ -281,6 +281,19 @@ em.tag {
 
   **[Check it out 👉](https://kopi.guide/)**
 
+- ![](/projects-images/chengyu-wordle.jpg)
+
+  ## Chengyu Wordle
+
+  Wordle, for Chinese idioms - 成语 (chéngyǔ)
+
+  **[Check it out 👉](https://cheeaun.github.io/chengyu-wordle/)**
+
+  Featured:
+
+  - [Wordle-Like Games Slowly Gain Traction on Chinese Social Media](https://www.sixthtone.com/news/1009586/wordle-like-games-slowly-gain-traction-on-chinese-social-media-)
+  - [A Sensational Wordle Clone Without Any Actual Words](https://kotaku.com/games-like-wordle-subwaydle-nyct-mta-best-routes-1848461481)
+
 - ![](/projects-images/bubble-wrap.jpg)
 
   ## Bubble wrap
