@@ -289,6 +289,8 @@ em.tag {
 
   **[Check it out 👉](https://cheeaun.github.io/chengyu-wordle/)**
 
+  Read more: [Chengyu Wordle Is Not a Love Story](/blog/2022/02/chengyu-wordle-is-not-a-love-story)
+
   Featured:
 
   - [Wordle-Like Games Slowly Gain Traction on Chinese Social Media](https://www.sixthtone.com/news/1009586/wordle-like-games-slowly-gain-traction-on-chinese-social-media-)
@@ -301,6 +303,8 @@ em.tag {
   - [Want more Wordle? Here are 13 spin-offs to try, including a Singlish version](https://www.asiaone.com/lifestyle/want-more-wordle-here-are-13-spin-offs-try-including-singlish-version)
   - [连总理都推荐的爆红猜字游戏Wordle　为何在全球疯狂吸粉？](https://www.redants.sg/good-reads/story20220211-5941)
   - [Wikipedia: Wordle](https://zh.wikipedia.org/wiki/Wordle#cite_note-45)
+  - [Can’t Get Enough Of Wordle? Here’s 17 Wordle Variants To Try
+](https://shopee.sg/blog/best-wordle-games/)
 
 - ![](/projects-images/bubble-wrap.jpg)
 
