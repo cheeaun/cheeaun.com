@@ -13,7 +13,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="apple-touch-icon" href="/assets/images/icon-192.png">
 <meta name="color-scheme" content="light dark"><div id="container">
-  <header role="banner">
+  <header>
     <h1>
       <a href="/"><svg width="120" height="120" viewBox="0 0 225 225">
     <title>Lim Chee Aun</title>
@@ -23,8 +23,7 @@
   </svg>
   </a>
     </h1>
-  </header>
-  <div id="content">
+  </header>  <div id="content">
     <article itemscope itemtype="http://schema.org/BlogPosting">
       <header><h1 itemprop="heading">Next-level visualizations with ExploreTrees.SG</h1><time datetime="2019-07-10" class="meta date" itemprop="datePublished">10 July 2019</time></header><div itemprop="articleBody"><p>Last year, I <a href="/blog/2018/04/building-exploretrees-sg/">wrote about one of my most ambitious side project ever</a>, <a href="https://exploretrees.sg/">ExploreTrees.SG</a>. It was simply <strong>breath-taking</strong>.</p><figure><img src="/blog/images/screenshots/web/tree-families-legend-layers-panel-exploretrees-sg@2x.png" alt="Tree families legend on layers panel, on ExploreTrees.SG" width="1024" height="768" loading="lazy" class="large"></figure><h2>Revisiting the masterpiece</h2><p>I haven&#x2019;t touch it since then. March this year, I <em>suddenly</em> had an itch to update the dataset and see if anything&#x2019;s changed. I ran the script to fetch the latest data and <a href="https://twitter.com/cheeaun/status/1108010887984472069">got this</a>:</p><figure><img src="/blog/images/screenshots/software/terminal-script-generating-trees-data@2x.jpg" alt="Terminal showing a script generating trees data" width="471" height="277"></figure><p>It&#x2019;s a script that scrapes data from <a href="https://www.nparks.gov.sg/">National Parks Board</a>&#x2019;s <a href="http://trees.sg/">Trees.sg</a>, showing the total count of trees and species, and generates a GeoJSON file. From the count, I can compare the previous year&#x2019;s number of trees to this year&#x2019;s.</p><p>March last year, <strong>564,266</strong> trees. March this year, <strong>564,678</strong> trees. It increased by few hundreds!</p><p>Looking back previously, I attempted to render <strong>all</strong> trees on the map <em>in</em> the web browser, but failed due to exceedingly large file size and slow performance. I ended up uploading the data to <a href="https://www.mapbox.com/mapbox-studio/">Mapbox Studio</a> as <a href="https://docs.mapbox.com/help/glossary/vector-tiles/">vector tileset</a>, to be served back on the map. It&#x2019;s not a pure client-side solution, but a back-end supported one, which makes it no different from Trees.sg <em>except</em> it&#x2019;s faster &#x1F937;&#x200D;&#x2642;&#xFE0F;.</p><p>Ultimately, I still want to achieve this pure client-side solution because I <em>love</em> to push the limits &#x1F609;.</p><p>A year has passed, technologies have improved, right?</p><p>I took a hard look at <code>trees-everything.geojson</code> which contains <em>all</em> trees data. It&#x2019;s <strong>197.6 MB</strong> in size, which is <em>insane</em> for any web sites.</p><p>I came up with two ideas:</p><ol>
 <li>Give up on the GeoJSON format. Embrace normal JSON, remove all the keys and only store values. Convert, for example <code>{&quot;id&quot;: &quot;123&quot;, &quot;height&quot;: 200}</code> into <code>[&quot;123&quot;, 200]</code>. Keys will be hardcoded somewhere else in the code.</li>

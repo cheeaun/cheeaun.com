@@ -13,7 +13,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="apple-touch-icon" href="/assets/images/icon-192.png">
 <meta name="color-scheme" content="light dark"><div id="container">
-  <header role="banner">
+  <header>
     <h1>
       <a href="/"><svg width="120" height="120" viewBox="0 0 225 225">
     <title>Lim Chee Aun</title>
@@ -23,8 +23,7 @@
   </svg>
   </a>
     </h1>
-  </header>
-  <div id="content">
+  </header>  <div id="content">
     <article itemscope itemtype="http://schema.org/BlogPosting">
       <header><h1 itemprop="heading">The inverted Firefox experiment</h1><time datetime="2004-10-31" class="meta date" itemprop="datePublished">31 October 2004</time></header><div itemprop="articleBody"><p>Would anyone  like to conduct an experiment? A <em>very simple</em> experiment?</p><p>I once watched a documentary on how wonderful the human brain is. Our grey matter has the ability to learn new things, remember a lot of data, control our body system and adapt to new environments. There was one experiment conducted by one scientist, being the guinea pig to wear a special pair of glasses that <em>inverts</em> our vision. That means the sky is at the bottom and the ground is at the top. Within some time, that scientist got used to it as the brain successfully adapt to the <em>inverted surrounding world</em>. After the scientist take off the glasses, the brain adapts again to the normal condition, also within a period of time. Amazing.</p><p>Just recently, I found <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=221824" title="Bug 221824 - themes should be RTL compatible">Bug 221824</a> from Kevin&apos;s <a href="http://kmgerich.com/archive/000075.html" title="Firefox 1.0almost">blog post</a>. It&apos;s a bug report to make themes compatible with right-to-left systems. I wonder, what is right-to-left, in short, RTL? I read the comments and understand that it&apos;s related to systems with RTL languages such as Hebrew and Arabic. As a theme designer, I got quite interested in this issue and added my email address to the CC list. However, there is a problem. English is not a RTL language, so how am I going to see a RTL interface?</p><figure><img src="/blog/images/screenshots/firefox/rtl_bidi_toolbox_interface.png" alt="right-to-left interface of Mozilla Firefox" width="300" height="90"></figure><p>Well, it&apos;s pretty simple anyway. First, I type <code>about:config</code> into Firefox&apos;s location bar and press <code>Enter</code>. Then, I modify the value of the &apos;bidi.direction&apos; preference name from 1 to 2. Reload Firefox and behold. <strong>Everything is cross-eyed</strong>. It gets a bit scary the first time I see it on my monitor screen. Suddenly, I lost my way around the interface, as my brain tries to adapt to this <em>new environment</em>. Since this setting also affects the web pages I visit, it messes up the page layout and makes the text hard to read. To prevent so, I have to put this code into the &apos;userContent.css&apos; file:</p><pre><code>*:not([dir=&quot;rtl&quot;]){
 <em>direction: ltr !important;</em>

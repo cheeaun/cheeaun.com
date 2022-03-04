@@ -13,7 +13,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="apple-touch-icon" href="/assets/images/icon-192.png">
 <meta name="color-scheme" content="light dark"><div id="container">
-  <header role="banner">
+  <header>
     <h1>
       <a href="/"><svg width="120" height="120" viewBox="0 0 225 225">
     <title>Lim Chee Aun</title>
@@ -23,8 +23,7 @@
   </svg>
   </a>
     </h1>
-  </header>
-  <div id="content">
+  </header>  <div id="content">
     <article itemscope itemtype="http://schema.org/BlogPosting">
       <header><h1 itemprop="heading">Replicating 3D Trees from Apple Maps</h1><time datetime="2021-11-05" class="meta date" itemprop="datePublished">5 November 2021</time></header><div itemprop="articleBody"><p>On June 2021, Apple&#x2019;s <a href="https://developer.apple.com/wwdc21/">WWDC21</a> <a href="https://developer.apple.com/videos/play/wwdc2021/101/">event</a> announced the all-new <a href="https://www.apple.com/maps/">Apple Maps</a>, introducing an amazing <a href="https://techcrunch.com/2021/06/07/apple-maps-upgrade-brings-more-detailed-maps-transit-features-ar-view-and-more/">new three-dimensional city experience</a> with unprecedented detail for elevation, neighbourhoods, buildings, trees, and road features.</p><p>It looks like this.</p><figure><img src="/blog/images/screenshots/software/wwdc21-apple-maps-elevation-trees-buildings@2x.jpg" alt="WWDC21 keynote showing the new Apple Maps with details for elevation, trees and buildings" width="815" height="459" class="large"></figure><p>There&#x2019;s a lot going on here, but I&#x2019;m going to focus on only one.</p><p><strong>Trees</strong>.</p><p>Two years ago, I wrote &#x201C;<a href="/blog/2019/07/next-level-visualizations-exploretrees-sg/">Next-level visualizations with ExploreTrees.SG</a>&#x201D;. It has details on how I try to render three-dimensional trees on a map and my experience along the way. I&#x2019;m not an expert in this topic but I had my fair share of trials and errors while working on it.</p><p>Here&#x2019;s a comparison of my attempt and Apple&#x2019;s:</p><figure><img src="/blog/images/screenshots/software/trees-comparison-exploretrees-sg-apple-maps.jpg" alt="Trees comparison between ExploreTrees.SG and Apple Maps" width="800" height="400"></figure><p>They look different but I have to admit, Apple&#x2019;s one looks <em>so good</em>.</p><p>Let me recap on how I came up with my attempt in the first place:</p><ol>
 <li>The trees have to look <strong>semi-realistic</strong>. They cannot be too realistic because they&#x2019;ll never look like the real thing anyway. Real-world <a href="https://en.wikipedia.org/wiki/Tree_measurement">tree measurement</a> is actually <em>very</em> complicated.</li>

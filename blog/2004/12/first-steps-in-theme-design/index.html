@@ -13,7 +13,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="apple-touch-icon" href="/assets/images/icon-192.png">
 <meta name="color-scheme" content="light dark"><div id="container">
-  <header role="banner">
+  <header>
     <h1>
       <a href="/"><svg width="120" height="120" viewBox="0 0 225 225">
     <title>Lim Chee Aun</title>
@@ -23,8 +23,7 @@
   </svg>
   </a>
     </h1>
-  </header>
-  <div id="content">
+  </header>  <div id="content">
     <article itemscope itemtype="http://schema.org/BlogPosting">
       <header><h1 itemprop="heading">First steps in theme design</h1><time datetime="2004-12-11" class="meta date" itemprop="datePublished">11 December 2004</time></header><div itemprop="articleBody"><p>I remember before I started making themes for Phoenix, I don&apos;t know anything at all about icons design and theme design. At that time, I have never even created a theme or skin for <em>any</em> software before. But somehow I was motivated to create one for Phoenix, just for fun anyway.</p><p>I decided to give it a try and used the <a href="http://quadrone.org/" title="Quadrone">Qute theme</a> as my base, because it was the most <em>polished</em> theme at that time. After decompressing the theme package, I look around and surprised to see that all are plain CSS files and mostly PNG images. When reading the files, I began to understand that all the UI elements in Phoenix are rendered with CSS properties! Using my basic CSS knowledge, it got me started right away.</p><figure><img src="/blog/images/artwork/icons/phoenie.png" width="270" height="100" alt="Phoenie icons"></figure><p>As you might not know, my first theme is <strong>not</strong> Phoenity. It&apos;s called <strong>Phoenie</strong>. It&apos;s my first ever attempt to create toolbar icons. Obviously, the icons look a lot like Phoenity, as they are now better known as the <em>pre-Phoenity</em> icons. When I released this theme, I didn&apos;t get much response from the community because the theme was very buggy. As I remember, the only person giving feedback was Chris Neale, who helped me a lot since then.</p><p>Unfortunately, the Phoenie icons are <em>a bit too complex</em>, so I decided to make a much simpler version which is now known as Phoenity. The simplicity of the icons actually gives me more time to focus on the codes and learn some stuff. One of the problems I had is that I don&apos;t understand some of the Mozilla-proprietary CSS codes. I was confused how <code>-moz-image-region</code> works as it is one of the most common properties used around the theme files. I guess, this could the <em>first problem</em> faced by most novice theme designers in the Mozilla community.</p><p>According to <a href="http://xulplanet.com/references/elemref/ref_StyleProperties.html#prop_-moz-image-region" title="Style Properties Reference : -moz-image-region">XULPlanet.com</a>, the syntax is explained as such:</p><blockquote><p>For elements that have an image, this property sets the area of the image that is used. You can set multiple elements to use the same image but use a different region of the image, reducing the amount of memory required. You can change this property to simulate animation. The syntax is similar to the <code>clip</code> property. All four values are relative to the upper left corner of the image.</p>
 <pre><code>-moz-image-region: rect(top, right, bottom, left);</code></pre>

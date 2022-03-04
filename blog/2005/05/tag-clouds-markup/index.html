@@ -13,7 +13,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="apple-touch-icon" href="/assets/images/icon-192.png">
 <meta name="color-scheme" content="light dark"><div id="container">
-  <header role="banner">
+  <header>
     <h1>
       <a href="/"><svg width="120" height="120" viewBox="0 0 225 225">
     <title>Lim Chee Aun</title>
@@ -23,8 +23,7 @@
   </svg>
   </a>
     </h1>
-  </header>
-  <div id="content">
+  </header>  <div id="content">
     <article itemscope itemtype="http://schema.org/BlogPosting">
       <header><h1 itemprop="heading">Tag clouds markup</h1><time datetime="2005-05-27" class="meta date" itemprop="datePublished">27 May 2005</time></header><div itemprop="articleBody"><figure><img src="/blog/images/screenshots/web/flickr_photo_sharing_all_time_most_popular_tags_cloud.png" alt="Flickr&apos;s photo tags page, showing the all time most popular tags in a tag cloud" width="400" height="130"></figure><p>Tag clouds are cool though they do have <a href="http://zeldman.com/daily/0505a.shtml" title="Remove Forebrain and Serve: Tag Clouds II">some disadvantages</a> as well. I just look at <a href="http://flickr.com/photos/tags/" title="Popular Tags on Flickr Photo Sharing">the popular ones on Flickr</a> and noticed something wrong in the way the cloud is presented. I view the source of the page and realise that it&apos;s an <strong>ugly markup</strong>:</p><pre><code>&lt;p class=&quot;TagsBox&quot;&gt;
 &amp;nbsp;&lt;a href=&quot;/photos/tags/africa/&quot; style=&quot;font-size: 12px;&quot; class=&quot;PopularTag&quot;&gt;africa&lt;/a&gt;&amp;nbsp;

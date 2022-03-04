@@ -13,7 +13,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="apple-touch-icon" href="/assets/images/icon-192.png">
 <meta name="color-scheme" content="light dark"><div id="container">
-  <header role="banner">
+  <header>
     <h1>
       <a href="/"><svg width="120" height="120" viewBox="0 0 225 225">
     <title>Lim Chee Aun</title>
@@ -23,8 +23,7 @@
   </svg>
   </a>
     </h1>
-  </header>
-  <div id="content">
+  </header>  <div id="content">
     <article itemscope itemtype="http://schema.org/BlogPosting">
       <header><h1 itemprop="heading">Rebuilding TaxiRouter SG</h1><time datetime="2018-04-17" class="meta date" itemprop="datePublished">17 April 2018</time></header><div itemprop="articleBody"><figure><a href="https://twitter.com/cliener/status/733276057604784129"><img src="/blog/images/photos/objects/cheeaun-speaking-talk-js-taxirouter-sg-2016.jpg" alt="Chee Aun speaking at Talk.JS about TaxiRouter SG in 2016" width="1024" height="768"></a></figure><p>In 2016, I built <a href="https://taxirouter.sg/">TaxiRouter SG</a> and <a href="/blog/2016/03/building-taxirouter-sg/">wrote an article about it</a>. I even <a href="https://engineers.sg/video/taxi-router-talk-js--737">gave a talk</a> on <a href="http://www.meetup.com/Singapore-JS/events/231037529/">Singapore JS meetup</a>. Heck I even got featured on <a href="https://www.digitalnewsasia.com/digital-economy/datasets-rest-us-datagovsg">Digital News Asia</a>, <a href="https://www.youtube.com/watch?v=8zH8fbUNdKI">Channel 8 News</a> and the <a href="https://twitter.com/heliumlife/status/784217428410544128">GovTech conference</a>! &#x1F605;</p><p>It&apos;s been two years and I still find it unbelievable that such a simple little web app could get me this far. Since then, I had a few ideas on improving it but slowly neglecting it as I got busy with too many things. My days of peace were taken away when someone reported to me that the map <em>disappeared</em> from the site, on February 15.</p><p>It turns out that the map was <em>not loading</em> on <strong>all</strong> my transportation web apps, including <a href="https://busrouter.sg/">BusRouter SG</a> and <a href="https://railrouter.sg/">RailRouter SG</a>! &#x1F631; I immediately suspect that something must be broken on Google Maps since all of them uses the <a href="https://developers.google.com/maps/documentation/javascript/">Google Maps JavaScript API</a>. Perhaps my API key stopped working or my apps have exceeded the <a href="https://developers.google.com/maps/documentation/javascript/usage">free daily usage limits</a>?</p><p>Turns out, it&apos;s this:</p><pre><code class="language-javascript">map.addListener(&apos;bounds_changed&apos;, function(){
    var bounds = map.getBounds();

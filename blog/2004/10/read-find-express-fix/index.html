@@ -13,7 +13,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="apple-touch-icon" href="/assets/images/icon-192.png">
 <meta name="color-scheme" content="light dark"><div id="container">
-  <header role="banner">
+  <header>
     <h1>
       <a href="/"><svg width="120" height="120" viewBox="0 0 225 225">
     <title>Lim Chee Aun</title>
@@ -23,8 +23,7 @@
   </svg>
   </a>
     </h1>
-  </header>
-  <div id="content">
+  </header>  <div id="content">
     <article itemscope itemtype="http://schema.org/BlogPosting">
       <header><h1 itemprop="heading">Read, find, express, fix</h1><time datetime="2004-10-17" class="meta date" itemprop="datePublished">17 October 2004</time></header><div itemprop="articleBody"><figure><a href="http://digital-web.com/articles/phpitfalls/" title="PHPitfalls: Five Beginner Mistakes to Avoid"><img src="/blog/images/screenshots/web/text_phpitfalls_article_digital_web_magazine.png" alt="hard-to-read text of the &apos;PHPitfalls: Five Beginner Mistakes to Avoid&apos; article on Digital Web Magazine" width="400" height="320"></a></figure><p>PHP is a nice scripting language to learn. I&apos;m still a beginner, so I read articles and tutorials which are made <em>specifically</em> for beginners. I found <a href="http://digital-web.com/articles/phpitfalls/" title="PHPitfalls: Five Beginner Mistakes to Avoid">one such article</a> written by Daryl L. L. Houston from <a href="http://digital-web.com/">Digital Web Magazine</a>. I read it and find that the text on the page is quite <em>unfriendly</em> to my eyes. The small font is okay, but there are <strong>no spacing</strong> at all between the paragraphs and codes, making it hard for me to read line by line. Anyone, at least myself, can easily get lost tracing the lines. I&apos;m not sure if this is an intended visual effect or something wrong with my copy of Mozilla Firefox, so I investigated and found this piece of code in the &apos;design.css&apos; file of the page:</p><pre><code>#content p {
 <em>margin: 0;</em>

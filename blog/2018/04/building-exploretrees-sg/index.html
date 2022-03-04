@@ -13,7 +13,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="apple-touch-icon" href="/assets/images/icon-192.png">
 <meta name="color-scheme" content="light dark"><div id="container">
-  <header role="banner">
+  <header>
     <h1>
       <a href="/"><svg width="120" height="120" viewBox="0 0 225 225">
     <title>Lim Chee Aun</title>
@@ -23,8 +23,7 @@
   </svg>
   </a>
     </h1>
-  </header>
-  <div id="content">
+  </header>  <div id="content">
     <article itemscope itemtype="http://schema.org/BlogPosting">
       <header><h1 itemprop="heading">Building ExploreTrees.SG</h1><time datetime="2018-04-24" class="meta date" itemprop="datePublished">24 April 2018</time></header><div itemprop="articleBody"><p>On 17 March 2018, <a href="https://www.nparks.gov.sg/">National Parks Board</a> (NParks) <a href="https://twitter.com/nparksbuzz/status/974857306734120960">launched a new portal site</a>, <a href="http://trees.sg">Trees.sg</a>, dedicated to trees in Singapore. It&apos;s <a href="https://mothership.sg/2018/03/trees-sg-map-nparks/">featured on Mothership.sg</a> and <a href="http://www.straitstimes.com/singapore/new-national-parks-board-online-map-treessg-lists-locations-info-of-500000-trees">The Straits Times</a>, and <a href="https://twitter.com/leehsienloong/status/977007986236256256">tweeted by the Prime Minister</a>. The map took <strong>10 months</strong> to create at a cost of <strong>$100,000</strong>. It has a record of <strong>500,000 trees</strong> and was billed as the <strong>most extensive tree map in Asia</strong>.</p><figure><img src="/blog/images/screenshots/web/trees-sg-web-site-map.png" alt="Trees.sg web site showing the map of trees" width="1000" height="506"></figure><p>On 18 March 2018, I <a href="https://twitter.com/cheeaun/status/975272277926330369">successfully scraped all the trees data</a> from the site, which is roughly <strong>600MB</strong> in file size. According to the data, there&apos;s a total of <strong>564,266 recorded trees</strong>. I was super psyched to see how I could visualize the data to my heart&apos;s content.</p><h2>Acquiring the data</h2><p>Opening the <a href="https://developers.google.com/web/tools/chrome-devtools/">Chrome Developer Tools</a>, via the &apos;Network&apos; tab, the initial requests for the map data look like this:</p><pre><code>https://imaven.nparks.gov.sg/arcgis/rest/services/maven/PTM_View_Grid/FeatureServer/1/query?&#x2026;
 </code></pre><p>It seems to return <em>clusters</em> of the trees, which is not exactly what I want. As the map is zoomed in, individual trees start to appear.</p><figure><img src="/blog/images/screenshots/web/tress-sg-web-site-zoom-in-trees.png" alt="Tress.sg web site, zoomed in showing individual trees" width="1000" height="473"></figure><p>The request endpoint changed to this:</p><pre><code>https://imaven.nparks.gov.sg/arcgis/rest/services/maven/PTMap/FeatureServer/2/query?returnGeometry=true&amp;where=1%3D1&amp;outSr=4326&amp;outFields=*&amp;inSr=4326&amp;geometry=%7B%22xmin%22%3A103.8482666015625%2C%22ymin%22%3A1.2935302390231982%2C%22xmax%22%3A103.85101318359375%2C%22ymax%22%3A1.2962761196418218%2C%22spatialReference%22%3A%7B%22wkid%22%3A4326%7D%7D&amp;geometryType=esriGeometryEnvelope&amp;spatialRel=esriSpatialRelIntersects&amp;geometryPrecision=6&amp;f=geojson

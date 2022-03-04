@@ -13,7 +13,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="apple-touch-icon" href="/assets/images/icon-192.png">
 <meta name="color-scheme" content="light dark"><div id="container">
-  <header role="banner">
+  <header>
     <h1>
       <a href="/"><svg width="120" height="120" viewBox="0 0 225 225">
     <title>Lim Chee Aun</title>
@@ -23,8 +23,7 @@
   </svg>
   </a>
     </h1>
-  </header>
-  <div id="content">
+  </header>  <div id="content">
     <article itemscope itemtype="http://schema.org/BlogPosting">
       <header><h1 itemprop="heading">Smart icon sizing</h1><time datetime="2004-09-30" class="meta date" itemprop="datePublished">30 September 2004</time></header><div itemprop="articleBody"><p>I&apos;ve spent the last few days updating the Phoenity theme for Mozilla Firefox 1.0 PR. Again, I found <a href="http://bugzilla.mozilla.org/show_bug.cgi?id=257480" title="Bug 257480 - theme style and icon cleanup - spit &amp; polish">few more interface glitches</a> during the process. I also had some problems here and there, as I struggle to cope with the changes in Winstripe theme&apos;s codes. One of them is <strong>icon sizing</strong>.</p><figure><img src="/blog/images/screenshots/firefox/throbber_large_menubar.png" alt="incorrect large size of the throbber positioned to the right corner of the menubar" width="380" height="90"></figure><p>Before this, the Phoenity theme implements large and small sizes for the throbber, so do most other themes. When Winstripe is introduced to the Firefox interface, the throbber no longer has a large dimension and is positioned way up to the right corner of the menubar. This means <em>bad news</em> because for my theme, the throbber will be in large size, in large-icon mode, thus increasing the menubar&apos;s height. In other words, it looks <em>ugly</em>.</p><figure><img src="/blog/images/screenshots/firefox/throbber_small_menubar.png" alt="correct small size of the throbber positioned to the right corner of the menubar" width="380" height="90"></figure><p>So, I kept thinking about it. Should I remove the large throbber? And maybe make it available from a sub-skin? No, that would be too redundant and I still want to keep the throbber that way, changing sizes according to the icon modes. I wonder if only there is a way for the size of the throbber to change <em>proportionally</em> to the height of the toolbar. Of course, this idea is <strong>impossible</strong> to be done merely with CSS. I have no choice but to think of other ways then.</p><p>My first solution is this:</p><pre><code>#toolbar-menubar #menubar-items + toolbarspring + #throbber-box &gt; #navigator-throbber,
 #toolbar-menubar #wrapper-menubar-items + toolbarpaletteitem[type=&quot;spring&quot;] + #wrapper-throbber-box #throbber-box &gt; #navigator-throbber{
