@@ -293,18 +293,23 @@ em.tag {
 
   Featured:
 
+  - [Wikipedia: Wordle](https://zh.wikipedia.org/wiki/Wordle#cite_note-45)
+  - [Chinese Wordle: Play and Learn Chinese (chengyus)!](https://ninchanese.com/blog/2022/01/28/chinese-wordle-play-and-learn-chinese-chengyus/)
+  - [6種英文和中文的 Wordle 猜字遊戲 打發時間真好用](https://blog.user.today/wordle-games-gallery/)
   - [Wordle-Like Games Slowly Gain Traction on Chinese Social Media](https://www.sixthtone.com/news/1009586/wordle-like-games-slowly-gain-traction-on-chinese-social-media-)
   - [A Sensational Wordle Clone Without Any Actual Words](https://kotaku.com/games-like-wordle-subwaydle-nyct-mta-best-routes-1848461481)
-  - [6種英文和中文的 Wordle 猜字遊戲 打發時間真好用](https://blog.user.today/wordle-games-gallery/)
   - [**Lee Hsien Loong**: ...I was also pleasantly surprised to find out that there are Chinese and Malay versions of the game. Give it a go — a simple but fun way to keep the mind engaged. ](https://www.facebook.com/leehsienloong/posts/484183366401131)
   - [全世界都在Wordle！快试试数字版Nerdle](https://entlife.8world.com/life/nerdle-nerdle-is-a-new-maths-based-wordle-clone-1718676)
   - [PM Lee says Wordle a fun way to keep the mind engaged, recommends Chinese & Malay versions](https://mothership.sg/2022/02/pm-lee-says-wordle-a-fun-way-to-keep-the-mind-engaged-recommends-chinese-malay-versions/)
   - [这款小游戏风靡全球，让李显龙总理都“玩上瘾了”](https://www.yan.sg/lixinglongzholi/)
   - [Want more Wordle? Here are 13 spin-offs to try, including a Singlish version](https://www.asiaone.com/lifestyle/want-more-wordle-here-are-13-spin-offs-try-including-singlish-version)
   - [连总理都推荐的爆红猜字游戏Wordle　为何在全球疯狂吸粉？](https://www.redants.sg/good-reads/story20220211-5941)
-  - [Wikipedia: Wordle](https://zh.wikipedia.org/wiki/Wordle#cite_note-45)
   - [Can’t Get Enough Of Wordle? Here’s 17 Wordle Variants To Try
 ](https://shopee.sg/blog/best-wordle-games/)
+  - [11 Other “Wordle” Challenges to Try](https://www.littledayout.com/11-other-wordle-challenges-to-try/)
+  - [More than mere words](https://www.weekinchina.com/2022/03/more-than-mere-words/)
+  - [5 Chinese Wordles for you to discover](https://www.chinoy.tv/5-chinese-wordles-for-you-to-discover/)
+  - [There’s a Big Advantage to Playing Wordle in Other Languages](https://slate.com/culture/2022/03/wordle-multiple-languages-lemot-termo-chengyu.html)
 
 - ![](/projects-images/bubble-wrap.jpg)
 
