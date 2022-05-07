@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title type="text">cheeaunblog</title>
+	<icon>{{domainURL}}/favicon.ico</icon>
 	<id>tag:cheeaun.com,2011:blog</id>
 	<link rel="alternate" type="text/html" href="{{domainURL}}/blog"/>
 	<link rel="self" type="application/atom+xml" href="{{domainURL}}/blog/feed.xml"/>
@@ -14,6 +15,7 @@
 			<updated>{{iso8601Date}}</updated>
 			<title type="text">{{title}}</title>
 			<summary type="text">{{{summary}}}</summary>
+			<content type="html">{{feedContents}}</content>
 			<link rel="alternate" type="text/html" href="{{../domainURL}}{{permalink}}" title="{{title}}"/>
 		</entry>
 	{{/each}}

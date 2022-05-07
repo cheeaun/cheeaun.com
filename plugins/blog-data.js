@@ -143,6 +143,9 @@ function plugin(options) {
         });
         data.contents = Buffer.from($.html().trim());
 
+        var feedContents = $('div[itemprop="articleBody"]').html().trim();
+        data.feedContents = Buffer.from(feedContents);
+
         // Path - Year and month, NOT day
         var path = file.replace(/_posts[\/\\](\d+)-(\d+)-\d+-/i, '$1/$2/');
         data.permalink = '/' + path.replace(/\\/gi, '/').replace('.html', '/');
