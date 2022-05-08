@@ -12,6 +12,9 @@
 {{#if ogImage}}<meta property="og:image" content="{{domainURL}}{{ogImage}}">{{/if}}
 <link rel="alternate" href="/blog/feed.xml" type="application/atom+xml" title="cheeaunblog">
 {{/if}}
+{{#if isHome}}
+<link rel="alternate" href="/blog/feed.xml" type="application/atom+xml" title="cheeaunblog">
+{{/if}}
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="apple-touch-icon" href="/assets/images/icon-192.png">
 <meta name="color-scheme" content="light dark">

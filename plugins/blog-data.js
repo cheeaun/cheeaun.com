@@ -20,6 +20,11 @@ function plugin(options) {
     setImmediate(done);
     Object.keys(files).forEach(function (file) {
       if (/blog/i.test(file)) files[file].isBlog = true;
+
+      if (/^index/i.test(file)) {
+        files[file].isHome = true;
+      }
+
       if (/_posts/i.test(file)) {
         if (!/\.html$/i.test(file)) {
           delete files[file];
