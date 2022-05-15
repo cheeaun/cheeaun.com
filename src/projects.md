@@ -304,8 +304,7 @@ em.tag {
   - [这款小游戏风靡全球，让李显龙总理都“玩上瘾了”](https://www.yan.sg/lixinglongzholi/)
   - [Want more Wordle? Here are 13 spin-offs to try, including a Singlish version](https://www.asiaone.com/lifestyle/want-more-wordle-here-are-13-spin-offs-try-including-singlish-version)
   - [连总理都推荐的爆红猜字游戏Wordle　为何在全球疯狂吸粉？](https://www.redants.sg/good-reads/story20220211-5941)
-  - [Can’t Get Enough Of Wordle? Here’s 17 Wordle Variants To Try
-](https://shopee.sg/blog/best-wordle-games/)
+  - [Can’t Get Enough Of Wordle? Here’s 17 Wordle Variants To Try](https://shopee.sg/blog/best-wordle-games/)
   - [11 Other “Wordle” Challenges to Try](https://www.littledayout.com/11-other-wordle-challenges-to-try/)
   - [More than mere words](https://www.weekinchina.com/2022/03/more-than-mere-words/)
   - [5 Chinese Wordles for you to discover](https://www.chinoy.tv/5-chinese-wordles-for-you-to-discover/)
