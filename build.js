@@ -1,21 +1,22 @@
-var fs = require('fs');
+const fs = require('fs');
 
-var Metalsmith = require('metalsmith');
-var layouts = require('metalsmith-layouts');
-var discoverPartials = require('metalsmith-discover-partials');
-var inplace = require('metalsmith-in-place');
-var markdown = require('metalsmith-markdownit');
-var collections = require('metalsmith-collections');
-var redirect = require('metalsmith-redirect');
-var sitemap = require('metalsmith-sitemap');
-var postcss = require('metalsmith-with-postcss');
-var XXH = require('xxhashjs');
+const Metalsmith = require('metalsmith');
+const layouts = require('@metalsmith/layouts');
+const markdown = require('@metalsmith/markdown');
+const inplace = require('@metalsmith/in-place');
+const collections = require('@metalsmith/collections');
+const postcss = require('@metalsmith/postcss');
 
-var contentTitles = require(__dirname + '/plugins/content-titles');
-var blogData = require(__dirname + '/plugins/blog-data');
-var archives = require(__dirname + '/plugins/archives');
+const discoverPartials = require('metalsmith-discover-partials');
+const redirect = require('metalsmith-redirect');
+const sitemap = require('metalsmith-sitemap');
+const XXH = require('xxhashjs');
 
-var metalsmith = Metalsmith(__dirname)
+const contentTitles = require(__dirname + '/plugins/content-titles');
+const blogData = require(__dirname + '/plugins/blog-data');
+const archives = require(__dirname + '/plugins/archives');
+
+const metalsmith = Metalsmith(__dirname)
   .metadata({
     authorName: 'Lim Chee Aun',
     domainURL: 'https://cheeaun.com',
@@ -34,7 +35,12 @@ var metalsmith = Metalsmith(__dirname)
       },
     }),
   )
-  .use(markdown('commonmark').enable('table'))
+  .use(
+    markdown({
+      headerIds: false,
+    }),
+  )
+  // .use(markdown('commonmark').enable('table'))
   .use(contentTitles())
   .use(blogData())
   .use(archives())
