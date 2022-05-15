@@ -139,6 +139,7 @@ content: &quot;generated text\A after the\A paragraph text&quot;;
 p { white-space: normal }
 td[nowrap] { white-space: nowrap }
 <strong>:before,:after { white-space: pre-line }</strong></code></pre>
+
 <p>&#x2014; <a href="http://w3.org/TR/CSS21/text.html#white-space-prop">http://w3.org/TR/CSS21/text.html#white-space-prop</a></p>
 </blockquote><p>Interesting. The <code>pre-line</code> behaviour is <em>expected</em> in generated content, instead of inherited? If then, this means Opera 8 is correct. <em>Partially</em> correct, because it <em>still</em> renders the escaped newline under <code>white-space: normal</code> though:</p><pre><code>p:after{
 <em>white-space: normal;</em>
@@ -219,6 +220,5 @@ content: attr(title);
   }
 </script>
 <script data-goatcounter="https://cheeaun.goatcounter.com/count" async src="//gc.zgo.at/count.v2.js" crossorigin="anonymous" integrity="sha384-PeYXrhTyEaBBz91ANMgpSbfN1kjioQNPHNDbMvevUVLJoWrVEjDCpKb71TehNAlj"></script>
-<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "56009c05c6234036a216843af8874520"}'></script><!-- End Cloudflare Web Analytics -->
 <script defer data-domain="cheeaun.com" src="https://plausible.io/js/plausible.js"></script>
 </html>

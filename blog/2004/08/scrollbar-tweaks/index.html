@@ -26,9 +26,8 @@
   </header>  <div id="content">
     <article itemscope itemtype="http://schema.org/BlogPosting">
       <header><h1 itemprop="heading">Scrollbar tweaks</h1><time datetime="2004-08-02" class="meta date" itemprop="datePublished">2 August 2004</time></header><div itemprop="articleBody"><figure><img src="/blog/images/screenshots/firefox/tweaked_scrollbar_buttons_slider_themes_manager.png" alt="tweaked appearance of the scrollbar widget, specifically the scrollbar buttons and slider, on Mozilla Firefox" width="230" height="130"></figure><p>Do you notice anything <em>weird</em> in the screenshot? Take a look at it carefully. It&apos;s neither the themes list nor the buttons. No, it&apos;s not a <em>trick</em> image or whatever.</p><p>It&apos;s the <em>scrollbar</em>.</p><p>I&apos;ve customised my Firefox with Mac-alike scrollbars, by adding few codes to <strong>both</strong> &apos;userChrome.css&apos; and &apos;userContent.css&apos; files of my profiles folder. Somehow I got bored with the default Windows scrollbar and thought of trying out the Mac scrollbar, where the scrollbar buttons are located at one side of the slider instead. In my opinion, the relocated scrollbar buttons seems <em>better</em> in terms of interface usability.</p><p>I read the XBL binding for the scrollbar widget, &apos;scrollbar.xml&apos; archived in the &apos;toolkit.jar&apos; file of the &apos;chrome&apos; folder, and discovered that there are <em>actually four</em> scrollbar buttons. I&apos;m confused, why four? Isn&apos;t it that Windows have only two? Reading the codes, there are two scrollbar buttons on both sides of the slider, showing two opposing arrows. One of the buttons of each side is hidden. Out of curiosity, I played around the codes, using CSS to tweak the buttons and came up with these:</p><ul>
-<li>
-<figure><img src="/blog/images/screenshots/firefox/scrollbar_mac_alike_tweak.png" alt="tweaked appearance of the scrollbar widget, Mac-alike look, on Mozilla Firefox" width="30" height="105"></figure>
-<p>The code for Mac-alike scrollbar is:</p>
+<li><figure><img src="/blog/images/screenshots/firefox/scrollbar_mac_alike_tweak.png" alt="tweaked appearance of the scrollbar widget, Mac-alike look, on Mozilla Firefox" width="30" height="105"></figure>
+<p>  The code for Mac-alike scrollbar is:</p>
 <pre><code>scrollbarbutton[sbattr=&quot;scrollbar-up-top&quot;]{
 display: none !important;
 }
@@ -37,9 +36,8 @@ display: -moz-box !important;
 }
 </code></pre>
 </li>
-<li>
-<figure><img src="/blog/images/screenshots/firefox/scrollbar_reversed_mac_alike_tweak.png" alt="tweaked appearance of the scrollbar widget, reversed type of Mac-alike look, on Mozilla Firefox" width="30" height="105"></figure>
-<p>For a <em>reversed</em> type of Mac-alike scrollbar, try this:</p>
+<li><figure><img src="/blog/images/screenshots/firefox/scrollbar_reversed_mac_alike_tweak.png" alt="tweaked appearance of the scrollbar widget, reversed type of Mac-alike look, on Mozilla Firefox" width="30" height="105"></figure>
+<p>  For a <em>reversed</em> type of Mac-alike scrollbar, try this:</p>
 <pre><code>scrollbarbutton[sbattr=&quot;scrollbar-down-top&quot;]{
 display: -moz-box !important;
 }
@@ -48,17 +46,15 @@ display: none !important;
 }
 </code></pre>
 </li>
-<li>
-<figure><img src="/blog/images/screenshots/firefox/scrollbar_linux_tweak.png" alt="tweaked appearance of the scrollbar widget, specially for Linux environment, on Mozilla Firefox" width="30" height="105"></figure>
-<p>Some of you Linux users would love this instead:</p>
+<li><figure><img src="/blog/images/screenshots/firefox/scrollbar_linux_tweak.png" alt="tweaked appearance of the scrollbar widget, specially for Linux environment, on Mozilla Firefox" width="30" height="105"></figure>
+<p>  Some of you Linux users would love this instead:</p>
 <pre><code>scrollbarbutton[sbattr=&quot;scrollbar-up-bottom&quot;]{
 display: -moz-box !important;
 }
 </code></pre>
 </li>
-<li>
-<figure><img src="/blog/images/screenshots/firefox/scrollbar_no_buttons_tweak.png" alt="tweaked appearance of the scrollbar widget, with no scrollbar buttons at all, on Mozilla Firefox" width="30" height="105"></figure>
-<p>If you <em>hate</em> the scrollbar buttons, remove them all!</p>
+<li><figure><img src="/blog/images/screenshots/firefox/scrollbar_no_buttons_tweak.png" alt="tweaked appearance of the scrollbar widget, with no scrollbar buttons at all, on Mozilla Firefox" width="30" height="105"></figure>
+<p>  If you <em>hate</em> the scrollbar buttons, remove them all!</p>
 <pre><code>scrollbarbutton[sbattr=&quot;scrollbar-up-top&quot;],
 scrollbarbutton[sbattr=&quot;scrollbar-down-bottom&quot;]{
 display: none !important;
@@ -144,6 +140,5 @@ margin-left: -1px !important;</em>
   }
 </script>
 <script data-goatcounter="https://cheeaun.goatcounter.com/count" async src="//gc.zgo.at/count.v2.js" crossorigin="anonymous" integrity="sha384-PeYXrhTyEaBBz91ANMgpSbfN1kjioQNPHNDbMvevUVLJoWrVEjDCpKb71TehNAlj"></script>
-<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "56009c05c6234036a216843af8874520"}'></script><!-- End Cloudflare Web Analytics -->
 <script defer data-domain="cheeaun.com" src="https://plausible.io/js/plausible.js"></script>
 </html>

@@ -31,26 +31,23 @@
 <li><a href="http://forums.mozillazine.org/viewtopic.php?t=159454">Neat Trick</a></li>
 <li><a href="http://forums.mozillazine.org/viewtopic.php?t=73108">css help</a></li>
 </ul><p>Those days were great. It reminds me how I use to apply some advanced CSS and XUL binding stuff to totally change Firefox&apos;s interface. So now, I&apos;m going to share something that I&apos;ve been using for few months now. This applies to Firefox users on Windows Vista. As a note, <strong>most tweaks here are to be implemented in <a href="http://www.mozilla.org/support/firefox/edit#css" title="Editing Configuration Files">userChrome.css</a>. Be careful.</strong></p><p>I&apos;ve been using Vista for quite some time now and I supposed most of us already know about the <em>Vista look</em> with glass effects, shadows, fancy animations and live thumbnails. When I first installed Firefox on Vista, I have to admit that Firefox&apos;s interface does look a bit weird. Or at least, something is missing. Am I right?</p><p>So, here are the steps:</p><ol>
-<li>
-<figure><img src="/blog/images/screenshots/firefox/menubar-hide-vista-style-before-after-firefox.png" alt="before: Firefox interface with menubar; after: Firefox interface without the menubar, installed with the &apos;Hide Menubar&apos; extension" width="200" height="230"></figure>
-<p>Obviously is the menubar. Before I start using Vista, I disagree that the menubar is hidden by default because of some reasons. But now, I got used to it. Gosh. The lack of menubar does seem to make the interface cleaner though. So, I got to hide the menubar. With CSS?</p>
+<li><figure>  <img src="/blog/images/screenshots/firefox/menubar-hide-vista-style-before-after-firefox.png" alt="before: Firefox interface with menubar; after: Firefox interface without the menubar, installed with the &apos;Hide Menubar&apos; extension" width="200" height="230"></figure>
+<p>  Obviously is the menubar. Before I start using Vista, I disagree that the menubar is hidden by default because of some reasons. But now, I got used to it. Gosh. The lack of menubar does seem to make the interface cleaner though. So, I got to hide the menubar. With CSS?</p>
 <pre><code>#toolbar-menubar{
 display: none !important;
 }
 </code></pre>
-<p><strong>No</strong>. This is not practical. <strong>Do not use the above code.</strong> I still need the menubar sometimes. In Vista, when you press <code>Alt</code>, the menubar appears on demand. To emulate that on Firefox, you&apos;ll need the <a href="https://addons.mozilla.org/en-US/firefox/addon/4762">Hide Menubar</a> extension by yuoo2k. Works perfect!</p>
+<p>  <strong>No</strong>. This is not practical. <strong>Do not use the above code.</strong> I still need the menubar sometimes. In Vista, when you press <code>Alt</code>, the menubar appears on demand. To emulate that on Firefox, you&apos;ll need the <a href="https://addons.mozilla.org/en-US/firefox/addon/4762">Hide Menubar</a> extension by yuoo2k. Works perfect!</p>
 </li>
-<li>
-<figure><img src="/blog/images/screenshots/firefox/tabbrowser-tabs-background-vista-style-before-after-firefox.png" alt="before: the &apos;darker&apos; background of the tabs bar on Firefox; after: the new shiny Vista-style background of the tabs bar on Firefox" width="400" height="210"></figure>
-<p>The tabs. Oops, I mean the background <em>behind</em> the tabs actually. From what I see, it&apos;s a little <em>darker than usual</em>. Somehow, on Internet Explorer 7, the tabs bar just look <em>shiny</em>, though I don&apos;t quite like the huge tabs taking up all the space. Mind you, Firefox&apos;s tabs are just nice. This may seem unnecessary but the code below will make quite a difference:</p>
+<li><figure>  <img src="/blog/images/screenshots/firefox/tabbrowser-tabs-background-vista-style-before-after-firefox.png" alt="before: the &apos;darker&apos; background of the tabs bar on Firefox; after: the new shiny Vista-style background of the tabs bar on Firefox" width="400" height="210"></figure>
+<p>  The tabs. Oops, I mean the background <em>behind</em> the tabs actually. From what I see, it&apos;s a little <em>darker than usual</em>. Somehow, on Internet Explorer 7, the tabs bar just look <em>shiny</em>, though I don&apos;t quite like the huge tabs taking up all the space. Mind you, Firefox&apos;s tabs are just nice. This may seem unnecessary but the code below will make quite a difference:</p>
 <pre><code>.tabbrowser-tabs{
 -moz-appearance: toolbox !important;
 }
 </code></pre>
 </li>
-<li>
-<figure><img src="/blog/images/screenshots/firefox/dark-navigation-toolbar-window-maximized-vista-style-before-after-firefox.png" alt="before: the normal Firefox navigation toolbar; after: the &apos;darker&apos; Firefox navigation toolbar when the window is maximized" width="220" height="180"></figure>
-<p>Okay, the navigation toolbar, the toolbar that contains the Back, Forward buttons, location bar and stuff. If you enable Windows Aero, when some windows are maximized such as Internet Explorer&apos;s, you&apos;ll find that the navigation bar turns into a dark background. I don&apos;t know why Windows did that, but it does seem useful as it makes me <strong>more focused</strong> on the tabs bar and the web content area of the browser window. Perhaps, just a personal preference. Here goes:</p>
+<li><figure>  <img src="/blog/images/screenshots/firefox/dark-navigation-toolbar-window-maximized-vista-style-before-after-firefox.png" alt="before: the normal Firefox navigation toolbar; after: the &apos;darker&apos; Firefox navigation toolbar when the window is maximized" width="220" height="180"></figure>
+<p>  Okay, the navigation toolbar, the toolbar that contains the Back, Forward buttons, location bar and stuff. If you enable Windows Aero, when some windows are maximized such as Internet Explorer&apos;s, you&apos;ll find that the navigation bar turns into a dark background. I don&apos;t know why Windows did that, but it does seem useful as it makes me <strong>more focused</strong> on the tabs bar and the web content area of the browser window. Perhaps, just a personal preference. Here goes:</p>
 <pre><code>#main-window[sizemode=&quot;maximized&quot;] toolbox{
 -moz-appearance: none !important;
 background-color: #0C2032 !important;
@@ -66,12 +63,11 @@ border-width: 0 !important;
 background-color: -moz-dialog !important;
 }
 </code></pre>
-<p>So, when Firefox&apos;s window is maximized, the background of the navigation toolbar will become dark. Cool.</p>
+<p>  So, when Firefox&apos;s window is maximized, the background of the navigation toolbar will become dark. Cool.</p>
 </li>
-<li>
-<figure><img src="/blog/images/screenshots/firefox/better-location-bar-search-bar-buttons-vista-style-before-after-firefox.png" alt="before: the awkward &apos;Go&apos; button, &apos;Search&apos; button, location bar and search bar on Firefox; after: Vista-style &apos;Go&apos; button, &apos;Search&apos; button, location bar and search bar" width="400" height="230"></figure>
-<p>What&apos;s left now is the location bar and the search bar. Vista&apos;s address bar has all those hover effects, <em>glowing</em> buttons and built-in loading indicator. Also, if you try the previous tweak, you&apos;ll notice that the &apos;Go&apos; button and &apos;Search&apos; button looks awkward. The white-background location bar and search bar are too contrasting against the black background, when maximized.</p>
-<p>Let&apos;s fix the the whole thing and implement the hover effects at the same time:</p>
+<li><figure>  <img src="/blog/images/screenshots/firefox/better-location-bar-search-bar-buttons-vista-style-before-after-firefox.png" alt="before: the awkward &apos;Go&apos; button, &apos;Search&apos; button, location bar and search bar on Firefox; after: Vista-style &apos;Go&apos; button, &apos;Search&apos; button, location bar and search bar" width="400" height="230"></figure>
+<p>  What&apos;s left now is the location bar and the search bar. Vista&apos;s address bar has all those hover effects, <em>glowing</em> buttons and built-in loading indicator. Also, if you try the previous tweak, you&apos;ll notice that the &apos;Go&apos; button and &apos;Search&apos; button looks awkward. The white-background location bar and search bar are too contrasting against the black background, when maximized.</p>
+<p>  Let&apos;s fix the the whole thing and implement the hover effects at the same time:</p>
 <pre><code>#urlbar,
 #searchbar,
 #go-button-stack&gt;vbox{
@@ -103,9 +99,9 @@ opacity: .999 !important;
 background-color: -moz-field !important;
 }
 </code></pre>
-<p>Done? Not yet.</p>
-<figure><img src="/blog/images/screenshots/firefox/loading-progress-meter-location-bar-vista-safari-style-fission-firefox.png" alt="Vista-styled or Safari-styled Firefox location bar, which doubles as a loading bar, installed with the &apos;Fission&apos; extension" width="400" height="140"></figure>
-<p>How about that Vista-style address bar which doubles as a loading bar? Or should I mention Safari-style address bar? Whatever. The <a href="https://addons.mozilla.org/en-US/firefox/addon/1951">Fission</a> extension by zeniko is the ultimate answer. And a little ingredient to spice it up:</p>
+<p>  Done? Not yet.</p>
+<figure>  <img src="/blog/images/screenshots/firefox/loading-progress-meter-location-bar-vista-safari-style-fission-firefox.png" alt="Vista-styled or Safari-styled Firefox location bar, which doubles as a loading bar, installed with the &apos;Fission&apos; extension" width="400" height="140"></figure>
+<p>  How about that Vista-style address bar which doubles as a loading bar? Or should I mention Safari-style address bar? Whatever. The <a href="https://addons.mozilla.org/en-US/firefox/addon/1951">Fission</a> extension by zeniko is the ultimate answer. And a little ingredient to spice it up:</p>
 <pre><code>#urlbar[fission=&quot;fusion&quot;] &gt; #statusbar-icon .progress-bar{
 -moz-appearance: progresschunk !important;
 background-color: transparent !important;
@@ -195,6 +191,5 @@ opacity: .999 !important;
   }
 </script>
 <script data-goatcounter="https://cheeaun.goatcounter.com/count" async src="//gc.zgo.at/count.v2.js" crossorigin="anonymous" integrity="sha384-PeYXrhTyEaBBz91ANMgpSbfN1kjioQNPHNDbMvevUVLJoWrVEjDCpKb71TehNAlj"></script>
-<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "56009c05c6234036a216843af8874520"}'></script><!-- End Cloudflare Web Analytics -->
 <script defer data-domain="cheeaun.com" src="https://plausible.io/js/plausible.js"></script>
 </html>

@@ -34,21 +34,21 @@
 </ol><h2>Acquire the boundary coordinates for the radar images</h2><p>This step took me a few surprising <em>round-trips</em>.</p><p>On the <a href="http://www.weather.gov.sg/weather-rain-area-50km/">Weather.gov.sg site</a>, there are no information on the boundary coordinates. I didn&apos;t look at the source code and assumed that the site simply overlay the radar image on a Singapore map.</p><p>My first attempt was to sniff the API calls from <a href="https://itunes.apple.com/sg/app/myenv/id444435182?mt=8">myENV iOS app</a>, which is <a href="https://buuuk.com/work/nea">built and designed by the wonderful folks at Buuuk</a>. I&apos;m a fan of their work and thought that it would be cool to see how they worked out with the APIs. I manage to pinpoint to this URL:</p><pre><code>http://cdn.neaaws.com/rain_radar/dpsri_70km_Remove_XXXXXXXXXXXX0000dBR.dpsri.png
 </code></pre><p>The <code>XXXXXXXXXXXX</code> value in the URL is a 12-character date-time string, for example <code>201805152335</code> represents 15 May 2018 at 23:35 (11:35PM). The last four zeros probably represents the milliseconds but seems like not needed to be modified. And not sure what <code>dBR</code> means. &#x1F937;&#x200D;&#x2642;&#xFE0F;</p><p>This radar image is a bit different that the one on <a href="http://www.weather.gov.sg/home/">weather.gov.sg</a>:</p><pre><code>http://www.weather.gov.sg/files/rainarea/50km/v2/dpsri_70km_XXXXXXXXXXXX0000dBR.dpsri.png
 </code></pre><p>So the former is a 70km radar image, and this one is a 50km image&#x2026; despite the file name has the word <code>70km</code> there. &#x1F605; One is served from <code>cdn.neaaws.com</code> which is obviously hosted on <a href="https://aws.amazon.com/">AWS</a>, and the other is under <code>weather.gov.sg</code> domain. It&apos;s all pretty confusing but throughout my tests,  <code>weather.gov.sg</code> seems to serve the latest radar images much earlier than <code>cdn.neaaws.com</code>.</p><p>Anyway, as I sniff the API calls on myEnv app, I found some coordinates. They are pretty rough, and I&apos;m not sure if they&apos;re accurate, so I tried them out and they kind of worked&#x2026;(?)</p><p>A few weeks later, to my surprise, I discovered that the source code of <a href="http://www.weather.gov.sg/weather-rain-area-50km/">Weather.gov.sg</a> site actually contains the coordinates! In fact, there are 8 coordinates?!?</p><pre><code class="language-javascript">function calculatePosition(basemapImg,latitude,longitude){
-	  /* var map_latitude_top = 1.490735;
-	  var map_longitude_left = 103.568691;
-	  var map_latitude_bottom = 1.177710;
-	  var map_longitude_right = 104.134487; */
-	var map_latitude_top = 1.4572;
-	  var map_longitude_left = 103.565;
-	  var map_latitude_bottom = 1.1450;
-	  var map_longitude_right = 104.130;
-		var width_calibration = 20720;
-		var height_calibration = 246;
-		var zoom_level_height = 200;
-		var zoom_level_width = 200;
-		var imgWidth  = basemapImg.width;
-		var imgHeight = basemapImg.height;
-		var scale		  = imgWidth/100;
+      /* var map_latitude_top = 1.490735;
+      var map_longitude_left = 103.568691;
+      var map_latitude_bottom = 1.177710;
+      var map_longitude_right = 104.134487; */
+    var map_latitude_top = 1.4572;
+      var map_longitude_left = 103.565;
+      var map_latitude_bottom = 1.1450;
+      var map_longitude_right = 104.130;
+        var width_calibration = 20720;
+        var height_calibration = 246;
+        var zoom_level_height = 200;
+        var zoom_level_width = 200;
+        var imgWidth  = basemapImg.width;
+        var imgHeight = basemapImg.height;
+        var scale		  = imgWidth/100;
 ...
 </code></pre><p>Some of them worked, some don&apos;t. Some of the edges were off by few degrees and don&apos;t look the same as the displayed map image on weather.gov.sg. Obviously at this point, I&apos;m throwing numbers around randomly and trying to get things as accurately as possible.</p><p>It got me thinking; does accuracy even matter at all? Looking at it, the radar images are actually quite low in resolution and some measurements could have been rounded off. The folks maintaining weather.gov.sg might have tweaked the coordinates even further to make it look good on the web site. Do anyone care if the accuracy is off by a few degrees?</p><p>Finally I end up using these values:</p><ul>
 <li>Lower latitude = 1.156&#xB0;</li>
@@ -58,15 +58,15 @@
 </ul><p>Disclaimer: these values <strong>are not accurate</strong>.</p><h2>Convert radar image to vector</h2><p>I have the radar image with width and height information. I have the boundary coordinates for all four sides.</p><p>Theoretically speaking, <a href="http://siliconvalleyism.com/silicon-valley-image.php?id=732">the math is sound</a>.</p><p>I did a little research on the Internet and the only relevant resource that I found is this article: <a href="https://blog.mapbox.com/creating-vector-tiles-from-raster-datasets-f8c9dc652c97">Creating vector tiles from raster datasets</a>. It uses <a href="https://github.com/mapbox/make-surface"><code>make-surface</code></a> for the raster-to-vector conversion with &quot;triangulated&quot; data. It looks pretty cool but the tool does seem a little complicated and much overkill for a <em>tiny</em> region like Singapore. &#x1F605;</p><p>Instead, I did the <em>simplest</em> thing that I could think of: converting every pixel in the radar image into vector coordinates. The radar image is a PNG image, so I did a quick <a href="https://www.npmjs.com/search?q=png%20parser"><code>npm</code> search</a> and voil&#xE0;, <a href="https://github.com/lukeapage/pngjs">pngjs</a> is found.</p><p>The main idea here is to parse the PNG file, loop through every single pixel, extract the color information, convert X and Y coordinates into latitudes and longitudes, generate GeoJSON polygons and lastly output a GeoJSON file. &#x1F4A5;&#x1F4A5;&#x1F4A5;</p><p>I&apos;m generally not going into the details and the <a href="https://github.com/cheeaun/rain-geojson-sg">source code is available</a> &#x1F609;. Those who have learned digital image processing in college/university or did some work with <a href="https://en.wikipedia.org/wiki/Canvas_element">HTML5 canvas</a>, will be able to guess what I did. Those who hasn&apos;t, could start by reading this article, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas">Pixel Manipulation with canvas</a>. &#x1F4AA;</p><h2>Render the vector with the radar image on Mapbox GL JS</h2><figure><img src="/blog/images/screenshots/web/vector-tiles-raster-radar-image-mapbox@2x.png" alt="Vector tiles on top of raster radar image on a map, powered by Mapbox" width="549" height="561"></figure><p>I did a super quick demo page and&#x2026; <a href="https://twitter.com/cheeaun/status/982477428713963527">it worked</a>! &#x1F631; The screenshot above might not show it clearly, but the blurry shadow-like edges around the square shapes is the radar image itself. For the radar images, it becomes blurry when zoomed in. For the GeoJSON vector polygons, it stays sharp. Judging from the squares overlapping on the blurry edges, it proves that the math is correct and the conversion works! &#x1F4AA;</p><h2>Optimizations &amp; improvements</h2><figure><img src="/blog/images/screenshots/web/rain-area-vector-tiles-3d-perspective-mapbox@2x.png" alt="Rain area vector tiles with 3D perspective on Mapbox" width="434" height="612"></figure><p>With <a href="https://www.mapbox.com/mapbox-gl-js/api/">Mapbox GL JS</a>&apos;s features, the polygons can even be <a href="https://twitter.com/cheeaun/status/982555182520086528">viewed with a slanted 3D pitch</a> and applied with different opacity styles!</p><p>Since it&apos;s already viewable in 3D, why not add a little <a href="https://blog.mapbox.com/3d-features-in-mapbox-gl-js-e94734f12110">extrusion</a>? &#x1F929;</p><figure><img src="/blog/images/screenshots/web/rain-area-3d-extrusion-mapbox@2x.png" alt="Rain area with 3D extrusion on Mapbox" width="1094" height="612" loading="lazy" class="large"></figure><figure><img src="/blog/images/screenshots/web/rain-area-3d-extrusion-close-up-mapbox@2x.png" alt="Rain area in 3D extrusion, close-up version, on Mapbox" width="1064" height="622" loading="lazy" class="large"></figure><p>For this extrusion feature to work, I need more than color information from the radar image. Basically, higher rain intensity (heavier) translates to higher 3D extrusions (taller).</p><p>Here&apos;s a relatively simple diagram:</p><figure><img src="/blog/images/figures/diagram/legend-rain-area-colors-extraction-intensity-values-maps.png" alt="Legend of rain intensity with colors, extracted as intensity values, to be rendered on maps" width="640" height="1520"></figure><p>I took the first step in color-picking the rain intensity legend on <a href="http://www.weather.gov.sg/weather-rain-area-50km/">weather.gov.sg</a>. It&apos;s a bit rough and may not match the colors found from the radar image, so I use a library called <a href="https://github.com/dtao/nearest-color"><code>nearest-color</code></a> to <em>map</em> the colors to the list of colors that I picked. For example, if the color on the radar image is <code>#40FFFE</code>, then it&apos;ll be mapped to <code>#40FFFD</code> from the <code>intensityColors</code> list.</p><p>From the intensity colors list, I only have colors but I don&apos;t have any scientific values for rain intensity. From <a href="http://www.weather.gov.sg/learn_observations/">weather.gov.sg</a>, the rainfall measurement section explains:</p><blockquote>
 <p>MSS uses the tipping bucket rain gauge, which uses a seesaw mechanism to measure both the amount and intensity of rainfall &#x2014; when rain fills one end of the &#x2018;bucket&#x2019; to the brim, it tips over and is recorded as a quantum unit of rainfall (e.g. 0.1 mm). The more the &#x2018;bucket&#x2019; tips from side to side, the higher the amount of measured rainfall. The faster the &#x2018;bucket&#x2019; tips from side to side, the higher the intensity of measured rainfall.</p>
 </blockquote><p>I guess&#x2026; this is a little complicated, so I did a super simple <em>assumption</em> by assigning ranged values from 0 to 100, where 0 is for least intensity (aqua) and 100 is for highest intensity (pink). Moderate intensity (green or yellow) would have values around 50.</p><pre><code class="language-json">{
-	&quot;type&quot;: &quot;Feature&quot;,
-	&quot;properties&quot;: {
-		&quot;color&quot;: &quot;#00efef&quot;,
-		&quot;intensity&quot;: 7
-	},
-	&quot;geometry&quot;: {
-		&quot;type&quot;: &quot;Polygon&quot;,
-		&quot;coordinates&quot;: [...]
-	}
+    &quot;type&quot;: &quot;Feature&quot;,
+    &quot;properties&quot;: {
+        &quot;color&quot;: &quot;#00efef&quot;,
+        &quot;intensity&quot;: 7
+    },
+    &quot;geometry&quot;: {
+        &quot;type&quot;: &quot;Polygon&quot;,
+        &quot;coordinates&quot;: [...]
+    }
 }
 </code></pre><p>Each GeoJSON polygon contains two values; <code>color</code> in hexadecimal format and <code>intensity</code> in numbers ranging from 0 to 100. Using these values, I could apply them to the 3D extrusions of the polygons. The Mapbox style expression looks like this:</p><pre><code class="language-javascript">&apos;fill-extrusion-height&apos;: [&apos;*&apos;, 50, [&apos;get&apos;, &apos;intensity&apos;]]
 </code></pre><p>The height of extrusion is further multiplied by 50 to make them look more awesome on the 3D map. &#x1F4A5;</p><p>After that, I realised that some of the square polygons of the same colors are <em>duplicated</em> on the map. The dimension of the radar image is 217&#xD7;120, which means the GeoJSON file will contain a maximum of 26,040 polygons, which results in 26,040 squares/cubes to be rendered on the map. I could perhaps reduce the number of polygons by merging polygons with the same color/intensity.</p><p>I tried using <a href="http://turfjs.org/docs/#union">Turf.js union</a> and <a href="https://github.com/w8r/martinez">martinez</a> which can perform union operation on polygons, but to no avail. Somehow the polygons are merged in a weird way which I have no idea what happened. I tried a few other solutions and finally manage to make it work with <a href="https://github.com/mfogel/polygon-clipping">polygon-clipping</a>.</p><figure><img src="/blog/images/figures/diagram/multiple-polygons-merged-multipolygons-map@2x.png" alt="Multiple polygons becomes merged MultiPolygons, on a map" width="438" height="670"></figure><p>In this step, I&apos;m killing two birds with one stone:</p><ol>
@@ -145,6 +145,5 @@
   }
 </script>
 <script data-goatcounter="https://cheeaun.goatcounter.com/count" async src="//gc.zgo.at/count.v2.js" crossorigin="anonymous" integrity="sha384-PeYXrhTyEaBBz91ANMgpSbfN1kjioQNPHNDbMvevUVLJoWrVEjDCpKb71TehNAlj"></script>
-<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "56009c05c6234036a216843af8874520"}'></script><!-- End Cloudflare Web Analytics -->
 <script defer data-domain="cheeaun.com" src="https://plausible.io/js/plausible.js"></script>
 </html>

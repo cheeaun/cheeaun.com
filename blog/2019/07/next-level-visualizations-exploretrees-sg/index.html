@@ -94,17 +94,14 @@ const finalData = { props, line };
   },
 });
 </code></pre><p>For the new implementation with Deck.gl:</p><ul>
-<li>
-<p>The dots are rendered with <a href="https://deck.gl/#/documentation/deckgl-api-reference/layers/scatterplot-layer"><code>ScatterPlotLayer</code></a>. May look the same as the former but the styles are written differently.</p>
+<li><p>The dots are rendered with <a href="https://deck.gl/#/documentation/deckgl-api-reference/layers/scatterplot-layer"><code>ScatterPlotLayer</code></a>. May look the same as the former but the styles are written differently.</p>
 </li>
-<li>
-<p>Pure client-side solution becomes possible. The <a href="https://deck.gl/#/documentation/developer-guide/performance-optimization?section=general-performance-expectations">documentation</a> quotes:</p>
+<li><p>Pure client-side solution becomes possible. The <a href="https://deck.gl/#/documentation/developer-guide/performance-optimization?section=general-performance-expectations">documentation</a> quotes:</p>
 <blockquote>
 <p>On 2015 MacBook Pros with dual graphics cards, most basic layers (like <code>ScatterplotLayer</code>) renders fluidly at 60 FPS during pan and zoom operations up to about 1M (one million) data items, with framerates dropping into low double digits (10-20FPS) when the data sets approach 10M items.</p>
 </blockquote>
 </li>
-<li>
-<p><strong>All</strong> trees are rendered in <strong>all</strong> zoom levels.</p>
+<li><p><strong>All</strong> trees are rendered in <strong>all</strong> zoom levels.</p>
 </li>
 </ul><p>The new code example:</p><pre><code class="language-js">new MapboxLayer({
   id: &apos;trees&apos;,
@@ -210,7 +207,7 @@ const renderingMode = !hqHash &amp;&amp; isTouch ? &apos;low&apos; : &apos;high&
   circle,
   throttle,
 } = await import(&apos;./hq.bundle&apos;);
-</code></pre><p>Besides that, I did an interesting trick for the MessagePack data file. I realised that MessagePack doesn&#x2019;t have an <a href="https://github.com/msgpack/msgpack/issues/194">official MIME type</a>. Even though I started using Parcel for bundling files, the site is still deployed to GitHub Pages via the <a href="https://github.com/JamesIves/github-pages-deploy-action">GitHub Pages Deploy Action</a>. This means gzip compression could only be available for certain file extensions.</p><p>For example, <code>.js</code> files will be served with gzip compression but not <code>.png</code> files. I tried using <code>.mp</code> extension for the MessagePack file and&#x2026; it&#x2019;s not compressed unfortunately &#x1F61F;. Since the site traffic is also handled by Cloudflare, I looked through <a href="https://support.cloudflare.com/hc/en-us/articles/200168396">the list of content types that Cloudflare will compress</a>.</p><p>I needed a file format that&#x2026;</p><ul>
+</code></pre><p>Besides that, I did an interesting trick for the MessagePack data file. I realised that MessagePack doesn&#x2019;t have an <a href="https://github.com/msgpack/msgpack/issues/194">official MIME type</a>. Even though I started using Parcel for bundling files, the site is still deployed to GitHub Pages via the <a href="https://github.com/JamesIves/github-pages-deploy-action">GitHub Pages Deploy Action</a>. This means gzip compression could only be available for certain file extensions.</p><p>For example, <code>.js</code> files will be served with gzip compression but not <code>.png</code> files. I tried using <code>.mp</code> extension for the MessagePack file and&#x2026; it&#x2019;s not compressed unfortunately &#x1F61F;. Since the site traffic is also handled by Cloudflare, I looked through <a href="https://support.cloudflare.com/hc/en-us/articles/200168396">the list of content types that Cloudflare will compress</a>.</p><p>I needed a file format that&#x2026; </p><ul>
 <li>Is whitelisted in the server&apos;s content type compression list, from either GitHub Pages or Cloudflare. I&#x2019;m aware that <a href="https://www.netlify.com/docs/headers-and-basic-auth/">Netlify allows custom headers</a> which may be able to set gzip headers, but I&#x2019;m not moving the site there for now.</li>
 <li>Bypasses Parcel&#x2019;s <a href="https://parceljs.org/assets.html">intelligent asset handling</a>. For example, if <code>.json</code> is used, Parcel will include the file content <em>into</em> the JavaScript bundle.</li>
 <li>Is not confusing for me to revisit in the future. If I use <code>.png</code>, which could work, the future me would be confused and wonder why it&#x2019;s used for a non-image file &#x1F605;.</li>
@@ -287,6 +284,5 @@ const renderingMode = !hqHash &amp;&amp; isTouch ? &apos;low&apos; : &apos;high&
   }
 </script>
 <script data-goatcounter="https://cheeaun.goatcounter.com/count" async src="//gc.zgo.at/count.v2.js" crossorigin="anonymous" integrity="sha384-PeYXrhTyEaBBz91ANMgpSbfN1kjioQNPHNDbMvevUVLJoWrVEjDCpKb71TehNAlj"></script>
-<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "56009c05c6234036a216843af8874520"}'></script><!-- End Cloudflare Web Analytics -->
 <script defer data-domain="cheeaun.com" src="https://plausible.io/js/plausible.js"></script>
 </html>

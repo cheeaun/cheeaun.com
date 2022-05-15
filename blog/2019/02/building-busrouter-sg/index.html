@@ -69,22 +69,19 @@ $(&apos;#busservice_option optgroup&apos;).each((i, el) =&gt; {
 </blockquote><p>At first, I thought the bulk of it comes from BusRouter SG, but turns out it&#x2019;s from another old app of mine. The app is not popular but I found <em>other</em> sites and projects that copied my Google Maps API key! Immediately I delete the key for that app to prevent myself from paying more &#x1F605;.</p><p>The horror didn&#x2019;t stop. Deleting the key wasn&#x2019;t enough. I blamed myself for not paying attention to the <a href="https://cloud.google.com/blog/products/maps-platform/introducing-google-maps-platform">pricing changes</a> as I didn&#x2019;t expect it to be so <em>dramatic</em>.</p><p>At the start of August 2018, I set <a href="https://developers.google.com/maps/documentation/javascript/usage-and-billing#set-caps">some <em>reasonable</em> daily limits in the Quotas page</a> in the Google Cloud Platform Console and keep monitoring the usage. It <a href="https://github.com/cheeaun/busrouter-sg/issues/26">took me a while</a> to make sure the limits don&#x2019;t affect the user experience, because if the limit is reached, an error &#x201C;This page can&apos;t load Google Maps correctly&#x201D; will appear &#x1F605;.</p><p>At the end of the month, I <a href="https://twitter.com/cheeaun/status/1035470274945110016">got this</a>:</p><figure><img src="/blog/images/screenshots/web/billing-report-chart-august-2018-google-cloud-platform-console.png" alt="Billing report chart for August 2018 in the Google Cloud Platform Console" width="709" height="810"></figure><p>For the first 22 days of August, the chart line is flat because it&#x2019;s compensated by the <em>free</em> $200 USD monthly credit. It&#x2019;s like free tier pricing but paid with free credits instead.</p><p>According to the <a href="https://cloud.google.com/maps-platform/pricing/sheet/">price sheet</a>, the free-usage credit applies to <em>each</em> billing account and across <em>all</em> Google Maps Platform API calls, not just Dynamics Maps calls or Static Maps calls. For Dynamic Maps, $200 is enough for up to 28,000 loads and once exceeded, it&#x2019;ll be $7 per 1,000 loads, for <em>within</em> a 100,000 monthly volume range. (Yes, I learnt my lesson and read everything carefully)</p><p>In the chart above, the costs soar up to $8 per day after 22 August. I checked BusRouter SG&#x2019;s stats and found that it&#x2019;s roughly <strong>1,000 to 1,200</strong> Dynamic Maps loads per day. So if I get charged roughly $8 a day, minus the credit of $200, <strong>excluding</strong> the occasional traffic spikes, the Static Maps loads, Places Autocomplete calls and costs for my <em>other</em> apps in the Google Cloud Platform, I would have to pay <strong>at least $40 every month</strong>!? &#x1F631;</p><p>During that month, the math freaked me out and I was thinking hard on how to solve this. I decided that putting advertisements would be the easiest low-effort way to temporarily cover my loss. I&#x2019;ve also asked for donations on Twitter via <a href="https://www.buymeacoffee.com/cheeaun">Buy me a coffee</a>, though not very sustainable in the long term.</p><p>Adsense somehow didn&#x2019;t work as it seems to favor web sites with static content instead of a web app like BusRouter SG. There&#x2019;s nothing like <a href="https://en.wikipedia.org/wiki/AdMob">AdMob</a> for web apps too &#x1F622;.</p><p>In September 2018, I reached out to <a href="https://www.carbonads.net/">Carbon Ads</a> and managed to join their network. On 3 October, I <a href="https://twitter.com/cheeaun/status/1047388673711386624">tweeted</a>:</p><blockquote>
 <p>For BusRouter SG, last month, Google Maps API usage cost (USD46) vs ads earnings (USD35)</p>
 </blockquote><p>It&#x2019;s pretty obvious that I need to migrate away from Google Maps. At that time, there were <a href="https://news.ycombinator.com/item?id=17570029">a few</a> <a href="https://news.ycombinator.com/item?id=18390425">Hacker News posts</a> on folks migrating away as well. My first choice is <a href="https://www.mapbox.com/">Mapbox</a> because I like their vector tiles and the <a href="https://github.com/mapbox/mapbox-gl-js">Mapbox GL JS</a> library.</p><p>I&#x2019;ve always been thinking of rebuilding BusRouter SG and this Google Maps pricing hike has become one of the biggest reasons.</p><h2>Building the next-generation BusRouter SG</h2><p>I&#x2019;ve set three main ambitious goals.</p><ol>
-<li><strong>Migrate to Mapbox</strong> from Google Maps API. Reasons:
-<ul>
+<li><strong>Migrate to Mapbox</strong> from Google Maps API. Reasons:<ul>
 <li>Google Maps API costs got too expensive.</li>
 <li>Google Maps API is still using raster tiles, while Mapbox uses vector tiles. It&#x2019;s kind of unfair because Google Maps <a href="https://maps.google.com/">web site</a> itself uses vector tiles instead &#x1F605;. And believe me, vector tiles is really the future of mapping on the web.</li>
 <li><a href="https://github.com/mapbox/mapbox-gl-js">Mapbox GL JS</a> generally can handle more features (markers and polylines) on the map and perform better than Google Maps API.</li>
 </ul>
 </li>
-<li><strong>Redesign the whole UI</strong> to be more map-focused and mobile-optimized.
-<ul>
+<li><strong>Redesign the whole UI</strong> to be more map-focused and mobile-optimized.<ul>
 <li>Getting rid of the list view, especially the list of stops for a bus service. Despite its usefulness, I realised that most users don&#x2019;t care about the bus stop numbers and names.</li>
 <li>Putting more focus on the search field as I expect most users have a bus service in mind and won&#x2019;t be <em>browsing</em> for bus services.</li>
 <li>The map should take the full spotlight, by hiding any unnecessary information, and let users focus on the map data.</li>
 </ul>
 </li>
-<li><strong>Preload all data</strong> from the start instead of on-demand.
-<ul>
+<li><strong>Preload all data</strong> from the start instead of on-demand.<ul>
 <li>In the previous version, every click on a bus service has to initiate a separate API call. It was meant to save bandwidth and improve performance.</li>
 <li>With Mapbox, it&#x2019;s possible to load <em>everything</em> on the map while still having great performance. It helps to reduce network calls, minimize round trip times, and the pre-cached data allows the site to have better offline capabilities.</li>
 <li>Bandwidth can be saved by generating custom <em>minified</em> JSON files and be served with Gzip or <a href="https://en.wikipedia.org/wiki/Brotli">Brotli</a> compression.</li>
@@ -131,8 +128,7 @@ routesLayer.setProps({ data: data });
 <th>Revenue (USD)</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>July 2018</td>
 <td>$97.93</td>
 <td>$5.00</td>
@@ -162,8 +158,7 @@ routesLayer.setProps({ data: data });
 <td>$4.50</td>
 <td>$80.97</td>
 </tr>
-</tbody>
-</table><p>The costs include both Google Cloud and Mapbox, <strong>excluding</strong> domain renewals. The revenue comes from generous donations via <a href="https://www.buymeacoffee.com/cheeaun">Buy Me A Coffee</a> and advertising via <a href="https://www.carbonads.net/">Carbon Ads</a>.</p><p>On December 2018, it reached a break-even point &#x1F60C;.</p><p>On January 2019, I reverted back to maintenance-mode and did these:</p><ul>
+</tbody></table><p>The costs include both Google Cloud and Mapbox, <strong>excluding</strong> domain renewals. The revenue comes from generous donations via <a href="https://www.buymeacoffee.com/cheeaun">Buy Me A Coffee</a> and advertising via <a href="https://www.carbonads.net/">Carbon Ads</a>.</p><p>On December 2018, it reached a break-even point &#x1F60C;.</p><p>On January 2019, I reverted back to maintenance-mode and did these:</p><ul>
 <li>Replaced Mapbox GL JS&#x2019;s <a href="https://docs.mapbox.com/mapbox-gl-js/api/#geolocatecontrol">GeolocateControl</a> with my own custom-coded component. It has similar functionality like Google Map&#x2019;s, with <a href="https://twitter.com/cheeaun/status/1080764913738407936">compass heading</a>.</li>
 <li><a href="https://twitter.com/cheeaun/status/1083572537987031040">Added</a> approximate first and last bus arrival times information.</li>
 <li>Approved <a href="https://github.com/cheeaun/busrouter-sg/pull/29">JinGen&#x2019;s pull request</a> for adding custom <code>apple-touch-icon</code> for every bus stop arrival time page.</li>
@@ -242,6 +237,5 @@ routesLayer.setProps({ data: data });
   }
 </script>
 <script data-goatcounter="https://cheeaun.goatcounter.com/count" async src="//gc.zgo.at/count.v2.js" crossorigin="anonymous" integrity="sha384-PeYXrhTyEaBBz91ANMgpSbfN1kjioQNPHNDbMvevUVLJoWrVEjDCpKb71TehNAlj"></script>
-<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "56009c05c6234036a216843af8874520"}'></script><!-- End Cloudflare Web Analytics -->
 <script defer data-domain="cheeaun.com" src="https://plausible.io/js/plausible.js"></script>
 </html>

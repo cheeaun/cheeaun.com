@@ -31,22 +31,18 @@
 <li><a href="http://www.bloglah.org/">Bloglah</a></li>
 <li><a href="http://www.petalingstreet.org/">Project Petaling Street</a></li>
 </ul><p>Obviously, the page layout and design are either a bunch of links or a pile of blog posts all compiled into one page. A bunch of links makes the site looks like a <strong>link dump site</strong>. A pile of blog posts on a single page makes the site <strong>loads too slow</strong>. No offense though, but I just feel that the layout can be further improved. Here is a list of notes I made when designing the portal site:</p><ul>
-<li>
-<p>The site shouldn&apos;t show only a bunch of links because it&apos;s boring, at least for me. It&apos;s not a social bookmarking site like <a href="http://del.icio.us/">del.icio.us</a>.</p>
+<li><p>The site shouldn&apos;t show only a bunch of links because it&apos;s boring, at least for me. It&apos;s not a social bookmarking site like <a href="http://del.icio.us/">del.icio.us</a>.</p>
 </li>
-<li>
-<p>The aggregated blog posts should at least contain the post title and content. The content should be a summary of the whole post entry, so that it won&apos;t clutter the page and will not have site-specific formatting issues such as aligned images. If the visitor would love to read more, a &apos;continue reading&apos; button is provided, potentially sending traffic to the original blog site. Good.</p>
+<li><p>The aggregated blog posts should at least contain the post title and content. The content should be a summary of the whole post entry, so that it won&apos;t clutter the page and will not have site-specific formatting issues such as aligned images. If the visitor would love to read more, a &apos;continue reading&apos; button is provided, potentially sending traffic to the original blog site. Good.</p>
 </li>
-<li>
-<p>Since this is a site where all blog posts compiled into one, it doesn&apos;t make sense to show the readers <em>the exact date</em> of a post, provided that everyone should expect all blog posts are written within 24 hours period. At most, a week or two. Therefore, it&apos;s preferable to show the time <em>since</em> the entry was posted, for example &apos;posted 5 hours and 40 minutes ago&apos;, just like how <a href="http://www.technorati.com/">Technorati</a> does it.</p>
+<li><p>Since this is a site where all blog posts compiled into one, it doesn&apos;t make sense to show the readers <em>the exact date</em> of a post, provided that everyone should expect all blog posts are written within 24 hours period. At most, a week or two. Therefore, it&apos;s preferable to show the time <em>since</em> the entry was posted, for example &apos;posted 5 hours and 40 minutes ago&apos;, just like how <a href="http://www.technorati.com/">Technorati</a> does it.</p>
 </li>
-<li>
-<p>For each blog entry, the entry URL, author, source information are optional. Or should I say, insignificant. So, they are rendered with a small font size. In addition, the layout and colors are slightly inspired by <a href="http://mozillalinks.org/wp/2007/11/firefox-3-location-bar-just-became-almighty/" title="Firefox 3 location bar just became almighty">Firefox 3&apos;s new almighty location bar</a>, as quoted:</p>
+<li><p>For each blog entry, the entry URL, author, source information are optional. Or should I say, insignificant. So, they are rendered with a small font size. In addition, the layout and colors are slightly inspired by <a href="http://mozillalinks.org/wp/2007/11/firefox-3-location-bar-just-became-almighty/" title="Firefox 3 location bar just became almighty">Firefox 3&apos;s new almighty location bar</a>, as quoted:</p>
 <blockquote>
 <p>According to studies on human cognition, it is easier for us to isolate elements on an image based on different coloring than any other attribute.</p>
 <p>&#x2014; <a href="http://mozillalinks.org/wp/2007/11/firefox-3-location-bar-just-became-almighty/">http://mozillalinks.org/wp/2007/11/firefox-3-location-bar-just-became-almighty/</a></p>
 </blockquote>
-<p>Pretty neat.</p>
+<p>  Pretty neat.</p>
 </li>
 </ul><p>Okay, done? No.</p><p>The initial layout is too plain, somehow. The list of blog posts are from various blogs, so I need to provide a visual cue for visitors to recognise where the post originates from. At first, I thought of grabbing the site icon, or so-called <a href="http://en.wikipedia.org/wiki/Favicon">favicon</a> for each blog site. It can be done with CSS Guy&apos;s <a href="http://www.askthecssguy.com/2006/12/hyperlink_cues_with_favicons.html">Hyperlink Cues with Favicons</a>. Awesome, but I found a much, much better way.</p><figure><img src="/blog/images/screenshots/web/penang-bloggers-web-site-thumbnails-mythumbshot-thumbalizr-artviper-websnapr-shrinktheweb.jpg" alt="thumbnail images of the Penang Bloggers web site taken from MyThumbShot, thumbalizr, websnapr, artViper and ShrinkTheWeb" width="340" height="640"></figure><p><strong>Web site thumbnails</strong>.</p><p>If I&apos;m not mistaken, it&apos;s easier to recognise a web site from its design viewpoint than its favicon. So, I&apos;ve taken some time to try almost all web site thumbnail providers and it comes down to these few promising services:</p><ul>
 <li><a href="http://www.mythumbshot.com/">MyThumbShot</a></li>
@@ -127,6 +123,5 @@
   }
 </script>
 <script data-goatcounter="https://cheeaun.goatcounter.com/count" async src="//gc.zgo.at/count.v2.js" crossorigin="anonymous" integrity="sha384-PeYXrhTyEaBBz91ANMgpSbfN1kjioQNPHNDbMvevUVLJoWrVEjDCpKb71TehNAlj"></script>
-<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "56009c05c6234036a216843af8874520"}'></script><!-- End Cloudflare Web Analytics -->
 <script defer data-domain="cheeaun.com" src="https://plausible.io/js/plausible.js"></script>
 </html>
