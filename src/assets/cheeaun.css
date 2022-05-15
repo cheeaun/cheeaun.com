@@ -350,24 +350,21 @@ pre code {
   word-break: normal;
 }
 
-header {
+header.site-header {
   text-align: center;
   padding: 50px;
 }
-header h1 {
-  margin: 0;
-}
-header h1 a {
+header.site-header a {
   display: inline-block;
   border-radius: 50%;
 }
-header h1 a:focus {
+header.site-header a:focus {
   transform: scale(0.97);
 }
-header svg {
+header.site-header svg {
   vertical-align: top;
 }
-header h1 a:focus svg {
+header.site-header a:focus svg {
   filter: brightness(0.9);
 }
 
