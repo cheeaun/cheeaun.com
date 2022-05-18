@@ -1,65 +1,50 @@
 ---
 title: Projects
-layout: basic.html.hbs
 ---
 
 Projects
 ===
 
 <style>
-#projects-list {
-  padding: 2em 0;
-  min-height: 100vh;
-}
 #projects-list > ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  /* padding: 1em;
-  columns: auto 320px;
-  column-gap: 2em; */
-  position: relative;
 }
 #projects-list h2 {
-  margin: .25em 0;
+  margin: 0;
   font-size: 24px;
 }
 #projects-list > ul > li{
+  margin: 0 auto 2em;
+  position: relative;
+  max-width: 610px;
+}
+#projects-list > ul > li figure {
+  outline: 1px solid rgba(128,128,128,.5);
+  position: relative;
+  margin-top: 0;
+}
+#projects-list > ul > li figure:hover {
+  outline-color: var(--link-color);
+}
+#projects-list > ul > li figure:hover img {
+  filter: brightness(.9);
+}
+#projects-list > ul > li figure img + img {
   position: absolute;
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 640px;
-  padding: 1em 1em .1em;
-  /* margin: 0 0 2em; */
-  border-radius: 1em;
-  overflow: hidden;
-  box-shadow: 0 15px 30px rgba(0,0,0,.1);
-  transition: .3s box-shadow;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: peekaboo 15s ease-in-out both infinite alternate;
 }
-#projects-list > ul > li:hover{
-  box-shadow: 0 17px 30px rgba(0,0,0,.2);
-}
-#projects-list > ul > li > p:first-child {
-  /* assume first p has the image */
-  margin: -1em -1em .5em;
-}
-#projects-list > ul > li > p:first-child img {
-  /* assume first p has the image */
-  border-radius: 1em;
-  overflow: hidden;
-  box-shadow: 0 15px 30px #0b62a020;
-  object-fit: cover;
-  width: 100%;
-  min-height: 240px;
-  height: 240px;
-  background-color: #ccc;
-  transition: .3s all;
-  opacity: .9;
-  transform: scale(.98);
-}
-#projects-list > ul > li:hover > p:first-child img {
-  opacity: 1;
-  transform: scale(1);
+@keyframes peekaboo {
+  0%, 40% {
+    opacity: 0;
+  }
+  60%, 100% {
+    opacity: 1;
+  }
 }
 #projects-list > ul > li p + ul {
   margin-top: -1em;
@@ -67,30 +52,87 @@ Projects
 #projects-list > ul > li li {
   list-style-type: disc;
 }
-#projects-list strong > a {
-  background-color: #0b62a010;
-  padding: .5em;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  border-radius: .5em;
-  transition: .3s background-color;
+#projects-list figure ~ h2,
+#projects-list figure ~ p {
+  padding-right: 64px;
 }
-#projects-list > ul > li:hover strong > a {
-  background-color: #0b62a099;
-  color: #fff;
+#projects-list > ul > li details {
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  overflow: hidden;
+  left: -1em;
+  right: -1em;
+  pointer-events: none;
 }
-#projects-list > ul > li strong > a:hover {
-  background-color: #0b62a0;
-  color: #fff;
+#projects-list > ul > li details[open] {
+  pointer-events: auto;
+}
+#projects-list > ul > li details summary {
+  pointer-events: auto;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  user-select: none;
+  text-indent: -999em;
+  background: no-repeat center;
+  width: 32px;
+  height: 32px;
+  margin: 1em;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><path fill="gray" d="M150 0a150 150 0 1 0 0 300 150 150 0 0 0 0-300zm63 167h-48v50a15 15 0 0 1-31 0v-50H87a15 15 0 0 1 0-31h47V91a15 15 0 1 1 31 0v45h48a15 15 0 1 1 0 31z"/></svg>');
+  transition: transform 0.3s ease-in-out;
+  opacity: 0.5;
+}
+#projects-list > ul > li details summary:hover {
+  opacity: .75;
+}
+#projects-list > ul > li details summary:active {
+  opacity: .9;
+}
+#projects-list > ul > li details[open] summary {
+  transform: rotate(135deg);
+  position: absolute;
+}
+#projects-list > ul > li details summary + div {
+  position: absolute;
+  max-height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--bg-faint-color);
+  padding: 2em;
+  z-index: 2;
+  overflow: auto;
+  box-shadow: inset 0 0 0 3px rgba(128,128,128,.2);
+}
+@supports (backdrop-filter: blur(30px)) {
+  #projects-list > ul > li details summary + div {
+    background-color: rgba(255,255,255,.9);
+    backdrop-filter: blur(30px);
+  }
+}
+#projects-list > ul > li details[open] summary + div {
+  animation: appear 0.3s ease-in-out both;
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 em.tag {
   font-style: normal;
   border-radius: 3px;
-  padding: .3em .75em;
+  padding: .3em .5em;
   background-color: #999;
   color: #fff;
-  font-weight: bold;
   font-size: 12px;
   display: inline-block;
   line-height: 1;
@@ -98,16 +140,37 @@ em.tag {
   text-transform: uppercase;
   vertical-align: middle;
 }
+@supports (display: grid) {
+  @media (min-width: 40em) {
+    #container {
+      max-width: calc(100% - 2em);
+    }
+    #projects-list > ul {
+      display: grid;
+      grid-template-columns: repeat( auto-fit, minmax(420px, 1fr) );
+      column-gap: 3em;
+    }
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  @supports (backdrop-filter: blur(30px)) {
+    #projects-list > ul > li details summary + div {
+      background-color: rgba(0,0,0,.9);
+    }
+  }
+}
 </style>
 <div id="projects-list">
 
-- ![](/projects-images/hackerweb.jpg)
+- <figure>
+    <a href="https://hackerwebapp.com/"><img src="/project-images/hackerweb.jpg" alt="" width="1280" height="1024" loading="lazy"></a>
+  </figure>
 
-  ## HackerWeb
+  ## [HackerWeb]((https://hackerwebapp.com/))
 
   A simply readable Hacker News app.
 
-  **[Check it out 👉](https://hackerwebapp.com/)**
+  <details><summary>More details</summary><div>
 
   Read more:
 
@@ -120,37 +183,49 @@ em.tag {
   Discussion: [Rebuilt my RN app from scratch. Feedback welcomed](https://www.reddit.com/r/reactnative/comments/ki6652/rebuilt_my_rn_app_from_scratch_feedback_welcomed/)
 
   Featured:
-  
+
   - [Product Hunt: HackerWeb](https://www.producthunt.com/posts/hackerweb-2)
   - [EAS Build — April Preview Update](https://blog.expo.dev/eas-build-april-preview-update-ebd7dff9dd25)
 
-- ![](/projects-images/cheeaun-earth.jpg)
+  </div>
 
-  ## cheeaun.earth
+- <figure>
+    <a href="https://cheeaun.earth"><img src="/project-images/cheeaun-earth.jpg" alt="" width="1280" height="1024" loading="lazy"><img src="/project-images/cheeaun-earth-2.jpg" alt="" width="1280" height="1024" loading="lazy"></a>
+  </figure>
+
+  ## [cheeaun.earth](https://cheeaun.earth)
 
   A map of places I've checked in on Earth.
 
-  **[Check it out 👉](https://cheeaun.earth)**
+  <details><summary>More details</summary><div>
 
   Featured: [Map Your Trips Around the World](https://googlemapsmania.blogspot.com/2017/07/map-your-trips-around-world.html)
 
-- ![](/projects-images/cheeaun-life.jpg)
+  </div>
 
-  ## cheeaun.life
+- <figure>
+    <a href="https://cheeaun.life"><img src="/project-images/cheeaun-life.jpg" alt="" width="1280" height="1024" loading="lazy"></a>
+  </figure>
+
+  ## [cheeaun.life](https://cheeaun.life)
 
   A timeline of important events in my life.
 
-  **[Check it out 👉](https://cheeaun.life)**
+  <details><summary>More details</summary><div>
 
   Discussion: [Show HN: Life – A timeline of important events in (your) life](https://news.ycombinator.com/item?id=6833565)
 
-- ![](/projects-images/busrouter-sg.jpg)
+  </div>
 
-  ## BusRouter SG
+- <figure>
+    <a href="https://busrouter.sg/"><img src="/project-images/busrouter-sg.jpg" alt="" width="1280" height="1024" loading="lazy"><img src="/project-images/busrouter-sg-2.jpg" alt="" width="1280" height="1024" loading="lazy"></a>
+  </figure>
+
+  ## [BusRouter SG](https://busrouter.sg/)
 
   Explore bus stops and routes on the map for all bus services in Singapore.
 
-  **[Check it out 👉](https://busrouter.sg/)**
+  <details><summary>More details</summary><div>
 
   Read more:
   
@@ -170,14 +245,18 @@ em.tag {
   - [[OC] Visualization of bus routes overlapping each other, in Singapore](https://www.reddit.com/r/dataisbeautiful/comments/8xbvtz/oc_visualization_of_bus_routes_overlapping_each/)
   - [I've designed a pretty unique bus service route diagram on busrouter.sg](https://www.reddit.com/r/singapore/comments/nv03xe/ive_designed_a_pretty_unique_bus_service_route/)
   - [BusRouter SG now has multi-route mode - display multiple bus routes at the same time](https://www.reddit.com/r/singapore/comments/ofyhrp/busrouter_sg_now_has_multiroute_mode_display/)
+  
+  </div>
 
-- ![](/projects-images/railrouter-sg.jpg)
+- <figure>
+    <a href="https://railrouter.sg/"><img src="/project-images/railrouter-sg.jpg" alt="" width="1280" height="1024" loading="lazy"><img src="/project-images/railrouter-sg-2.jpg" alt="" width="1280" height="1024" loading="lazy"></a>
+  </figure>
 
-  ## RailRouter SG
+  ## [RailRouter SG](https://railrouter.sg/)
 
   Explore MRT and LRT rail routes in Singapore.
 
-  **[Check it out 👉](https://railrouter.sg/)**
+  <details><summary>More details</summary><div>
 
   Featured:
   
@@ -188,15 +267,19 @@ em.tag {
 
   - [RailRouter SG now updated with TEL2 line and stations](https://www.reddit.com/r/singapore/comments/pdqdwh/railrouter_sg_now_updated_with_tel2_line_and/)
   - [Real-time crowdedness level indicators on MRT/LRT stations](https://www.reddit.com/r/singapore/comments/qpwi0r/realtime_crowdedness_level_indicators_on_mrtlrt/)
+  
+  </div>
 
-- ![](/projects-images/taxirouter-sg.jpg)
+- <figure>
+    <a href="https://taxirouter.sg/"><img src="/project-images/taxirouter-sg.jpg" alt="" width="1280" height="1024" loading="lazy"><img src="/project-images/taxirouter-sg-2.jpg" alt="" width="1280" height="1024" loading="lazy"></a>
+  </figure>
 
-  ## TaxiRouter SG
+  ## [TaxiRouter SG](https://taxirouter.sg/)
 
   Explore available taxis and taxi stands in Singapore.
 
-  **[Check it out 👉](https://taxirouter.sg/)**
-
+  <details><summary>More details</summary><div>
+  
   Read more:
 
   - [Building TaxiRouter SG](/blog/2016/03/building-taxirouter-sg)
@@ -217,15 +300,19 @@ em.tag {
 
   - [Live Taxi Locations on Singapore Map](https://www.reddit.com/r/singapore/comments/4ives5/live_taxi_locations_on_singapore_map/)
   - [I tried rendering data.gov.sg's live taxi locations in 3D. What do you think?](https://www.reddit.com/r/singapore/comments/i7qxrh/i_tried_rendering_datagovsgs_live_taxi_locations/)
+  
+  </div>
 
-- ![](/projects-images/exploretrees-sg.jpg)
+- <figure>
+    <a href="https://exploretrees.sg/"><img src="/project-images/exploretrees-sg.jpg" alt="" width="1280" height="1024" loading="lazy"><img src="/project-images/exploretrees-sg-2.jpg" alt="" width="1280" height="1024" loading="lazy"></a>
+  </figure>
 
-  ## ExploreTrees.SG
+  ## [ExploreTrees.SG](https://exploretrees.sg/)
 
   Explore Trees in Singapore.
 
-  **[Check it out 👉](https://exploretrees.sg/)**
-
+  <details><summary>More details</summary><div>
+  
   Read more:
 
   - [Building ExploreTrees.SG](/blog/2018/04/building-exploretrees-sg)
@@ -242,29 +329,37 @@ em.tag {
   - [I rendered trees in SG to look like the one in Apple Maps](https://www.reddit.com/r/singapore/comments/q7v0gr/i_rendered_trees_in_sg_to_look_like_the_one_in/)
   - [What's new on ExploreTrees.SG (Oct 2021)](https://www.reddit.com/r/singapore/comments/qhib9d/whats_new_on_exploretreessg_oct_2021/)
   - [I made a cool video of my 3D trees project](https://www.reddit.com/r/singapore/comments/qjgm25/i_made_a_cool_video_of_my_3d_trees_project/)
+  
+  </div>
 
-- ![](/projects-images/checkweather-sg.jpg)
+- <figure>
+    <a href="https://checkweather.sg/"><img src="/project-images/checkweather-sg.jpg" alt="" width="1280" height="1024" loading="lazy"></a>
+  </figure>
 
-  ## Check Weather SG
+  ## [Check Weather SG](https://checkweather.sg/)
 
   Yet another weather app for Singapore.
 
-  **[Check it out 👉](https://checkweather.sg/)**
-
+  <details><summary>More details</summary><div>
+  
   Read more: [Building Check Weather SG](/blog/2018/06/building-check-weather-sg)
 
   Featured: [The reality of standing up for my country – part 1](https://harishpillay.com/2020/07/27/the-reality-of-standing-up-for-my-country-part-1/)
 
   Discussion: [I built an iOS app (including a site & two bots) that shows rain radar in Singapore](https://www.reddit.com/r/singapore/comments/h9dne3/i_built_an_ios_app_including_a_site_two_bots_that/)
+  
+  </div>
 
-- ![](/projects-images/repokemon.jpg)
+- <figure>
+    <a href="https://cheeaun.github.io/repokemon/"><img src="/project-images/repokemon.jpg" alt="" width="1280" height="1024" loading="lazy"></a>
+  </figure>
 
-  ## Repokémon
+  ## [Repokémon](https://cheeaun.github.io/repokemon/)
 
   Showcase of GitHub repos with Pokémon names.
 
-  **[Check it out 👉](https://cheeaun.github.io/repokemon/)**
-
+  <details><summary>More details</summary><div>
+  
   Read more: [Building Repokémon](/blog/2016/08/building-repokemon)
 
   Presented: [Repokémon - Talk.CSS #9](https://www.youtube.com/watch?v=ECYVAiM1gSc)
@@ -272,23 +367,19 @@ em.tag {
   Featured: [Product Hunt: Repokémon](https://www.producthunt.com/posts/repokemon)
 
   Discussion: [Repokémon – Showcase of GitHub Repos with Pokémon Names](https://news.ycombinator.com/item?id=12098918)
+  
+  </div>
 
-- ![](/projects-images/kopi-guide.jpg)
+- <figure>
+    <a href="https://cheeaun.github.io/chengyu-wordle/"><img src="/project-images/chengyu-wordle.jpg" alt="" width="1280" height="1024" loading="lazy"></a>
+  </figure>
 
-  ## Order Kopi Guide
-
-  A helpful guide on how to order Kopi in Singapore and some say Malaysia too.
-
-  **[Check it out 👉](https://kopi.guide/)**
-
-- ![](/projects-images/chengyu-wordle.jpg)
-
-  ## Chengyu Wordle
+  ## [Chengyu Wordle](https://cheeaun.github.io/chengyu-wordle/)
 
   Wordle, for Chinese idioms - 成语 (chéngyǔ)
 
-  **[Check it out 👉](https://cheeaun.github.io/chengyu-wordle/)**
-
+  <details><summary>More details</summary><div>
+  
   Read more: [Chengyu Wordle Is Not a Love Story](/blog/2022/02/chengyu-wordle-is-not-a-love-story)
 
   Featured:
@@ -309,84 +400,104 @@ em.tag {
   - [More than mere words](https://www.weekinchina.com/2022/03/more-than-mere-words/)
   - [5 Chinese Wordles for you to discover](https://www.chinoy.tv/5-chinese-wordles-for-you-to-discover/)
   - [There’s a Big Advantage to Playing Wordle in Other Languages](https://slate.com/culture/2022/03/wordle-multiple-languages-lemot-termo-chengyu.html)
+  
+  </div>
 
-- ![](/projects-images/bubble-wrap.jpg)
+- <figure>
+    <a href="https://cheeaun.github.io/steepless/"><img src="/project-images/steepless.jpg" alt="" width="1280" height="1024" loading="lazy"></a>
+  </figure>
 
-  ## Bubble wrap
+  ## [Steepless](https://cheeaun.github.io/steepless/)
+
+  An app to find the flattest routes and avoid the hilliest routes
+
+- <figure>
+    <a href="https://kopi.guide/"><img src="/project-images/kopi-guide.jpg" alt="" width="1280" height="1024" loading="lazy"></a>
+  </figure>
+
+  ## [Order Kopi Guide](https://kopi.guide/)
+
+  A helpful guide on how to order Kopi in Singapore and some say Malaysia too.
+
+- <figure>
+    <a href="https://bubble-wrap.party/"><img src="/project-images/bubble-wrap.jpg" alt="" width="1280" height="1024" loading="lazy"></a>
+  </figure>
+
+  ## [Bubble wrap](https://bubble-wrap.party/)
 
   A rather satisfying bubble wrap popping game.
 
-  **[Check it out 👉](https://bubble-wrap.party/)**
+- <figure>
+    <a href="https://puppetron.vercel.app/"><img src="/project-images/puppetron.jpg" alt="" width="1280" height="1024" loading="lazy"></a>
+  </figure>
 
-- ![](/projects-images/puppetron.jpg)
-
-  ## Puppetron
+  ## [Puppetron](https://puppetron.vercel.app/)
 
   Puppeteer (Headless Chrome Node API)-based rendering solution.
 
-  **[Check it out 👉](https://puppetron.now.sh/)**
-
+  <details><summary>More details</summary><div>
+  
   Featured: [Puppeteer examples](https://github.com/puppeteer/puppeteer/tree/main/examples)
+  
+  </div>
 
-- ![](/projects-images/neat-bookmarks.jpg)
+- <figure>
+    <a href="https://github.com/cheeaun/neat-bookmarks"><img src="/project-images/neat-bookmarks.jpg" alt="" width="1280" height="1024" loading="lazy"></a>
+  </figure>
 
-  ## Neat Bookmarks
+  ## [Neat Bookmarks](https://github.com/cheeaun/neat-bookmarks) <em class="tag">Unmaintained</em>
 
-  <em class="tag">Sold</em> <em class="tag">Unmaintained</em><br>A neat bookmarks tree popup extension for Google Chrome.
+  A neat bookmarks tree popup extension for Google Chrome.
 
-  **[Check it out 👉](https://github.com/cheeaun/neat-bookmarks)**
-
+  <details><summary>More details</summary><div>
+  
   Featured:
 
   - [Launch bookmarks AND bookmarklets from the Chrome Omnibox with Neat Bookmarks](https://thenextweb.com/news/launch-bookmarks-and-bookmarklets-from-the-chrome-omnibox-with-neat-bookmarks)
   - [Neat Bookmarks Gives You One Click Access to Your Chrome Bookmarks](https://lifehacker.com/neat-bookmarks-gives-you-one-click-access-to-your-chrom-5797418)
   - [Neat Bookmarks For Chrome, Search And Access Bookmarks Faster](https://www.ghacks.net/2010/10/17/neat-bookmarks-for-chrome-search-and-access-bookmarks-faster/)
   - [Access Bookmarks in Just 1 Click - Tekzilla Daily Tip](https://www.youtube.com/watch?v=RA3TxqaH26o)
+  
+  </div>
 
-- ![](/projects-images/mooeditable.jpg)
+- <figure>
+    <a href="https://github.com/cheeaun/mooeditable"><img src="/project-images/mooeditable.jpg" alt="" width="1280" height="1024" loading="lazy"></a>
+  </figure>
 
-  ## MooEditable
+  ## [MooEditable](https://github.com/cheeaun/mooeditable) <em class="tag">Unmaintained</em>
 
-  <em class="tag">Unmaintained</em><br>A simple web-based WYSIWYG editor, written in MooTools.
+  A simple web-based WYSIWYG editor, written in MooTools.
 
-  **[Check it out 👉](https://github.com/cheeaun/mooeditable)**
+- <figure>
+    <a href="https://github.com/cheeaun/pentagoo"><img src="/project-images/pentagoo.jpg" alt="" width="1280" height="1024" loading="lazy"></a>
+  </figure>
 
-- ![](/projects-images/pentagoo.jpg)
+  ## [Pentagoo](https://github.com/cheeaun/pentagoo) <em class="tag">Unmaintained</em>
 
-  ## Pentagoo
+  The popular Pentago game, written in Javascript.
 
-  <em class="tag">Unmaintained</em><br>The popular Pentago game, written in Javascript.
-
-  **[Check it out 👉](https://github.com/cheeaun/pentagoo)**
-
+  <details><summary>More details</summary><div>
+  
   Read more: [Pentago or Pentagoo?](/blog/2007/10/pentago-or-pentagoo)
+  
+  </div>
 
-- ![](/projects-images/phoenity.jpg)
+- <figure>
+    <a href="https://github.com/cheeaun/phoenity-icons"><img src="/project-images/phoenity.jpg" alt="" width="1280" height="1024" loading="lazy"></a>
+  </figure>
 
-  ## Phoenity
+  ## [Phoenity](https://github.com/cheeaun/phoenity-icons) <em class="tag">Unmaintained</em>
 
-  <em class="tag">Unmaintained</em><br>A whole family of icons, perfectly designed to be simple, modern and usable.
+  A whole family of icons, perfectly designed to be simple, modern and usable.
 
-  **[Check it out 👉](https://github.com/cheeaun/phoenity-icons)**
-
+  <details><summary>More details</summary><div>
+  
   Featured: ["Firefox Secrets" book](https://books.google.com.sg/books?id=sfciobmzOOcC&lpg=PA110&dq=%22phoenity%22&pg=PA110#v=onepage&q=%22phoenity%22&f=false)
+  
+  </div>
 
 </div>
 
 <div style="text-align: center; margin: 5em;">
 Check out more of my latest projects on <a href="https://github.com/cheeaun">GitHub</a>.<br><a href="https://twitter.com/cheeaun">Follow me on Twitter too</a>.
 </div>
-
-<script>
-  // https://unpkg.com/minimasonry@1.3.0/build/minimasonry.min.js
-  var MiniMasonry=function(){"use strict";function t(t){return this._sizes=[],this._columns=[],this._container=null,this._count=null,this._width=0,this._removeListener=null,this._resizeTimeout=null,this.conf={baseWidth:255,gutterX:null,gutterY:null,gutter:10,container:null,minify:!0,ultimateGutter:5,surroundingGutter:!0,direction:"ltr",wedge:!1},this.init(t),this}return t.prototype.init=function(t){for(var i in this.conf)null!=t[i]&&(this.conf[i]=t[i]);if(null!=this.conf.gutterX&&null!=this.conf.gutterY||(this.conf.gutterX=this.conf.gutterY=this.conf.gutter),this._container="object"==typeof this.conf.container&&this.conf.container.nodeName?this.conf.container:document.querySelector(this.conf.container),!this._container)throw new Error("Container not found or missing");var n=this.resizeThrottler.bind(this);window.addEventListener("resize",n),this._removeListener=function(){window.removeEventListener("resize",n)},this.layout()},t.prototype.reset=function(){this._sizes=[],this._columns=[],this._count=null,this._width=this._container.clientWidth;var t=this.conf.baseWidth;this._width<t&&(this._width=t,this._container.style.minWidth=t+"px"),1==this.getCount()&&(this.conf.gutterX=this.conf.ultimateGutter,this._count=1),this._width<this.conf.baseWidth+2*this.conf.gutterX&&(this.conf.gutterX=0)},t.prototype.getCount=function(){return this.conf.surroundingGutter?Math.floor((this._width-this.conf.gutterX)/(this.conf.baseWidth+this.conf.gutterX)):Math.floor((this._width+this.conf.gutterX)/(this.conf.baseWidth+this.conf.gutterX))},t.prototype.computeWidth=function(){var t=this.conf.surroundingGutter?(this._width-this.conf.gutterX)/this._count-this.conf.gutterX:(this._width+this.conf.gutterX)/this._count-this.conf.gutterX;return t=Number.parseFloat(t.toFixed(2))},t.prototype.layout=function(){if(this._container){this.reset(),null==this._count&&(this._count=this.getCount());for(var t=this.computeWidth(),i=0;i<this._count;i++)this._columns[i]=0;for(var n,e,o=this._container.children,s=0;s<o.length;s++)o[s].style.width=t+"px",this._sizes[s]=o[s].clientHeight;n="ltr"==this.conf.direction?this.conf.surroundingGutter?this.conf.gutterX:0:this._width-(this.conf.surroundingGutter?this.conf.gutterX:0),this._count>this._sizes.length&&(e=this._sizes.length*(t+this.conf.gutterX)-this.conf.gutterX,!1===this.conf.wedge?n="ltr"==this.conf.direction?(this._width-e)/2:this._width-(this._width-e)/2:"ltr"==this.conf.direction||(n=this._width-this.conf.gutterX));for(var r=0;r<o.length;r++){var h=this.conf.minify?this.getShortest():this.getNextColumn(r),u=0;!this.conf.surroundingGutter&&h==this._columns.length||(u=this.conf.gutterX);var c="ltr"==this.conf.direction?n+(t+u)*h:n-(t+u)*h-t,u=this._columns[h];o[r].style.transform="translate3d("+Math.round(c)+"px,"+Math.round(u)+"px,0)",this._columns[h]+=this._sizes[r]+(1<this._count?this.conf.gutterY:this.conf.ultimateGutter)}this._container.style.height=this._columns[this.getLongest()]-this.conf.gutterY+"px"}else console.error("Container not found")},t.prototype.getNextColumn=function(t){return t%this._columns.length},t.prototype.getShortest=function(){for(var t=0,i=0;i<this._count;i++)this._columns[i]<this._columns[t]&&(t=i);return t},t.prototype.getLongest=function(){for(var t=0,i=0;i<this._count;i++)this._columns[i]>this._columns[t]&&(t=i);return t},t.prototype.resizeThrottler=function(){this._resizeTimeout||(this._resizeTimeout=setTimeout(function(){this._resizeTimeout=null,this._container.clientWidth!=this._width&&this.layout()}.bind(this),33))},t.prototype.destroy=function(){"function"==typeof this._removeListener&&this._removeListener();for(var t=this._container.children,i=0;i<t.length;i++)t[i].style.removeProperty("width"),t[i].style.removeProperty("transform");this._container.style.removeProperty("height"),this._container.style.removeProperty("min-width")},t}();
-
-  setTimeout(function(){
-    new MiniMasonry({
-      container: '#projects-list > ul',
-      baseWidth: 320,
-      gutter: 25,
-      ultimateGutter: 20,
-    });
-  }, 300);
-</script>
