@@ -166,7 +166,7 @@ em.tag {
     <a href="https://hackerwebapp.com/"><img src="/project-images/hackerweb.jpg" alt="" width="1280" height="1024" loading="lazy"></a>
   </figure>
 
-  ## [HackerWeb]((https://hackerwebapp.com/))
+  ## [HackerWeb](https://hackerwebapp.com/)
 
   A simply readable Hacker News app.
 
