@@ -16,7 +16,7 @@ Projects
   font-size: 24px;
 }
 #projects-list > ul > li{
-  margin: 0 auto 2em;
+  margin: 0 auto 3em;
   position: relative;
   max-width: 610px;
 }
@@ -149,6 +149,9 @@ em.tag {
       display: grid;
       grid-template-columns: repeat( auto-fit, minmax(420px, 1fr) );
       column-gap: 3em;
+    }
+    #projects-list > ul > li{
+      margin: 0 auto 2em;
     }
   }
 }
