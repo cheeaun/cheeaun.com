@@ -20,7 +20,7 @@ Fast forward to today, I live in Singapore, one of the countries with the best p
 The early days
 ---
 
-On 7 June 2012, I stumbled upon this [tweet by @mengwong](https://twitter.com/mengwong/status/155511398653362177):
+On 7 January 2012, I stumbled upon this [tweet by @mengwong](https://twitter.com/mengwong/status/155511398653362177):
 
 > if i could view bus routes on a map the way you can view subway routes on a map, i would take them a whole lot more.
 
