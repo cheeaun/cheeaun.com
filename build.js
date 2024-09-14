@@ -24,6 +24,7 @@ const metalsmith = Metalsmith(__dirname)
     cssHash: XXH.h32(fs.readFileSync('src/assets/cheeaun.css'), '').toString(
       36,
     ),
+    fediverseHandle: '@cheeaun@mastodon.social',
   })
   .use(
     postcss({
