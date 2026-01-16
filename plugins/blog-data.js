@@ -119,7 +119,8 @@ function plugin(options) {
             img.addClass('large');
           var el = img;
           if (img.parent('a').length) el = img.parent('a');
-          if (el.parent('p').length) {
+          const $p = el.parent('p');
+          if ($p.length && $p.contents().length === 1) {
             // remove the <p>
             el.parent('p').addClass('__P2FIGURE__');
           } else {
