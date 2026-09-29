@@ -1,3 +1,18 @@
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-group(site-logo),
+::view-transition-group(site-footer) {
+  animation-duration: 0.4s;
+  animation-timing-function: cubic-bezier(0.34, 1.35, 0.64, 1);
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.3s;
+}
+
 /*=====================================
   Standard Styles
 =======================================*/
@@ -350,6 +365,20 @@ pre code {
   word-break: normal;
 }
 
+@supports at-rule(@view-transition) {
+  .home #container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+  }
+  .home #container > header.site-header {
+    margin-top: auto;
+  }
+  .home #container > #content {
+    margin-bottom: auto;
+  }
+}
+
 header.site-header {
   text-align: center;
   padding: 50px;
@@ -357,6 +386,7 @@ header.site-header {
 header.site-header a {
   display: inline-block;
   border-radius: 50%;
+  view-transition-name: site-logo;
 }
 header.site-header a:focus {
   transform: scale(0.97);
@@ -554,6 +584,9 @@ footer {
   padding: 50px;
   text-align: center;
   color: var(--footer-text-color);
+}
+#container > footer {
+  view-transition-name: site-footer;
 }
 footer a {
   color: inherit;
