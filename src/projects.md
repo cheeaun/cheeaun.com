@@ -166,6 +166,40 @@ em.tag {
 <div id="projects-list">
 
 - <figure>
+    <a href="https://phanpy.social/"><img src="/project-images/phanpy.jpg" alt="" width="1280" height="1024" loading="lazy"><img src="/project-images/phanpy-2.jpg" alt="" width="1280" height="1024" loading="lazy"></a>
+  </figure>
+
+  ## [Phanpy](https://phanpy.social/)
+
+  A minimalistic opinionated Mastodon web client.
+
+  <details><summary>More details</summary><div>
+
+  Source code: [cheeaun/phanpy](https://github.com/cheeaun/phanpy)
+
+  Discussion:
+  
+  - [Hacker News: Phanpy: A minimalistic opinionated Mastodon web client](https://news.ycombinator.com/item?id=40033039)
+  - [Reddit: Phanpy.social](https://www.reddit.com/r/Mastodon/comments/1bx97l2/phanpysocial/)
+
+  Featured:
+
+  - [Trunk & Tidbits, March 2025](https://blog.joinmastodon.org/2025/04/trunk-tidbits-march-2025/)
+  - [【(ﾟ∀ﾟ)!!】マストドン界の黒船？！噂のミニマルWebクライアント「ファンピー(Phanpy)」を丸裸にしちゃうぞ！☆彡](https://dopingconsomme.blogspot.com/2025/04/phanpy-minimal-mastodon-client-review.html)
+  - [#fediday2025 Elena Rossini - The Future is federated](https://c-tube.c-base.org/w/sFSzvrMMbx1sU5yjoM1cyh)
+  - [Threads on Mastodon and The Bright Future of the Fediverse](https://www.augment.ink/threads-on-mastodon/)
+  - [Simon Willison’s Weblog: Phanpy](https://simonwillison.net/2024/Mar/16/phanpy/)
+  - [My favorite weird little apps](https://a.wholelottanothing.org/my-favorite-weird-little-apps/)
+  - [Impact of fediverse clients on the use of alt text](https://stefanbohacek.com/blog/impact-of-fediverse-clients-on-the-use-of-alt-text/)
+  - [Last Week in Fediverse – ep 59](https://fediversereport.com/last-week-in-fediverse-ep-59/)
+  - [The best Mastodon client now has an iOS version!](https://fantinel.dev/blog/iphanpy-mastodon-client)
+  - [ongoing by Tim Bray: Time to Migrate](https://www.tbray.org/ongoing/When/202x/2025/11/03/Time-to-Migrate)
+  - [ongoing by Tim Bray: Mastodon, The Only Good Choice](https://www.tbray.org/ongoing/When/202x/2026/07/05/Choose-Mastodon)
+  - [The Seven Deadly Fediverse UX Sins: A Redemption Report Card](https://wedistribute.org/2026/04/the-seven-deadly-fediverse-ux-sins-a-redemption-report-card/)
+  
+  </div>
+  
+- <figure>
     <a href="https://hackerwebapp.com/"><img src="/project-images/hackerweb.jpg" alt="" width="1280" height="1024" loading="lazy"></a>
   </figure>
 
