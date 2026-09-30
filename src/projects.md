@@ -536,5 +536,5 @@ em.tag {
 </div>
 
 <div style="text-align: center; margin: 5em;">
-Check out more of my latest projects on <a href="https://github.com/cheeaun">GitHub</a>.<br><a href="https://twitter.com/cheeaun">Follow me on Twitter too</a>.
+Check out more of my latest projects on <a href="https://github.com/cheeaun">GitHub</a>.
 </div>
