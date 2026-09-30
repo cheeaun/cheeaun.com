@@ -2,15 +2,9 @@
   navigation: auto;
 }
 
-::view-transition-group(site-logo),
-::view-transition-group(site-footer) {
-  animation-duration: 0.4s;
-  animation-timing-function: cubic-bezier(0.34, 1.35, 0.64, 1);
-}
-
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation-duration: 0.3s;
+::view-transition-group(site-logo) {
+  animation-duration: 0.6s;
+  animation-timing-function: cubic-bezier(0.34, 1.2, 0.64, 1);
 }
 
 /*=====================================
@@ -386,12 +380,12 @@ header.site-header {
 header.site-header a {
   display: inline-block;
   border-radius: 50%;
-  view-transition-name: site-logo;
 }
 header.site-header a:focus {
   transform: scale(0.97);
 }
 header.site-header svg {
+  view-transition-name: site-logo;
   vertical-align: top;
 }
 header.site-header a:focus svg {
@@ -584,9 +578,6 @@ footer {
   padding: 50px;
   text-align: center;
   color: var(--footer-text-color);
-}
-#container > footer {
-  view-transition-name: site-footer;
 }
 footer a {
   color: inherit;
